@@ -1,6 +1,7 @@
 ## nlp_proj
 Final project in "Intro to NLP" course
 # Schedule
-| Due date | Task | Done |
+<!--- :heavy_check_mark: --->
+| Due date | Task | Status |
 | --- | --- | ---|
 

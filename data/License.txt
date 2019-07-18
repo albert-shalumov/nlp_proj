@@ -1,0 +1,4 @@
+License
+This resource can be used freely. Any publication resulting from the use of this corpus should refer to it as "The MILA Hebrew Treebank" and cite:
+
+Khalil Sima'an, Alon Itai, Yoad Winter, Alon Altman and Noa Nativ. "Building a Tree-Bank of Modern Hebrew Text." Traitment Automatique des Langues, 42, 347-380. 2001. [BibTeX]

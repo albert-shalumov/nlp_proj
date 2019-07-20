@@ -5,7 +5,7 @@ Description: Final project in "Intro. to NLP" course.
 <!--- :heavy_check_mark: --->
 | Due date | Task | Status |
 | --- | --- | ---|
-| 22/7 | Finish script to convert hebrew to transl. chars ||
+| 22/7 | Finish script to convert hebrew to transl. chars | :heavy_check_mark: |
 | 26/7 | Annotate some data for HMM work ||
 | 26/7 | Annotate some data for HMM work ||
 | 2/8 | HMM code finished ||

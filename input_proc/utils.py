@@ -1,6 +1,18 @@
 import codecs
 
+
+
 cache = set()
+
+'''
+Performs character-wise conversion from hebrew unicode script to characters suggested by Uzi Ornan
+
+Input: 
+w - hebrew word
+
+Return:
+word in Ornan convention
+'''
 def Hebrew2Ornan(w):
     # Used https://unicode-table.com as reference
     char_lut = {
@@ -49,12 +61,27 @@ def BreakLines(text):
             prev_ch = u''
             continue
         prev_ch = ch
-        #if ch in [u'.']:
-        #    new_text += u'\n'
-        #    prev_ch = u''
-        #    continue
+
     return new_text.splitlines()
 
+'''
+Converts hebrew text in unicode to expected word-wise structure for syllabification.
+Note: this function is somewhat specific for text for MILA Haaretz text.
+Format:
+for each sentence:
+    # sent_id = sentence_index
+    # text = sentence_hebrew_unicode
+    for each word:
+        word_index word_hebrew word_ornan word_ornan
+    \n
+
+Input: 
+file_in - hebrew text file
+file_out - output file
+
+Return:
+None
+'''
 def ConvertRaw(file_in, file_out):
     with codecs.open(file_in, encoding='utf-8') as f:
         lines = f.readlines()

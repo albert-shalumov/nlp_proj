@@ -126,159 +126,159 @@
 # sent_id = 6
 # text =  היא הודיעה כי הוועדה תגבש הצעת חוק בנושא העובדים הזרים , שתכלול איסור על מתן שכר לעובדים מתחת לשכר המינימום ומתן התנאים הסוציאליים המקובלים במקום העבודה .   
 1 היא hyˀ hiy*ˀ* yi
-2 הודיעה hwdyˁh how*diy*ˁah* o-di-a
+2 הודיעה hwdyˁh how*-diy*-ˁah* o-di-a
 3 כי ky kiy* ki
-4 הוועדה hwwˁdh hawaw*ˁadah* a-va-a-da
-5 תגבש tgbš tegabeš* te-ga-besh
-6 הצעת hçˁt haçaˁat* a-tsa-at
+4 הוועדה hwwˁdh ha-waw*-ˁa-dah* a-va-a-da
+5 תגבש tgbš te-ga-beš* te-ga-besh
+6 הצעת hçˁt ha-ça-ˁat* a-tsa-at
 7 חוק ḥwq ḥow*q* hok
-8 בנושא bnwšˀ banow*šeˀ* ba-no-se
-9 העובדים hˁwbdym haˁow*b*diy*m* a-ov-dim
-10 הזרים hzrym hazariy*m* a-za-rim
+8 בנושא bnwšˀ ba-now*-šeˀ* ba-no-se
+9 העובדים hˁwbdym ha-ˁow*-b*diy*m* a-ov-dim
+10 הזרים hzrym ha-za-riy*m* a-za-rim
 #11 , , , 
-12 שתכלול štklwl šetik*low*l* she-tih-lol
-13 איסור ˀyswr ˀiy*sow*r* i-sor
+12 שתכלול štklwl še-tik*-low*l* she-tih-lol
+13 איסור ˀyswr ˀiy*-sow*r* i-sor
 14 על ˁl ˁ*l* al
-15 מתן mtn matan* ma-tan
-16 שכר škr šakar* sa-har
-17 לעובדים lˁwbdym laˁow*b*diy*m* la-ov-dim
-18 מתחת mtḥt mitaḥat* mi-ta-hat
-19 לשכר lškr lešakar* le-sa-har
-20 המינימום hmynymwm hamiy*niy*muw*m a-mi-ni-mum
-21 ומתן wmtn wematan* ve-ma-tan
-22 התנאים htnˀym hat*naˀiy*m* at-na-im
-23 הסוציאליים hswçyˀlyym hasow*çiy*ˀaliy*yim* a-so-tsi-a-liym
-24 המקובלים hmqwblym hamequw*baliy*m* a-me-ku-ba-lim
-25 במקום bmqwm bemeqow*m* bem-kom
-26 העבודה hˁbwdh haˁabow*dah* a-a-vo-da
+15 מתן mtn ma-tan* ma-tan
+16 שכר škr ša-kar* sa-har
+17 לעובדים lˁwbdym la-ˁow*b*-diy*m* la-ov-dim
+18 מתחת mtḥt mi-ta-ḥat* mi-ta-hat
+19 לשכר lškr le-ša-kar* le-sa-har
+20 המינימום hmynymwm ha-miy*-niy*-muw*m a-mi-ni-mum
+21 ומתן wmtn we-ma-tan* ve-ma-tan
+22 התנאים htnˀym ha-t*na-ˀiy*m* a-tna-im
+23 הסוציאליים hswçyˀlyym ha-sow*-çiy*-ˀa-liy*yim* a-so-tsi-a-liym
+24 המקובלים hmqwblym ha-me-quw*-ba-liy*m* a-me-ku-ba-lim
+25 במקום bmqwm be-me-qow*m* be-me-kom
+26 העבודה hˁbwdh ha-ˁa-bow*-dah* a-a-vo-da
 #27 . . . 
 
 # sent_id = 7
 # text =  כמו כן , תציב הצעת החוק עונשי מאסר והטלת קנסות כבדים למי שיעסיק עובדים זרים בלא רשיון .    
-1 כמו kmw kemow* ke-mo
+1 כמו kmw ke-mow* ke-mo
 2 כן kn ken* hen
 #3 , , , 
-4 תציב tçyb taçiy*b* ta-tsiv
-5 הצעת hçˁt haçaˁat* a-tsa-at
-6 החוק hḥwq haḥow*q* a-hok
-7 עונשי ˁwnšy ˁow*n*šeyi on-shei
-8 מאסר mˀsr maˀasar* ma-a-sar
-9 והטלת whṭlt wehaṭalat* ve-a-ta-lat
-10 קנסות qnswt q*nasow*t* kna-sot
-11 כבדים kbdym k*bediy*m* kve-dim
-12 למי lmy lemiy* le-mi
-13 שיעסיק šyˁsyq šeyaˁasiy*q* she-ya-a-sik
-14 עובדים ˁwbdym ˁow*b*diy*m* ov-dim
-15 זרים zrym zariy*m* za-rim
-16 בלא blˀ beloˀ* be-lo
-17 רשיון ršywn rišayow*n* ri-sha-yon
+4 תציב tçyb ta-çiy*b* ta-tsiv
+5 הצעת hçˁt ha-ça-ˁat* a-tsa-at
+6 החוק hḥwq ha-ḥow*q* a-hok
+7 עונשי ˁwnšy ˁow*-n*šeyi on-shei
+8 מאסר mˀsr ma-ˀa-sar* ma-a-sar
+9 והטלת whṭlt we-ha-ṭa-lat* ve-a-ta-lat
+10 קנסות qnswt q*na-sow*t* kna-sot
+11 כבדים kbdym k*be-diy*m* kve-dim
+12 למי lmy le-miy* le-mi
+13 שיעסיק šyˁsyq še-ya-ˁa-siy*q* she-ya-a-sik
+14 עובדים ˁwbdym ˁow*b*-diy*m* ov-dim
+15 זרים zrym za-riy*m* za-rim
+16 בלא blˀ be-loˀ* be-lo
+17 רשיון ršywn ri-ša-yow*n* ri-sha-yon
 #18 . . . 
 
 # sent_id = 8
 # text =  מרגלית אילת , הממונה על מתן היתרי עבודה לזרים בשירות התעסוקה , מסרה כי תנועת המושבים הפעילה לחץ שיותר לה להביא עובדים זרים מתאילנד .   
-1 מרגלית mrglyt mar*galiy*t* mar-ga-lit
-2 אילת ˀylt ˀiy*lat* il-at
+1 מרגלית mrglyt mar*-ga-liy*t* mar-ga-lit
+2 אילת ˀylt ˀ*ye-lat* e-lat
 #3 , , , 
-4 הממונה hmmwnh hamemuw*neh* a-me-mu-ne
+4 הממונה hmmwnh ha-me-muw*-neh* a-me-mu-ne
 5 על ˁl ˁ*l* al
-6 מתן mtn matan* ma-tan
-7 היתרי hytry hiy*teriy* i-te-ry
-8 עבודה ˁbwdh ˁabow*dah* a-vo-da
-9 לזרים lzrym lezariy*m* le-za-rim
-10 בשירות bšyrwt bešiy*row*t* be-shi-rot
-11 התעסוקה htˁswqh hataˁasuw*qah* a-ta-a-su-ka
+6 מתן mtn ma-tan* ma-tan
+7 היתרי hytry h*ye-te-r*ye e-te-rye
+8 עבודה ˁbwdh ˁa-bow*-dah* a-vo-da
+9 לזרים lzrym le-za-riy*m* le-za-rim
+10 בשירות bšyrwt be-šiy*-row*t* be-shi-rot
+11 התעסוקה htˁswqh ha-ta-ˁa-suw*-qah* a-ta-a-su-ka
 #12 , , , 
-13 מסרה msrh mas*rah* mas-ra
+13 מסרה msrh mas*-rah* mas-ra
 14 כי ky kiy* ki
-15 תנועת tnwˁt t*nuw*ˁat* tnu-at
-16 המושבים hmwšbym hamow*šabiy*m* a-mo-sha-vim
-17 הפעילה hpˁylh hep*ˁiy*lah* ef-i-la
-18 לחץ lḥç laḥaç* la-hats
-19 שיותר šywtr šeyuw*tar* she-yu-tar
+15 תנועת tnwˁt t*nuw*-ˁat* tnu-at
+16 המושבים hmwšbym ha-mow*-ša-biy*m* a-mo-sha-vim
+17 הפעילה hpˁylh hep*-ˁiy*-lah* ef-i-la
+18 לחץ lḥç la-ḥa-ç* la-hats
+19 שיותר šywtr še-yuw*-tar* she-yu-tar
 20 לה lh lah* la
-21 להביא lhbyˀ lehabiy*ˀ* le-a-vi
-22 עובדים ˁwbdym ˁow*b*diy*m* ov-dim
-23 זרים zrym zariy*m* za-rim
-24 מתאילנד mtˀylnd mitaˀiy*lan*d* mi-tai-land
+21 להביא lhbyˀ le-ha-biy*ˀ* le-a-vi
+22 עובדים ˁwbdym ˁow*b*-diy*m* ov-dim
+23 זרים zrym za-riy*m* za-rim
+24 מתאילנד mtˀylnd mi-taˀiy*-lan*d* mi-tai-land
 #25 . . . 
 
 # sent_id = 9
 # text =  היא אמרה כי שירות התעסוקה הציע להביא עובדים מדרום לבנון , אך תנועת המושבים סירבה .
 1 היא hyˀ hiy*ˀ* yi
-2 אמרה ˀmrh ˀ*m*rah* am-ra
+2 אמרה ˀmrh ˀ*m*-rah* am-ra
 3 כי ky kiy* ki
-4 שירות šyrwt šiy*ruw*t* shi-rut
-5 התעסוקה htˁswqh hataˁasuw*qah* a-ta-a-su-ka
-6 הציע hçyˁ heçiy*ˁa e-tsi-a
-7 להביא lhbyˀ lehabiy*ˀ* le-a-vi
-8 עובדים ˁwbdym ˁow*b*diy*m* ov-dim
-9 מדרום mdrwm mid*row*m* mid-rom
-10 לבנון lbnwn lebanow*n* le-va-non
+4 שירות šyrwt šiy*-ruw*t* shi-rut
+5 התעסוקה htˁswqh ha-ta-ˁa-suw*-qah* a-ta-a-su-ka
+6 הציע hçyˁ he-çiy*-ˁa e-tsi-a
+7 להביא lhbyˀ le-ha-biy*ˀ* le-a-vi
+8 עובדים ˁwbdym ˁow*b*-diy*m* ov-dim
+9 מדרום mdrwm mid*-row*m* mid-rom
+10 לבנון lbnwn le-ba-now*n* le-va-non
 #11 , , , 
 12 אך ˀk ˀak* ah
-13 תנועת tnwˁt t*nuw*ˁat* tnu-at
-14 המושבים hmwšbym hamow*šabiy*m* a-mo-sha-vim
-15 סירבה syrbh siy*r*bah* sir-va
+13 תנועת tnwˁt t*nuw*-ˁat* tnu-at
+14 המושבים hmwšbym ha-mow*-ša-biy*m* a-mo-sha-vim
+15 סירבה syrbh siy*r*-bah* sir-va
 #16 . . . 
 
 # sent_id = 10
 # text =  ישראל ארד , סמנכ"ל הביטוח הלאומי , אמר כי ממלא מקום שר העבודה והרווחה , דוד מגן , הקים ועדה בין - משרדית , שהמליצה להגדיל באופן משמעותי את הקנסות למעסיקים .
-1 ישראל yšrˀl yiš*raˀel* is-ra-el
-2 ארד ˀrd ˀarad* a-rad
+1 ישראל yšrˀl yiš*-ra-ˀel* is-ra-el
+2 ארד ˀrd ˀa-rad* a-rad
 #3 , , , 
 #4 סמנכ"ל smnk"l saman*kal* sa-man-kal
-5 הביטוח hbyṭwḥ habiy*ṭuw*ḥ* a-bi-tu-h
-6 הלאומי hlˀwmy haleˀuw*miy* a-le-u-mi
+5 הביטוח hbyṭwḥ ha-biy*-ṭuw*-ḥ* a-bi-tu-h
+6 הלאומי hlˀwmy ha-le-ˀuw*-miy* a-le-u-mi
 #7 , , , 
-8 אמר ˀmr ˀamar* a-mar
+8 אמר ˀmr ˀa-mar* a-mar
 9 כי ky kiy* ki
-10 ממלא mmlˀ memaleˀ* me-ma-la
-11 מקום mqwm maqow*m* ma-kom
+10 ממלא mmlˀ me-ma-leˀ* me-ma-la
+11 מקום mqwm ma-qow*m* ma-kom
 12 שר šr šar* sar
-13 העבודה hˁbwdh haˁabow*dah* a-a-vo-da
-14 והרווחה whrwwḥh weharewaw*ḥah* ve-a-re-va-ha
+13 העבודה hˁbwdh ha-ˁa-bow*-dah* a-a-vo-da
+14 והרווחה whrwwḥh we-ha-re-waw*-ḥah* ve-a-re-va-ha
 #15 , , , 
-16 דוד dwd dawid* da-vid
-17 מגן mgn magen* ma-gen
+16 דוד dwd da-wid* da-vid
+17 מגן mgn ma-gen* ma-gen
 #18 , , , 
-19 הקים hqym heqiy*m* e-kim
-20 ועדה wˁdh waˁadah* va-a-da
+19 הקים hqym he-qiy*m* e-kim
+20 ועדה wˁdh wa-ˁa-dah* va-a-da
 21 בין byn b*yen* ben
 #22 - - - 
-23 משרדית mšrdyt miš*radiy*t* mis-ra-dit
+23 משרדית mšrdyt miš*-ra-diy*t* mis-ra-dit
 #24 , , , 
-25 שהמליצה šhmlyçh šehem*liy*çah* she-em-li-tsa
-26 להגדיל lhgdyl lehag*diy*l* le-ag-dil
-27 באופן bˀwpn beˀow*pen* be-o-fen
-28 משמעותי mšmˁwty maš*maˁuw*tiy* mash-ma-u-ti
+25 שהמליצה šhmlyçh še-hem*-liy*-çah* she-em-li-tsa
+26 להגדיל lhgdyl le-hag*-diy*l* le-ag-dil
+27 באופן bˀwpn be-ˀow*-pen* be-o-fen
+28 משמעותי mšmˁwty maš*-ma-ˁuw*-tiy* mash-ma-u-ti
 29 את ˀt ˀet* et
-30 הקנסות hqnswt haq*nasow*t* ak-na-sot
-31 למעסיקים lmˁsyqym lemaˁasiy*qiy*m* le-ma-a-si-kim
+30 הקנסות hqnswt haq*-na-sow*t* ak-na-sot
+31 למעסיקים lmˁsyqym le-ma-ˁa-siy*-qiy*m* le-ma-a-si-kim
 #32 . . . 
 
 # sent_id = 11
 # text =  ח"ך אלי דיין ( מערך ) הגיש הצעת חוק שלפיה יוטל היטל על מעסיקי עובדים זרים , כדי למנוע העדפתם על עובדים ישראליים .    
 #1 ח"כ ḥ"k ḥa"*k* hak
-2 אלי ˀly ˀeliy* eli
-3 דיין dyyn dayay*n* da-yan
+2 אלי ˀly ˀe-liy* e-li
+3 דיין dyyn da-yay*n* da-yan
 #4 ( ( ( 
-5 מערך mˁrk maˁarak* ma-a-rah
+5 מערך mˁrk ma-ˁa-rak* ma-a-rah
 #6 ) ) ) 
-7 הגיש hgyš hegiy*š* e-gish
-8 הצעת hçˁt haçaˁat* a-tsa-at
+7 הגיש hgyš he-giy*š* e-gish
+8 הצעת hçˁt ha-ça-ˁat* a-tsa-at
 9 חוק ḥwq ḥow*q* hok
-10 שלפיה šlpyh šelepiyah she-le-fi-ya
-11 יוטל ywṭl yuw*ṭal* yu-tal
-12 היטל hyṭl hey*ṭel* ey-tel
+10 שלפיה šlpyh še-le-pi-yah* she-le-fi-ya
+11 יוטל ywṭl yuw*-ṭal* yu-tal
+12 היטל hyṭl hey*-ṭel* ey-tel
 13 על ˁl ˁ*l* al
-14 מעסיקי mˁsyqy maˁasiy*qey* ma-a-si-key 
-15 עובדים ˁwbdym ˁow*b*diy*m* ov-dim 
-16 זרים zrym zariy*m* za-rim 
+14 מעסיקי mˁsyqy ma-ˁa-siy*-qey* ma-a-si-key 
+15 עובדים ˁwbdym ˁow*b*-diy*m* ov-dim 
+16 זרים zrym za-riy*m* za-rim 
 #17 , , , 
-18 כדי kdy kedey* ke-dey  
-19 למנוע lmnwˁ lim*now*ˁa lim-noa 
-20 העדפתם hˁdptm haˁadapatam* a-a-da-fa-tam 
+18 כדי kdy ke-dey* ke-dey  
+19 למנוע lmnwˁ lim*-now*ˁa lim-noa 
+20 העדפתם hˁdptm ha-ˁa-da-pa-tam* a-a-da-fa-tam 
 21 על ˁl ˁ*l* al 
-22 עובדים ˁwbdym ˁow*b*diy*m* 
-23 ישראליים yšrˀlyym yiš*raˀeliyiy*m is-ra-el-yim 
+22 עובדים ˁwbdym ˁow*b*-diy*m* 
+23 ישראליים yšrˀlyym yiš*-ra-ˀe-liy*-yim is-ra-e-li-yim 
 #24 . . . 

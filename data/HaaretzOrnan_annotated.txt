@@ -282,3 +282,55 @@
 22 עובדים ˁwbdym ˁow*b*-diy*m* 
 23 ישראליים yšrˀlyym yiš*-ra-ˀe-liy*-yim is-ra-e-li-yim 
 #24 . . . 
+
+# sent_id = 12
+# text =  חברות המעסיקות עובדים זרים זוכות במכרזים , היות והן מציעות שירותים זולים יותר .
+1 חברות ḥbrwt ḥeb*-row*t* hev-rot 
+2 המעסיקות hmˁsyqwt ha-ma-ˁa-siy*-qow*t* a-ma-a-si-kot 
+3 עובדים ˁwbdym ˁow*b*-diy*m* ov-dim 
+4 זרים zrym za-riy*m* za-rim 
+5 זוכות zwkwt zow*-kow*t* zo-hot 
+6 במכרזים bmkrzym be-mik*-ra-ziy*m* be-mih-ra-zim 
+#7 , , , 
+8 היות hywt he-yow*t* e-yot
+9 והן whn we-hen* ve-en 
+10 מציעות mçyˁwt me-çiy*-ˁow*t* me-tsi-ot 
+11 שירותים šyrwtym šiy*-ruw*-tiy*m* shi-ru-tim
+12 זולים zwlym zow*-liy*m* zo-lim 
+13 יותר ywtr yuw*-ter* yu-ter
+#14 . . . 
+
+# sent_id = 13
+# text =  ח"ך רן כהן ( רץ ) אמר כי על הוועדה לפנות לממשלה בדרישה לחסל את העסקת העובדים הזרים לאלתר , על רקע היצע העולים המוכנים לעבוד בכל עבודה בשכר המינימום .
+#1 ח"ך ḥ"k ḥ"k 
+2 רן rn ran* ran  
+3 כהן khn ko-hen* ko-en 
+#4 ( ( ( 
+5 רץ rç raç* rats 
+#6 ) ) ) 
+7 אמר ˀmr ˀa-mar* a-mar 
+8 כי ky kiy* ki 
+9 על ˁl ˁ*l* al 
+10 הוועדה hwwˁdh ha-waw*-ˁa-dah* a-va-a-da
+11 לפנות lpnwt lip*-now*t* lif-not 
+12 לממשלה lmmšlh la-mem*-ša-lah* la-mem-sha-la
+13 בדרישה bdryšh be-d*riy*-šah* be-dri-sha
+14 לחסל lḥsl le-ḥa-sel* le-ha-sel
+15 את ˀt ˀet* et
+16 העסקת hˁsqt ha-ˁa-sa-qat* a-a-sa-kat
+17 העובדים hˁwbdym ha-ˁow*b*-diy*m* a-ov-dim 
+18 הזרים hzrym ha-za-riy*m* a-za-rim 
+19 לאלתר lˀltr le-ˀal*-tar* le-al-tar 
+#20 , , , 
+21 על ˁl ˁ*l* al
+22 רקע rqˁ re-qaˁ* re-ka 
+23 היצע hyçˁ hey*-çaˁ* ey-tsa 
+24 העולים hˁwlym ha-ˁow*-liy*m* a-o-lim
+25 המוכנים hmwknym ha-muw*-ka-niy*m* a-mu-ha-nim 
+26 לעבוד lˁbwd la-ˁa-bow*d* la-a-vod 
+27 בכל bkl be-kol* be-kol
+28 עבודה ˁbwdh ˁa-bow*-dah* a-vo-da 
+29 בשכר bškr be-ša-kar* be-sa-har 
+30 המינימום hmynymwm ha-miy*-niy*-muw*m* a-mi-ni-mum 
+#31 . . . 
+

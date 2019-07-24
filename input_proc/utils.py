@@ -42,7 +42,7 @@ def Hebrew2Ornan(w):
             res += char_lut[ch] if ch in char_lut else ch
     return res
 
-#
+# Not in use
 def BreakLines(text):
     prev_ch = u''
     quot = False
@@ -63,6 +63,14 @@ def BreakLines(text):
         prev_ch = ch
 
     return new_text.splitlines()
+
+def IsSkipWord(word:str):
+    if word.isdecimal():
+        return True
+    if len(word)==1 and word in [u',',u'\'',u'"',u'!',u'.',u'?', u')',u'(',u'-',u';',u':',]:
+        return True
+    if u'"' in word:
+        return True
 
 '''
 Converts hebrew text in unicode to expected word-wise structure for syllabification.
@@ -120,9 +128,13 @@ def ConvertRaw(file_in, file_out):
         for sent_idx, sentence in enumerate(hebrew_text):
             f.write(u'# sent_id = {}\n'.format(sent_idx+1))
             f.write(u'# text = {}\n'.format(sentence))
-            for word_idx, word in enumerate(sentence.split(u' ')):
+            split_sent = sentence.split(u' ')
+            split_sent = list(filter(lambda x: len(x)>0, split_sent))
+            for word_idx, word in enumerate(split_sent):
                 word_ornan = Hebrew2Ornan(word)
-                f.write(u'{} {} {} {} {}\n'.format(word_idx+1, word, word_ornan, word_ornan, u'xxxxxxx'))
+                if IsSkipWord(word_ornan):
+                    f.write(u'#')
+                f.write(u'{} {} {} {} \n'.format(word_idx+1, word, word_ornan, word_ornan))
             f.write(u'\n')
 
 

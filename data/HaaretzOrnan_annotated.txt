@@ -76,51 +76,51 @@
 2 אחד ˀḥd ˀe-ḥad* e-had
 3 רוצה rwçh row*-çeh* ro-tse
 4 האוצר hˀwçr ha-ˀow*-çar* a-o-tsar
-5 להוריד lhwryd lehow*riy*d* le-o-rid
+5 להוריד lhwryd le-how*-riy*d* le-o-rid
 6 את ˀt ˀet* et
-7 שכר škr šakar* sha-har
-8 המינימום hmynymwm hamiy*niy*muw*m a-mi-ni-mum
+7 שכר škr ša-kar* sha-har
+8 המינימום hmynymwm ha-miy*-niy*-muw*m a-mi-ni-mum
 #9 , , , 
-10 ומצד wmçd wemiçad* ve-mi-tsad
-11 שני šny šeniy* she-ni
-12 מתיר mtyr matiy*r* ma-tir
-13 משרד mšrd miš*rad* mis-rad
-14 העבודה hˁbwdh haˁabow*dah* a-a-vo-da
-15 והרווחה whrwwḥh weharewaw*ḥah* ve-a-re-va-ha
-16 להעסיק lhˁsyq lehaˁasiy*q* le-a-a-sik
-17 עובדים ˁwbdym ˁow*b*diy*m* ov-dim
-18 זרים zrym zariy*m* za-rim
-19 בפחות bpḥwt bepaḥow*t* be-pa-hot
-20 משכר mškr mišakar* mi-sa-har
+10 ומצד wmçd we-mi-çad* ve-mi-tsad
+11 שני šny še-niy* she-ni
+12 מתיר mtyr ma-tiy*r* ma-tir
+13 משרד mšrd miš*-rad* mis-rad
+14 העבודה hˁbwdh ha-ˁa-bow*-dah* a-a-vo-da
+15 והרווחה whrwwḥh we-ha-re-waw*-ḥah* ve-a-re-va-ha
+16 להעסיק lhˁsyq le-ha-ˁa-siy*q* le-a-a-sik
+17 עובדים ˁwbdym ˁow*b*-diy*m* ov-dim
+18 זרים zrym za-riy*m* za-rim
+19 בפחות bpḥwt be-pa-ḥow*t* be-pa-hot
+20 משכר mškr mi-ša-kar* mi-sa-har
 21 זה zh zeh* ze
 #22 " " " 
 #23 . . . 
 
 # sent_id = 5
 # text =  נמיר הודיעה כי תפנה לשרי הפנים והעבודה והרווחה ולמזכיר תנועת המושבים , בתביעה לבטל את הזמנתם של 500 עובדים זרים מתאילנד כמתנדבים כביכול .   
-1 נמיר nmyr namiy*r* na-mir
-2 הודיעה hwdyˁh how*diy*ˁah* o-di-a
+1 נמיר nmyr na-miy*r* na-mir
+2 הודיעה hwdyˁh how*-diy*-ˁah* o-di-a
 3 כי ky kiy* ki
-4 תפנה tpnh tip*neh* tif-ne
-5 לשרי lšry lešarey* le-sa-rey
-6 הפנים hpnym hap*niy*m* ap-nim
-7 והעבודה whˁbwdh wehaˁabow*dah* ve-a-a-vo-da
-8 והרווחה whrwwḥh weharewaw*ḥah* ve-a-re-va-ha
-9 ולמזכיר wlmzkyr welemaz*kiy*r* ve-le-maz-kir
-10 תנועת tnwˁt t*nuw*ˁat* tnu-at
-11 המושבים hmwšbym hamow*šabiy*m* a-mo-sha-vim
+4 תפנה tpnh tip*-neh* tif-ne
+5 לשרי lšry le-ša-rey* le-sa-rey
+6 הפנים hpnym hap*-niy*m* ap-nim
+7 והעבודה whˁbwdh we-ha-ˁa-bow*-dah* ve-a-a-vo-da
+8 והרווחה whrwwḥh we-ha-re-waw*-ḥah* ve-a-re-va-ha
+9 ולמזכיר wlmzkyr we-le-maz*-kiy*r* ve-le-maz-kir
+10 תנועת tnwˁt t*nuw*-ˁat* tnu-at
+11 המושבים hmwšbym ha-mow*-ša-biy*m* a-mo-sha-vim
 #12 , , , 
-13 בתביעה btbyˁh bet*biy*ˁah* be-tvi-a
-14 לבטל lbṭl lebaṭel* le-va-tel
+13 בתביעה btbyˁh be-t*biy*-ˁah* be-tvi-a
+14 לבטל lbṭl le-ba-ṭel* le-va-tel
 15 את ˀt ˀet* et
-16 הזמנתם hzmntm haz*manatam* az-ma-na-tam
+16 הזמנתם hzmntm haz*-ma-na-tam* az-ma-na-tam
 17 של šl šel* shel
 #18 500 500 500 
-19 עובדים ˁwbdym ˁow*b*diy*m* ov-dim
-20 זרים zrym zariy*m* za-rim
-21 מתאילנד mtˀylnd mitaˀiy*lan*d* mi-tai-land
-22 כמתנדבים kmtndbym kemit*nad*biy*m* ke-mit-nad-vim
-23 כביכול kbykwl kib*yekow*l* kiv-ye-hol 
+19 עובדים ˁwbdym ˁow*b*-diy*m* ov-dim
+20 זרים zrym za-riy*m* za-rim
+21 מתאילנד mtˀylnd mi-taˀiy*-lan*d* mi-tai-land
+22 כמתנדבים kmtndbym ke-mit*-nad*-biy*m* ke-mit-nad-vim
+23 כביכול kbykwl kib*-ye-kow*l* kiv-ye-hol 
 #24 . . . 
 
 # sent_id = 6

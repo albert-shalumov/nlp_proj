@@ -1,7 +1,5 @@
 import codecs
 
-
-
 cache = set()
 
 '''

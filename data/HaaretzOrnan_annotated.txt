@@ -334,3 +334,138 @@
 30 המינימום hmynymwm ha-miy*-niy*-muw*m* a-mi-ni-mum 
 #31 . . . 
 
+# sent_id = 14
+# text =  לדבריו , יש לפנות למשרד העבודה והרווחה בדרישה לבטל בתוך חודש את עבודת העובדים הזרים המועסקים כיום תחת הכותרת " מתנדבים " .
+1 לדבריו ldbryw le-d*ba-ray*w* le-dva-rav 
+#2 , , , 
+3 יש yš yeš* yesh 
+4 לפנות lpnwt le-pa-now*t* le-fa-not 
+5 למשרד lmšrd le-miš*-rad* le-mis-rad 
+6 העבודה hˁbwdh ha-ˁa-bow*-dah* a-a-vo-da 
+7 והרווחה whrwwḥh we-ha-re-waw*-ḥah* ve-a-re-va-ha 
+8 בדרישה bdryšh be-d*riy*-šah* be-dri-sha
+9 לבטל lbṭl le-ba-ṭel* le-va-tel
+10 בתוך btwk be-tow*k* be-toh
+11 חודש ḥwdš ḥow*-deš* ho-desh 
+12 את ˀt ˀet* et
+13 עבודת ˁbwdt ˁa-bow*-dat* a-vo-dat 
+14 העובדים hˁwbdym ha-ˁow*b*-diy*m* a-ov-dim 
+15 הזרים hzrym ha-za-riy*m* a-za-rim 
+16 המועסקים hmwˁsqym ha-mow*-ˁa-sa-qiy*m* a-mo-a-sa-kim
+17 כיום kywm ka-yow*m* ka-yom
+18 תחת tḥt ta-ḥat* ta-hat 
+19 הכותרת hkwtrt ha-kow*-te-ret* a-ko-te-ret 
+#20 " " " 
+21 מתנדבים mtndbym mit*-nad*-biy*m* mit-nad-vim 
+#22 " " " 
+#23 . . . 
+
+# sent_id = 15
+# text =  ח"ך יאיר צבן ( מפם ) אמר כי פרשת המתנדבים התאילנדיים היא " כתם חרפה על פרצופנו הלאומי .
+#1 ח"ך ḥ"k ḥ"k 
+2 יאיר yˀyr ya-ˀiy*r* ya-ir 
+3 צבן çbn ça-ban* tsa-ban 
+#4 ( ( ( 
+5 מפם mpm ma-pam* ma-pam 
+#6 ) ) ) 
+7 אמר ˀmr ˀa-mar* a-mar 
+8 כי ky kiy* ki 
+9 פרשת pršt pa-ra-šat* pa-ra-shat 
+10 המתנדבים hmtndbym ha-mit*-nad-biy*m* a-mit-nad-vim 
+11 התאילנדיים htˀylndyym ha-ta-ˀiy*-lan*-diy*-yim* a-ta-i-lan-di-yim 
+12 היא hyˀ hiy*ˀ* yi
+#13 " " " 
+14 כתם ktm ke-tem* ke-tem 
+15 חרפה ḥrph ḥer*-pah* her-pa 
+16 על ˁl ˁ*l* al 
+17 פרצופנו prçwpnw par*-çuw*-pe-nuw* par-tsu-fe-nu 
+18 הלאומי hlˀwmy ha-le-ˀuw*-miy* a-le-u-mi 
+#19 . . . 
+
+# sent_id = 16
+# text =  המוח מתפלץ לא רק מהתופעה המבישה אלא גם מדרכי ההערמה .
+1 המוח hmwḥ ha-mow*-ḥ* a-mo-h 
+2 מתפלץ mtplç mit*-pa-leç* mit-pa-lets 
+3 לא lˀ loˀ* lo 
+4 רק rq raq* rak 
+5 מהתופעה mhtwpˁh me-ha-tow*-pa-ˁah* me-a-to-fa-a 
+6 המבישה hmbyšh ha-me-biy*-šah* a-me-vi-sha 
+7 אלא ˀlˀ ˀe-laˀ* e-la 
+8 גם gm gam* gam 
+9 מדרכי mdrky me-d*ra-key* me-dra-hey 
+10 ההערמה hhˁrmh ha-haˁ*-ra-mah* a-a-ra-ma 
+#11 . . . 
+
+# sent_id = 17
+# text =  הראש היהודי ממציא לנו פטנטים בדמות מתנדבים , המשולמים שכר מחפיר " .
+1 הראש hrˀš ha-roˀ*-š* a-ro-sh 
+2 היהודי hyhwdy ha-ye-huw*-diy* a-ye-u-di 
+3 ממציא mmçyˀ mam*-çiy*ˀ* mam-tsi
+4 לנו lnw la-nuw* la-nu 
+5 פטנטים pṭnṭym pa-ṭen*-ṭiy*m* pa-ten-tim 
+6 #בדמות bdmwt bedmwt 
+7 מתנדבים mtndbym mit*-nad*-biy*m* mit-nad-vim 
+#8 , , , 
+9 המשולמים hmšwlmym ha-me-šuw*-la-miy*m* a-me-shu-la-mim  
+10 שכר škr ša-kar* sa-har 
+11 מחפיר mḥpyr maḥ*-piy*r* mah-fir 
+#12 " " " 
+#13 . . . 
+
+# sent_id = 18
+# text =  הוא קרא להפסקת התופעה ולמתן תשלומים רטרואקטיוויים לתאילנדים , שישלימו את שכר המינימום .
+1 הוא hwˀ huw*ˀ* u 
+2 קרא qrˀ qa-raˀ* ka-ra 
+3 להפסקת lhpsqt le-hap*-sa-qat* le-af-sa-kat 
+4 התופעה htwpˁh ha-tow*-pa-ˁah* a-to-fa-a 
+5 ולמתן wlmtn we-le-ma-tan* ve-le-ma-tan 
+6 תשלומים tšlwmym taš*-luw*-miy*m* tash-lu-mim 
+7 רטרואקטיוויים rṭrwˀqṭywwyym reṭ*-row*-ˀaq*-ṭiy*-w*wiy*-yim ret-ro-ak-ti-vi-yim 
+8 לתאילנדים ltˀylndym la-ta-ˀiy*-lan*-diy*m* la-ta-i-lan-dim 
+#9 , , , 
+10 שישלימו šyšlymw še-ya-š*liy*-muw* she-ya-shli-mu 
+11 את ˀt ˀet* et 
+12 שכר škr šakar* sa-har 
+13 המינימום hmynymwm ha-miy*-niy*-muw*m* a-mi-ni-mum 
+#14 . . . 
+
+# sent_id = 19
+# text =  דוברת שירות התעסוקה מסרה אתמול בתגובה , כי השירות פועל לצמצום מספרם של העובדים הזרים ולהכנסת עולים חדשים במקומם .
+1 דוברת dwbrt dow*-be-ret* do-ve-ret 
+2 שירות šyrwt šiy*-ruw*t* shi-rut 
+3 התעסוקה htˁswqh ha-ta-ˁa-suw*-qah* a-ta-a-su-ka
+4 מסרה msrh mas*-rah* mas-ra 
+5 אתמול ˀtmwl ˀet*-mow*l* et-mol 
+6 בתגובה btgwbh bet*-guw*-bah* bet-gu-va 
+#7 , , , 
+8 כי ky kiy* ki 
+9 השירות hšyrwt ha-šiy*-ruw*t* a-shi-rut 
+10 פועל pwˁl pow*-ˁel* po-el 
+11 לצמצום lçmçwm le-çim*-çuw*m* le-tsim-tsum 
+12 מספרם msprm mis*-pa-ram* mis-pa-ram 
+13 של šl šel* shel 
+14 העובדים hˁwbdym ha-ˁow*b*-diy*m* a-ov-dim
+15 הזרים hzrym ha-za-riy*m* a-za-rim 
+16 ולהכנסת wlhknst we-le-hak*-na-sat* ve-le-ah-na-sat 
+17 עולים ˁwlym ˁow*-liy*m* o-lim 
+18 חדשים ḥdšym ḥa-da-šiy*m* ha-da-shim 
+19 במקומם bmqwmm bem*qow*mam* bem-ko-mam 
+#20 . . . 
+
+# sent_id = 20
+# text =  " לאחר פעילות נמרצת בשבועות האחרונים , צומצם מספר העובדים הזרים בענף האחיות ב%50 .
+#1 " " " 
+2 לאחר lˀḥr le-ˀa-ḥar* le-a-har 
+3 פעילות pˁylwt pe-ˁiy*-luw*t* pe-i-lut 
+4 נמרצת nmrçt nim*-re-çet* nim-re-tset 
+5 בשבועות bšbwˁwt ba-ša-buw*-ˁow*t* ba-sha-vu-ot 
+6 האחרונים hˀḥrwnym ha-ˀaḥ*-row*-niy*m* a-ah-ro-nim 
+#7 , , , 
+8 צומצם çwmçm çuw*m*-çam* tsum-tsam 
+9 מספר mspr mis*-par* mis-par 
+10 העובדים hˁwbdym ha-ˁow*b*-diy*m* a-ov-dim 
+11 הזרים hzrym ha-za-riy*m* a-za-rim 
+12 בענף bˁnp be-ˁa-nap* be-a-naf 
+13 האחיות hˀḥywt haˀaḥayow*t* a-aha-yot 
+#14 ב%50 b%50 b%50 
+#15 . . . 

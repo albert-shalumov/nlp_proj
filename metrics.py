@@ -41,5 +41,9 @@ def AvgAcc(conf_mat):
     return s/l
 
 
-def CalcFscore(rec,prec,beta=1):
-    return (1+beta**2)*prec*rec/(prec*beta**2+rec)
+def Fscore(recall,precision,beta=1):
+    return (1+beta**2)*precision*recall/(precision*beta**2+recall)
+
+def NormalizeConfusion(conf_mat):
+    gt_sum = np.sum(conf_mat,axis=0)+EPS
+    return conf_mat/gt_sum

@@ -53,21 +53,26 @@ def TestNgram(n=1,iters=5):
 
         #print('Results:')
         for i,w_cons in enumerate(valid_word_cons):
-        #    print('     ',w_cons)
-        #    print('Gold:',valid_word_vowel[i])
+            #print('     ',w_cons)
+            #print('Gold:',valid_word_vowel[i])
             pred_set = model.best_path(w_cons)
             for j in range(len(pred_set)):
                 conf_mat[state_idx[pred_set[j]],state_idx[valid_word_vowel[i][j]]] += 1
-        #    print('Pred:',pred_set)
-        #    print('-------------------------------')
+            #print('Pred:',pred_set)
+            #print('-------------------------------')
     return conf_mat
 
 
 for i in range(1,6,1):
     print("|Ngram| = {}: ".format(i))
-    conf_mat = TestNgram(i, 100)
-    print('MicroAvg:',metrics.MicroAvg(conf_mat))
-    print('MacroAvg:',metrics.MacroAvg(conf_mat))
+    conf_mat = TestNgram(i, 10)
+    precision, recall = metrics.MicroAvg(conf_mat)
+    f1 = metrics.Fscore(recall, precision, 1)
+    print('MicroAvg:',precision,recall,f1)
+    precision, recall = metrics.MacroAvg(conf_mat)
+    f1 = metrics.Fscore(recall, precision, 1)
+    print('MacroAvg:', precision, recall, f1)
     print('AvgAcc:',metrics.AvgAcc(conf_mat))
+    conf_mat = metrics.NormalizeConfusion(conf_mat)
     print('ConfMat:\n', np.array_str(conf_mat, max_line_width=300, precision=4))
     print('----------------------------------------------')

@@ -371,7 +371,7 @@
 7 אמר ˀmr ˀa-mar* a-mar 
 8 כי ky kiy* ki 
 9 פרשת pršt pa-ra-šat* pa-ra-shat 
-10 המתנדבים hmtndbym ha-mit*-nad-biy*m* a-mit-nad-vim 
+10 המתנדבים hmtndbym ha-mit*-nad*-biy*m* a-mit-nad-vim 
 11 התאילנדיים htˀylndyym ha-ta-ˀiy*-lan*-diy*-yim* a-ta-i-lan-di-yim 
 12 היא hyˀ hiy*ˀ* yi
 #13 " " " 

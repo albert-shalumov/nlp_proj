@@ -403,7 +403,7 @@
 3 ממציא mmçyˀ mam*-çiy*ˀ* mam-tsi
 4 לנו lnw la-nuw* la-nu 
 5 פטנטים pṭnṭym pa-ṭen*-ṭiy*m* pa-ten-tim 
-6 #בדמות bdmwt bedmwt 
+#6 בדמות bdmwt bedmwt 
 7 מתנדבים mtndbym mit*-nad*-biy*m* mit-nad-vim 
 #8 , , , 
 9 המשולמים hmšwlmym ha-me-šuw*-la-miy*m* a-me-shu-la-mim  
@@ -469,3 +469,4 @@
 13 האחיות hˀḥywt haˀaḥayow*t* a-aha-yot 
 #14 ב%50 b%50 b%50 
 #15 . . . 
+

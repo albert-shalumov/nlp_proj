@@ -4,7 +4,7 @@ import numpy as np
 from sklearn.metrics import confusion_matrix
 import metrics
 
-states = ['a','e','u','i','o','*']
+states = [u'a',u'e',u'u',u'i',u'o',u'*']
 state_idx = {x:i for i,x in enumerate(states)}
 
 def ExtractNgrams(word, n=1):
@@ -63,11 +63,11 @@ def TestNgram(n=1,iters=5):
     return conf_mat
 
 
-for i in range(1,6,1):
+for i in range(1,5,1):
     print("|Ngram| = {}: ".format(i))
-    conf_mat = TestNgram(i, 10)
+    conf_mat = TestNgram(i, 50)
     precision, recall = metrics.MicroAvg(conf_mat)
-    f1 = metrics.Fscore(recall, precision, 1)
+    f1 = metrics.Fscore(precision, recall, 1)
     print('MicroAvg:',precision,recall,f1)
     precision, recall = metrics.MacroAvg(conf_mat)
     f1 = metrics.Fscore(recall, precision, 1)

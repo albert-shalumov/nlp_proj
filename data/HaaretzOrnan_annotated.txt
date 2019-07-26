@@ -280,7 +280,7 @@
 20 העדפתם hˁdptm ha-ˁa-da-pa-tam* a-a-da-fa-tam 
 21 על ˁl ˁ*l* al 
 22 עובדים ˁwbdym ˁow*b*-diy*m* 
-23 ישראליים yšrˀlyym yiš*-ra-ˀe-liy*-yim is-ra-e-li-yim 
+23 ישראליים yšrˀlyym yiš*-ra-ˀe-liy*-yim* is-ra-e-li-yim 
 #24 . . . 
 
 # sent_id = 12

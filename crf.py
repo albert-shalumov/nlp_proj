@@ -93,17 +93,25 @@ def SentenceCRF(ftr_set, iters=5):
 
     return conf_mat
 
-def len_(a):
-    return len(a) if isinstance(a,str) else int(a)
-
 
 def WordCRF(ftr_set, iters=5):
-    data = list()
-    symbols = set()
+    def len_(a):
+        return len(a) if isinstance(a, str) else int(a)
+
+    def extract_ftrs(words, chars=1):
+        X = np.zeros((chars, MAX_FTR_LEN))
+        Y = np.zeros(chars)
+
+        sample = 0
+        for w in words:
+            for i in range(len(w)//2):
+                ExtractWordFtr(w[::2], i, X[sample, :])
+                Y[sample] = vowels_idx[w[1::2][i]]
+                sample += 1
+
+        return X,Y
 
     words = []
-    num_chars = 0
-
     #print('Preparing data')
     with codecs.open('data/HaaretzOrnan_annotated.txt', encoding='utf-8') as f:
         lines = f.readlines()
@@ -120,37 +128,20 @@ def WordCRF(ftr_set, iters=5):
     train = words[:-valid_size]
     valid = words[-valid_size:]
 
-
     num_train_chars = reduce((lambda x,y:len_(x)+len_(y)), train)
     num_valid_chars = reduce((lambda x, y: len_(x)+len_(y)), valid)
 
-    X = np.zeros((num_train_chars//2, MAX_FTR_LEN))
-    Y = np.zeros(num_train_chars//2)
-
-    sample=0
-    for w in train:
-        for i in range(len(w)//2):
-            ExtractWordFtr(w[::2], i, X[sample,:])
-            Y[sample] = vowels_idx[w[1::2][i]]
-            sample+=1
-
-    conf_mat = np.zeros((len(vowels), len(vowels)))
+    X,Y = extract_ftrs(train, num_train_chars//2)
 
     # Train
     model = LogisticRegression(multi_class='multinomial', solver='lbfgs', max_iter=500)
     model.fit(X,Y)
 
     # Predict
-    X = np.zeros((num_valid_chars//2, MAX_FTR_LEN))
-    Y = np.zeros(num_valid_chars//2)
+    X, Y = extract_ftrs(valid, num_valid_chars//2)
 
-    sample=0
-    for w in valid:
-        for i in range(len(w)//2):
-            ExtractWordFtr(w[::2], i, X[sample,:])
-            Y[sample] = vowels_idx[w[1::2][i]]
-            sample += 1
     pred = model.predict(X)
+    conf_mat = np.zeros((len(vowels), len(vowels)))
     for i in range(pred.shape[0]):
         conf_mat[int(pred[i]),int(Y[i])] += 1
 

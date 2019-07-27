@@ -4,7 +4,7 @@
 2 אנשים ˀnšym ˀa-na-šiy*m* a-na-shim
 3 מגיעים mgyˁym me-giy*-ˁiy*m* me-gi-im
 4 מתאילנד mtˀylnd mi-taˀiy*-lan*d* mi-tai-land
-5 לישראל lyšrˀl le-yiš*-ra-ˀel le-is-ra-el
+5 לישראל lyšrˀl le-yiš*-ra-ˀel* le-is-ra-el
 6 כשהם kšhm k*še-hem* kshe-em
 7 נרשמים nršmym nir*-ša-miy*m* nir-sha-mim
 8 כמתנדבים kmtndbym ke-mit*-nad*-biy*m* ke-mit-nad-vim
@@ -79,7 +79,7 @@
 5 להוריד lhwryd le-how*-riy*d* le-o-rid
 6 את ˀt ˀet* et
 7 שכר škr ša-kar* sha-har
-8 המינימום hmynymwm ha-miy*-niy*-muw*m a-mi-ni-mum
+8 המינימום hmynymwm ha-miy*-niy*-muw*m* a-mi-ni-mum
 #9 , , , 
 10 ומצד wmçd we-mi-çad* ve-mi-tsad
 11 שני šny še-niy* she-ni
@@ -144,7 +144,7 @@
 17 לעובדים lˁwbdym la-ˁow*b*-diy*m* la-ov-dim
 18 מתחת mtḥt mi-ta-ḥat* mi-ta-hat
 19 לשכר lškr le-ša-kar* le-sa-har
-20 המינימום hmynymwm ha-miy*-niy*-muw*m a-mi-ni-mum
+20 המינימום hmynymwm ha-miy*-niy*-muw*m* a-mi-ni-mum
 21 ומתן wmtn we-ma-tan* ve-ma-tan
 22 התנאים htnˀym ha-t*na-ˀiy*m* a-tna-im
 23 הסוציאליים hswçyˀlyym ha-sow*-çiy*-ˀa-liy*yim* a-so-tsi-a-liym
@@ -420,7 +420,7 @@
 4 התופעה htwpˁh ha-tow*-pa-ˁah* a-to-fa-a 
 5 ולמתן wlmtn we-le-ma-tan* ve-le-ma-tan 
 6 תשלומים tšlwmym taš*-luw*-miy*m* tash-lu-mim 
-7 רטרואקטיוויים rṭrwˀqṭywwyym reṭ*-row*-ˀaq*-ṭiy*-w*wiy*-yim ret-ro-ak-ti-vi-yim 
+7 רטרואקטיוויים rṭrwˀqṭywwyym reṭ*-row*-ˀaq*-ṭiy*-w*wiy*-yim* ret-ro-ak-ti-vi-yim 
 8 לתאילנדים ltˀylndym la-ta-ˀiy*-lan*-diy*m* la-ta-i-lan-dim 
 #9 , , , 
 10 שישלימו šyšlymw še-ya-š*liy*-muw* she-ya-shli-mu 

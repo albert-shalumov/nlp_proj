@@ -470,3 +470,85 @@
 #14 ב%50 b%50 b%50 
 #15 . . . 
 
+# sent_id = 21
+# text =  עד סוף השנה לא תועסק בארץ אף אחות כעובדת זרה " .
+1 עד ˁd ˁ*d* ad 
+2 סוף swp sow*p* sof
+3 השנה hšnh ha-ša-nah* a-sha-na 
+4 לא lˀ loˀ* lo
+5 תועסק twˁsq tow*-ˁa-saq* to-a-sak 
+6 בארץ bˀrç ba-ˀa-reç* ba-a-rets 
+7 אף ˀp ˀap* af
+8 אחות ˀḥwt ˀa-ḥow*t* a-hot 
+9 כעובדת kˁwbdt ke-ˁow*-be-det* ke-o-ve-det 
+10 זרה zrh za-rah* za-ra 
+#11 " " " 
+#12 . . . 
+
+# sent_id = 22
+# text =  הדוברת אמרה כי השירות קורא לחקלאים לדאוג לעובדים ישראליים , במקום לתאילנדים .
+1 הדוברת hdwbrt ha-dow*-be-ret* a-do-ve-ret 
+2 אמרה ˀmrh ˀam*rah* am-ra 
+3 כי ky kiy* ki
+4 השירות hšyrwt ha-šiy*-ruw*t* a-shi-rut
+5 קורא qwrˀ qow*-reˀ* ko-re 
+6 לחקלאים lḥqlˀym la-ḥaq*-la-ˀiy*m* la-hak-la-im 
+7 לדאוג ldˀwg lid*-ˀow*g* lid-og 
+8 לעובדים lˁwbdym le-ˁow*b*-diy*m* le-ov-dim 
+9 ישראליים yšrˀlyym yiš*-ra-ˀe-liy*-yim* is-ra-e-li-yim 
+#10 , , , 
+11 במקום bmqwm bim*-qow*m* bim-kom 
+12 לתאילנדים ltˀylndym la-ta-ˀiy*-lan*-diy*m* la-ta-i-lan-dim 
+#13 . . . 
+
+# sent_id = 23
+# text =  " השירות לא שינה את המדיניות בנושא העסקת תאילנדים בחקלאות , אלא להיפך , הוא הבהיר לתנועת המושבים שכל עובד ישראלי שיסכים לעבוד בענף החקלאות , ישובץ לעבודה לאלתר " .
+#1 " " " 
+2 השירות hšyrwt ha-šiy*-ruw*t* a-shi-rut 
+3 לא lˀ loˀ* lo 
+4 שינה šynh šiy*-nah* shi-na 
+5 את ˀt ˀet* et 
+6 המדיניות hmdynywt ha-me-diy*-ni-yuw*t* a-me-di-ni-yut 
+7 בנושא bnwšˀ ba-now*-šeˀ* ba-no-se 
+8 העסקת hˁsqt ha-ˁa-sa-qat* a-a-sa-kat 
+9 תאילנדים tˀylndym ta-ˀiy*-lan*-diy*m* ta-i-lan-dim 
+10 בחקלאות bḥqlˀwt ba-ḥaq*-la-ˀuw*t* ba-hak-la-ut 
+#11 , , , 
+12 אלא ˀlˀ ˀe-laˀ* e-la 
+13 להיפך lhypk le-hey*-pek* le-hey-feh 
+#14 , , , 
+15 הוא hwˀ huw*ˀ* u 
+16 הבהיר hbhyr heb*-hiy*r* ev-ir 
+17 לתנועת ltnwˁt le-t*nuw*-ˁat* le-tnu-at 
+18 המושבים hmwšbym ha-mow*-ša-biy*m* a-mo-sha-vim 
+19 שכל škl še-kol* she-kol  
+20 עובד ˁwbd ˁow*-bed* o-ved 
+21 ישראלי yšrˀly yiš*raˀeliy* is-ra-eli 
+22 שיסכים šyskym še-yas*-kiy*m* she-yas-kim 
+23 לעבוד lˁbwd la-ˁa-bow*d* la-a-vod 
+24 בענף bˁnp ba-ˁa-nap* ba-a-naf 
+25 החקלאות hḥqlˀwt ha-ḥaq*-la-ˀuw*t* a-hak-la-ut
+#26 , , , 
+27 ישובץ yšwbç ye-šuw*-baç* ye-shu-bats 
+28 לעבודה lˁbwdh la-ˁa-bow*-dah* la-a-vo-da
+29 לאלתר lˀltr le-ˀal*-tar* le-al-tar 
+#30 " " " 
+#31 . . . 
+
+# sent_id = 24
+# text =  אוסטרליה מבקשת לשגר לישראל " מרגלים " לצורך מעקב אחר נבחרת הנוער .
+1 אוסטרליה ˀwsṭrlyh ˀow*s*-ṭ*ral*-yah* os-tral-ya 
+2 מבקשת mbqšt me-ba-qe-šet* me-va-ke-shet 
+3 לשגר lšgr le-ša-ger* le-sha-ger
+4 לישראל lyšrˀl le-yiš*-ra-ˀel* le-is-ra-el 
+#5 " " " 
+6 מרגלים mrglym me-rag*-liy*m* me-rag-lim 
+#7 " " " 
+8 לצורך lçwrk le-çow*-rek* le-tso-reh 
+9 מעקב mˁqb ma-ˁa-qab* ma-a-kav
+10 אחר ˀḥr ˀa-ḥar* a-har 
+11 נבחרת nbḥrt nib*-ḥe-ret* niv-he-ret 
+12 הנוער hnwˁr ha-now*-ˁar* a-no-ar
+#13 . . . 
+
+

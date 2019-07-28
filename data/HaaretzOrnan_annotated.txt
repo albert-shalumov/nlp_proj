@@ -518,7 +518,7 @@
 13 להיפך lhypk le-hey*-pek* le-ey-feh 
 #14 , , , 
 15 הוא hwˀ huw*ˀ* u 
-16 הבהיר hbhyr heb*-hiy*r* eb-ir 
+16 הבהיר hbhyr heb*-hiy*r* ev-ir 
 17 לתנועת ltnwˁt let*-nuw*-ˁat* let-nu-at 
 18 המושבים hmwšbym hamow*šabiy*m* a-mo-sha-vim 
 19 שכל škl še-kol* she-kol 
@@ -538,7 +538,7 @@
 # sent_id = 24
 # text =  אוסטרליה מבקשת לשגר לישראל " מרגלים " לצורך מעקב אחר נבחרת הנוער .
 1 אוסטרליה ˀwsṭrlyh ˀow*s*-ṭ*ral*-yah* os-tral-ya 
-2 מבקשת mbqšt me-ba-qe-šet* me-ba-ke-shet 
+2 מבקשת mbqšt me-ba-qe-šet* me-va-ke-shet 
 3 לשגר lšgr le-ša-ger* le-sha-ger 
 4 לישראל lyšrˀl le-yiš*-ra-ˀel* le-is-ra-el 
 #5 " " " 
@@ -547,7 +547,7 @@
 8 לצורך lçwrk le-çow*-rek* le-tso-reh 
 9 מעקב mˁqb ma-ˁa-qab* ma-a-kav 
 10 אחר ˀḥr ˀaḥar* a-har 
-11 נבחרת nbḥrt nib*-ḥe-ret* nib-he-ret 
+11 נבחרת nbḥrt nib*-ḥe-ret* niv-he-ret 
 12 הנוער hnwˁr ha-now*-ˁar* a-no-ar 
 #13 . . . 
 
@@ -581,11 +581,104 @@
 6 מידע mydˁ mey*-daˁ* mey-da 
 7 על ˁl ˁ*l* al 
 8 משחקי mšḥqy miš*-ḥa-qey* mis-ha-key 
-9 מיבחן mybḥn miy*b*-ḥan* mib-han 
+9 מיבחן mybḥn miy*b*-ḥan* miv-han 
 10 של šl šel* shel 
 11 הנבחרת hnbḥrt ha-nib*-ḥe-ret* a-niv-he-ret 
 12 הישראלית hyšrˀlyt ha-yiš*-ra-ˀe-liy*t* a-is-ra-e-lit 
 13 בתקופה btqwph bat*-quw*-pah* bat-ku-fa 
 14 הקרובה hqrwbh haq*-row*-bah* ak-ro-va 
 #15 . . . 
+
+# sent_id = 27
+# text =  מאמן הנבחרת ( נוער אא ) אמנון רז הגיב אתמול : " אין לי מה להשיב להם , כי כרגע לא מתוכננים לנו משחקי אימון " .
+1 מאמן mˀmn me-ˀa-men* me-a-men 
+2 הנבחרת hnbḥrt ha-nib*-ḥe-ret* a-niv-he-ret 
+#3 ( ( ( 
+4 נוער nwˁr now*-ˁar* no-ar 
+#5 אא ˀˀ ˀˀ 
+#6 ) ) ) 
+7 אמנון ˀmnwn ˀam*-now*n* am-non 
+8 רז rz raz* raz 
+9 הגיב hgyb he-giy*b* e-giv 
+10 אתמול ˀtmwl ˀet*-mow*l* et-mol 
+#11 : : : 
+#12 " " " 
+13 אין ˀyn ˀeyin* ein
+14 לי ly liy* li
+15 מה mh mah*  ma
+16 להשיב lhšyb le-ha-šiy*b* le-a-shiv 
+17 להם lhm la-hem* la-em 
+#18 , , , 
+19 כי ky kiy* ki
+20 כרגע krgˁ ka-re-gaˁ* ka-re-ga 
+21 לא lˀ loˀ* lo 
+22 מתוכננים mtwknnym me-tuw*k*-na-niy*m* me-tuh-na-nim 
+23 לנו lnw la-nuw* la-nu
+24 משחקי mšḥqy miš*-ḥa-qey* mis-ha-key 
+25 אימון ˀymwn ˀiy*-muw*n* i-mun 
+#26 " " " 
+#27 . . . 
+
+# sent_id = 28
+# text =  הבעיה העיקרית מבחינתה של ישראל היא אי הבהירות לגבי מקום עריכת הטורניר הקדם עולמי .
+1 הבעיה hbˁyh ha-be-ˁa-yah* a-be-a-ya 
+2 העיקרית hˁyqryt ha-ˁiy*-qa-riy*t* a-i-ka-rit
+3 מבחינתה mbḥynth mib*-ḥiy*-na-tah* mib-hi-na-ta 
+4 של šl šel* shel 
+5 ישראל yšrˀl yiš*-ra-ˀel* is-ra-el 
+6 היא hyˀ hiy*ˀ* yi 
+#7 אי ˀy ˀy 
+8 הבהירות hbhyrwt ha-be-hiy*-ruw*t* a-be-i-rut
+9 לגבי lgby le-ga-bey* le-ga-bey 
+10 מקום mqwm ma-qow*m* ma-kom 
+11 עריכת ˁrykt ˁa-riy*-kat* a-ri-hat 
+12 הטורניר hṭwrnyr ha-ṭuw*r*-niy*r* a-tur-nir 
+13 הקדם hqdm haq*-dam* ak-dam 
+14 עולמי ˁwlmy ˁow*-la-miy* o-la-mi 
+#15 . . . 
+
+# sent_id = 29
+# text =  ישראל היתה אמורה לארח את הטורניר , אך פיפ"א הודיעה כי בגלל המשבר במפרץ תחליט רק בדצמבר היכן יהיו המשחקים .
+1 ישראל yšrˀl yiš*-ra-ˀel* is-ra-el 
+2 היתה hyth hay*-tah* ay-ta 
+3 אמורה ˀmwrh ˀa-muw*-rah* a-mu-ra 
+4 לארח lˀrḥ le-ˀa-re-ḥ* le-a-re-ah 
+5 את ˀt ˀet*  et
+6 הטורניר hṭwrnyr ha-ṭuw*r*-niy*r* a-tur-nir 
+#7 , , , 
+8 אך ˀk ˀak* ah 
+#9 פיפ"א pyp"ˀ pyp"ˀ 
+10 הודיעה hwdyˁh how*-diy*-ˁah* o-di-a 
+11 כי ky kiy* ki
+12 בגלל bgll big*-lal* big-lal 
+13 המשבר hmšbr ha-maš*-ber* a-mash-ber 
+14 במפרץ bmprç ba-mip*-raç* ba-mif-rats 
+15 תחליט tḥlyṭ taḥ*-liy*ṭ* tah-lit 
+16 רק rq raq* rak 
+17 בדצמבר bdçmbr be-de-çem*-ber* be-de-tsem-ber 
+18 היכן hykn hey*-kan* ey-han 
+19 יהיו yhyw yi-hi-yuw* yi-i-yu 
+20 המשחקים hmšḥqym ha-miš*-ḥa-qiy*m* a-mis-ha-kim 
+#21 . . . 
+
+# sent_id = 30
+# text =  המאמן רז אמר , כי קביעת משחקי המיבחן תיעשה רק לאחר שיתברר אם הטורניר יהיה בישראל .
+1 המאמן hmˀmn ha-me-ˀa-men* a-me-a-men 
+2 רז rz raz* raz 
+3 אמר ˀmr ˀa-mar* a-mar 
+#4 , , , 
+5 כי ky kiy* ki 
+6 קביעת qbyˁt q*biy*-ˁat* kvi-at 
+7 משחקי mšḥqy miš*-ḥa-qey* mis-ha-key 
+8 המיבחן hmybḥn ha-miy*b*-ḥan* a-miv-han 
+9 תיעשה tyˁšh tey*-ˁa-šeh* te-a-se 
+10 רק rq raq* rak 
+11 לאחר lˀḥr le-ˀa-ḥar* le-a-har 
+12 שיתברר šytbrr še-yit*-ba-rer* she-it-ba-rer 
+13 אם ˀm ˀim* im
+14 הטורניר hṭwrnyr ha-ṭuw*r*-niy*r* a-tur-nir 
+#15 יהיה yhyh yi-hi-yeh* yi-iy-ye 
+16 בישראל byšrˀl be-yiš*-ra-ˀel* be-is-ra-el 
+#17 . . . 
+
 

@@ -12,5 +12,5 @@ Description: Final project in "Intro. to NLP" course.
 | 2/8 | Metrics for HMM finished |:heavy_check_mark:| 25/7 |
 | 2/8 | Division to syllables finished |||
 | 9/8 | Conversion to english letters finished |||
-| 15/8 | CRF code finished |||
+| 15/8 | CRF code finished |:heavy_check_mark:| 28/7 |
 | 28/8 | Final data version - no more annotation from this point |||

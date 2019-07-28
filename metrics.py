@@ -36,12 +36,9 @@ def MacroAvg(conf_mat):
 
 def AvgAcc(conf_mat):
     l = conf_mat.shape[0]
-    mat_sum = np.sum(conf_mat)
     s=0
     for i in range(l):
-        tp = conf_mat[i,i]
-        tn = mat_sum-(np.sum(conf_mat[i,:])+np.sum(conf_mat[:,i])-tp)
-        s += (tp+tn)/(mat_sum+EPS)
+        s += (_tp(conf_mat,i)+_tn(conf_mat,i))/(_tp(conf_mat,i)+_tn(conf_mat,i)+_fn(conf_mat,i)+_fp(conf_mat,i))
     return s/l
 
 def Fscore(precision, recall, beta=1):

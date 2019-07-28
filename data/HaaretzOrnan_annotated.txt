@@ -279,7 +279,7 @@
 19 למנוע lmnwˁ lim*-now*ˁa lim-noa 
 20 העדפתם hˁdptm ha-ˁa-da-pa-tam* a-a-da-fa-tam 
 21 על ˁl ˁ*l* al 
-22 עובדים ˁwbdym ˁow*b*-diy*m* 
+22 עובדים ˁwbdym ˁow*b*-diy*m* ov-dim
 23 ישראליים yšrˀlyym yiš*-ra-ˀe-liy*-yim* is-ra-e-li-yim 
 #24 . . . 
 
@@ -588,3 +588,4 @@
 13 בתקופה btqwph bat*-quw*-pah* bat-ku-fa 
 14 הקרובה hqrwbh haq*-row*-bah* ak-ro-va 
 #15 . . . 
+

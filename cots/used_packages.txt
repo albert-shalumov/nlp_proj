@@ -2,4 +2,7 @@ nltk
 numpy
 scikit
 python-crfsuite
+pytorch
+gensim
+
 

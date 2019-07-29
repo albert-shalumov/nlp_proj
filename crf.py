@@ -22,16 +22,16 @@ def WordCrfFtr(tokens, i):
     #print(tokens, i, tokens[i])
     feature_list = []
 
-    feature_list.append(str(i))
-    feature_list.append(tokens[i])
-    feature_list.append(tokens[0])
-    feature_list.append(tokens[-1])
-    feature_list.append(str(len(tokens)))
+    feature_list.append("pos="+str(i))
+    feature_list.append("cur="+tokens[i])
+    feature_list.append("first="+tokens[0])
+    feature_list.append("last="+tokens[-1])
+    feature_list.append("len="+str(len(tokens)))
     if i>0:
-        feature_list.append(tokens[i-1])
+        feature_list.append("prev="+tokens[i-1])
 
     if i<(len(tokens)-1):
-        feature_list.append(tokens[i+1])
+        feature_list.append("next="+tokens[i+1])
 
     return feature_list
 
@@ -85,16 +85,16 @@ def SentCrfFtr(tokens, i):
     word = sent[word_pos]
 
     # Word features
-    feature_list.append(str(i))
-    feature_list.append(word[i])
-    feature_list.append(word[0])
-    feature_list.append(word[-1])
-    feature_list.append(str(len(word)))
+    feature_list.append("pos="+str(i))
+    feature_list.append("cur="+word[i])
+    feature_list.append("first="+word[0])
+    feature_list.append("last="+word[-1])
+    feature_list.append("len="+str(len(word)))
     if i>0:
-        feature_list.append(word[i-1])
+        feature_list.append("prev="+word[i-1])
 
     if i<(len(word)-1):
-        feature_list.append(word[i+1])
+        feature_list.append("next"+word[i+1])
 
     if word_pos==0:
         feature_list.append('FIRST_WORD')
@@ -103,7 +103,7 @@ def SentCrfFtr(tokens, i):
         feature_list.append('LAST_WORD')
 
     if word_pos>0:
-        feature_list.append(sent[word_pos-1][-1])
+        feature_list.append("prev_w_last_ch="+sent[word_pos-1][-1])
 
     # Sentence features
     #feature_list.append(str(word_pos))
@@ -111,14 +111,6 @@ def SentCrfFtr(tokens, i):
 
 
 def SentenceCRF(ftr_set, iters=5):
-    def len_(a):
-        return len(a) if isinstance(a, str) else int(a)
-
-    def extract_ftrs(words, chars=1):
-        X = np.zeros((chars, MAX_FTR_LEN))
-        Y = np.zeros(chars)
-
-
     sents = []
     #print('Preparing data')
     with codecs.open('data/HaaretzOrnan_annotated.txt', encoding='utf-8') as f:
@@ -128,8 +120,9 @@ def SentenceCRF(ftr_set, iters=5):
             line = line.rstrip()
             if line.startswith(u'#'):
                 continue
-            if len(line)==0 and len(sents[-1])>0:
-                sents.append([])
+            if len(line)==0:
+                if len(sents[-1])>0:
+                    sents.append([])
                 continue
 
             w = line.split(u' ')[3]

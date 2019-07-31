@@ -1,22 +1,3 @@
-# sent_id = 1
-# text = עשרות אנשים מגיעים מתאילנד לישראל כשהם נרשמים כמתנדבים , אך למעשה משמשים עובדים שכירים זולים .
-1 עשרות ˁšrwt ˁeš*-row*t* es-rot
-2 אנשים ˀnšym ˀa-na-šiy*m* a-na-shim
-3 מגיעים mgyˁym me-giy*-ˁiy*m* me-gi-im
-4 מתאילנד mtˀylnd mi-taˀiy*-lan*d* mi-tai-land
-5 לישראל lyšrˀl le-yiš*-ra-ˀel* le-is-ra-el
-6 כשהם kšhm k*še-hem* kshe-em
-7 נרשמים nršmym nir*-ša-miy*m* nir-sha-mim
-8 כמתנדבים kmtndbym ke-mit*-nad*-biy*m* ke-mit-nad-vim
-#9 , , , 
-10 אך ˀk ˀak* ah
-11 למעשה lmˁšh le-ma-ˁa-šeh* le-ma-a-se
-12 משמשים mšmšym me-šam*-šiy*m* me-sham-shim
-13 עובדים ˁwbdym ˁow*b*-diy*m* ov-dim
-14 שכירים škyrym še-kiy*-riy*m* se-ki-rim
-15 זולים zwlym zow*-liy*m* zo-lim
-#16 . . . 
-
 # sent_id = 2
 # text =  תופעה זו התבררה אתמול בוועדת העבודה והרווחה של הכנסת , שדנה בנושא העסקת עובדים זרים .    
 1 תופעה twpˁh tow*-pa-ˁah* to-fa-a
@@ -283,23 +264,6 @@
 23 ישראליים yšrˀlyym yiš*-ra-ˀe-liy*-yim* is-ra-e-li-im 
 #24 . . . 
 
-# sent_id = 12
-# text =  חברות המעסיקות עובדים זרים זוכות במכרזים , היות והן מציעות שירותים זולים יותר .
-1 חברות ḥbrwt ḥeb*-row*t* hev-rot 
-2 המעסיקות hmˁsyqwt ha-ma-ˁa-siy*-qow*t* a-ma-a-si-kot 
-3 עובדים ˁwbdym ˁow*b*-diy*m* ov-dim 
-4 זרים zrym za-riy*m* za-rim 
-5 זוכות zwkwt zow*-kow*t* zo-hot 
-6 במכרזים bmkrzym be-mik*-ra-ziy*m* be-mih-ra-zim 
-#7 , , , 
-8 היות hywt he-yow*t* e-yot
-9 והן whn we-hen* ve-en 
-10 מציעות mçyˁwt me-çiy*-ˁow*t* me-tsi-ot 
-11 שירותים šyrwtym šiy*-ruw*-tiy*m* shi-ru-tim
-12 זולים zwlym zow*-liy*m* zo-lim 
-13 יותר ywtr yuw*-ter* yu-ter
-#14 . . . 
-
 # sent_id = 13
 # text =  ח"ך רן כהן ( רץ ) אמר כי על הוועדה לפנות לממשלה בדרישה לחסל את העסקת העובדים הזרים לאלתר , על רקע היצע העולים המוכנים לעבוד בכל עבודה בשכר המינימום .
 #1 ח"ך ḥ"k ḥ"k 
@@ -500,40 +464,6 @@
 11 במקום bmqwm bim*-qow*m* bim-kom 
 12 לתאילנדים ltˀylndym la-ta-ˀiy*-lan*-diy*m* la-ta-i-lan-dim 
 #13 . . . 
-
-# sent_id = 23
-# text =  " השירות לא שינה את המדיניות בנושא העסקת תאילנדים בחקלאות , אלא להיפך , הוא הבהיר לתנועת המושבים שכל עובד ישראלי שיסכים לעבוד בענף החקלאות , ישובץ לעבודה לאלתר " .
-#1 " " " 
-2 השירות hšyrwt ha-šiy*-ruw*t* a-shi-rut 
-3 לא lˀ loˀ* lo
-4 שינה šynh šiy*-nah* shi-na 
-5 את ˀt ˀet* et 
-6 המדיניות hmdynywt ha-me-diy*-ni-yuw*t* a-me-di-ni-yut 
-7 בנושא bnwšˀ be-now*-šeˀ* be-no-se 
-8 העסקת hˁsqt ha-ˁa-sa-qat* a-a-sa-kat 
-9 תאילנדים tˀylndym taˀiy*-lan*-diy*m* tai-lan-dim 
-10 בחקלאות bḥqlˀwt ba-ḥaq*-la-ˀuw*t* ba-hak-la-ut 
-#11 , , , 
-12 אלא ˀlˀ ˀe-laˀ* e-la 
-13 להיפך lhypk le-hey*-pek* le-ey-feh 
-#14 , , , 
-15 הוא hwˀ huw*ˀ* u 
-16 הבהיר hbhyr heb*-hiy*r* ev-ir 
-17 לתנועת ltnwˁt let*-nuw*-ˁat* let-nu-at 
-18 המושבים hmwšbym ha-mow*-ša-biy*m* a-mo-sha-vim 
-19 שכל škl še-kol* she-kol 
-20 עובד ˁwbd ˁow*-bed* o-ved 
-21 ישראלי yšrˀly yiš*-ra-ˀe-liy* is-ra-e-li 
-22 שיסכים šyskym še-yas*-kiy*m* she-yas-kim 
-23 לעבוד lˁbwd la-ˁa-bow*d* la-a-vod 
-24 בענף bˁnp be-ˁa-nap* be-a-naf 
-25 החקלאות hḥqlˀwt ha-ḥaq*-la-ˀuw*t* a-hak-la-ut  
-#26 , , , 
-27 ישובץ yšwbç ye-šuw*-baç* ye-shu-bats 
-28 לעבודה lˁbwdh la-ˁa-bow*-dah* la-a-vo-da 
-29 לאלתר lˀltr le-ˀal*-tar* le-al-tar 
-#30 " " " 
-#31 . . . 
 
 # sent_id = 24
 # text =  אוסטרליה מבקשת לשגר לישראל " מרגלים " לצורך מעקב אחר נבחרת הנוער .

@@ -89,17 +89,17 @@ def TestNgram(n=1,iters=5):
             #print('-------------------------------')
     return conf_mat
 
-
-for i in range(1,5,1):
-    print("|Ngram| = {}: ".format(i))
-    conf_mat = TestNgram(i, 50)
-    precision, recall = metrics.MicroAvg(conf_mat)
-    f1 = metrics.Fscore(precision, recall, 1)
-    print('MicroAvg:',precision,recall,f1)
-    precision, recall = metrics.MacroAvg(conf_mat)
-    f1 = metrics.Fscore(recall, precision, 1)
-    print('MacroAvg:', precision, recall, f1)
-    print('AvgAcc:',metrics.AvgAcc(conf_mat))
-    conf_mat = metrics.NormalizeConfusion(conf_mat)
-    print('ConfMat:\n', np.array_str(conf_mat, max_line_width=300, precision=4))
-    print('----------------------------------------------')
+if __name__ == '__main__':
+    for i in range(1,5,1):
+        print("|Ngram| = {}: ".format(i))
+        conf_mat = TestNgram(i, 50)
+        precision, recall = metrics.MicroAvg(conf_mat)
+        f1 = metrics.Fscore(precision, recall, 1)
+        print('MicroAvg:',precision,recall,f1)
+        precision, recall = metrics.MacroAvg(conf_mat)
+        f1 = metrics.Fscore(recall, precision, 1)
+        print('MacroAvg:', precision, recall, f1)
+        print('AvgAcc:',metrics.AvgAcc(conf_mat))
+        conf_mat = metrics.NormalizeConfusion(conf_mat)
+        print('ConfMat:\n', np.array_str(conf_mat, max_line_width=300, precision=4))
+        print('----------------------------------------------')

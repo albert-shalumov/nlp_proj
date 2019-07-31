@@ -94,7 +94,7 @@ def SentCrfFtr(tokens, i):
         feature_list.append("prev="+word[i-1])
 
     if i<(len(word)-1):
-        feature_list.append("next"+word[i+1])
+        feature_list.append("next="+word[i+1])
 
     if word_pos==0:
         feature_list.append('FIRST_WORD')

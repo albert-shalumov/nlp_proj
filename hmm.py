@@ -16,6 +16,33 @@ def ExtractNgrams(word, n=1):
         l.append(''.join(w[i:i+n]))
     return l
 
+def Predict(words, ngram=1):
+    data = list()
+    symbols = set()
+    with codecs.open('data/HaaretzOrnan_annotated.txt', encoding='utf-8') as f:
+        lines = f.readlines()
+        for line in lines:
+            line = line.rstrip()
+            if line.startswith(u'#') or len(line)==0:
+                continue
+            w = line.split(u' ')[3]
+            w = w.replace(u'-', u'')
+            ngrams = ExtractNgrams(w[::2], ngram)
+            vowel = list(w[1::2])
+            data.append(list(zip(ngrams, vowel)))
+            symbols.update(ngrams)
+
+    np.random.shuffle(data)
+    train = data
+    hmm_trainer = HiddenMarkovModelTrainer(states=states, symbols=list(symbols))
+    model = hmm_trainer.train(labeled_sequences=train)
+
+    result = []
+    for i, w_cons in enumerate(words):
+        pred_set = model.best_path(w_cons)
+        result.append(pred_set)
+
+    return pred_set
 
 def TestNgram(n=1,iters=5):
     data = list()

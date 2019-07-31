@@ -40,9 +40,9 @@ def Predict(words, ngram=1):
     result = []
     for i, w_cons in enumerate(words):
         pred_set = model.best_path(w_cons)
-        result.append(pred_set)
+        result.append(''.join(x+y for x,y in zip(w_cons, pred_set)))
 
-    return pred_set
+    return result
 
 def TestNgram(n=1,iters=5):
     data = list()

@@ -39,7 +39,7 @@ def Predict(words, ngram=1):
 
     result = []
     for i, w_cons in enumerate(words):
-        pred_set = model.best_path(w_cons)
+        pred_set = model.best_path(ExtractNgrams(w_cons, ngram))
         result.append(''.join(x+y for x,y in zip(w_cons, pred_set)))
 
     return result

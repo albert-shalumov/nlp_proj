@@ -9,7 +9,7 @@
 7 נרשמים nršmym nir*-ša-miy*m* nir-sha-mim
 8 כמתנדבים kmtndbym ke-mit*-nad*-biy*m* ke-mit-nad-vim
 #9 , , , 
-10 אך ˀk ˀ*k* ah
+10 אך ˀk ˀak* ah
 11 למעשה lmˁšh le-ma-ˁa-šeh* le-ma-a-se
 12 משמשים mšmšym me-šam*-šiy*m* me-sham-shim
 13 עובדים ˁwbdym ˁow*b*-diy*m* ov-dim
@@ -55,7 +55,7 @@
 15 עובדים ˁwbdym ˁow*b*-diy*m* ov-dim
 16 זרים zrym za-riy*m* za-rim
 17 לישראל lyšrˀl le-yiš*-ra-ˀel* le-is-ra-el
-18 על ˁl ˁ*l* al
+18 על ˁl ˁal* al
 19 תקן tqn te-qen* te-ken
 20 של šl šel* shel
 21 מתנדבים mtndbym mit*-nad*-biy*m* mit-nad-vim
@@ -72,7 +72,7 @@
 
 # sent_id = 4
 # text =  מצד אחד רוצה האוצר להוריד את שכר המינימום , ומצד שני מתיר משרד העבודה והרווחה להעסיק עובדים זרים בפחות משכר זה " .   
-1 מצד mçd mi-ça-d* mi-tsad
+1 מצד mçd mi-çad* mi-tsad
 2 אחד ˀḥd ˀe-ḥad* e-had
 3 רוצה rwçh row*-çeh* ro-tse
 4 האוצר hˀwçr ha-ˀow*-çar* a-o-tsar
@@ -133,12 +133,12 @@
 6 הצעת hçˁt ha-ça-ˁat* a-tsa-at
 7 חוק ḥwq ḥow*q* hok
 8 בנושא bnwšˀ ba-now*-šeˀ* ba-no-se
-9 העובדים hˁwbdym ha-ˁow*-b*diy*m* a-ov-dim
+9 העובדים hˁwbdym ha-ˁow*b*-diy*m* a-ov-dim
 10 הזרים hzrym ha-za-riy*m* a-za-rim
 #11 , , , 
 12 שתכלול štklwl še-tik*-low*l* she-tih-lol
 13 איסור ˀyswr ˀiy*-sow*r* i-sor
-14 על ˁl ˁ*l* al
+14 על ˁl ˁal* al
 15 מתן mtn ma-tan* ma-tan
 16 שכר škr ša-kar* sa-har
 17 לעובדים lˁwbdym la-ˁow*b*-diy*m* la-ov-dim
@@ -147,7 +147,7 @@
 20 המינימום hmynymwm ha-miy*-niy*-muw*m* a-mi-ni-mum
 21 ומתן wmtn we-ma-tan* ve-ma-tan
 22 התנאים htnˀym ha-t*na-ˀiy*m* a-tna-im
-23 הסוציאליים hswçyˀlyym ha-sow*-çiy*-ˀa-liy*yim* a-so-tsi-a-liym
+23 הסוציאליים hswçyˀlyym ha-sow*-çiy*-ˀa-liy*-yim* a-so-tsi-a-li-im
 24 המקובלים hmqwblym ha-me-quw*-ba-liy*m* a-me-ku-ba-lim
 25 במקום bmqwm be-me-qow*m* be-me-kom
 26 העבודה hˁbwdh ha-ˁa-bow*-dah* a-a-vo-da
@@ -161,7 +161,7 @@
 4 תציב tçyb ta-çiy*b* ta-tsiv
 5 הצעת hçˁt ha-ça-ˁat* a-tsa-at
 6 החוק hḥwq ha-ḥow*q* a-hok
-7 עונשי ˁwnšy ˁow*-n*šeyi on-shei
+7 עונשי ˁwnšy ˁow*n*-šeyi on-shei
 8 מאסר mˀsr ma-ˀa-sar* ma-a-sar
 9 והטלת whṭlt we-ha-ṭa-lat* ve-a-ta-lat
 10 קנסות qnswt q*na-sow*t* kna-sot
@@ -177,12 +177,12 @@
 # sent_id = 8
 # text =  מרגלית אילת , הממונה על מתן היתרי עבודה לזרים בשירות התעסוקה , מסרה כי תנועת המושבים הפעילה לחץ שיותר לה להביא עובדים זרים מתאילנד .   
 1 מרגלית mrglyt mar*-ga-liy*t* mar-ga-lit
-2 אילת ˀylt ˀ*ye-lat* e-lat
+#2 אילת ˀylt ˀ*ye-lat* e-lat
 #3 , , , 
 4 הממונה hmmwnh ha-me-muw*-neh* a-me-mu-ne
-5 על ˁl ˁ*l* al
+5 על ˁl ˁal* al
 6 מתן mtn ma-tan* ma-tan
-7 היתרי hytry h*ye-te-r*ye e-te-rye
+7 היתרי hytry hey*-te-r*ye e-te-rye
 8 עבודה ˁbwdh ˁa-bow*-dah* a-vo-da
 9 לזרים lzrym le-za-riy*m* le-za-rim
 10 בשירות bšyrwt be-šiy*-row*t* be-shi-rot
@@ -193,7 +193,7 @@
 15 תנועת tnwˁt t*nuw*-ˁat* tnu-at
 16 המושבים hmwšbym ha-mow*-ša-biy*m* a-mo-sha-vim
 17 הפעילה hpˁylh hep*-ˁiy*-lah* ef-i-la
-18 לחץ lḥç la-ḥa-ç* la-hats
+18 לחץ lḥç la-ḥaç* la-hats
 19 שיותר šywtr še-yuw*-tar* she-yu-tar
 20 לה lh lah* la
 21 להביא lhbyˀ le-ha-biy*ˀ* le-a-vi
@@ -205,7 +205,7 @@
 # sent_id = 9
 # text =  היא אמרה כי שירות התעסוקה הציע להביא עובדים מדרום לבנון , אך תנועת המושבים סירבה .
 1 היא hyˀ hiy*ˀ* yi
-2 אמרה ˀmrh ˀ*m*-rah* am-ra
+2 אמרה ˀmrh ˀam*-rah* am-ra
 3 כי ky kiy* ki
 4 שירות šyrwt šiy*-ruw*t* shi-rut
 5 התעסוקה htˁswqh ha-ta-ˁa-suw*-qah* a-ta-a-su-ka
@@ -232,7 +232,7 @@
 #7 , , , 
 8 אמר ˀmr ˀa-mar* a-mar
 9 כי ky kiy* ki
-10 ממלא mmlˀ me-ma-leˀ* me-ma-la
+10 ממלא mmlˀ me-ma-leˀ* me-ma-le
 11 מקום mqwm ma-qow*m* ma-kom
 12 שר šr šar* sar
 13 העבודה hˁbwdh ha-ˁa-bow*-dah* a-a-vo-da
@@ -243,7 +243,7 @@
 #18 , , , 
 19 הקים hqym he-qiy*m* e-kim
 20 ועדה wˁdh wa-ˁa-dah* va-a-da
-21 בין byn b*yen* ben
+21 בין byn bey*n* beyn
 #22 - - - 
 23 משרדית mšrdyt miš*-ra-diy*t* mis-ra-dit
 #24 , , , 
@@ -270,7 +270,7 @@
 10 שלפיה šlpyh še-le-pi-yah* she-le-fi-ya
 11 יוטל ywṭl yuw*-ṭal* yu-tal
 12 היטל hyṭl hey*-ṭel* ey-tel
-13 על ˁl ˁ*l* al
+13 על ˁl ˁal* al
 14 מעסיקי mˁsyqy ma-ˁa-siy*-qey* ma-a-si-key 
 15 עובדים ˁwbdym ˁow*b*-diy*m* ov-dim 
 16 זרים zrym za-riy*m* za-rim 
@@ -278,9 +278,9 @@
 18 כדי kdy ke-dey* ke-dey  
 19 למנוע lmnwˁ lim*-now*ˁa lim-noa 
 20 העדפתם hˁdptm ha-ˁa-da-pa-tam* a-a-da-fa-tam 
-21 על ˁl ˁ*l* al 
+21 על ˁl ˁal* al 
 22 עובדים ˁwbdym ˁow*b*-diy*m* ov-dim
-23 ישראליים yšrˀlyym yiš*-ra-ˀe-liy*-yim* is-ra-e-li-yim 
+23 ישראליים yšrˀlyym yiš*-ra-ˀe-liy*-yim* is-ra-e-li-im 
 #24 . . . 
 
 # sent_id = 12
@@ -310,7 +310,7 @@
 #6 ) ) ) 
 7 אמר ˀmr ˀa-mar* a-mar 
 8 כי ky kiy* ki 
-9 על ˁl ˁ*l* al 
+9 על ˁl ˁal* al 
 10 הוועדה hwwˁdh ha-waw*-ˁa-dah* a-va-a-da
 11 לפנות lpnwt lip*-now*t* lif-not 
 12 לממשלה lmmšlh la-mem*-ša-lah* la-mem-sha-la
@@ -322,7 +322,7 @@
 18 הזרים hzrym ha-za-riy*m* a-za-rim 
 19 לאלתר lˀltr le-ˀal*-tar* le-al-tar 
 #20 , , , 
-21 על ˁl ˁ*l* al
+21 על ˁl ˁal* al
 22 רקע rqˁ re-qaˁ* re-ka 
 23 היצע hyçˁ hey*-çaˁ* ey-tsa 
 24 העולים hˁwlym ha-ˁow*-liy*m* a-o-lim
@@ -372,12 +372,12 @@
 8 כי ky kiy* ki 
 9 פרשת pršt pa-ra-šat* pa-ra-shat 
 10 המתנדבים hmtndbym ha-mit*-nad*-biy*m* a-mit-nad-vim 
-11 התאילנדיים htˀylndyym ha-ta-ˀiy*-lan*-diy*-yim* a-ta-i-lan-di-yim 
+11 התאילנדיים htˀylndyym ha-ta-ˀiy*-lan*-diy*-yim* a-ta-i-lan-di-im 
 12 היא hyˀ hiy*ˀ* yi
 #13 " " " 
 14 כתם ktm ke-tem* ke-tem 
 15 חרפה ḥrph ḥer*-pah* her-pa 
-16 על ˁl ˁ*l* al 
+16 על ˁl ˁal* al 
 17 פרצופנו prçwpnw par*-çuw*-pe-nuw* par-tsu-fe-nu 
 18 הלאומי hlˀwmy ha-le-ˀuw*-miy* a-le-u-mi 
 #19 . . . 
@@ -420,12 +420,12 @@
 4 התופעה htwpˁh ha-tow*-pa-ˁah* a-to-fa-a 
 5 ולמתן wlmtn we-le-ma-tan* ve-le-ma-tan 
 6 תשלומים tšlwmym taš*-luw*-miy*m* tash-lu-mim 
-7 רטרואקטיוויים rṭrwˀqṭywwyym reṭ*-row*-ˀaq*-ṭiy*-w*wiy*-yim* ret-ro-ak-ti-vi-yim 
+7 רטרואקטיוויים rṭrwˀqṭywwyym reṭ*-row*-ˀaq*-ṭiy*-w*wiy*-yim* ret-ro-ak-ti-vi-im 
 8 לתאילנדים ltˀylndym la-ta-ˀiy*-lan*-diy*m* la-ta-i-lan-dim 
 #9 , , , 
 10 שישלימו šyšlymw še-ya-š*liy*-muw* she-ya-shli-mu 
 11 את ˀt ˀet* et 
-12 שכר škr šakar* sa-har 
+12 שכר škr ša-kar* sa-har 
 13 המינימום hmynymwm ha-miy*-niy*-muw*m* a-mi-ni-mum 
 #14 . . . 
 
@@ -449,7 +449,7 @@
 16 ולהכנסת wlhknst we-le-hak*-na-sat* ve-le-ah-na-sat 
 17 עולים ˁwlym ˁow*-liy*m* o-lim 
 18 חדשים ḥdšym ḥa-da-šiy*m* ha-da-shim 
-19 במקומם bmqwmm bem*qow*mam* bem-ko-mam 
+19 במקומם bmqwmm bim*-qow*-mam* bim-ko-mam 
 #20 . . . 
 
 # sent_id = 20
@@ -466,19 +466,19 @@
 10 העובדים hˁwbdym ha-ˁow*b*-diy*m* a-ov-dim 
 11 הזרים hzrym ha-za-riy*m* a-za-rim 
 12 בענף bˁnp be-ˁa-nap* be-a-naf 
-13 האחיות hˀḥywt haˀaḥayow*t* a-aha-yot 
+13 האחיות hˀḥywt ha-ˀa-ḥa-yow*t* a-a-ha-yot 
 #14 ב%50 b%50 b%50 
 #15 . . . 
 
 # sent_id = 21
 # text =  עד סוף השנה לא תועסק בארץ אף אחות כעובדת זרה " .
-1 עד ˁd ˁ*d* ad 
+1 עד ˁd ˁad* ad 
 2 סוף swp sow*p* sof 
 3 השנה hšnh ha-ša-nah* a-sha-na 
 4 לא lˀ loˀ* lo 
 5 תועסק twˁsq tuw*-ˁa-saq* tu-a-sak 
 6 בארץ bˀrç ba-ˀa-reç* ba-a-rets 
-7 אף ˀp ˀ*p* af 
+7 אף ˀp ˀap* af 
 8 אחות ˀḥwt ˀa-ḥow*t* a-hot 
 9 כעובדת kˁwbdt ke-ˁow*-be-det* ke-o-ve-det 
 10 זרה zrh za-rah* za-ra 
@@ -495,7 +495,7 @@
 6 לחקלאים lḥqlˀym la-ḥaq*-la-ˀiy*m* la-hak-la-im 
 7 לדאוג ldˀwg lid*-ˀow*g* lid-og
 8 לעובדים lˁwbdym le-ˁow*b*-diy*m* le-ov-dim 
-9 ישראליים yšrˀlyym yiš*-ra-ˀe-liy*-yim* is-ra-e-li-yim 
+9 ישראליים yšrˀlyym yiš*-ra-ˀe-liy*-yim* is-ra-e-li-im 
 #10 , , , 
 11 במקום bmqwm bim*-qow*m* bim-kom 
 12 לתאילנדים ltˀylndym la-ta-ˀiy*-lan*-diy*m* la-ta-i-lan-dim 
@@ -511,7 +511,7 @@
 6 המדיניות hmdynywt ha-me-diy*-ni-yuw*t* a-me-di-ni-yut 
 7 בנושא bnwšˀ be-now*-šeˀ* be-no-se 
 8 העסקת hˁsqt ha-ˁa-sa-qat* a-a-sa-kat 
-9 תאילנדים tˀylndym taˀiy*lan*diy*m* tai-lan-dim 
+9 תאילנדים tˀylndym taˀiy*-lan*-diy*m* tai-lan-dim 
 10 בחקלאות bḥqlˀwt ba-ḥaq*-la-ˀuw*t* ba-hak-la-ut 
 #11 , , , 
 12 אלא ˀlˀ ˀe-laˀ* e-la 
@@ -520,7 +520,7 @@
 15 הוא hwˀ huw*ˀ* u 
 16 הבהיר hbhyr heb*-hiy*r* ev-ir 
 17 לתנועת ltnwˁt let*-nuw*-ˁat* let-nu-at 
-18 המושבים hmwšbym hamow*šabiy*m* a-mo-sha-vim 
+18 המושבים hmwšbym ha-mow*-ša-biy*m* a-mo-sha-vim 
 19 שכל škl še-kol* she-kol 
 20 עובד ˁwbd ˁow*-bed* o-ved 
 21 ישראלי yšrˀly yiš*-ra-ˀe-liy* is-ra-e-li 
@@ -546,15 +546,15 @@
 #7 " " " 
 8 לצורך lçwrk le-çow*-rek* le-tso-reh 
 9 מעקב mˁqb ma-ˁa-qab* ma-a-kav 
-10 אחר ˀḥr ˀaḥar* a-har 
+10 אחר ˀḥr ˀa-ḥar* a-har 
 11 נבחרת nbḥrt nib*-ḥe-ret* niv-he-ret 
 12 הנוער hnwˁr ha-now*-ˁar* a-no-ar 
 #13 . . . 
 
 # sent_id = 25
 # text =  ישראל ואוסטרליה יתמודדו עם ניו זילנד בטורניר הקדם עולמי לנוער , שיהיה בפברואר - מארס 1991 .
-1 ישראל yšrˀl yiš*raˀel* is-ra-el 
-2 ואוסטרליה wˀwsṭrlyh weˀow*s*-ṭ*ral*-yah* os-tral-ya 
+1 ישראל yšrˀl yiš*-ra-ˀel* is-ra-el 
+2 ואוסטרליה wˀwsṭrlyh we-ˀow*s*-ṭ*ral*-yah* ve-os-tral-ya 
 3 יתמודדו ytmwddw yit*-mow*-de-duw* it-mo-de-du 
 4 עם ˁm ˁim* im
 5 ניו nyw neyuw* neyu 
@@ -564,7 +564,7 @@
 9 עולמי ˁwlmy ˁow*-la-miy* o-la-mi 
 10 לנוער lnwˁr la-now*-ˁar* la-no-ar 
 #11 , , , 
-12 שיהיה šyhyh še-yi-hi-yeh* she-yi-i-ye 
+12 שיהיה šyhyh še-yi-hi-yeh* she-i-i-ye 
 13 בפברואר bpbrwˀr be-peb*-ruw*-ˀar* be-feb-ru-ar 
 #14 - - -
 15 מארס mˀrs maˀ*r*s* mars 
@@ -579,7 +579,7 @@
 4 באורח bˀwrḥ be-ˀow*-raḥ* be-o-rah 
 5 רשמי ršmy riš*-miy* rish-mi 
 6 מידע mydˁ mey*-daˁ* mey-da 
-7 על ˁl ˁ*l* al 
+7 על ˁl ˁal* al 
 8 משחקי mšḥqy miš*-ḥa-qey* mis-ha-key 
 9 מיבחן mybḥn miy*b*-ḥan* miv-han 
 10 של šl šel* shel 
@@ -657,7 +657,7 @@
 16 רק rq raq* rak 
 17 בדצמבר bdçmbr be-de-çem*-ber* be-de-tsem-ber 
 18 היכן hykn hey*-kan* ey-han 
-19 יהיו yhyw yi-hi-yuw* yi-i-yu 
+19 יהיו yhyw yi-hi-yuw* i-i-yu 
 20 המשחקים hmšḥqym ha-miš*-ḥa-qiy*m* a-mis-ha-kim 
 #21 . . . 
 
@@ -671,7 +671,7 @@
 6 קביעת qbyˁt q*biy*-ˁat* kvi-at 
 7 משחקי mšḥqy miš*-ḥa-qey* mis-ha-key 
 8 המיבחן hmybḥn ha-miy*b*-ḥan* a-miv-han 
-9 תיעשה tyˁšh tey*-ˁa-šeh* te-a-se 
+9 תיעשה tyˁšh tey*-ˁa-šeh* tey-a-se 
 10 רק rq raq* rak 
 11 לאחר lˀḥr le-ˀa-ḥar* le-a-har 
 12 שיתברר šytbrr še-yit*-ba-rer* she-it-ba-rer 
@@ -681,4 +681,28 @@
 16 בישראל byšrˀl be-yiš*-ra-ˀel* be-is-ra-el 
 #17 . . . 
 
+# sent_id = 31
+# text =  המאמן רז ביקש שנבחרת הנוער תתמודד עם האולימפיים של פולין , אך המשחק לא יצא לפועל בגלל חוסר תיאום לגבי המועד .
+1 המאמן hmˀmn ha-me-ˀa-men* a-me-a-men 
+2 רז rz raz* raz 
+3 ביקש byqš biy*-qeš* bi-kesh 
+4 שנבחרת šnbḥrt še-nib*-ḥe-ret* she-niv-he-ret  
+5 הנוער hnwˁr ha-now*-ˁar* a-no-ar 
+6 תתמודד ttmwdd tit*-mow*-ded* tit-mo-ded 
+7 עם ˁm ˁim* im 
+8 האולימפיים hˀwlympyym ha-ˀow*-liy*m*-piy*-yim* a-o-lim-pi-im 
+9 של šl šel* shel 
+10 פולין pwlyn pow*-liy*n* po-lin 
+#11 , , , 
+12 אך ˀk ˀak* ah 
+13 המשחק hmšḥq ha-miš*-ḥaq* a-mis-hak 
+14 לא lˀ loˀ* lo 
+15 יצא yçˀ ye-çeˀ* ye-tse 
+16 לפועל lpwˁl la-pow*-ˁal* la-po-al 
+17 בגלל bgll big*-lal* big-lal 
+18 חוסר ḥwsr ḥow*-ser* ho-ser 
+19 תיאום tyˀwm tiy*-ˀuw*m* ti-um 
+20 לגבי lgby le-ga-bey* le-ga-bey 
+21 המועד hmwˁd ha-mow*-ˁed* a-mo-ed 
+#22 . . . 
 

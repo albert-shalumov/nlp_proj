@@ -39,10 +39,13 @@ def post_processing(word):
 	if word == "i":
 		word = "yi"
 
-	'''word = list(word)
-	if word[len(word)-1] == "h":
-		word.insert(len(word)-1, "a")
-	word = "".join(word)'''
+
+	PandB = {"p": "f", "b": "v"}
+	word = list(word)
+	for i, letter in enumerate(word):
+		if i > 0 and letter in PandB:
+			word[i] = PandB.get(letter)
+	word = "".join(word)
 
 	return (word)
 

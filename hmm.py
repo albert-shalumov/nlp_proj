@@ -1,98 +1,96 @@
 from nltk.tag.hmm import *
 import codecs
 import numpy as np
-from sklearn.metrics import confusion_matrix
 import metrics
+from copy import deepcopy
 
-states = [u'a',u'e',u'u',u'i',u'o',u'*']
-state_idx = {x:i for i,x in enumerate(states)}
+class HMM:
+    def __init__(self, ngram):
+        self.ngram = ngram
 
-def ExtractNgrams(word, n=1):
-    start_symb=u'-'
-    start_w = [start_symb]*(n-1)
-    w = start_w+list(word)
-    l = []
-    for i in range(len(w)-n+1):
-        l.append(''.join(w[i:i+n]))
-    return l
+        pass
 
-def Predict(words, ngram=1):
-    data = list()
-    symbols = set()
-    with codecs.open('data/HaaretzOrnan_annotated.txt', encoding='utf-8') as f:
-        lines = f.readlines()
-        for line in lines:
-            line = line.rstrip()
-            if line.startswith(u'#') or len(line)==0:
-                continue
-            w = line.split(u' ')[3]
-            w = w.replace(u'-', u'')
-            ngrams = ExtractNgrams(w[::2], ngram)
-            vowel = list(w[1::2])
-            data.append(list(zip(ngrams, vowel)))
-            symbols.update(ngrams)
+    def prep_data(self, file='data/HaaretzOrnan_annotated.txt'):
+        ngrams = set()
+        self.data = []
+        with codecs.open(file, encoding='utf-8') as f:
+            lines = f.readlines()
+            for line in lines:
+                line = line.rstrip()
+                if line.startswith(u'#') or len(line) == 0:
+                    continue
+                w = line.split(u' ')[3]
+                w = w.replace(u'-', u'')
+                word_ngrams = HMM._extract_ngrams(w[::2], self.ngram)
+                self.data.append(list(zip(word_ngrams, list(w[1::2]))))
+                ngrams.update(word_ngrams)
+        self.ngrams = list(ngrams)
+        return self
 
-    np.random.shuffle(data)
-    train = data
-    hmm_trainer = HiddenMarkovModelTrainer(states=states, symbols=list(symbols))
-    model = hmm_trainer.train(labeled_sequences=train)
+    def shuffle(self, seed=None):
+        inds = np.arange(len(self.data))
+        np.random.seed(seed)
+        np.random.shuffle(inds)
+        self.data=[self.data[i] for i in inds]
+        return self
 
-    result = []
-    for i, w_cons in enumerate(words):
-        pred_set = model.best_path(ExtractNgrams(w_cons, ngram))
-        result.append(''.join(x+y for x,y in zip(w_cons, pred_set)))
+    def split(self, valid_ratio=0.1):
+        # Split to train and validation based on ratio.
+        # If ratio is 0 use all data for training
+        num_train = int(len(self.data)*(1-valid_ratio))
+        self.train_set = self.data[:num_train]
+        self.valid_set = None if valid_ratio==0 else self.data[num_train:]
+        return self
 
-    return result
+    def train(self):
+        hmm_trainer = HiddenMarkovModelTrainer(states = HMM.VOWELS, symbols = self.ngrams)
+        self.model = hmm_trainer.train(labeled_sequences=self.train_set)
+        return self
 
-def TestNgram(n=1,iters=5):
-    data = list()
-    symbols = set()
+    def eval(self):
+        conf_mat = np.zeros((len(HMM.VOWELS), len(HMM.VOWELS)))
+        valid_word_cons = [[x[0] for x in w] for w in self.valid_set]
+        valid_word_vowel = [[x[1] for x in w] for w in self.valid_set]
+        predicted = self.model.tag_sents(valid_word_cons)
+        predicted = [[x[1] for x in w] for w in predicted]
+        for w_ind in range(len(predicted)):
+            for vow_ind, pred_vow in enumerate(predicted[w_ind]):
+                conf_mat[self.VOWELS_IDX[pred_vow], self.VOWELS_IDX[valid_word_vowel[w_ind][vow_ind]]] += 1
+        return conf_mat
 
-    #print('Preparing data')
-    with codecs.open('data/HaaretzOrnan_annotated.txt', encoding='utf-8') as f:
-        lines = f.readlines()
-        for line in lines:
-            line = line.rstrip()
-            if line.startswith(u'#') or len(line)==0:
-                continue
-            w = line.split(u' ')[3]
-            w = w.replace(u'-', u'')
-            ngrams = ExtractNgrams(w[::2], n)
-            vowel = list(w[1::2])
-            data.append(list(zip(ngrams, vowel)))
-            symbols.update(ngrams)
+    def predict(self, pred_set):
+        result = []
+        for i, w_cons in enumerate(pred_set):
+            predicted = self.model.best_path(HMM._extract_ngrams(w_cons, self.ngram))
+            result.append(''.join(x+y for x, y in zip(w_cons, predicted)))
+        return result
 
 
-    conf_mat = np.zeros((len(states),len(states)))
+    VOWELS = [u'a',u'e',u'u',u'i',u'o',u'*']
+    VOWELS_IDX = {x:i for i,x in enumerate(VOWELS)}
 
-    for i in range(iters):
-        np.random.shuffle(data)
-        valid_size = max(1, len(data)//10)
-        train = data[:-valid_size]
-        valid = data[-valid_size:]
+    @staticmethod
+    def _extract_ngrams(word, ngram):
+        start_symb=u'-'
+        start_w = [start_symb]*(ngram-1)
+        w = start_w+list(word)
+        l = []
+        for i in range(len(w)-ngram+1):
+            l.append(''.join(w[i:i+ngram]))
+        return l
 
-        #print('Training {}/{}'.format(i,iters))
-        hmm_trainer = HiddenMarkovModelTrainer(states = states, symbols = list(symbols))
-        model = hmm_trainer.train(labeled_sequences=train)
-        #print('Prediction')
-        valid_word_cons = [[x[0] for x in w] for w in valid]
-        valid_word_vowel = [[x[1] for x in w] for w in valid]
-
-        #print('Results:')
-        for i,w_cons in enumerate(valid_word_cons):
-            #print('     ',w_cons)
-            #print('Gold:',valid_word_vowel[i])
-            pred_set = model.best_path(w_cons)
-            for j in range(len(pred_set)):
-                conf_mat[state_idx[pred_set[j]],state_idx[valid_word_vowel[i][j]]] += 1
-            #print('Pred:',pred_set)
-            #print('-------------------------------')
-    return conf_mat
 
 if __name__ == '__main__':
-    for i in range(1,5,1):
-        print("|Ngram| = {}: ".format(i))
-        conf_mat = TestNgram(i, 50)
+    for ngram in range(1,5,1):
+        if 'conf_mat' in locals():
+            del conf_mat
+        for iters in range(5):
+            hmm = HMM(ngram)
+            if 'conf_mat' in locals():
+                conf_mat += hmm.prep_data().shuffle(None).split(0.1).train().eval()
+            else:
+                conf_mat  = hmm.prep_data().shuffle(None).split(0.1).train().eval()
+        print("|Ngram| = {}: ".format(ngram))
         precision, recall = metrics.MicroAvg(conf_mat)
         f1 = metrics.Fscore(precision, recall, 1)
         print('MicroAvg:',precision,recall,f1)

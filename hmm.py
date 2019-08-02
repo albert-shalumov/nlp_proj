@@ -8,8 +8,6 @@ class HMM:
     def __init__(self, ngram):
         self.ngram = ngram
 
-        pass
-
     def prep_data(self, file='data/HaaretzOrnan_annotated.txt'):
         ngrams = set()
         self.data = []

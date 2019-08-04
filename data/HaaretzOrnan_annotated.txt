@@ -13,7 +13,7 @@
 11 שדנה šdnh še-da-nah* she-da-na
 12 בנושא bnwšˀ ba-now*-šeˀ* ba-no-se
 13 העסקת hˁsqt ha-ˁa-sa-qat* a-a-sa-kat
-14 עובדים ˁwbdym ˁow*b-*diy*m* ov-dim
+14 עובדים ˁwbdym ˁow*b*-diy*m* ov-dim
 15 זרים zrym za-riy*m* za-rim
 #16 . . . 
 
@@ -40,7 +40,7 @@
 19 תקן tqn te-qen* te-ken
 20 של šl šel* shel
 21 מתנדבים mtndbym mit*-nad*-biy*m* mit-nad-vim
-22 מתאילנד mtˀylnd mi-taˀiy*-lan*d* mi-tai-land
+22 מתאילנד mtˀylnd mi-ta-ˀiy*-lan*d* mi-ta-i-land
 #23 , , , 
 24 רק rq raq* rak
 25 כדי kdy ke-dey* ke-dey
@@ -91,7 +91,7 @@
 10 תנועת tnwˁt t*nuw*-ˁat* tnu-at
 11 המושבים hmwšbym ha-mow*-ša-biy*m* a-mo-sha-vim
 #12 , , , 
-13 בתביעה btbyˁh be-t*biy*-ˁah* be-tvi-a
+13 בתביעה btbyˁh bet*-biy*-ˁah* bet-vi-a
 14 לבטל lbṭl le-ba-ṭel* le-va-tel
 15 את ˀt ˀet* et
 16 הזמנתם hzmntm haz*-ma-na-tam* az-ma-na-tam
@@ -99,7 +99,7 @@
 #18 500 500 500 
 19 עובדים ˁwbdym ˁow*b*-diy*m* ov-dim
 20 זרים zrym za-riy*m* za-rim
-21 מתאילנד mtˀylnd mi-taˀiy*-lan*d* mi-tai-land
+21 מתאילנד mtˀylnd mi-ta-ˀiy*-lan*d* mi-ta-i-land
 22 כמתנדבים kmtndbym ke-mit*-nad*-biy*m* ke-mit-nad-vim
 23 כביכול kbykwl kib*-ye-kow*l* kiv-ye-hol 
 #24 . . . 
@@ -127,7 +127,7 @@
 19 לשכר lškr le-ša-kar* le-sa-har
 20 המינימום hmynymwm ha-miy*-niy*-muw*m* a-mi-ni-mum
 21 ומתן wmtn we-ma-tan* ve-ma-tan
-22 התנאים htnˀym ha-t*na-ˀiy*m* a-tna-im
+22 התנאים htnˀym hat*-na-ˀiy*m* at-na-im
 23 הסוציאליים hswçyˀlyym ha-sow*-çiy*-ˀa-liy*-yim* a-so-tsi-a-li-im
 24 המקובלים hmqwblym ha-me-quw*-ba-liy*m* a-me-ku-ba-lim
 25 במקום bmqwm be-me-qow*m* be-me-kom
@@ -180,7 +180,7 @@
 21 להביא lhbyˀ le-ha-biy*ˀ* le-a-vi
 22 עובדים ˁwbdym ˁow*b*-diy*m* ov-dim
 23 זרים zrym za-riy*m* za-rim
-24 מתאילנד mtˀylnd mi-taˀiy*-lan*d* mi-tai-land
+24 מתאילנד mtˀylnd mi-ta-ˀiy*-lan*d* mi-ta-i-land
 #25 . . . 
 
 # sent_id = 9
@@ -208,7 +208,7 @@
 2 ארד ˀrd ˀa-rad* a-rad
 #3 , , , 
 #4 סמנכ"ל smnk"l saman*kal* sa-man-kal
-5 הביטוח hbyṭwḥ ha-biy*-ṭuw*-ḥ* a-bi-tu-h
+5 הביטוח hbyṭwḥ ha-biy*-ṭuw*-ḥ* a-bi-tu-ah
 6 הלאומי hlˀwmy ha-le-ˀuw*-miy* a-le-u-mi
 #7 , , , 
 8 אמר ˀmr ˀa-mar* a-mar
@@ -257,7 +257,7 @@
 16 זרים zrym za-riy*m* za-rim 
 #17 , , , 
 18 כדי kdy ke-dey* ke-dey  
-19 למנוע lmnwˁ lim*-now*ˁa lim-noa 
+19 למנוע lmnwˁ lim*-now*-ˁa lim-no-a 
 20 העדפתם hˁdptm ha-ˁa-da-pa-tam* a-a-da-fa-tam 
 21 על ˁl ˁal* al 
 22 עובדים ˁwbdym ˁow*b*-diy*m* ov-dim
@@ -278,7 +278,7 @@
 10 הוועדה hwwˁdh ha-waw*-ˁa-dah* a-va-a-da
 11 לפנות lpnwt lip*-now*t* lif-not 
 12 לממשלה lmmšlh la-mem*-ša-lah* la-mem-sha-la
-13 בדרישה bdryšh be-d*riy*-šah* be-dri-sha
+13 בדרישה bdryšh bed*-riy*-šah* bed-ri-sha
 14 לחסל lḥsl le-ḥa-sel* le-ha-sel
 15 את ˀt ˀet* et
 16 העסקת hˁsqt ha-ˁa-sa-qat* a-a-sa-kat
@@ -300,14 +300,14 @@
 
 # sent_id = 14
 # text =  לדבריו , יש לפנות למשרד העבודה והרווחה בדרישה לבטל בתוך חודש את עבודת העובדים הזרים המועסקים כיום תחת הכותרת " מתנדבים " .
-1 לדבריו ldbryw le-d*ba-ray*w* le-dva-rav 
+1 לדבריו ldbryw led*-ba-ray*w* led-va-rav 
 #2 , , , 
 3 יש yš yeš* yesh 
 4 לפנות lpnwt le-pa-now*t* le-fa-not 
 5 למשרד lmšrd le-miš*-rad* le-mis-rad 
 6 העבודה hˁbwdh ha-ˁa-bow*-dah* a-a-vo-da 
 7 והרווחה whrwwḥh we-ha-re-waw*-ḥah* ve-a-re-va-ha 
-8 בדרישה bdryšh be-d*riy*-šah* be-dri-sha
+8 בדרישה bdryšh bed*-riy*-šah* bed-ri-sha
 9 לבטל lbṭl le-ba-ṭel* le-va-tel
 10 בתוך btwk be-tow*k* be-toh
 11 חודש ḥwdš ḥow*-deš* ho-desh 
@@ -348,7 +348,7 @@
 
 # sent_id = 16
 # text =  המוח מתפלץ לא רק מהתופעה המבישה אלא גם מדרכי ההערמה .
-1 המוח hmwḥ ha-mow*-ḥ* a-mo-h 
+1 המוח hmwḥ ha-mow*-ḥ* a-mo-ah 
 2 מתפלץ mtplç mit*-pa-leç* mit-pa-lets 
 3 לא lˀ loˀ* lo 
 4 רק rq raq* rak 
@@ -356,13 +356,13 @@
 6 המבישה hmbyšh ha-me-biy*-šah* a-me-vi-sha 
 7 אלא ˀlˀ ˀe-laˀ* e-la 
 8 גם gm gam* gam 
-9 מדרכי mdrky me-d*ra-key* me-dra-hey 
+9 מדרכי mdrky med*-ra-key* med-ra-hey 
 10 ההערמה hhˁrmh ha-haˁ*-ra-mah* a-a-ra-ma 
 #11 . . . 
 
 # sent_id = 17
 # text =  הראש היהודי ממציא לנו פטנטים בדמות מתנדבים , המשולמים שכר מחפיר " .
-1 הראש hrˀš ha-roˀ*-š* a-ro-sh 
+1 הראש hrˀš ha-roˀ*š* a-rosh 
 2 היהודי hyhwdy ha-ye-huw*-diy* a-ye-u-di 
 3 ממציא mmçyˀ mam*-çiy*ˀ* mam-tsi
 4 לנו lnw la-nuw* la-nu 
@@ -387,7 +387,7 @@
 7 רטרואקטיוויים rṭrwˀqṭywwyym reṭ*-row*-ˀaq*-ṭiy*-w*wiy*-yim* ret-ro-ak-ti-vi-im 
 8 לתאילנדים ltˀylndym la-ta-ˀiy*-lan*-diy*m* la-ta-i-lan-dim 
 #9 , , , 
-10 שישלימו šyšlymw še-ya-š*liy*-muw* she-ya-shli-mu 
+10 שישלימו šyšlymw še-yaš*-liy*-muw* she-yash-li-mu 
 11 את ˀt ˀet* et 
 12 שכר škr ša-kar* sa-har 
 13 המינימום hmynymwm ha-miy*-niy*-muw*m* a-mi-ni-mum 
@@ -467,7 +467,7 @@
 
 # sent_id = 24
 # text =  אוסטרליה מבקשת לשגר לישראל " מרגלים " לצורך מעקב אחר נבחרת הנוער .
-1 אוסטרליה ˀwsṭrlyh ˀow*s*-ṭ*ral*-yah* os-tral-ya 
+1 אוסטרליה ˀwsṭrlyh ˀow*s*ṭ*-ral*-yah* ost-ral-ya 
 2 מבקשת mbqšt me-ba-qe-šet* me-va-ke-shet 
 3 לשגר lšgr le-ša-ger* le-sha-ger 
 4 לישראל lyšrˀl le-yiš*-ra-ˀel* le-is-ra-el 
@@ -484,7 +484,7 @@
 # sent_id = 25
 # text =  ישראל ואוסטרליה יתמודדו עם ניו זילנד בטורניר הקדם עולמי לנוער , שיהיה בפברואר - מארס 1991 .
 1 ישראל yšrˀl yiš*-ra-ˀel* is-ra-el 
-2 ואוסטרליה wˀwsṭrlyh we-ˀow*s*-ṭ*ral*-yah* ve-os-tral-ya 
+2 ואוסטרליה wˀwsṭrlyh we-ˀow*s*ṭ*-ral*-yah* ve-ost-ral-ya 
 3 יתמודדו ytmwddw yit*-mow*-de-duw* it-mo-de-du 
 4 עם ˁm ˁim* im
 5 ניו nyw neyuw* neyu 
@@ -505,7 +505,7 @@
 # text =  אתמול ביקשה אוסטרליה באורח רשמי מידע על משחקי מיבחן של הנבחרת הישראלית בתקופה הקרובה .
 1 אתמול ˀtmwl ˀet*-mow*l* et-mol 
 2 ביקשה byqšh biy*q*-šah* bik-sha 
-3 אוסטרליה ˀwsṭrlyh ˀow*s*-ṭ*ral*-yah* os-tral-ya 
+3 אוסטרליה ˀwsṭrlyh ˀow*s*ṭ*-ral*-yah* ost-ral-ya 
 4 באורח bˀwrḥ be-ˀow*-raḥ* be-o-rah 
 5 רשמי ršmy riš*-miy* rish-mi 
 6 מידע mydˁ mey*-daˁ* mey-da 
@@ -636,3 +636,417 @@
 21 המועד hmwˁd ha-mow*-ˁed* a-mo-ed 
 #22 . . . 
 
+# sent_id = 32
+# text =  בינתיים התבטלה גם תכניתו של רז לצאת לטורקיה כדי לעקוב אחרי נבחרת הנוער ( בב ) של ארץ זו .
+1 בינתיים byntyym biy*n*-ta-yiy*m* bin-ta-im 
+2 התבטלה htbṭlh hit*-baṭ*-lah* it-bat-la 
+3 גם gm gam* gam 
+4 תכניתו tknytw tok*-niy*-tow* toh-ni-to 
+5 של šl šel* shel 
+6 רז rz raz* raz 
+7 לצאת lçˀt la-ç*ˀet* la-tset
+8 לטורקיה lṭwrqyh le-ṭuw*r*-qi-yah* le-tur-ki-ya 
+9 כדי kdy ke-dey* ke-dey 
+10 לעקוב lˁqwb la-ˁa-qow*b* la-a-kov 
+11 אחרי ˀḥry ˀaḥ*-rey* ah-rey 
+12 נבחרת nbḥrt nib*-ḥe-ret* niv-he-ret 
+13 הנוער hnwˁr ha-now*-ˁar* a-no-ar 
+#14 ( ( ( 
+#15 בב bb bb 
+#16 ) ) ) 
+17 של šl šel* shel 
+18 ארץ ˀrç ˀe-reç* e-rets 
+19 זו zw zow* zo 
+#20 . . . 
+
+# sent_id = 33
+# text =  הטורקים יארחו את ישראל ב18 בנובמבר במשחק קדם אליפות אירופה .
+1 הטורקים hṭwrqym ha-ṭuw*r*-qiy*m* a-tur-kim 
+2 יארחו yˀrḥw ye-ˀar*-ḥuw* ye-ar-hu 
+3 את ˀt ˀet* et 
+4 ישראל yšrˀl yiš*-ra-ˀel* is-ra-el 
+#5 ב18 b18 b18 
+6 בנובמבר bnwbmbr be-now*-bem*-ber* be-no-vem-ber 
+7 במשחק bmšḥq be-miš*-ḥaq* be-mis-hak 
+8 קדם qdm q*dam* kdam 
+9 אליפות ˀlypwt ˀa-liy*-puw*t* a-li-fut 
+10 אירופה ˀyrwph ˀey*-row*-pah* ey-ro-pa 
+#11 . . . 
+
+# sent_id = 34
+# text =  ישראל צועדת בראש הבית לאחר ניצחונה על שוייץ 20 .
+1 ישראל yšrˀl yiš*-ra-ˀel* is-ra-el 
+2 צועדת çwˁdt çow*-ˁe-det* tso-e-det
+3 בראש brˀš be-roˀ*š* be-rosh
+4 הבית hbyt ha-ba-yit* a-ba-it
+5 לאחר lˀḥr le-ˀa-ḥar* le-a-har 
+6 ניצחונה nyçḥwnh niy*ç*-ḥow*-nah* nits-ho-na 
+7 על ˁl ˁal* al
+8 שוייץ šwyyç š*wa-yiy*ç* shva-its 
+#9 20 20 20 
+#10 . . . 
+
+# sent_id = 36
+# text =  רז היה אמור לצפות במשחק אימון בין נערי טורקיה ופולין באמצע השבוע , ולהמתין לנבחרת ישראל שתגיע לאיסטנבול בעוד שבוע , אך התברר כי נערי פולין כלל לא יגיעו לטורקיה .
+1 רז rz raz* raz
+2 היה hyh ha-yah* a-ya  
+3 אמור ˀmwr ˀa-muw*r* a-mur 
+4 לצפות lçpwt liç*-pow*t* lits-pot 
+5 במשחק bmšḥq ba-miš*-ḥaq* ba-mis-hak 
+6 אימון ˀymwn ˀiy*-muw*n* i-mun 
+7 בין byn bey*n* beyn 
+8 נערי nˁry na-ˁa-rey* na-a-rey 
+9 טורקיה ṭwrqyh ṭuw*r*q*-yah* turk-ya 
+10 ופולין wpwlyn we-pow*-liy*n* ve-po-lin 
+11 באמצע bˀmçˁ be-ˀem*-çaˁ* be-em-tsa 
+12 השבוע hšbwˁ ha-ša-buw*-ˁa a-sha-vu-a
+#13 , , , 
+14 ולהמתין wlhmtyn we-le-ham*-tiy*n* ve-le-am-tin 
+15 לנבחרת lnbḥrt le-nib*-ḥe-ret* le-niv-he-ret 
+16 ישראל yšrˀl yiš*-ra-ˀel* is-ra-el 
+17 שתגיע štgyˁ še-ta-giy*-ˁa she-ta-gi-a  
+18 לאיסטנבול lˀysṭnbwl le-ˀiy*s*-ṭan*-buw*l* le-is-tan-bul
+19 בעוד bˁwd be-ˁow*d* be-od 
+20 שבוע šbwˁ ša-buw*-ˁa sha-vu-a 
+#21 , , , 
+22 אך ˀk ˀak* ah 
+23 התברר htbrr hit*-ba-rer* it-ba-rer 
+24 כי ky kiy* ki 
+25 נערי nˁry na-ˁa-rey* na-a-rey 
+26 פולין pwlyn pow*-liy*n* po-lin 
+27 כלל kll k*lal* klal 
+28 לא lˀ loˀ* lo
+29 יגיעו ygyˁw ya-giy*-ˁuw* ya-gi-u 
+30 לטורקיה lṭwrqyh le-ṭuw*r*q*-yah* le-turk-ya 
+#31 . . . 
+
+# sent_id = 37
+# text =  מאמרו של תום שגב , " הקרב על סן סימון היה או לא היה " ( " הארץ " 105 ) , הגיע לידי רק בימים אלה .
+1 מאמרו mˀmrw ma-ˀa-ma-row* ma-a-ma-ro 
+2 של šl šel* shel 
+3 תום twm tow*m* tom 
+4 שגב šgb še-geb* se-gev 
+#5 , , , 
+#6 " " " 
+7 הקרב hqrb haq*-rab* ak-rav 
+8 על ˁl ˁal* al 
+9 סן sn san* san 
+10 סימון symwn siy*-mow*n* si-mon 
+11 היה hyh ha-yah* a-ya 
+12 או ˀw ˀow* o  
+13 לא lˀ loˀ* lo 
+14 היה hyh ha-yah* a-ya 
+#15 " " " 
+#16 ( ( ( 
+#17 " " " 
+18 הארץ hˀrç ha-ˀa-reç* a-a-rets  
+#19 " " " 
+#20 105 105 105 
+#21 ) ) ) 
+#22 , , , 
+23 הגיע hgyˁ he-giy*-ˁa e-gi-a 
+24 לידי lydy le-ya-diy* le-ya-di 
+25 רק rq raq* rak 
+26 בימים bymym be-ya-miy*m* be-ya-mim 
+27 אלה ˀlh ˀe-leh* e-le
+#28 . . . 
+
+# sent_id = 38
+# text =  למרות שחלפו מאז 24 שנה , ולמרות שאירועי ימים אלה אולי מאפילים על כל דבר אחר , אני מרגיש חובה בשמם של החללים , הפצועים ולוחמי הקרב הזה , כאחד שהיה שם , להתייחס למאמר .
+1 למרות lmrwt lam*-row*t* lam-rot 
+2 שחלפו šḥlpw še-ḥal*-puw* she-hal-fu 
+3 מאז mˀz me-ˀaz* me-az 
+#4 24 24 24 
+5 שנה šnh ša-nah* sha-na 
+#6 , , , 
+7 ולמרות wlmrwt we-lam*-row*t* ve-lam-rot 
+8 שאירועי šˀyrwˁy še-ˀey*-ruw*-ˁey* she-ey-ru-ey 
+9 ימים ymym ya-miy*m* ya-mim 
+10 אלה ˀlh ˀe-leh* e-le 
+11 אולי ˀwly ˀuw*-lay* u-lay 
+12 מאפילים mˀpylym ma-ˀa-piy*-liy*m* ma-a-fi-lim 
+13 על ˁl ˁal* al 
+14 כל kl kol* kol 
+15 דבר dbr da-bar* da-var 
+16 אחר ˀḥr ˀa-ḥer* a-her 
+#17 , , , 
+18 אני ˀny ˀa-niy* a-ni 
+19 מרגיש mrgyš mar*-giy*š* mar-gish 
+20 חובה ḥwbh ḥow*-bah* ho-va 
+21 בשמם bšmm biš*-mam* bish-mam 
+22 של šl šel* shel 
+23 החללים hḥllym ha-ḥa-la-liy*m* a-ha-la-lim 
+#24 , , , 
+25 הפצועים hpçwˁym hap*-çuw*-ˁiy*m* ap-tsu-im 
+26 ולוחמי wlwḥmy we-low*-ḥa-mey* ve-lo-ha-mey 
+27 הקרב hqrb haq*-rab* ak-rav 
+28 הזה hzh ha-zeh* a-ze 
+#29 , , , 
+30 כאחד kˀḥd ke-ˀe-ḥad* ke-e-had 
+31 שהיה šhyh še-ha-yah* she-a-ya 
+32 שם šm šam* sham 
+#33 , , , 
+34 להתייחס lhtyyḥs le-hit*-yay*-ḥes* le-it-ya-hes 
+35 למאמר lmˀmr la-ma-ˀa-mar* la-ma-a-mar 
+#36 . . . 
+
+# sent_id = 39
+# text =  קטעי המאמר העוסקים בקרב עצמו , ושרק אליהם אתייחס , מאופיינים בחוסר היגיון ובסילוף עובדות , ומעידים על הכותב כי הוא משולל הבנה טקטית מינימלית וניסיון קרבי משמעותי .
+1 קטעי qṭˁy qiṭ*-ˁey* kit-ey 
+2 המאמר hmˀmr ha-ma-ˀa-mar* a-ma-a-mar 
+3 העוסקים hˁwsqym ha-ˁow*s*-qiy*m* a-os-kim 
+4 בקרב bqrb baq*-rab* bak-rav 
+5 עצמו ˁçmw ˁaç*-mow* ats-mo 
+#6 , , , 
+7 ושרק wšrq we-še-raq* ve-she-rak 
+8 אליהם ˀlyhm ˀe-ley*-hem* e-ley-em 
+9 אתייחס ˀtyyḥs ˀet*-yay*-ḥes* et-ya-hes 
+#10 , , , 
+11 מאופיינים mˀwpyynym me-ˀuw*p*-yay*-niy*m* me-uf-ya-nim 
+12 בחוסר bḥwsr be-ḥow*-ser* be-ho-ser 
+13 היגיון hygywn hiy*-ga-yow*n* i-ga-yon 
+14 ובסילוף wbsylwp we-be-siy*-luw*p* ve-be-si-luf 
+15 עובדות ˁwbdwt ˁuw*b*-dow*t* uv-dot 
+#16 , , , 
+17 ומעידים wmˁydym we-me-ˁiy*-diy*m* ve-me-i-dim
+18 על ˁl ˁal* al 
+19 הכותב hkwtb ha-kow*-teb* a-ko-tev 
+20 כי ky kiy* ki 
+21 הוא hwˀ huw*ˀ* u 
+22 משולל mšwll me-šuw*-lal* me-shu-lal 
+23 הבנה hbnh ha-ba-nah* a-va-na 
+24 טקטית ṭqṭyt ṭaq*-ṭiy*t* tak-tit 
+25 מינימלית mynymlyt miy*-niy*-ma-liy*t* mi-ni-ma-lit 
+26 וניסיון wnysywn we-niy*-sa-yow*n* ve-ni-sa-yon 
+27 קרבי qrby q*ra-biy* kra-vi 
+28 משמעותי mšmˁwty maš*-ma-ˁuw*-tiy* mash-ma-u-ti 
+#29 . . . 
+
+# sent_id = 40
+# text =  וכעת לעובדות המצוטטות : כותרת המאמר , " הקרב על סן סימון : היה לא היה " , מרמזת כי ייתכן שבמנזר כלל לא התנהל קרב .
+1 וכעת wkˁt we-ka-ˁet* ve-ka-et 
+2 לעובדות lˁwbdwt le-ˁuw*b*-dow*t* le-uv-dot 
+3 המצוטטות hmçwṭṭwt ha-me-çuw*-ṭa-ṭow*t* a-me-tsu-ta-tot 
+#4 : : : 
+5 כותרת kwtrt kow*-te-ret* ko-te-ret 
+6 המאמר hmˀmr ha-ma-ˀa-mar* a-ma-a-mar 
+#7 , , , 
+#8 " " " 
+9 הקרב hqrb haq*-rab* ak-rav 
+10 על ˁl ˁal* al 
+11 סן sn san* san 
+12 סימון symwn siy*-mow*n* si-mon 
+#13 : : : 
+14 היה hyh ha-yah* a-ya 
+15 לא lˀ loˀ* lo 
+16 היה hyh ha-yah* a-ya 
+#17 " " " 
+#18 , , , 
+19 מרמזת mrmzt me-ra-me-zet* me-ra-me-zet  
+20 כי ky kiy* ki 
+21 ייתכן yytkn yiy*-ta-ken* i-ta-hen 
+22 שבמנזר šbmnzr še-be-min*-zar* she-be-min-zar 
+23 כלל kll k*lal* klal 
+24 לא lˀ loˀ* lo 
+25 התנהל htnhl hit*-na-hel* it-na-el 
+26 קרב qrb q*rab* krav 
+#27 . . . 
+
+# sent_id = 41
+# text =  לכל אלה המתרשמים ומסתפקים בקריאת הכותרת בלבד , אני יכול להבטיח שאכן התנהל שם קרב , והוא היה אחד הקשים והמפוארים בכל קרבות ישראל .
+1 לכל lkl le-kol* le-kol 
+2 אלה ˀlh ˀe-leh* e-le 
+3 המתרשמים hmtršmym ha-mit*-raš*-miy*m* a-mit-rash-mim 
+4 ומסתפקים wmstpqym we-mis*-tap*-qiy*m* ve-mis-tap-kim 
+5 בקריאת bqryˀt beq*-riy*-ˀat* bek-ri-at 
+6 הכותרת hkwtrt ha-kow*-te-ret* a-ko-te-ret 
+7 בלבד blbd bil*-bad* bil-vad 
+#8 , , , 
+9 אני ˀny ˀa-niy* a-ni 
+10 יכול ykwl ya-kow*l* ya-hol 
+11 להבטיח lhbṭyḥ le-hab*-ṭiy-aḥ* le-av-ti-ah 
+12 שאכן šˀkn še-ˀa-ken* she-a-hen 
+13 התנהל htnhl hit*-na-hel* it-na-el 
+14 שם šm šam* sham
+15 קרב qrb q*rab* krav 
+#16 , , , 
+17 והוא whwˀ we-huw*ˀ* ve-u 
+18 היה hyh ha-yah* a-ya 
+19 אחד ˀḥd ˀe-ḥad* e-had 
+20 הקשים hqšym ha-qa-šiy*m* a-ka-shim 
+21 והמפוארים whmpwˀrym we-ha-me-pow*-ˀa-riy*m* ve-a-me-fo-a-rim 
+22 בכל bkl be-kol* be-kol 
+23 קרבות qrbwt q*ra-bow*t* kra-vot 
+24 ישראל yšrˀl yiš*-ra-ˀel* is-ra-el 
+#25 . . . 
+
+# sent_id = 42
+# text =  ועל כך תעיד ההיסטוריה , ויעידו עשרות הלוחמים שנשארו בחיים והצליחו לבצע את משימתם על אף האבדות הכבדות .
+1 ועל wˁl we-ˁal* ve-al
+2 כך kk kak* kah
+3 תעיד tˁyd ta-ˁiy*d* ta-id 
+4 ההיסטוריה hhysṭwryh ha-hiy*s*-ṭow*r*-yah* a-is-tor-ya 
+#5 , , , 
+6 ויעידו wyˁydw we-ya-ˁiy*-dow* ve-ya-i-do 
+7 עשרות ˁšrwt ˁaš*-row*t* as-rot 
+8 הלוחמים hlwḥmym ha-low*-ḥa-miy*m* a-lo-ha-mim 
+9 שנשארו šnšˀrw še-niš*-ˀe-ruw* she-nish-e-ru 
+10 בחיים bḥyym ba-ḥa-yiy*m* ba-ha-im 
+11 והצליחו whçlyḥw we-heç*-liy*-ḥuw* ve-ets-li-hu 
+12 לבצע lbçˁ le-ba-çe-ˁa le-va-tse-a 
+13 את ˀt ˀet* et 
+14 משימתם mšymtm me-šiy*-ma-tam* me-si-ma-tam 
+15 על ˁl ˁal* al 
+16 אף ˀp ˀap* af 
+17 האבדות hˀbdwt ha-ˀa-be-dow*t* a-a-ve-dot 
+18 הכבדות hkbdwt hak*-be-dow*t* ak-ve-dot 
+#19 . . . 
+
+# sent_id = 43
+# text =  במלחמת העצמאות , בקרב על ירושלים , נשארה שכונת קטמון תקועה בלב ירושלים המערבית ושימשה כמרכז כוח ערבי רב ומאורגן .
+1 במלחמת bmlḥmt be-mil*-ḥe-met* be-mil-he-met 
+2 העצמאות hˁçmˀwt ha-ˁaç*-ma-ˀuw*t* a-ats-ma-ut 
+#3 , , , 
+4 בקרב bqrb baq*-rab* bak-rav 
+5 על ˁl ˁal* al
+6 ירושלים yrwšlym ye-ruw*-ša-la-yim* ye-ru-sha-la-im 
+#7 , , , 
+8 נשארה nšˀrh niš*-ˀa-rah* nish-a-ra 
+9 שכונת škwnt še-kuw*-nat* she-hu-nat 
+10 קטמון qṭmwn qa-ṭa-mow*n* ka-ta-mon 
+11 תקועה tqwˁh t*quw*-ˁah* tku-a 
+12 בלב blb be-leb* be-lev 
+13 ירושלים yrwšlym ye-ruw*-ša-la-yim* ye-ru-sha-la-im 
+14 המערבית hmˁrbyt ha-ma-ˁa-ra-biy*t* a-ma-a-ra-vit 
+15 ושימשה wšymšh we-šiy*m*-šah* ve-shim-sha 
+16 כמרכז kmrkz ke-mer*-kaz* ke-mer-kaz 
+17 כוח kwḥ kow*ḥ* koh 
+18 ערבי ˁrby ˁa-ra-biy* a-ra-vi 
+19 רב rb rab* rav 
+20 ומאורגן wmˀwrgn we-me-ˀuw*r*-gan* ve-me-ur-gan 
+#21 . . . 
+
+# sent_id = 44
+# text =  השטח החיוני של קטמון לשליטה באזור מסוים או לניצחון בקרב היה מנזר סן סימון , ולכן היה עלינו להשתלט עליו .
+1 השטח hšṭḥ ha-še-ṭaḥ* a-she-tah 
+2 החיוני hḥywny ha-ḥi-yuw*-niy* a-hi-yu-ni 
+3 של šl šel* shel 
+4 קטמון qṭmwn qa-ṭa-mow*n* ka-ta-mon 
+5 לשליטה lšlyṭh leš*-liy*-ṭah* lesh-li-ta 
+6 באזור bˀzwr be-ˀe-zow*r* be-e-zor 
+7 מסוים mswym me-suw*-yam* me-su-yam 
+8 או ˀw ˀow* o 
+9 לניצחון lnyçḥwn le-niy*-ça-ḥow*n* le-ni-tsa-hon 
+10 בקרב bqrb baq*-rab* bak-rav 
+11 היה hyh ha-yah* a-ya 
+12 מנזר mnzr min*-zar* min-zar 
+13 סן sn san* san 
+14 סימון symwn siy*-mow*n* si-mon 
+#15 , , , 
+16 ולכן wlkn we-la-ken* ve-la-hen 
+17 היה hyh ha-yah* a-ya 
+18 עלינו ˁlynw ˁa-ley*-nuw* a-ley-nu 
+19 להשתלט lhštlṭ le-hiš*-ta-leṭ* le-ish-ta-let 
+20 עליו ˁlyw ˁa-lay*w* a-lav 
+#21 . . . 
+
+# sent_id = 45
+# text =  כתוב : " בחוכמה עשה לך מלחמה " .
+1 כתוב ktwb ka-tuw*b* ka-tuv 
+#2 : : : 
+#3 " " " 
+4 בחוכמה bḥwkmh be-ḥow*k*-mah* be-huh-ma 
+5 עשה ˁšh ˁa-šeh* a-se 
+6 לך lk le-ka le-ha 
+7 מלחמה mlḥmh mil*-ḥa-mah* mil-ha-ma 
+#8 " " " 
+#9 . . . 
+
+# sent_id = 46
+# text =  אכן , כך עשתה חטיבת " הראל " .
+1 אכן ˀkn ˀa-ken* a-hen 
+#2 , , , 
+3 כך kk kak* kah 
+4 עשתה ˁšth ˁaš*-tah* as-ta 
+5 חטיבת ḥṭybt ḥa-ṭiy*-bat* ha-ti-vat 
+#6 " " " 
+7 הראל hrˀl har*-ˀel* ar-el 
+#8 " " " 
+#9 . . . 
+
+# sent_id = 47
+# text =  היא כבשה תחילה את המנזר ואת התנגדות האויב שברה לאחר מכן , בקרב מגננה שהתנהל בתוך המנזר ( קרב מגננה מיועד לשבירת כוחות חזקים ממך ) .
+1 היא hyˀ hiy*ˀ* yi 
+2 כבשה kbšh kab*-šah* kav-sha 
+3 תחילה tḥylh te-ḥiy*-lah* te-hi-la 
+4 את ˀt ˀet* et 
+5 המנזר hmnzr ha-min*-zar* a-min-zar 
+6 ואת wˀt we-ˀet* ve-et 
+7 התנגדות htngdwt hit*-nag*-duw*t* it-nag-dut 
+8 האויב hˀwyb ha-ˀow*-yeb* a-o-yev 
+9 שברה šbrh šab*-rah* shav-ra 
+10 לאחר lˀḥr le-ˀa-ḥar* le-a-har 
+11 מכן mkn mi-ken* mi-ken 
+#12 , , , 
+13 בקרב bqrb beq*-rab* bek-rav 
+14 מגננה mgnnh mig*-na-nah* mig-na-na 
+15 שהתנהל šhtnhl še-hit*-na-hel* she-it-na-el 
+16 בתוך btwk be-tuw*k* be-tuh 
+17 המנזר hmnzr ha-min*-zar* a-min-zar 
+#18 ( ( ( 
+19 קרב qrb q*rab* krav 
+20 מגננה mgnnh mig*-na-nah* mig-na-na 
+21 מיועד mywˁd me-yuw*-ˁad* me-yu-ad 
+22 לשבירת lšbyrt leš*-biy*-rat* lesh-vi-rat 
+23 כוחות kwḥwt kow*-ḥow*t* ko-hot 
+24 חזקים ḥzqym ḥa-za-qiy*m* ha-za-kim 
+25 ממך mmk mim*-ka mim-ha 
+#26 ) ) ) 
+#27 . . . 
+
+# sent_id = 49
+# text =  המאמר , המצטט ממחקרו של אורי מילשטיין : " מלכתחילה לא היה צריך לכבוש את המנזר … " , מצביע על חוסר הבנה אסטרטגית וטקטית בסוגיה זו .
+1 המאמר hmˀmr ha-ma-ˀa-mar* a-ma-a-mar 
+#2 , , , 
+3 המצטט hmçṭṭ ha-me-ça-ṭeṭ* a-me-tsa-tet 
+4 ממחקרו mmḥqrw mi-meḥ*-qa-row* mi-meh-ka-ro 
+5 של šl šel* shel 
+6 אורי ˀwry ˀuw*-riy* u-ri 
+#7 מילשטיין mylšṭyyn mylšṭyyn
+#8 : : : 
+#9 " " " 
+10 מלכתחילה mlktḥylh mi-le-kat*-ḥiy*-lah* mi-le-hat-hi-la 
+11 לא lˀ loˀ* lo
+12 היה hyh ha-yah* a-ya 
+13 צריך çryk ça-riy*k* tsa-rih 
+14 לכבוש lkbwš lik*-bow*š* lih-bosh
+15 את ˀt ˀet* et 
+16 המנזר hmnzr ha-min*-zar* a-min-zar 
+#17 … … … 
+#18 " " " 
+#19 , , , 
+20 מצביע mçbyˁ maç*-biy*-ˁa mats-bi-a 
+21 על ˁl ˁal* al 
+22 חוסר ḥwsr ḥow*-ser* ho-ser 
+23 הבנה hbnh ha-ba-nah* a-va-na 
+24 אסטרטגית ˀsṭrṭgyt ˀas*ṭ*-ra-ṭe-giy*t* ast-ra-te-git 
+25 וטקטית wṭqṭyt we-ṭaq*-ṭiy*t* ve-tak-tit 
+26 בסוגיה bswgyh be-suw*-gi-yah* be-su-gi-ya 
+27 זו zw zow* zo
+#28 . . . 
+
+# sent_id = 50
+# text =  מורשת הקרב שצה"ל אימץ כתוצאה מהקרב על מנזר סן סימון איננה מיתוס .
+1 מורשת mwršt mow*-re-šet* mo-re-shet 
+2 הקרב hqrb haq*-rab* ak-rav 
+#3 שצה"ל šçh"l šçh"l 
+4 אימץ ˀymç ˀiy*-meç* i-mets 
+5 כתוצאה ktwçˀh ke-tow*-ça-ˀah* ke-to-tsa-a 
+6 מהקרב mhqrb me-haq*-rab* me-ak-rav 
+7 על ˁl ˁal* al 
+8 מנזר mnzr min*-zar* min-zar 
+9 סן sn san* san
+10 סימון symwn siy*-mow*n* si-mon 
+11 איננה ˀynnh ˀey*-ne-nah* ey-ne-na 
+12 מיתוס mytws miy*-tow*s* mi-tos 
+#13 . . . 

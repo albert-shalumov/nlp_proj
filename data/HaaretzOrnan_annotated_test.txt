@@ -3,7 +3,7 @@
 1 עשרות ˁšrwt ˁeš*-row*t* es-rot
 2 אנשים ˀnšym ˀa-na-šiy*m* a-na-shim
 3 מגיעים mgyˁym me-giy*-ˁiy*m* me-gi-im
-4 מתאילנד mtˀylnd mi-taˀiy*-lan*d* mi-tai-land
+4 מתאילנד mtˀylnd mi-ta-ˀiy*-lan*d* mi-ta-i-land
 5 לישראל lyšrˀl le-yiš*-ra-ˀel* le-is-ra-el
 6 כשהם kšhm k*še-hem* kshe-em
 7 נרשמים nršmym nir*-ša-miy*m* nir-sha-mim
@@ -67,3 +67,31 @@
 29 לאלתר lˀltr le-ˀal*-tar* le-al-tar 
 #30 " " " 
 #31 . . . 
+
+# sent_id = 35
+# text =  בבית זה משובצת גם יוון .
+1 בבית bbyt be-ba-yit* be-ba-it 
+2 זה zh zeh* ze
+3 משובצת mšwbçt me-šuw*-be-çet* me-shu-be-tset 
+4 גם gm gam* gam 
+5 יוון ywwn ya-w*wan* ya-van 
+#6 . . . 
+
+# sent_id = 48
+# text =  האויב אמנם נשבר ; קרב המגננה הפך לניצחון מוחץ ; קטמון נפלה וירושלים המערבית אוחדה .
+1 האויב hˀwyb ha-ˀow*-yeb* a-o-yev 
+2 אמנם ˀmnm ˀum*-nam* um-nam 
+3 נשבר nšbr niš*-bar* nish-bar 
+#4 ; ; ; 
+5 קרב qrb q*rab* krav 
+6 המגננה hmgnnh ha-mig*-na-nah* a-mig-na-na 
+7 הפך hpk ha-pak* a-fah 
+8 לניצחון lnyçḥwn le-niy*-ça-ḥow*n* le-ni-tsa-hon 
+9 מוחץ mwḥç mow*-ḥeç* mo-hets 
+#10 ; ; ; 
+11 קטמון qṭmwn qa-ṭa-mow*n* ka-ta-mon 
+12 נפלה nplh nap*-lah* naf-la 
+13 וירושלים wyrwšlym we-ye-ruw*-ša-la-yim* ve-ye-ru-sha-la-im 
+14 המערבית hmˁrbyt ha-ma-ˁa-ra-biy*t* a-ma-a-ra-vit 
+15 אוחדה ˀwḥdh ˀuw*ḥ*-dah* uh-da 
+#16 . . . 

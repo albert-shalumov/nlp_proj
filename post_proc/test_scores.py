@@ -4,26 +4,32 @@ from post_processing import post_processing
 
 def check_dgeshim(post_processing_manual, post_processing_aotomatic):
 
-    dgeshim = {"h": "", "b": "v", "k": "h", "p": "f"}
+    dgeshim = {"h": "", "b": "v", "k": "h", "p": "f", "f": "p", "v": "b"}
     word_aotomatic = list(post_processing_aotomatic)
     word_manual = list(post_processing_manual)
     idx = 0
+    let = None
     try:
         for i, letter in enumerate(word_aotomatic):
             if word_aotomatic[i] != word_manual[idx] and letter in dgeshim:
                 word_aotomatic[i] = dgeshim.get(letter)
+                let = letter
                 if letter == "h":
                     idx -= 1
             idx += 1
         if "".join(word_aotomatic) == post_processing_manual:
-            return 1
-    except:
+            if let == "p" or let == "v":
+                return "PandB"
+            return "dagesh"
+    except:#if the problem is nor only the dgeshim sometimes the nomber of characters is not equal
         return
 
 def test_scores(file_in, file_out):
     not_equel = []
     dgeshim_problems = []
     counter_dgeshim_problems = 0
+    PandB_problems = []
+    counter_PandB_problems = 0
     counter_true = 0
     counter_false = 0
     with codecs.open(file_in, encoding='utf-8') as f:
@@ -40,9 +46,12 @@ def test_scores(file_in, file_out):
             line = line.split()
             post_proc = post_processing(line[3])
             if post_proc != line[4]:
-                if check_dgeshim(line[4], post_proc):    #retorn: true if the problem is only dgeshim else return false
+                if check_dgeshim(line[4], post_proc) == "dagesh":    #retorn: true if the problem is only dgeshim else return false
                     dgeshim_problems.append([sent_id, line[0], line[3], line[4], post_proc])
                     counter_dgeshim_problems += 1
+                elif check_dgeshim(line[4], post_proc) == "PandB":
+                    PandB_problems.append([sent_id, line[0], line[3], line[4], post_proc])
+                    counter_PandB_problems += 1
                 else:
                     not_equel.append([sent_id, line[0], line[3], line[4], post_proc])
                     counter_false += 1
@@ -53,6 +62,10 @@ def test_scores(file_in, file_out):
         f.write(u'counter_false = {}\n'.format(counter_false))
         f.write(u'counter_true = {}\n'.format(counter_true))
         for i, error in enumerate(not_equel):
+            f.write('{}  k: sent_id = {} word = {} {} {}\n'.format(i, error[0], error[1], error[2], error[3]))
+            f.write('{}  p: sent_id = {} word = {} {} {}\n'.format(i, error[0], error[1], error[2], error[4]))
+        f.write(u'\n\ncounter_PandB_problems = {}\n'.format(counter_PandB_problems))
+        for i, error in enumerate(PandB_problems):
             f.write('{}  k: sent_id = {} word = {} {} {}\n'.format(i, error[0], error[1], error[2], error[3]))
             f.write('{}  p: sent_id = {} word = {} {} {}\n'.format(i, error[0], error[1], error[2], error[4]))
         f.write(u'\n\ncounter_dgeshim_problems = {}\n'.format(counter_dgeshim_problems))

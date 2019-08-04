@@ -38,8 +38,6 @@ class CRF:
         return self
 
     def train(self):
-        # Train model using logistic regression.
-        # If number of features becomes too big - use PCA reduce
         self.model = CRFTagger(CRF._extract_ftr, verbose=False,
                        training_opt={"c1": 0, "c2": 0, "num_memories": 50, "epsilon": 1e-7, "delta": 1e-8})
         self.model.train(self.train_set, 'word_crf_model')
@@ -57,9 +55,11 @@ class CRF:
         return conf_mat
 
     def predict(self, pred_set):
-
-
-        pass
+        result = []
+        predicted = self.model.tag_sents(pred_set)
+        for i, w_cons in enumerate(predicted):
+            result.append(''.join(x+y for x, y in w_cons))
+        return result
 
     @staticmethod
     def _len(x):
@@ -86,6 +86,7 @@ if __name__ == '__main__':
     print("Word CRF: ")
     for i in range(5):
         crf = CRF()
+        #crf.prep_data().shuffle().split(0).train().predict(['ˀnšym', u'nršmym'])
         if 'conf_mat' in locals():
             conf_mat += crf.prep_data().shuffle(None).split(0.1).train().eval()
         else:

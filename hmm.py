@@ -63,10 +63,8 @@ class HMM:
             result.append(''.join(x+y for x, y in zip(w_cons, predicted)))
         return result
 
-
     VOWELS = [u'a',u'e',u'u',u'i',u'o',u'*']
     VOWELS_IDX = {x:i for i,x in enumerate(VOWELS)}
-
     @staticmethod
     def _extract_ngrams(word, ngram):
         start_symb=u'-'

@@ -1,4 +1,5 @@
 import numpy as np
+from weighted_levenshtein import lev
 
 EPS = 1e-9
 def _tp(conf_mat, i):
@@ -47,3 +48,15 @@ def Fscore(precision, recall, beta=1):
 def NormalizeConfusion(conf_mat):
     gt_sum = np.sum(conf_mat,axis=0)+EPS
     return conf_mat/gt_sum
+
+
+def EditDistance(str1, str2):
+    alphabet=[u'\u02c0', u'b',u'g', u'd', u'h', u'w', u'z', u'\u1e25', u'\u1e6d', u'y',
+            u'k', u'k', u'l', u'm', u'm', u'n', u'n', u's', u'\u02c1', u'p', u'p', u'\u00e7',
+            u'\u00e7', u'q', u'r', u'\u0161', u't']+list('euioa*-')
+    int2char = dict(enumerate(alphabet))
+    char2int = {char: ind for ind, char in int2char.items()}
+
+    str1_ = ''.join([chr(char2int[x]) for x in str1])
+    str2_ = ''.join([chr(char2int[x]) for x in str2])
+    return lev(str1_,str2_)

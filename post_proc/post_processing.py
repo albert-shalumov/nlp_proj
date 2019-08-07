@@ -1,4 +1,4 @@
-def post_processing(word):
+def romanize(word):
 
 	# change to origin english letters
 	uzi_arnon_symbols = "".maketrans({"h": "H", "w": "v", "ḥ": "h", "ṭ": "t", "ç": "ts", "q": "k", "š": "sh"})
@@ -53,4 +53,4 @@ def post_processing(word):
 
 
 if __name__ == "__main__":
-    print(post_processing ("ko-ḥ*"))
+    print(romanize ("ko-ḥ*"))

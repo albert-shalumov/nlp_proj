@@ -3,7 +3,10 @@ import codecs
 import numpy as np
 from sklearn.metrics import confusion_matrix
 import metrics
+from metrics import EditDistance
+from hmm import HMM
 from memm import MEMM
+from crf_word import CRF as CRF_WORD
 from post_proc.syllabification import syllabification
 from post_proc.post_processing import romanize
 
@@ -44,8 +47,69 @@ def evaluate():
             syllable_words.append(split_line[3])
             romanized_words.append(split_line[4])
 
+    H = HMM(2)
+    H.prep_data().shuffle(None).split(0).train()
+    hmm_predict_words = H.predict(words)
+
+    for w in hmm_predict_words:
+        p_syllable_words.append(syllabification(w))
+
+    for w in p_syllable_words:
+        p_romanized_words.append(romanize(w))
+
+    states = [u'a', u'e', u'u', u'i', u'o', u'*']
+    state_idx = {x: i for i, x in enumerate(states)}
+
+    conf_mat_voweled = np.zeros((len(states), len(states)))
+    conf_mat_romanize = np.zeros((len(states), len(states)))
+
+    for i, w in enumerate(hmm_predict_words):
+        for j in range(1, len(w), 2):
+            conf_mat_voweled[state_idx[w[j]], state_idx[voweled_words[i][j]]] += 1
+
+    PrintConfMat(conf_mat_voweled, 'HMM - voweled')
+
+
+    total = 0
+    for i, w in enumerate(p_syllable_words):
+        total += EditDistance(w, syllable_words[i])
+    print('HMM SYLLABLE:', total / len(p_syllable_words))
+
+    total = 0
+    for i, w in enumerate(p_romanized_words):
+        total += EditDistance(w, romanized_words[i])
+    print('HMM ROMANIZE:', total / len(p_romanized_words))
+
+    '''syl_states = [u'a', u'e', u'u', u'i', u'o', u'*', u'-', u'a-', u'e-', u'u-', u'i-', u'o-', u'*-']
+    syl_state_idx = {x: i for i, x in enumerate(syl_states)}
+    conf_mat_syllable = np.zeros((len(syl_states), len(syl_states)))
+    for i,w in enumerate(p_syllable_words):
+        for j in range(1,len(w),2):
+            if (j+1) < len(w) and w[j+1] == '-':
+                if (j+1) < len(syllable_words[i]) and syllable_words[i][j+1] == '-':
+                    conf_mat_syllable[syl_state_idx[w[j:j+2]],syl_state_idx[syllable_words[i][j:j+2]]] += 1
+                else:
+                    conf_mat_syllable[syl_state_idx[w[j:j+2]],syl_state_idx[syllable_words[i][j]]] += 1
+            else:
+                if (j+1) < len(syllable_words[i]) and syllable_words[i][j+1] == '-':
+                    conf_mat_syllable[syl_state_idx[w[j]],syl_state_idx[syllable_words[i][j:j+2]]] += 1
+                else:
+                    conf_mat_syllable[syl_state_idx[w[j]],syl_state_idx[syllable_words[i][j]]] += 1
+
+    PrintConfMat(conf_mat_syllable, 'HMM - syllable')
+
+    for i,w in enumerate(p_romanized_words):
+        for j in range(len(w)):
+            if j%2 == 1:
+                conf_mat_romanize[state_idx[w[j]],state_idx[romanized_words[i][j]]] += 1
+    PrintConfMat(conf_mat_romanize, 'HMM - romanize')
+    '''
+
+    p_syllable_words = list()
+    p_romanized_words = list()
+
     M = MEMM()
-    M.prep_data().shuffle(None).split().train()
+    M.prep_data().shuffle(None).split(0).train()
     memm_predict_words = M.predict(words)
 
     for w in memm_predict_words:
@@ -67,8 +131,15 @@ def evaluate():
 
     PrintConfMat(conf_mat_voweled, 'MEMM - voweled')
 
-    print(romanized_words)
-    print(p_romanized_words)
+    total = 0
+    for i, w in enumerate(p_syllable_words):
+        total += EditDistance(w, syllable_words[i])
+    print('MEMM SYLABLE:',total / len(p_syllable_words))
+
+    total = 0
+    for i, w in enumerate(p_romanized_words):
+        total += EditDistance(w, romanized_words[i])
+    print('MEMM ROMANIZE:', total / len(p_romanized_words))
 
     '''for i,w in enumerate(p_syllable_words):
         for j in range(len(w)):
@@ -84,6 +155,39 @@ def evaluate():
     PrintConfMat(conf_mat_romanize, 'MEMM - romanize')
     '''
 
+    p_syllable_words = list()
+    p_romanized_words = list()
+    C = CRF_WORD()
+    C.prep_data().shuffle(None).split(0).train()
+    crf_predict_words = C.predict(words)
+
+    for w in crf_predict_words:
+        p_syllable_words.append(syllabification(w))
+
+    for w in p_syllable_words:
+        p_romanized_words.append(romanize(w))
+
+    states = [u'a', u'e', u'u', u'i', u'o', u'*']
+    state_idx = {x: i for i, x in enumerate(states)}
+
+    conf_mat_voweled = np.zeros((len(states), len(states)))
+
+
+    for i, w in enumerate(crf_predict_words):
+        for j in range(1, len(w), 2):
+            conf_mat_voweled[state_idx[w[j]], state_idx[voweled_words[i][j]]] += 1
+
+    PrintConfMat(conf_mat_voweled, 'CRF - voweled')
+
+    total = 0
+    for i, w in enumerate(p_syllable_words):
+        total += EditDistance(w, syllable_words[i])
+    print('CRF SYLLABLE:', total / len(p_syllable_words))
+
+    total = 0
+    for i, w in enumerate(p_romanized_words):
+        total += EditDistance(w, romanized_words[i])
+    print('CRF ROMANIZE:', total / len(p_romanized_words))
 
 if __name__ == "__main__":
     evaluate()

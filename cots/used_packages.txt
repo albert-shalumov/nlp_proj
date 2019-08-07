@@ -4,5 +4,6 @@ scikit
 python-crfsuite
 pytorch
 gensim
+weighted-levenshtein
 
 

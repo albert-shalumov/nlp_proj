@@ -82,7 +82,7 @@ seq_in = []
 seq_out = []
 # pool sequences
 for i in range(len(data_out)):
-    for j in range(max_len, len(data_in)):
+    for j in range(max_len, len(data_in[i])):
         seq_in.append(data_in[i][j-max_len:j])
         seq_out.append(data_out[i][j-max_len])
 

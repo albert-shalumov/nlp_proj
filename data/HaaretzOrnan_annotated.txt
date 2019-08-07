@@ -497,7 +497,7 @@
 12 שיהיה šyhyh še-yi-hi-yeh* she-i-i-ye 
 13 בפברואר bpbrwˀr be-peb*-ruw*-ˀar* be-feb-ru-ar 
 #14 - - -
-15 מארס mˀrs maˀ*r*s* mars 
+#15 מארס mˀrs maˀ*r*s* mars 
 #16 1991 1991 1991 
 #17 . . . 
 
@@ -864,7 +864,7 @@
 #8 , , , 
 9 אני ˀny ˀa-niy* a-ni 
 10 יכול ykwl ya-kow*l* ya-hol 
-11 להבטיח lhbṭyḥ le-hab*-ṭiy-aḥ* le-av-ti-ah 
+11 להבטיח lhbṭyḥ le-hab*-ṭiy*-ḥ* le-av-ti-ah 
 12 שאכן šˀkn še-ˀa-ken* she-a-hen 
 13 התנהל htnhl hit*-na-hel* it-na-el 
 14 שם šm šam* sham
@@ -955,7 +955,7 @@
 1 כתוב ktwb ka-tuw*b* ka-tuv 
 #2 : : : 
 #3 " " " 
-4 בחוכמה bḥwkmh be-ḥow*k*-mah* be-huh-ma 
+4 בחוכמה bḥwkmh be-ḥow*k*-mah* be-hoh-ma 
 5 עשה ˁšh ˁa-šeh* a-se 
 6 לך lk le-ka le-ha 
 7 מלחמה mlḥmh mil*-ḥa-mah* mil-ha-ma 

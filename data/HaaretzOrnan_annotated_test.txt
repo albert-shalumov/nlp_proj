@@ -111,3 +111,38 @@
 11 איננה ˀynnh ˀey*-ne-nah* ey-ne-na 
 12 מיתוס mytws miy*-tow*s* mi-tos 
 #13 . . . 
+
+# sent_id = 69
+# text =  אני רוצה שהילד שלי יסתכל בעיניים של הילד הפגוע ויגיד לו : " אתה לא לבדך בירושלים , כי גם אנחנו הגרים בנווה - מונסון , אתך בלב איתן ביחד " .
+1 אני ˀny ˀa-niy* a-ni 
+2 רוצה rwçh row*-çeh* ro-tse 
+3 שהילד šhyld še-ha-ye-led* she-a-ye-led 
+4 שלי šly še-liy* she-li 
+5 יסתכל ystkl yis*-ta-kel* is-ta-kel 
+6 בעיניים bˁynyym ba-ˁey*-na-yiy*m* ba-ey-na-im 
+7 של šl šel*  shel
+8 הילד hyld ha-ye-led* a-ye-led 
+9 הפגוע hpgwˁ ha-pa-guw*-ˁa a-pa-gu-a
+10 ויגיד wygyd we-ya-giy*d* ve-ya-gid 
+11 לו lw low* lo
+#12 : : : 
+#13 " " " 
+14 אתה ˀth ˀa-tah* a-ta 
+15 לא lˀ loˀ* lo 
+16 לבדך lbdk le-bad*-ka le-vad-ha 
+#17 בירושלים byrwšlym byrwšlym 
+#18 , , , 
+19 כי ky kiy* ki 
+20 גם gm gam* gam 
+21 אנחנו ˀnḥnw ˀa-naḥ*-nuw* a-nah-nu 
+22 הגרים hgrym ha-ga-riy*m* a-ga-rim 
+23 בנווה bnwwh be-ne-wew*h* be-ne-ve 
+#24 - - - 
+25 מונסון mwnswn mow*n*-sow*n* mon-son 
+#26 , , , 
+27 אתך ˀtk ˀit*-ka it-ha 
+28 בלב blb be-leb* be-lev 
+29 איתן ˀytn ˀey*-tan* ey-tan 
+30 ביחד byḥd be-ya-ḥad* be-ya-had 
+#31 " " " 
+#32 . . . 

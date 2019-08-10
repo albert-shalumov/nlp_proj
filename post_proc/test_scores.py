@@ -62,16 +62,16 @@ def test_scores(file_in, file_out):
         f.write(u'counter_false = {}\n'.format(counter_false))
         f.write(u'counter_true = {}\n'.format(counter_true))
         for i, error in enumerate(not_equel):
-            f.write('{}  k: sent_id = {} word = {} {} {}\n'.format(i, error[0], error[1], error[2], error[3]))
-            f.write('{}  p: sent_id = {} word = {} {} {}\n'.format(i, error[0], error[1], error[2], error[4]))
+            f.write('{}  human  : sent_id = {} word = {} {} {}\n'.format(i, error[0], error[1], error[2], error[3]))
+            f.write('{}  machine: sent_id = {} word = {} {} {}\n'.format(i, error[0], error[1], error[2], error[4]))
         f.write(u'\n\ncounter_PandB_problems = {}\n'.format(counter_PandB_problems))
         for i, error in enumerate(PandB_problems):
-            f.write('{}  k: sent_id = {} word = {} {} {}\n'.format(i, error[0], error[1], error[2], error[3]))
-            f.write('{}  p: sent_id = {} word = {} {} {}\n'.format(i, error[0], error[1], error[2], error[4]))
+            f.write('{}  human  : sent_id = {} word = {} {} {}\n'.format(i, error[0], error[1], error[2], error[3]))
+            f.write('{}  machine: sent_id = {} word = {} {} {}\n'.format(i, error[0], error[1], error[2], error[4]))
         f.write(u'\n\ncounter_dgeshim_problems = {}\n'.format(counter_dgeshim_problems))
         for i, error in enumerate(dgeshim_problems):
-            f.write('{}  k: sent_id = {} word = {} {} {}\n'.format(i, error[0], error[1], error[2], error[3]))
-            f.write('{}  p: sent_id = {} word = {} {} {}\n'.format(i, error[0], error[1], error[2], error[4]))
+            f.write('{}  human  : sent_id = {} word = {} {} {}\n'.format(i, error[0], error[1], error[2], error[3]))
+            f.write('{}  machine: sent_id = {} word = {} {} {}\n'.format(i, error[0], error[1], error[2], error[4]))
 
 
 

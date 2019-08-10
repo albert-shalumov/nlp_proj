@@ -1035,18 +1035,156 @@
 27 זו zw zow* zo
 #28 . . . 
 
-# sent_id = 50
-# text =  מורשת הקרב שצה"ל אימץ כתוצאה מהקרב על מנזר סן סימון איננה מיתוס .
-1 מורשת mwršt mow*-re-šet* mo-re-shet 
-2 הקרב hqrb haq*-rab* ak-rav 
-#3 שצה"ל šçh"l šçh"l 
-4 אימץ ˀymç ˀiy*-meç* i-mets 
-5 כתוצאה ktwçˀh ke-tow*-ça-ˀah* ke-to-tsa-a 
-6 מהקרב mhqrb me-haq*-rab* me-ak-rav 
-7 על ˁl ˁal* al 
-8 מנזר mnzr min*-zar* min-zar 
-9 סן sn san* san
-10 סימון symwn siy*-mow*n* si-mon 
-11 איננה ˀynnh ˀey*-ne-nah* ey-ne-na 
-12 מיתוס mytws miy*-tow*s* mi-tos 
-#13 . . . 
+# sent_id = 51
+# text =  היא מבוססת על אותו קרב המגננה שבו אירעו מעשי גבורה עילאיים , ועל קבלת החלטות קשות בתנאי קרב .
+1 היא hyˀ hiy*ˀ* yi 
+2 מבוססת mbwsst me-buw*-se-set* me-vu-se-set 
+3 על ˁl ˁal* al
+4 אותו ˀwtw ˀow*-tow* o-to 
+5 קרב qrb q*rab* krav 
+6 המגננה hmgnnh ha-mig*-na-nah* a-mig-na-na 
+7 שבו šbw še-bow* she-bo 
+8 אירעו ˀyrˁw ˀiy*r*-ˁow* ir-o  
+9 מעשי mˁšy ma-ˁa-šey* ma-a-sey 
+10 גבורה gbwrh g*buw*-rah* gvu-ra 
+11 עילאיים ˁylˀyym ˁiy*-la-ˀiy*-yim* i-la-i-im  
+#12 , , , 
+13 ועל wˁl we-ˁal* ve-al 
+14 קבלת qblt qa-ba-lat* ka-ba-lat 
+15 החלטות hḥlṭwt haḥ*-la-ṭow*t* ah-la-tot 
+16 קשות qšwt qa-šow*t* ka-shot 
+17 בתנאי btnˀy bet*-na-ˀey* bet-na-ey 
+18 קרב qrb q*rab* krav 
+#19 . . . 
+
+# sent_id = 52
+# text =  חוסר ניסיון ועלילה זדונית באים לביטוי בקטע המאמר הדן בנושא " רצח הנזירות " .
+1 חוסר ḥwsr ḥow*-ser* ho-ser 
+2 ניסיון nysywn niy*-sa-yow*n* ni-sa-yon 
+3 ועלילה wˁlylh we-ˁa-liy*-lah* ve-a-li-la 
+4 זדונית zdwnyt z*duw*-niy*t* zdu-nit 
+5 באים bˀym ba-ˀiy*m* ba-im 
+6 לביטוי lbyṭwy le-biy*-ṭow*y* le-bi-toi  
+7 בקטע bqṭˁ ba-qe-ṭaˁ* ba-ke-ta 
+8 המאמר hmˀmr ha-ma-ˀa-mar* a-ma-a-mar 
+9 הדן hdn ha-dan* a-dan 
+10 בנושא bnwšˀ ba-now*-šeˀ* ba-no-se 
+#11 " " " 
+12 רצח rçḥ re-çaḥ* re-tsah 
+13 הנזירות hnzyrwt ha-ne-ziy*-row*t* a-ne-zi-rot 
+#14 " " " 
+#15 . . . 
+
+# sent_id = 53
+# text =  כל ישראלי המנוסה בקרב לילה בשטח בנוי ( כמנזר סן סימון ) יודע , כי תוך כדי פריצה בחשכה קודם כל יורים בכל דבר שנע ממולך .
+1 כל kl kol* kol 
+2 ישראלי yšrˀly yiš*-ra-ˀe-liy* is-ra-e-li 
+3 המנוסה hmnwsh ha-me-nuw*-seh* a-me-nu-se 
+4 בקרב bqrb beq*-rab* bek-rav 
+5 לילה lylh lay*-lah* lay-la 
+6 בשטח bšṭḥ be-še-ṭaḥ* be-she-tah 
+7 בנוי bnwy ba-nuw*y* ba-nuy 
+#8 ( ( ( 
+9 כמנזר kmnzr ke-min*-zar* ke-min-zar 
+10 סן sn san* san 
+11 סימון symwn siy*-mow*n* si-mon 
+#12 ) ) ) 
+13 יודע ywdˁ yuw*-de-ˁa  yu-de-a
+#14 , , , 
+15 כי ky kiy* ki 
+16 תוך twk tow*k* toh 
+17 כדי kdy ke-dey* ke-dey 
+18 פריצה pryçh p*riy*-çah* pri-tsa 
+19 בחשכה bḥškh ba-ḥa-še-kah* ba-ha-she-ha 
+20 קודם qwdm qow*-dem* ko-dem 
+21 כל kl kol* kol
+22 יורים ywrym yuw*-riy*m* yu-rim 
+23 בכל bkl be-kol* be-kol 
+24 דבר dbr da-bar* da-var 
+25 שנע šnˁ še-naˁ* she-na 
+26 ממולך mmwlk mi-muw*l*-ka mi-mul-ha
+#27 . . . 
+
+# sent_id = 54
+# text =  ואכן , כך קרה בפריצה למנזר החשוך לחלוטין .
+1 ואכן wˀkn we-ˀa-ken* ve-a-hen 
+#2 , , , 
+3 כך kk kak* kah 
+4 קרה qrh qa-rah* ka-ra 
+5 בפריצה bpryçh bap*-riy*-çah* bap-ri-tsa 
+6 למנזר lmnzr la-min*-zar* la-min-zar 
+7 החשוך hḥšwk ha-ḥa-šuw*k* a-ha-shuh 
+8 לחלוטין lḥlwṭyn le-ḥa-luw*-ṭiy*n* le-ha-lu-tin 
+#9 . . . 
+
+# sent_id = 55
+# text =  לא נהרגו " נזירות " , אלא נשים ערביות , כנראה משרתות במנזר .
+1 לא lˀ loˀ* lo 
+2 נהרגו nhrgw ne-her*-guw* ne-er-gu 
+#3 " " " 
+4 נזירות nzyrwt ne-ziy*-row*t* ne-zi-rot 
+#5 " " " 
+#6 , , , 
+7 אלא ˀlˀ ˀe-laˀ* e-la 
+8 נשים nšym na-šiy*m* na-shim 
+9 ערביות ˁrbywt ˁa-ra-bi-yow*t* a-ra-vi-yot 
+#10 , , , 
+11 כנראה knrˀh ka-nir*-ˀeh* ka-nir-e 
+12 משרתות mšrtwt me-šar*-tow*t* me-shar-tot 
+13 במנזר bmnzr ba-min*-zar* ba-min-zar 
+#14 . . . 
+
+# sent_id = 56
+# text =  חבל .
+1 חבל ḥbl ḥa-bal* ha-val 
+#2 . . . 
+
+# sent_id = 57
+# text =  איש לא התכוון לכך .
+1 איש ˀyš ˀiy*š* ish 
+2 לא lˀ loˀ* lo 
+3 התכוון htkwwn hit*-ka-w*wen* it-ka-ven 
+4 לכך lkk le-kak* le-kah 
+#5 . . . 
+
+# sent_id = 58
+# text =  ציטוט מהמאמר : " בעת שנורתה , ( הנזירה ) עסקה בטיפול בפצועים " .
+1 ציטוט çyṭwṭ çiy*-ṭow*ṭ* tsi-tot 
+2 מהמאמר mhmˀmr me-ha-ma-ˀa-mar* me-a-ma-a-mar 
+#3 : : : 
+#4 " " " 
+5 בעת bˁt be-ˁet* be-et 
+6 שנורתה šnwrth še-nuw*r*-tah* she-nur-ta 
+#7 , , , 
+#8 ( ( ( 
+9 הנזירה hnzyrh ha-ne-ziy*-rah* a-ne-zi-ra 
+#10 ) ) ) 
+11 עסקה ˁsqh ˁas*-qah* as-ka 
+12 בטיפול bṭypwl be-ṭiy*-puw*l* be-ti-pul 
+13 בפצועים bpçwˁym bap*-çuw*-ˁiy*m* bap-tsu-im 
+#14 " " " 
+#15 . . . 
+
+# sent_id = 59
+# text =  איזה פצועים ?
+1 איזה ˀyzh ˀey*-zeh* ey-ze 
+2 פצועים pçwˁym p*çuw*-ˁiy*m* ptsu-im 
+#3 ? ? ? 
+
+# sent_id = 60
+# text =  הרי כותב המאמר קובע , פסקה קודם לכן , כי המנזר היה ריק ממגינים .
+1 הרי hry ha-rey* a-rey 
+2 כותב kwtb kow*-teb* ko-tev 
+3 המאמר hmˀmr ha-ma-ˀa-mar* a-ma-a-mar 
+4 קובע qwbˁ qow*-be-ˁa ko-ve-a 
+#5 , , , 
+6 פסקה psqh pis*-qah* pis-ka 
+7 קודם qwdm qow*-dem* ko-dem 
+8 לכן lkn la-ken* la-hen 
+#9 , , , 
+10 כי ky kiy* ki 
+11 המנזר hmnzr ha-min*-zar* a-min-zar 
+12 היה hyh ha-yah* a-ya 
+13 ריק ryq r*y*q* rek 
+#14 ממגינים mmgynym mmgynym 
+#15 . . . 

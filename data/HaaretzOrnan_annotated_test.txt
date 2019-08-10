@@ -95,3 +95,19 @@
 14 המערבית hmˁrbyt ha-ma-ˁa-ra-biy*t* a-ma-a-ra-vit 
 15 אוחדה ˀwḥdh ˀuw*ḥ*-dah* uh-da 
 #16 . . . 
+
+# sent_id = 50
+# text =  מורשת הקרב שצה"ל אימץ כתוצאה מהקרב על מנזר סן סימון איננה מיתוס .
+1 מורשת mwršt mow*-re-šet* mo-re-shet 
+2 הקרב hqrb haq*-rab* ak-rav 
+#3 שצה"ל šçh"l šçh"l 
+4 אימץ ˀymç ˀiy*-meç* i-mets 
+5 כתוצאה ktwçˀh ke-tow*-ça-ˀah* ke-to-tsa-a 
+6 מהקרב mhqrb me-haq*-rab* me-ak-rav 
+7 על ˁl ˁal* al 
+8 מנזר mnzr min*-zar* min-zar 
+9 סן sn san* san
+10 סימון symwn siy*-mow*n* si-mon 
+11 איננה ˀynnh ˀey*-ne-nah* ey-ne-na 
+12 מיתוס mytws miy*-tow*s* mi-tos 
+#13 . . . 

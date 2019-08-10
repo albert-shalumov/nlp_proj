@@ -1,5 +1,5 @@
 import codecs
-from post_processing import post_processing
+from post_processing import romanize
 
 
 def check_dgeshim(post_processing_manual, post_processing_aotomatic):
@@ -21,7 +21,7 @@ def check_dgeshim(post_processing_manual, post_processing_aotomatic):
             if let == "p" or let == "v":
                 return "PandB"
             return "dagesh"
-    except:#if the problem is nor only the dgeshim sometimes the nomber of characters is not equal
+    except:#sometimes the number of characters is not equal
         return
 
 def test_scores(file_in, file_out):
@@ -44,9 +44,9 @@ def test_scores(file_in, file_out):
                     sent_id = line[3]
                 continue
             line = line.split()
-            post_proc = post_processing(line[3])
+            post_proc = romanize(line[3])
             if post_proc != line[4]:
-                if check_dgeshim(line[4], post_proc) == "dagesh":    #retorn: true if the problem is only dgeshim else return false
+                if check_dgeshim(line[4], post_proc) == "dagesh":    #return: true if the problem is only dgeshim else return false
                     dgeshim_problems.append([sent_id, line[0], line[3], line[4], post_proc])
                     counter_dgeshim_problems += 1
                 elif check_dgeshim(line[4], post_proc) == "PandB":

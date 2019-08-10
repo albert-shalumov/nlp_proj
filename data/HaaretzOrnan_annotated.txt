@@ -1188,3 +1188,298 @@
 13 ריק ryq r*y*q* rek 
 #14 ממגינים mmgynym mmgynym 
 #15 . . . 
+
+# sent_id = 61
+# text =  אני הייתי שם , וכל תיאור הגווייה ( " זה היה מראה איום של דם ובשר ואיברי מין " ) הוא שקר וכזב .
+1 אני ˀny ˀa-niy* a-ni 
+2 הייתי hyyty ha-yiy*-tiy* a-yi-ti 
+3 שם šm šam* sham 
+#4 , , , 
+5 וכל wkl we-kol* ve-kol 
+6 תיאור tyˀwr tiy*-ˀuw*r* ti-ur 
+#7 הגווייה hgwwyyh hgwwyyh 
+#8 ( ( ( 
+#9 " " " 
+10 זה zh zeh* ze 
+11 היה hyh ha-yah* a-ya 
+12 מראה mrˀh mar*-ˀeh* mar-e 
+13 איום ˀywm ˀa-yow*m* a-yom 
+14 של šl šel* shel 
+15 דם dm dam* dam 
+16 ובשר wbšr we-ba-šar* ve-ba-sar 
+17 ואיברי wˀybry we-ˀey*-ba-rey* ve-ey-va-rey 
+18 מין myn miy*n* min 
+#19 " " " 
+#20 ) ) ) 
+21 הוא hwˀ huw*ˀ* u 
+22 שקר šqr še-qer* she-ker 
+23 וכזב wkzb we-ka-zab* ve-ka-zav 
+#24 . . . 
+
+# sent_id = 62
+# text =  לא היה כאן רצח נזירות , אלא ניסיון לרצח טוהר הנשק של הפלמ"ח בטוהר עט הסופרים של הכותב .
+1 לא lˀ loˀ* lo 
+2 היה hyh ha-yah* a-ya 
+3 כאן kˀn k*ˀan* kan 
+4 רצח rçḥ re-çaḥ* re-tsah 
+5 נזירות nzyrwt ne-ziy*-row*t* ne-zi-rot 
+#6 , , , 
+7 אלא ˀlˀ ˀe-laˀ* e-la 
+8 ניסיון nysywn niy*-sa-yow*n* ni-sa-yon 
+9 לרצח lrçḥ le-re-çaḥ* le-re-tsah 
+10 טוהר ṭwhr ṭow*-har* to-ar 
+11 הנשק hnšq ha-ne-šeq* a-ne-shek 
+12 של šl šel* shel 
+#13 הפלמ"ח hplm"ḥ hplm"ḥ 
+14 בטוהר bṭwhr be-ṭow*-har* be-to-ar 
+15 עט ˁṭ ˁeṭ* et 
+16 הסופרים hswprym ha-sow*p*-riy*m* a-sof-rim 
+17 של šl šel* shel 
+18 הכותב hkwtb ha-kow*-teb* a-ko-tev 
+#19 . . . 
+
+# sent_id = 63
+# text =  הידיעה שפורסמה תחת הכותרת : " הורים בבית הספר בנווה - מונוסון נגד טיול לירושלים ; טוענים : הפגנה פוליטית " ; ( " הארץ " , 0192 ) , הטרידה אותי מאוד .
+1 הידיעה hydyˁh ha-ye-diy*-ˁah* a-ye-di-a 
+2 שפורסמה špwrsmh še-puw*r*-se-mah* she-pur-se-ma 
+3 תחת tḥt ta-ḥat* ta-hat 
+4 הכותרת hkwtrt ha-kow*-te-ret* a-ko-te-ret 
+#5 : : : 
+#6 " " " 
+7 הורים hwrym how*-riy*m* o-rim 
+8 בבית bbyt be-bey*t* be-beyt 
+9 הספר hspr ha-se-per* a-se-fer 
+10 בנווה bnwwh be-ne-wew*h* be-ne-ve 
+#11 - - - 
+12 מונוסון mwnwswn mow*-now*-sow*n* mo-no-son 
+13 נגד ngd ne-ged* ne-ged 
+14 טיול ṭywl ṭi-yuw*l* ti-yul
+#15 לירושלים lyrwšlym liyeruw*šalayim*  
+#16 ; ; ; 
+17 טוענים ṭwˁnym ṭow*-ˁa-niy*m* to-a-nim 
+#18 : : : 
+19 הפגנה hpgnh hap*-ga-nah* af-ga-na 
+20 פוליטית pwlyṭyt puw*-liy*-ṭiy*t* pu-li-tit 
+#21 " " " 
+#22 ; ; ; 
+#23 ( ( ( 
+#24 " " " 
+25 הארץ hˀrç ha-ˀa-reç* a-a-rets 
+#26 " " " 
+#27 , , , 
+#28 0192 0192 0192 
+#29 ) ) ) 
+#30 , , , 
+31 הטרידה hṭrydh hiṭ*-riy*-dah* it-ri-da 
+32 אותי ˀwty ˀow*-tiy* o-ti 
+33 מאוד mˀwd me-ˀow*d* me-od 
+#34 . . . 
+
+# sent_id = 64
+# text =  נילי מנדלר , שמסרה את הידיעה מפי הורים ( אין יודעים אם מדובר בהורה בודד , או בקבוצת הורים מסוימת ) , כתבה כי " אחד ההורים , שהחזיר למנהלת את הספח החוזר שבו הביע התנגדות להשתתפות ילדו בטיול , טען כי " זהו חינוך פוליטי כאשר ילדינו משמשים אמצעי חי להפגנות " .
+1 נילי nyly niy*-liy* ni-li 
+#2 מנדלר mndlr mndlr 
+#3 , , , 
+4 שמסרה šmsrh še-mas*-rah* she-mas-ra 
+5 את ˀt ˀet* et 
+6 הידיעה hydyˁh ha-ye-diy*-ˁah* a-ye-di-a 
+7 מפי mpy mi-piy* mi-pi 
+8 הורים hwrym how*-riy*m* o-rim 
+#9 ( ( ( 
+10 אין ˀyn ˀey*n* eyn 
+11 יודעים ywdˁym yow*d*-ˁiy*m* yod-im 
+12 אם ˀm ˀim* im 
+13 מדובר mdwbr me-duw*-bar* me-du-bar 
+14 בהורה bhwrh be-how*-reh* be-o-re 
+15 בודד bwdd bow*-ded* bo-ded 
+#16 , , , 
+17 או ˀw ˀow* o 
+18 בקבוצת bqbwçt beq*-buw*-çat* bek-vu-tsat 
+19 הורים hwrym how*-riy*m* o-rim
+20 מסוימת mswymt me-suw*-ye-met* me-su-ye-met 
+#21 ) ) ) 
+#22 , , , 
+23 כתבה ktbh kat*-bah* kat-va 
+24 כי ky kiy* ki 
+#25 " " " 
+26 אחד ˀḥd ˀe-ḥad* e-had 
+27 ההורים hhwrym ha-how*-riy*m* a-o-rim 
+#28 , , , 
+29 שהחזיר šhḥzyr še-heḥ*-ziy*r* she-eh-zir 
+30 למנהלת lmnhlt la-me-na-he-let* la-me-na-e-let 
+31 את ˀt ˀet* et 
+32 הספח hspḥ ha-se-paḥ* a-se-fah 
+33 החוזר hḥwzr ha-ḥow*-zer* a-ho-zer 
+34 שבו šbw še-bow* she-bo 
+35 הביע hbyˁ he-biy*-ˁa e-bi-a 
+36 התנגדות htngdwt hit*-nag*-duw*t* it-nag-dut 
+37 להשתתפות lhšttpwt le-hiš*-tat*-puw*t* le-ish-tat-fut 
+38 ילדו yldw yal*-dow* yal-do 
+39 בטיול bṭywl ba-ṭi-yuw*l* ba-ti-yul 
+#40 , , , 
+41 טען ṭˁn ṭa-ˁan* ta-an 
+42 כי ky kiy* ki 
+#43 " " " 
+44 זהו zhw ze-huw* ze-u 
+45 חינוך ḥynwk ḥiy*-nuw*k* hi-nuh 
+46 פוליטי pwlyṭy puw*-liy*-ṭiy* pu-li-ti 
+47 כאשר kˀšr ka-ˀa-šer* ka-a-sher 
+48 ילדינו yldynw ye-la-dey*-nuw* ye-la-dey-nu 
+49 משמשים mšmšym me-šam*-šiy*m* me-sham-shim 
+50 אמצעי ˀmçˁy ˀem*-ça-ˁiy* em-tsa-i 
+51 חי ḥy ḥay* hay 
+52 להפגנות lhpgnwt le-hap*-ga-now*t* le-af-ga-not 
+#53 " " " 
+#54 . . . 
+
+# sent_id = 65
+# text =  לשם איזון הנושא , עלי לציין כי אני נמנה על ההורים שהביעו את הסכמתם לקיום הטיול .
+1 לשם lšm le-šem* le-shem 
+2 איזון ˀyzwn ˀiy*-zuw*n* i-zun 
+3 הנושא hnwšˀ ha-nuw*-šeˀ* a-nu-se 
+#4 , , , 
+5 עלי ˁly ˁa-lay* a-lay 
+6 לציין lçyyn le-ça-yey*n* le-tsa-yen 
+7 כי ky kiy* ki 
+8 אני ˀny ˀa-niy* a-ni 
+9 נמנה nmnh nim*-nah* nim-na 
+10 על ˁl ˁal* al 
+11 ההורים hhwrym ha-how*-riy*m* a-o-rim 
+12 שהביעו šhbyˁw še-he-biy*-ˁuw* she-e-bi-u 
+13 את ˀt ˀet* et 
+14 הסכמתם hskmtm has*-ka-ma-tam* as-ka-ma-tam 
+15 לקיום lqywm le-qi-yuw*m* le-ki-yum 
+16 הטיול hṭywl ha-ṭi-yuw*l* a-ti-yul 
+#17 . . . 
+
+# sent_id = 66
+# text =  לא רק שאין זה עניין פוליטי אלא זה נושא חינוכי - לאומי ממדרגה ראשונה .
+1 לא lˀ loˀ* lo 
+2 רק rq raq* rak 
+3 שאין šˀyn še-ˀey*n* she-eyn 
+4 זה zh zeh* ze 
+5 עניין ˁnyyn ˁin*-yay*n* in-yan 
+6 פוליטי pwlyṭy puw*-liy*-ṭiy* pu-li-ti 
+7 אלא ˀlˀ ˀe-laˀ* e-la 
+8 זה zh zeh* ze 
+9 נושא nwšˀ now*-šeˀ* no-se 
+10 חינוכי ḥynwky ḥiy*-nuw*-kiy* hi-nu-hi 
+#11 - - - 
+12 לאומי lˀwmy le-ˀuw*-miy* le-u-mi 
+13 ממדרגה mmdrgh mi-mad*-re-gah* mi-mad-re-ga 
+14 ראשונה rˀšwnh riˀ*-šow*-nah* ri-sho-na 
+#15 . . . 
+
+# sent_id = 67
+# text =  אני גם מוכן להסתכן ולשער כי ההורה , או קבוצת ההורים שהתנגדה לטיול , מסתתרים תחת המעטה של טיעון פוליטי נבוב ולמעשה הם פוחדים לשלוח את ילדיהם שמא איזה ערבי ינעץ בהם סכין בגב .
+1 אני ˀny ˀa-niy* a-ni 
+2 גם gm gam* gam 
+3 מוכן mwkn mow*-kan* mo-han 
+4 להסתכן lhstkn le-his*-ta-ken* le-is-ta-ken 
+5 ולשער wlšˁr we-le-ša-ˁer* ve-le-sha-er 
+6 כי ky kiy* ki 
+7 ההורה hhwrh ha-how*-reh* a-o-re 
+#8 , , , 
+9 או ˀw ˀow* o 
+10 קבוצת qbwçt q*buw*-çat* kvu-tsat 
+11 ההורים hhwrym ha-how*-riy*m* a-o-rim 
+12 שהתנגדה šhtngdh še-hit*-nag*-dah* she-it-nag-da 
+13 לטיול lṭywl la-ṭi-yuw*l* la-ti-yul 
+#14 , , , 
+15 מסתתרים msttrym mis*-tat*-riy*m* mis-tat-rim 
+16 תחת tḥt ta-ḥat* ta-hat 
+17 המעטה hmˁṭh ha-ma-ˁa-ṭeh* a-ma-a-te 
+18 של šl šel* shel 
+19 טיעון ṭyˁwn ṭiy*-ˁuw*n* ti-un 
+20 פוליטי pwlyṭy puw*-liy*-ṭiy* pu-li-ti 
+21 נבוב nbwb na-bow*b* na-vov 
+22 ולמעשה wlmˁšh we-le-ma-ˁa-šeh* ve-le-ma-a-se 
+23 הם hm hem* em 
+24 פוחדים pwḥdym pow*-ḥa-diy*m* po-ha-dim 
+25 לשלוח lšlwḥ liš*-low*-ḥ* lish-lo-ah  
+26 את ˀt ˀet* et 
+27 ילדיהם yldyhm yel*-dey*-hem* yel-dey-em 
+28 שמא šmˀ še-maˀ* she-ma 
+29 איזה ˀyzh ˀey*-zeh* ey-ze 
+30 ערבי ˁrby ˁa-ra-biy* a-ra-vi 
+31 ינעץ ynˁç yin*-ˁaç* in-ats 
+32 בהם bhm ba-hem* ba-em 
+33 סכין skyn sa-kiy*n* sa-kin 
+34 בגב bgb ba-gab* ba-gav 
+#35 . . . 
+
+# sent_id = 68
+# text =  אני מוכן , ורוצה , לשלוח את הילד שלי לירושלים עם זר פרחים ועם קופסת ממתקים , כדי להביע הוקרה ועידוד לנכד של אבא קובנר , שחטף סכין בראש מידי אותו מרצח שפל שדקר למוות שלושה יהודים בשכונת בקעה .
+1 אני ˀny ˀa-niy* a-ni 
+2 מוכן mwkn muw*-kan* mu-han 
+#3 , , , 
+4 ורוצה wrwçh we-row*-çeh* ve-ro-tse 
+#5 , , , 
+6 לשלוח lšlwḥ liš*-low*-ḥ* lish-lo-ah 
+7 את ˀt ˀet* et 
+8 הילד hyld ha-ye-led* a-ye-led 
+9 שלי šly še-liy* she-li
+#10 לירושלים lyrwšlym lyrwšlym 
+11 עם ˁm ˁim* im 
+12 זר zr zer* zer 
+13 פרחים prḥym p*ra-ḥiy*m* pra-him 
+14 ועם wˁm we-ˁim* ve-im 
+15 קופסת qwpst quw*p*-sat* kuf-sat 
+16 ממתקים mmtqym mam*-ta-qiy*m* mam-ta-kim 
+#17 , , , 
+18 כדי kdy ke-dey* ke-dey 
+19 להביע lhbyˁ le-ha-biy*-ˁa le-a-bi-a
+20 הוקרה hwqrh how*-qa-rah* o-ka-ra 
+21 ועידוד wˁydwd we-ˁiy*-duw*d* ve-i-dud 
+22 לנכד lnkd la-ne-ked* la-ne-hed 
+23 של šl šel* shel 
+24 אבא ˀbˀ ˀa-baˀ* a-ba 
+#25 קובנר qwbnr qwbnr 
+#26 , , , 
+27 שחטף šḥṭp še-ḥa-ṭap* she-ha-taf 
+28 סכין skyn sa-kiy*n* sa-kin 
+29 בראש brˀš ba-roˀ*š* ba-rosh 
+30 מידי mydy mi-ye-dey* mi-ye-dey 
+31 אותו ˀwtw ˀow*-tow* o-to 
+32 מרצח mrçḥ me-ra-çe-ḥ* me-ra-tse-ah 
+33 שפל špl ša-pel* sha-fel 
+34 שדקר šdqr še-da-qar* she-da-kar 
+35 למוות lmwwt la-ma-wew*t* la-ma-vet 
+36 שלושה šlwšh š*low*-šah* shlo-sha 
+37 יהודים yhwdym ye-huw*-diy*m* ye-u-dim 
+38 בשכונת bškwnt beš*-kuw*-nat* besh-hu-nat 
+#39 בקעה bqˁh bqˁh 
+#40 . . . 
+
+# sent_id = 70
+# text =  אני מוכן להעיד כי גם אבי ז"ל , שלקח אותי באוטובוס לירושלים בשנת תרצ"ח כאשר הערבים ירו על כביש באב אל - ואד , אמר לי : " אלי !
+1 אני ˀny ˀa-niy* a-ni 
+2 מוכן mwkn muw*-kan* mu-han 
+3 להעיד lhˁyd le-ha-ˁiy*d* le-a-id 
+4 כי ky kiy* ki 
+5 גם gm gam* gam 
+6 אבי ˀby ˀa-biy* a-vi 
+#7 ז"ל z"l z"l 
+#8 , , , 
+9 שלקח šlqḥ še-la-qaḥ* she-la-kah 
+10 אותי ˀwty ˀow*-tiy* o-ti 
+11 באוטובוס bˀwṭwbws ba-ˀow*-ṭow*-buw*s* ba-o-to-bus 
+#12 לירושלים lyrwšlym lyrwšlym 
+13 בשנת bšnt biš*-nat* bish-nat 
+#14 תרצ"ח trç"ḥ trç"ḥ 
+15 כאשר kˀšr ka-ˀa-šer* ka-a-sher 
+16 הערבים hˁrbym ha-ˁa-ra-biy*m* a-a-ra-vim 
+17 ירו yrw ya-ruw* ya-ru 
+18 על ˁl ˁal* al
+19 כביש kbyš k*biy*š* kvish 
+20 באב bˀb baˀ*b* bab 
+21 אל ˀl ˀel* el 
+#22 - - - 
+#23 ואד wˀd wˀd 
+#24 , , , 
+25 אמר ˀmr ˀa-mar* a-mar 
+26 לי ly liy* li 
+#27 : : : 
+#28 " " " 
+29 אלי ˀly ˀe-lay* e-lay 
+#30 ! ! ! 

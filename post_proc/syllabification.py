@@ -33,7 +33,7 @@ def test_syllabification(file_in, file_out):
 
     with codecs.open(file_out, encoding='utf-8', mode='w') as f:
         for i, _ in enumerate(errors):
-            f.write('sent_id:{} word:{}\nk:{}\np:{}\n\n'.format(errors[i][0], errors[i][1], errors[i][3], errors[i][2]))
+            f.write('sent_id:{} word:{}\nHuman  :{}\nMachine:{}\n\n'.format(errors[i][0], errors[i][1], errors[i][3], errors[i][2]))
 
 
 if __name__ == '__main__':

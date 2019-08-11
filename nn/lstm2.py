@@ -7,28 +7,30 @@ import codecs
 import re
 import numpy as np
 
-dict_in = set(' ')
-dict_out1 = set(' ')
-dict_out1.update(list('euioa*'))
-dict_out1.update(['e-','u-','i-','o-','a-','*-'])
-dict_out2 = set()
-dict_out2.update(list('euioa- '))
+
+sentences = [[]]
 
 with codecs.open('../data/HaaretzOrnan_annotated.txt', encoding='utf-8') as f:
     lines = f.readlines()
     for line in lines:
         line = line.rstrip()
-        if line.startswith(u'#') or len(line) == 0:
+        if line.startswith(u'#'):
+            continue
+        if len(line) == 0:
+            if len(sentences[-1])>0:
+                sentences.append([])
             continue
 
-        w_in = line.split(u' ')[2]
-        dict_in.update(list(w_in))
+        split_line = line.split(u' ')
+        sentences[-1].append((split_line[2],split_line[3],split_line[4]))
+if len(sentences[-1])==0:
+    sentences.pop(-1)
 
-        #w_out1 = line.split(u' ')[3]
-        #dict_out1.update([x for x in re.sub('[^euioa*\-]',' ',w_out1).split(' ') if len(x)>0])
+a=5
 
-        w_out2 = line.split(u' ')[4]
-        dict_out2.update([x for x in re.sub('[euioa\-]',' ',w_out2).split(' ') if len(x)>0])
+
+
+
 
 
 in_int2char = dict(enumerate(dict_in))
@@ -121,7 +123,7 @@ train_in_seq = torch.from_numpy(X_train.astype(np.float32))
 train_tgt_seq = torch.Tensor(Y_train.astype(np.float32))
 
 valid_in_seq = torch.from_numpy(X_valid.astype(np.float32))
-valid_tgt_seq = torch.Tensor(Y_valid.astype(np.float32)).long()
+valid_tgt_seq = torch.Tensor(Y_valid.astype(np.float32))
 
 #device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
 device = torch.device("cpu")
@@ -164,20 +166,19 @@ class Model(nn.Module):
 
 
 # Instantiate the model with hyperparameters
-model = Model(input_size=in_emb_size*max_len, output_size=out_emb_size, hidden_dim=32, n_layers=3)
+model = Model(input_size=in_emb_size*max_len, output_size=out_emb_size, hidden_dim=32, n_layers=2)
 # We'll also set the model to the device that we defined earlier (default is CPU)
 model.to(device)
 
 # Define hyperparameters
-n_epochs = 1000
-lr=0.02
+n_epochs = 10000
+lr=0.025
 
 # Define Loss, Optimizer
 criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=lr)
 
 # Training Run
-tot_loss = []
 for epoch in range(1, n_epochs+1):
     optimizer.zero_grad()  # Clears existing gradients from previous epoch
     input_seq = train_in_seq.to(device)
@@ -186,45 +187,31 @@ for epoch in range(1, n_epochs+1):
     loss.backward()  # Does backpropagation and calculates gradients
     optimizer.step()  # Updates the weights accordingly
 
-
     if epoch%10 == 0:
         pass
         #print('Epoch: {}/{}.............'.format(epoch, n_epochs), end=' ')
-        #print("Loss: {}".format(loss.item()))
+        print("Loss: {}".format(loss.item()))
 
-    if True or epoch%20==0:
+    if epoch%20==0:
+
+
         with torch.no_grad():
             valid_in_seq = valid_in_seq.to(device)
             valid_tgt_seq = valid_tgt_seq.to(device)
-            pred,_ = model(valid_in_seq)
-            #pred = nn.functional.softmax(pred, dim=0).data.max(-1)[1]
-            #loss = criterion(pred.view(-1,1).float(), valid_tgt_seq[0,...].float())
-            v_loss = criterion(pred, valid_tgt_seq.view(-1).long()).item()
-            #print('test loss:', loss.item())
-            y = pred.detach().numpy()
+            model.eval()
+            y_pred,_ = model(valid_in_seq)
+            # TODO: convert to pytorch ops
+            y_pred = np.exp(y_pred.numpy())
+            norm = np.sum(y_pred,axis=-1)
+            y_pred = y_pred/norm[:,np.newaxis]
+            y_pred = np.argmax(y_pred, -1)
+            y_gt = Y_valid[0,:,0]
+            #print(y_pred.shape)
+            #print(y_gt.shape)
 
-    tot_loss.append((loss.item(), v_loss))
-    print(tot_loss[-1])
+            print("Valid acc: {}".format(np.sum(y_pred==y_gt)/y_pred.shape[0]))
 
-    '''
-    with torch.no_grad():
-        valid_in_seq = valid_in_seq.to(device)
-        valid_tgt_seq = valid_tgt_seq.to(device)
-        model.eval()
-        y_pred,_ = model(valid_in_seq)
-        # TODO: convert to pytorch ops
-        y_pred = np.exp(y_pred.numpy())
-        norm = np.sum(y_pred,axis=-1)
-        y_pred = y_pred/norm[:,np.newaxis]
-        y_pred = np.argmax(y_pred, -1)
-        y_gt = Y_valid[0,:,0]
-        #print(y_pred.shape)
-        #print(y_gt.shape)
-    
-        print("Valid acc: {}".format(np.sum(y_pred==y_gt)/y_pred.shape[0]))
-    '''
     if epoch%10==0:
         lr = lr*0.999
         for g in optimizer.param_groups:
             g['lr'] = lr
-

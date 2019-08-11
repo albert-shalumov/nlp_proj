@@ -1,8 +1,8 @@
 def romanize(word):
 
 	# change to origin english letters
-	uzi_arnon_symbols = "".maketrans({"h": "H", "w": "v", "ḥ": "h", "ṭ": "t", "ç": "ts", "q": "k", "š": "sh"})
-	word = word.translate(uzi_arnon_symbols)
+	uzi_ornan_symbols = "".maketrans({"h": "H", "w": "v", "ḥ": "h", "ṭ": "t", "ç": "ts", "q": "k", "š": "sh"})
+	word = word.translate(uzi_ornan_symbols)
 
 	# handling letters א-ה-ע-ו-י and remove rhe symbol *
 	idxs_to_remove = []

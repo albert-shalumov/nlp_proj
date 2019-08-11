@@ -1259,7 +1259,7 @@
 17 טוענים ṭwˁnym ṭow*-ˁa-niy*m* to-a-nim 
 #18 : : : 
 19 הפגנה hpgnh hap*-ga-nah* af-ga-na 
-20 פוליטית pwlyṭyt puw*-liy*-ṭiy*t* pu-li-tit 
+20 פוליטית pwlyṭyt pow*-liy*-ṭiy*t* po-li-tit 
 #21 " " " 
 #22 ; ; ; 
 #23 ( ( ( 
@@ -1322,7 +1322,7 @@
 #43 " " " 
 44 זהו zhw ze-huw* ze-u 
 45 חינוך ḥynwk ḥiy*-nuw*k* hi-nuh 
-46 פוליטי pwlyṭy puw*-liy*-ṭiy* pu-li-ti 
+46 פוליטי pwlyṭy pow*-liy*-ṭiy* po-li-ti 
 47 כאשר kˀšr ka-ˀa-šer* ka-a-sher 
 48 ילדינו yldynw ye-la-dey*-nuw* ye-la-dey-nu 
 49 משמשים mšmšym me-šam*-šiy*m* me-sham-shim 
@@ -1359,7 +1359,7 @@
 3 שאין šˀyn še-ˀey*n* she-eyn 
 4 זה zh zeh* ze 
 5 עניין ˁnyyn ˁin*-yay*n* in-yan 
-6 פוליטי pwlyṭy puw*-liy*-ṭiy* pu-li-ti 
+6 פוליטי pwlyṭy pow*-liy*-ṭiy* po-li-ti 
 7 אלא ˀlˀ ˀe-laˀ* e-la 
 8 זה zh zeh* ze 
 9 נושא nwšˀ now*-šeˀ* no-se 
@@ -1391,7 +1391,7 @@
 17 המעטה hmˁṭh ha-ma-ˁa-ṭeh* a-ma-a-te 
 18 של šl šel* shel 
 19 טיעון ṭyˁwn ṭiy*-ˁuw*n* ti-un 
-20 פוליטי pwlyṭy puw*-liy*-ṭiy* pu-li-ti 
+20 פוליטי pwlyṭy pow*-liy*-ṭiy* po-li-ti 
 21 נבוב nbwb na-bow*b* na-vov 
 22 ולמעשה wlmˁšh we-le-ma-ˁa-šeh* ve-le-ma-a-se 
 23 הם hm hem* em 
@@ -1483,3 +1483,215 @@
 #28 " " " 
 29 אלי ˀly ˀe-lay* e-lay 
 #30 ! ! ! 
+
+# sent_id = 71
+# text =  אם תשמע יריות תתכופף , אבל אל תפחד " .
+1 אם ˀm ˀim* im 
+2 תשמע tšmˁ tiš*-maˁ* tish-ma 
+3 יריות yrywt ye-ri-yow*t* ye-ri-yot 
+4 תתכופף ttkwpp tit*-kow*-pep* tit-ko-fef 
+#5 , , , 
+6 אבל ˀbl ˀa-bal* a-val 
+7 אל ˀl ˀal* al 
+8 תפחד tpḥd te-pa-ḥed* te-fa-hed 
+#9 " " " 
+#10 . . . 
+
+# sent_id = 72
+# text =  ולכן אני אומר לכל ילדי ישראל : אל תפחדו !
+1 ולכן wlkn we-la-ken* ve-la-hen 
+2 אני ˀny ˀa-niy* a-ni 
+3 אומר ˀwmr ˀow*-mer* o-mer 
+4 לכל lkl le-kol* le-kol 
+5 ילדי yldy ye-la-dey* ye-la-dey 
+6 ישראל yšrˀl yiš*-ra-ˀel* is-ra-el 
+#7 : : : 
+8 אל ˀl ˀal* al 
+9 תפחדו tpḥdw te-pa-ḥa-duw* te-fa-ha-du 
+#10 ! ! ! 
+
+# sent_id = 73
+# text =  סעו לירושלים , אפילו אם יורים או אם מתעופפים שם סכינים .
+1 סעו sˁw se-ˁuw* se-u 
+#2 לירושלים lyrwšlym lyrwšlym 
+#3 , , , 
+4 אפילו ˀpylw ˀa-piy*-luw* a-fi-lu 
+5 אם ˀm ˀim* im 
+6 יורים ywrym yuw*-riy*m* yu-rim 
+7 או ˀw ˀow* o 
+8 אם ˀm ˀim* im 
+9 מתעופפים mtˁwppym mit*-ˁow*-pe-piy*m* mit-o-fe-fim 
+10 שם šm šam* sham 
+11 סכינים skynym sa-kiy*-niy*m* sa-ki-nim 
+#12 . . . 
+
+# sent_id = 74
+# text =  הפטיש הכבד שהנחית הפועל הערבי על ראשיהם של מעסיקו וחברו , הסכין שידו של איש המרכול תקעה באחד הספקים , ורצח המסעדן בעין כרם זה לא מכבר על - ידי אחד מעובדיו , אף הוא ערבי , מעלה מנבכי הזיכרון את הפתגם : " המגדל נחש שפיפון בביתו , אל יופתע אם ימצא עצמו מוכש " .
+1 הפטיש hpṭyš ha-pa-ṭiy*š* a-pa-tish 
+2 הכבד hkbd ha-ka-bed* a-ka-ved 
+3 שהנחית šhnḥyt še-hen*-ḥiy*t* she-en-hit 
+4 הפועל hpwˁl ha-pow*-ˁel* a-po-el 
+5 הערבי hˁrby ha-ˁa-ra-biy* a-a-ra-vi 
+6 על ˁl ˁal* al 
+7 ראשיהם rˀšyhm raˀ*-šey*-hem* ra-shey-em 
+8 של šl šel* shel 
+9 מעסיקו mˁsyqw ma-ˁa-siy*-qow* ma-a-si-ko 
+10 וחברו wḥbrw we-ḥa-be-row* ve-ha-ve-ro 
+#11 , , , 
+12 הסכין hskyn ha-sa-kiy*n* a-sa-kin 
+13 שידו šydw še-ya-dow* she-ya-do 
+14 של šl šel* shel 
+15 איש ˀyš ˀiy*š* ish 
+16 המרכול hmrkwl ha-mar*-kow*l* a-mar-kol 
+17 תקעה tqˁh taq*-ˁah* tak-a 
+18 באחד bˀḥd be-ˀe-ḥad* be-e-had 
+19 הספקים hspqym ha-sa-pa-qiy*m* a-sa-pa-kim 
+#20 , , , 
+21 ורצח wrçḥ we-re-çaḥ* ve-re-tsah 
+22 המסעדן hmsˁdn ha-mis*-ˁa-dan* a-mis-a-dan 
+23 בעין bˁyn be-ˁey*n* be-eyn 
+#24 כרם krm krm 
+25 זה zh zeh* ze 
+26 לא lˀ loˀ* lo 
+#27 מכבר mkbr mkbr 
+28 על ˁl ˁal* al 
+#29 - - - 
+30 ידי ydy ya-dey* ya-dey 
+31 אחד ˀḥd ˀe-ḥad* e-had 
+32 מעובדיו mˁwbdyw me-ˁow*b*-day*w* me-ov-dav 
+#33 , , , 
+34 אף ˀp ˀap* af 
+35 הוא hwˀ huw*ˀ* u 
+36 ערבי ˁrby ˁa-ra-biy* a-ra-vi 
+#37 , , , 
+38 מעלה mˁlh ma-ˁa-leh* ma-a-le 
+39 מנבכי mnbky mi-nib*-key* mi-niv-hey 
+40 הזיכרון hzykrwn ha-ziy*-ka-row*n* a-zi-ka-ron 
+41 את ˀt ˀet* et 
+42 הפתגם hptgm ha-pit*-gam* a-pit-gam 
+#43 : : : 
+#44 " " " 
+45 המגדל hmgdl ha-me-ga-del* a-me-ga-del 
+46 נחש nḥš na-ḥaš* na-hash 
+#47 שפיפון špypwn špypwn 
+48 בביתו bbytw be-bey*-tow* be-bey-to 
+#49 , , , 
+50 אל ˀl ˀal* al 
+51 יופתע ywptˁ yuw*p*-taˁ* yuf-ta 
+52 אם ˀm ˀim* im 
+53 ימצא ymçˀ yim*-çaˀ* im-tsa 
+54 עצמו ˁçmw ˁaç*-mow* ats-mo 
+55 מוכש mwkš muw*-kaš* mu-kash 
+#56 " " " 
+#57 . . . 
+
+# sent_id = 76
+# text =  מסתבר שהייתי תמים .
+1 מסתבר mstbr mis*-ta-ber* mis-ta-ber 
+2 שהייתי šhyyty še-ha-yiy*-tiy* she-a-i-ti 
+3 תמים tmym ta-miy*m* ta-mim 
+#4 . . . 
+
+# sent_id = 77
+# text =  מאמר המערכת שהתפרסם תחת הכותרת " יחדל נא מילוא להתלבט " ( " הארץ " , 111 ) , תובע למצות את הדין עם המפכ"ל וקציני המשטרה הבכירים בגלל מחדליהם באירועי הר הבית .
+1 מאמר mˀmr ma-ˀa-mar* ma-a-mar 
+2 המערכת hmˁrkt ha-ma-ˁa-re-ket* a-ma-a-re-het 
+3 שהתפרסם šhtprsm še-hit*-par*-sem* she-it-par-sem 
+4 תחת tḥt ta-ḥat* ta-hat
+5 הכותרת hkwtrt ha-kow*-te-ret* a-ko-te-ret 
+#6 " " " 
+7 יחדל yḥdl yiḥ*-dal* ih-dal 
+8 נא nˀ naˀ* na 
+#9 מילוא mylwˀ mylwˀ 
+10 להתלבט lhtlbṭ le-hit*-la-beṭ* le-it-la-bet 
+#11 " " " 
+#12 ( ( ( 
+#13 " " " 
+14 הארץ hˀrç ha-ˀa-reç* a-a-rets 
+#15 " " " 
+#16 , , , 
+#17 111 111 111 
+#18 ) ) ) 
+#19 , , , 
+20 תובע twbˁ tow*-be-ˁa to-ve-a 
+21 למצות lmçwt le-ma-çow*t* le-ma-tsot 
+22 את ˀt ˀet* et 
+23 הדין hdyn ha-diy*n* a-din 
+24 עם ˁm ˁim* im 
+#25 המפכ"ל hmpk"l hmpk"l 
+26 וקציני wqçyny weq*-çiy*-ney* vek-tsi-ney 
+27 המשטרה hmšṭrh ha-miš*-ṭa-rah* a-mish-ta-ra 
+28 הבכירים hbkyrym ha-be-kiy*-riy*m* a-be-hi-rim 
+29 בגלל bgll big*-lal* big-lal 
+30 מחדליהם mḥdlyhm maḥ*-da-ley*-hem* mah-da-ley-em 
+31 באירועי bˀyrwˁy be-ˀey*-ruw*-ˁey* be-e-ru-ey 
+32 הר hr har* ar 
+33 הבית hbyt ha-ba-yit* a-ba-it 
+#34 . . . 
+
+# sent_id = 78
+# text =  זהו כישלונו היחיד עד כה של המפכ"ל , שנגרם רק בגלל העובדה שהוא סמך יותר מדי על קציניו הבכירים .
+1 זהו zhw ze-huw* ze-u 
+2 כישלונו kyšlwnw kiy*š*-low*-now* kish-lo-no 
+3 היחיד hyḥyd ha-ya-ḥiy*d* a-ya-hid 
+4 עד ˁd ˁad* ad 
+5 כה kh koh* ko 
+6 של šl šel* shel 
+#7 המפכ"ל hmpk"l hmpk"l 
+#8 , , , 
+9 שנגרם šngrm še-nig*-ram* she-nig-ram 
+10 רק rq raq* rak 
+11 בגלל bgll big*-lal* big-lal 
+12 העובדה hˁwbdh ha-ˁuw*b*-dah* a-uv-da 
+13 שהוא šhwˀ še-huw*ˀ* she-u 
+14 סמך smk sa-mak* sa-mah 
+15 יותר ywtr yuw*-ter* yu-ter 
+16 מדי mdy mi-day* mi-day 
+17 על ˁl ˁal* al 
+18 קציניו qçynyw q*çiy*-nay*w* ktsi-nav 
+19 הבכירים hbkyrym ha-be-kiy*-riy*m* a-be-hi-rim 
+#20 . . . 
+
+# sent_id = 79
+# text =  אם כל נושא משרה יפוטר מיד עם השגיאה הראשונה , תסבול המדינה מסבב בלתי פוסק של בעלי תפקידים בכירים , חסרי ניסיון וחסרי ביטחון .
+1 אם ˀm ˀim* im
+2 כל kl kol* kol 
+3 נושא nwšˀ now*-šeˀ* no-se 
+4 משרה mšrh miš*-rah* mis-ra 
+5 יפוטר ypwṭr ye-puw*-ṭar* ye-fu-tar 
+6 מיד myd mi-yad* mi-yad 
+7 עם ˁm ˁim* im 
+8 השגיאה hšgyˀh haš*-giy*-ˀah* ash-gi-a 
+9 הראשונה hrˀšwnh ha-riˀ*-šow*-nah* a-ri-sho-na 
+#10 , , , 
+11 תסבול tsbwl tis*-bow*l* tis-bol 
+12 המדינה hmdynh ha-me-diy*-nah* a-me-di-na 
+13 מסבב msbb mi-se-beb* mi-se-vev 
+14 בלתי blty bil*-tiy* bil-ti 
+15 פוסק pwsq pow*-seq* po-sek 
+16 של šl šel* shel 
+17 בעלי bˁly ba-ˁa-ley* ba-a-ley 
+18 תפקידים tpqydym tap*-qiy*-diy*m* taf-ki-dim 
+19 בכירים bkyrym be-kiy*-riy*m* be-hi-rim 
+#20 , , , 
+21 חסרי ḥsry ḥas*-rey* has-rey 
+22 ניסיון nysywn niy*-sa-yow*n* ni-sa-yon 
+23 וחסרי wḥsry we-ḥas*-rey* ve-has-rey 
+24 ביטחון byṭḥwn biy*-ṭa-ḥow*n* bi-ta-hon 
+#25 . . . 
+
+# sent_id = 80
+# text =  מתקבל הרושם שהיחידים במדינה הזו שאינם צריכים לחשוש מתוצאות מעשיהם הם הפוליטיקאים .
+1 מתקבל mtqbl mit*-qa-bel* mit-ka-bel 
+2 הרושם hrwšm ha-row*-šem* a-ro-shem 
+3 שהיחידים šhyḥydym še-ha-ye-ḥiy*-diy*m* she-a-ye-hi-dim 
+4 במדינה bmdynh ba-me-diy*-nah* ba-me-di-na 
+5 הזו hzw ha-zuw* a-zu 
+6 שאינם šˀynm še-ˀey*-nam* she-ey-nam 
+7 צריכים çrykym ç*riy*-kiy*m* tsri-him 
+8 לחשוש lḥšwš laḥ*-šow*š* lah-shosh 
+9 מתוצאות mtwçˀwt mi-tow*-ça-ˀow*t* mi-to-tsa-ot 
+10 מעשיהם mˁšyhm ma-ˁa-šey*-hem* ma-a-sey-em 
+11 הם hm hem* em 
+12 הפוליטיקאים hpwlyṭyqˀym ha-pow*-liy*-ṭiy*-qaˀ*-yem* a-po-li-ti-ka-yem 
+#13 . . . 

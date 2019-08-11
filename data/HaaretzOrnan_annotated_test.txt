@@ -146,3 +146,25 @@
 30 ביחד byḥd be-ya-ḥad* be-ya-had 
 #31 " " " 
 #32 . . . 
+
+# sent_id = 75
+# text =  אני כותב זאת בצער וברגשי אשם ; פעם חשבתי אחרת ( על הערבים , לא על הנחשים ) .
+1 אני ˀny ˀa-niy* a-ni 
+2 כותב kwtb kow*-teb* ko-tev 
+3 זאת zˀt zoˀ*t* zot 
+4 בצער bçˁr be-ça-ˁar* be-tsa-ar 
+5 וברגשי wbrgšy wu-be-rig*-šey* u-be-rig-shey 
+6 אשם ˀšm ˀa-šam* a-sham 
+#7 ; ; ; 
+8 פעם pˁm pa-ˁam* pa-am 
+9 חשבתי ḥšbty ḥa-šab*-tiy* ha-shav-ti 
+10 אחרת ˀḥrt ˀa-ḥe-ret* a-he-ret 
+#11 ( ( ( 
+12 על ˁl ˁal* al 
+13 הערבים hˁrbym ha-ˁa-ra-biy*m* a-a-ra-vim 
+#14 , , , 
+15 לא lˀ loˀ* lo 
+16 על ˁl ˁal* al 
+17 הנחשים hnḥšym ha-na-ḥa-šiy*m* a-na-ha-shim 
+#18 ) ) ) 
+#19 . . . 

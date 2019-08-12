@@ -42,7 +42,7 @@ out1_char2int = {char: ind for ind, char in out1_int2char.items()}
 
 
 # data is small enough to hold entirely in memory
-max_len = 25
+max_len = 5
 data_in = []
 data_out = []
 # exctract sequences for sentence
@@ -97,7 +97,8 @@ Y = np.zeros((len(seq_out), 1))
 for i in range(len(seq_out)):
     for j,ch in enumerate(seq_in[i]):
         X[i,j*in_emb_size+in_char2int[ch]] = 1
-    Y[i] = out1_char2int[seq_out[i]]
+    Y[i] = out1_char2int[seq_out[i]]  # value
+    #Y[i,out1_char2int[seq_out[i]]] = 1  # one hot
 
 print('wait')
 
@@ -106,14 +107,20 @@ inds =np.arange(len(seq_out))
 np.random.shuffle(inds)
 X = X[inds]
 Y = Y[inds]
+batch_size = 16
+train_smpls = batch_size*int(X.shape[0]*.95/batch_size)
+X_train = X[np.newaxis,: train_smpls,:]
+X_train = np.reshape(X_train, (batch_size,-1,X_train.shape[-1]))
+valid_smpls = batch_size*int((X.shape[0]-train_smpls)/batch_size)
+X_valid = X[np.newaxis,train_smpls:train_smpls+valid_smpls,:]
+X_valid = np.reshape(X_valid, (batch_size,-1,X_valid.shape[-1]))
 
-X_valid = X[np.newaxis,:X.shape[0]//20,:]
-Y_valid = Y[np.newaxis,:X.shape[0]//20]
+Y_train = Y[:train_smpls]
+Y_train = np.reshape(Y_train, (batch_size,-1,Y_train.shape[-1]))
+Y_valid = Y[np.newaxis,train_smpls:train_smpls+valid_smpls]
+Y_valid = np.reshape(Y_valid, (batch_size,-1,Y_valid.shape[-1]))
 
-X_train = X[X_valid.shape[0]:,:]
-X_train = np.reshape(X_train, (-1,8,X_train.shape[-1]))
-Y_train = Y[Y_valid.shape[0]:]
-Y_train = np.reshape(Y_train, (-1,8,1))
+
 print('wait')
 
 # pytorch model
@@ -126,105 +133,100 @@ valid_tgt_seq = torch.Tensor(Y_valid.astype(np.float32)).long()
 #device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
 device = torch.device("cpu")
 
-
-class Model(nn.Module):
+class Model2(nn.Module):
     def __init__(self, input_size, output_size, hidden_dim, n_layers):
-        super(Model, self).__init__()
+        super(Model2, self).__init__()
 
-        # Defining some parameters
-        self.hidden_dim = hidden_dim
+        self.output_size = output_size
         self.n_layers = n_layers
+        self.hidden_dim = hidden_dim
+        drop_prob = 0.001
 
-        # Defining the layers
-        # RNN Layer
-        self.rnn = nn.RNN(input_size, hidden_dim, n_layers, batch_first=True)
-        # Fully connected layer
+        self.lstm = nn.LSTM(input_size, hidden_dim, n_layers, dropout=drop_prob, batch_first=True)
+        self.dropout = nn.Dropout(drop_prob)
         self.fc = nn.Linear(hidden_dim, output_size)
+        #self.sigmoid = nn.Sigmoid() # softmax loss includes sigmoid
 
-    def forward(self, x):
+
+    def forward(self, x, hidden):
         batch_size = x.size(0)
+        #x = x.long()
+        lstm_out, hidden = self.lstm(x, hidden)
+        lstm_out = lstm_out.contiguous().view(-1, self.hidden_dim)
 
-        # Initializing hidden state for first input using method defined below
-        hidden = self.init_hidden(batch_size)
-
-        # Passing in the input and hidden state into the model and obtaining outputs
-        out, hidden = self.rnn(x, hidden)
-
-        # Reshaping the outputs such that it can be fit into the fully connected layer
-        out = out.contiguous().view(-1, self.hidden_dim)
+        out = self.dropout(lstm_out)
         out = self.fc(out)
+        #out = self.sigmoid(out)
 
+        out = out.view(-1, self.output_size)
+        #out = out[:, -1]
         return out, hidden
 
+
     def init_hidden(self, batch_size):
-        # This method generates the first hidden state of zeros which we'll use in the forward pass
-        hidden = torch.zeros(self.n_layers, batch_size, self.hidden_dim).to(device)
-        # We'll send the tensor holding the hidden state to the device we specified earlier as well
+        weight = next(self.parameters()).data
+        hidden = (weight.new(self.n_layers, batch_size, self.hidden_dim).zero_().to(device),
+                  weight.new(self.n_layers, batch_size, self.hidden_dim).zero_().to(device))
         return hidden
 
 
 # Instantiate the model with hyperparameters
-model = Model(input_size=in_emb_size*max_len, output_size=out_emb_size, hidden_dim=32, n_layers=3)
+#model = Model(input_size=in_emb_size*max_len, output_size=out_emb_size, hidden_dim=32, n_layers=3)
+model = Model2(input_size=in_emb_size*max_len, output_size=out_emb_size, hidden_dim=max_len, n_layers=25)
 # We'll also set the model to the device that we defined earlier (default is CPU)
 model.to(device)
 
 # Define hyperparameters
-n_epochs = 1000
-lr=0.02
+n_epochs = 100000
+lr=1e-1
 
 # Define Loss, Optimizer
 criterion = nn.CrossEntropyLoss()
-optimizer = torch.optim.Adam(model.parameters(), lr=lr)
+optimizer = torch.optim.Adam(model.parameters(), lr=lr, amsgrad=True)
 
 # Training Run
-tot_loss = []
+train_loss = []
+valid_loss = []
+cnt=0
+abort = False
 for epoch in range(1, n_epochs+1):
+    hidden = model.init_hidden(batch_size)
     optimizer.zero_grad()  # Clears existing gradients from previous epoch
     input_seq = train_in_seq.to(device)
-    output, hidden = model(train_in_seq)
+    output, _ = model(train_in_seq, hidden)
     loss = criterion(output, train_tgt_seq.view(-1).long())
-    loss.backward()  # Does backpropagation and calculates gradients
-    optimizer.step()  # Updates the weights accordingly
-
-
-    if epoch%10 == 0:
-        pass
-        #print('Epoch: {}/{}.............'.format(epoch, n_epochs), end=' ')
-        #print("Loss: {}".format(loss.item()))
+    loss.backward()
+    optimizer.step()
 
     if True or epoch%20==0:
         with torch.no_grad():
             valid_in_seq = valid_in_seq.to(device)
             valid_tgt_seq = valid_tgt_seq.to(device)
-            pred,_ = model(valid_in_seq)
-            #pred = nn.functional.softmax(pred, dim=0).data.max(-1)[1]
-            #loss = criterion(pred.view(-1,1).float(), valid_tgt_seq[0,...].float())
+            pred,_ = model(valid_in_seq, model.init_hidden(batch_size))
             v_loss = criterion(pred, valid_tgt_seq.view(-1).long()).item()
-            #print('test loss:', loss.item())
             y = pred.detach().numpy()
 
-    tot_loss.append((loss.item(), v_loss))
-    print(tot_loss[-1])
+    train_loss.append(loss.item())
+    valid_loss.append(v_loss)
 
-    '''
-    with torch.no_grad():
-        valid_in_seq = valid_in_seq.to(device)
-        valid_tgt_seq = valid_tgt_seq.to(device)
-        model.eval()
-        y_pred,_ = model(valid_in_seq)
-        # TODO: convert to pytorch ops
-        y_pred = np.exp(y_pred.numpy())
-        norm = np.sum(y_pred,axis=-1)
-        y_pred = y_pred/norm[:,np.newaxis]
-        y_pred = np.argmax(y_pred, -1)
-        y_gt = Y_valid[0,:,0]
-        #print(y_pred.shape)
-        #print(y_gt.shape)
-    
-        print("Valid acc: {}".format(np.sum(y_pred==y_gt)/y_pred.shape[0]))
-    '''
-    if epoch%10==0:
-        lr = lr*0.999
+    if epoch>10: # early stop check
+        if v_loss>=np.average(np.array(valid_loss[-6:])):
+            cnt+=1
+        else:
+            cnt=0
+
+    print(train_loss[-1],valid_loss[-1])
+
+    if cnt>=5:
+        cnt = 0
+        lr = lr*0.95
         for g in optimizer.param_groups:
             g['lr'] = lr
 
+    if abort:
+        break
+
+with open('loss1.csv','w') as f:
+    for i, _ in enumerate(train_loss):
+        line = str(i) + ',' + str(train_loss[i])+','+str(valid_loss[i]) + '\n'
+        f.write(line)

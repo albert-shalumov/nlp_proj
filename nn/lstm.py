@@ -172,23 +172,24 @@ class Model2(nn.Module):
 
 # Instantiate the model with hyperparameters
 #model = Model(input_size=in_emb_size*max_len, output_size=out_emb_size, hidden_dim=32, n_layers=3)
-model = Model2(input_size=in_emb_size*max_len, output_size=out_emb_size, hidden_dim=max_len, n_layers=25)
+model = Model2(input_size=in_emb_size*max_len, output_size=out_emb_size, hidden_dim=max_len, n_layers=5)
 # We'll also set the model to the device that we defined earlier (default is CPU)
 model.to(device)
 
 # Define hyperparameters
 n_epochs = 100000
-lr=1e-1
+lr=5e-2
 
 # Define Loss, Optimizer
 criterion = nn.CrossEntropyLoss()
-optimizer = torch.optim.Adam(model.parameters(), lr=lr, amsgrad=True)
+optimizer = torch.optim.Adam(model.parameters(), lr=lr)
 
 # Training Run
 train_loss = []
 valid_loss = []
 cnt=0
 abort = False
+red_lr = 0
 for epoch in range(1, n_epochs+1):
     hidden = model.init_hidden(batch_size)
     optimizer.zero_grad()  # Clears existing gradients from previous epoch
@@ -218,8 +219,15 @@ for epoch in range(1, n_epochs+1):
     print(train_loss[-1],valid_loss[-1])
 
     if cnt>=5:
-        cnt = 0
-        lr = lr*0.95
+        red_lr |= 1
+        cnt=0
+    if epoch%75==74:
+        red_lr |= 2
+
+    if red_lr==3:
+        red_lr = 0
+        lr = lr*0.8
+        print('New lr:',lr)
         for g in optimizer.param_groups:
             g['lr'] = lr
 

@@ -91,7 +91,6 @@ class EncoderDecoder:
         else:
             self.device = device
 
-
     def prep_model(self, file='../data/HaaretzOrnan_annotated.txt'):
         self.proc_units = [[]]
         with codecs.open(file, encoding='utf-8') as f:

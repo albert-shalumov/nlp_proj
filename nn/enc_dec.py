@@ -201,8 +201,8 @@ class EncoderDecoder:
                 loss_value = loss.item()/target_length
                 loss_sum += loss_value
             print(loss_sum/len(training_pairs))
-            enc_scheduler.step()
-            dec_scheduler.step()
+            enc_scheduler.step(loss_sum/len(training_pairs))
+            dec_scheduler.step(loss_sum/len(training_pairs))
 
         return self
 

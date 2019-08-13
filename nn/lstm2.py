@@ -153,7 +153,7 @@ class EncoderDecoder:
         training_pairs = [self._tensor(self.proc_units[i][0]) for i in self.train_inds]
         #validation_pairs = [self._tensor(self.proc_units[i][0]) for i in self.valid_inds]
 
-        for epoch in range(10):
+        for epoch in range(100):
             loss_sum = 0
             for iter in range(len(training_pairs)):  # single sample
                 training_pair = training_pairs[iter]
@@ -237,6 +237,7 @@ class EncoderDecoder:
                         else:
                             res_set[-1][-1].append(self.output_int2char[topi.item()])
                         decoder_input = topi.squeeze().detach()
+                    res_set[-1][-1] = ''.join(res_set[-1][-1])
 
         return res_set
 
@@ -285,4 +286,4 @@ class EncoderDecoder:
 if __name__=='__main__':
     enc_dec = EncoderDecoder(256, (1,1), 2, 'cpu')
     enc_dec.prep_model().shuffle().split(0).train()
-    #print(enc_dec.predict([[u'ˀnšym',u'nršmym']]))
+    print(enc_dec.predict([[u'ˀnšym',u'nršmym']]))

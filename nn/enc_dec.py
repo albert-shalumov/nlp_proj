@@ -3,22 +3,20 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 import codecs
-import time
 import numpy as np
-import random
 
 class EncoderRNN(nn.Module):
-    def __init__(self, input_size, hidden_size):
+    def __init__(self, input_size, hidden_size, n_layers=1):
         super(EncoderRNN, self).__init__()
         self.hidden_size = hidden_size
-
         self.embedding = nn.Embedding(input_size, hidden_size)
-        self.gru = nn.GRU(hidden_size, hidden_size)
+        self.gru = [nn.GRU(self.hidden_size, self.hidden_size) for i in range(n_layers)]
 
     def forward(self, input, hidden):
         embedded = self.embedding(input).view(1, 1, -1)
         output = embedded
-        output, hidden = self.gru(output, hidden)
+        for gru in self.gru:
+            output, hidden = gru(output, hidden)
         return output, hidden
 
     def initHidden(self):
@@ -26,7 +24,7 @@ class EncoderRNN(nn.Module):
 
 
 class AttnDecoderRNN(nn.Module):
-    def __init__(self, hidden_size, output_size, dropout_p, max_length):
+    def __init__(self, hidden_size, output_size, dropout_p, max_length, n_layers=1):
         super(AttnDecoderRNN, self).__init__()
         self.hidden_size = hidden_size
         self.output_size = output_size
@@ -37,23 +35,22 @@ class AttnDecoderRNN(nn.Module):
         self.attn = nn.Linear(self.hidden_size * 2, self.max_length)
         self.attn_combine = nn.Linear(self.hidden_size * 2, self.hidden_size)
         self.dropout = nn.Dropout(self.dropout_p)
-        self.gru = nn.GRU(self.hidden_size, self.hidden_size)
+        self.gru = [nn.GRU(hidden_size, hidden_size) for i in range(n_layers)]
         self.out = nn.Linear(self.hidden_size, self.output_size)
 
     def forward(self, input, hidden, encoder_outputs):
         embedded = self.embedding(input).view(1, 1, -1)
         embedded = self.dropout(embedded)
 
-        attn_weights = F.softmax(
-            self.attn(torch.cat((embedded[0], hidden[0]), 1)), dim=1)
+        attn_weights = F.softmax(self.attn(torch.cat((embedded[0], hidden[0]), 1)), dim=1)
         attn_applied = torch.bmm(attn_weights.unsqueeze(0),
                                  encoder_outputs.unsqueeze(0))
 
         output = torch.cat((embedded[0], attn_applied[0]), 1)
         output = self.attn_combine(output).unsqueeze(0)
-
         output = F.relu(output)
-        output, hidden = self.gru(output, hidden)
+        for gru in self.gru:
+            output, hidden = gru(output, hidden)
 
         output = F.log_softmax(self.out(output[0]), dim=1)
         return output, hidden, attn_weights
@@ -88,7 +85,7 @@ class EncoderDecoder:
         self.n_layers = n_layers
         self.stage = stage
         self.proc_units = None
-
+        self.n_layers = n_layers
         if device is None:
             self.device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
         else:
@@ -124,8 +121,8 @@ class EncoderDecoder:
         self.output_int2char, self.output_char2int = EncoderDecoder.CreateDictionaries(unit_dict_sets[1])
 
         # Create encoder, decoder
-        self.encoder = EncoderRNN(len(unit_dict_sets[0])+1, self.hid_dim).to(self.device)
-        self.decoder = AttnDecoderRNN(self.hid_dim, len(unit_dict_sets[1])+1, 0.1, self.max_len).to(self.device)
+        self.encoder = EncoderRNN(len(unit_dict_sets[0])+1, self.hid_dim, self.n_layers[0]).to(self.device)
+        self.decoder = AttnDecoderRNN(self.hid_dim, len(unit_dict_sets[1])+1, 0.1, self.max_len, self.n_layers[1]).to(self.device)
 
         return self
 
@@ -144,16 +141,16 @@ class EncoderDecoder:
 
     def train(self):
         # Local constants
-        teacher_forcing_ratio = 0.5
-
-        enc_optim = optim.SGD(self.encoder.parameters(), lr=1e-2)
-        dec_optim = optim.SGD(self.decoder.parameters(), lr=1e-2)
+        teacher_forcing_ratio = 0.1
+        lr = 1e-2
+        enc_optim = optim.SGD(self.encoder.parameters(), lr=lr)
+        dec_optim = optim.SGD(self.decoder.parameters(), lr=lr)
         criterion = nn.NLLLoss()
 
         training_pairs = [self._tensor(self.proc_units[i][0]) for i in self.train_inds]
         #validation_pairs = [self._tensor(self.proc_units[i][0]) for i in self.valid_inds]
 
-        for epoch in range(100):
+        for epoch in range(50):
             loss_sum = 0
             for iter in range(len(training_pairs)):  # single sample
                 training_pair = training_pairs[iter]
@@ -203,11 +200,16 @@ class EncoderDecoder:
                 loss_sum += loss_value
             print(loss_sum/len(training_pairs))
 
-        return self
+            if epoch%10==9:
+                lr *= 0.8
+                lr = max(lr, 1e-5)  # bottom limit
+                for g in enc_optim.param_groups:
+                    g['lr'] = lr
+                for g in dec_optim.param_groups:
+                    g['lr'] = lr
 
-    def eval(self):
-        conf_mat = 1
-        return conf_mat
+
+        return self
 
     def predict(self, pred_set):
         res_set = []
@@ -250,6 +252,7 @@ class EncoderDecoder:
             return (input_tensor, target_tensor)
         else:
             return input_tensor
+
     START_SYMB = 0
 
     @staticmethod
@@ -284,6 +287,6 @@ class EncoderDecoder:
         return int2char, char2int
 
 if __name__=='__main__':
-    enc_dec = EncoderDecoder(256, (1,1), 2, 'cpu')
+    enc_dec = EncoderDecoder(256, (1,1), 1, 'cpu')
     enc_dec.prep_model().shuffle().split(0).train()
-    print(enc_dec.predict([[u'ˀnšym',u'nršmym']]))
+    #print(enc_dec.predict([[u'ˀnšym',u'nršmym']]))

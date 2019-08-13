@@ -141,16 +141,18 @@ class EncoderDecoder:
 
     def train(self):
         # Local constants
-        teacher_forcing_ratio = 0.1
+        teacher_forcing_ratio = 0.7
         lr = 1e-2
         enc_optim = optim.SGD(self.encoder.parameters(), lr=lr)
         dec_optim = optim.SGD(self.decoder.parameters(), lr=lr)
+        enc_scheduler = optim.lr_scheduler.ReduceLROnPlateau(enc_optim, factor=0.5)
+        dec_scheduler = optim.lr_scheduler.ReduceLROnPlateau(dec_optim, factor=0.5)
         criterion = nn.NLLLoss()
 
         training_pairs = [self._tensor(self.proc_units[i][0]) for i in self.train_inds]
         #validation_pairs = [self._tensor(self.proc_units[i][0]) for i in self.valid_inds]
 
-        for epoch in range(50):
+        for epoch in range(500):
             loss_sum = 0
             for iter in range(len(training_pairs)):  # single sample
                 training_pair = training_pairs[iter]
@@ -199,15 +201,8 @@ class EncoderDecoder:
                 loss_value = loss.item()/target_length
                 loss_sum += loss_value
             print(loss_sum/len(training_pairs))
-
-            if epoch%10==9:
-                lr *= 0.8
-                lr = max(lr, 1e-5)  # bottom limit
-                for g in enc_optim.param_groups:
-                    g['lr'] = lr
-                for g in dec_optim.param_groups:
-                    g['lr'] = lr
-
+            enc_scheduler.step()
+            dec_scheduler.step()
 
         return self
 
@@ -287,6 +282,6 @@ class EncoderDecoder:
         return int2char, char2int
 
 if __name__=='__main__':
-    enc_dec = EncoderDecoder(256, (1,1), 1, 'cpu')
+    enc_dec = EncoderDecoder(256, (2,2), 1)
     enc_dec.prep_model().shuffle().split(0).train()
     #print(enc_dec.predict([[u'ˀnšym',u'nršmym']]))

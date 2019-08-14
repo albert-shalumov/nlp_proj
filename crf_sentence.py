@@ -66,7 +66,25 @@ class CRF:
         return conf_mat
 
     def predict(self, pred_set):
-        raise Exception("Not implemented yet!")
+        data = []
+        for sent in pred_set:
+            sent_cons = u' '.join(sent)
+            for i, w in enumerate(sent):
+                w_cons = list(w)
+                w_pos = [i]*len(w)
+                unif_sent = [sent_cons]*len(w)
+                d = list(zip(w_cons, w_pos, unif_sent))
+                data.append(d)
+        pred = self.model.tag_sents(data)
+        result = []
+        word_idx = 0
+        for sent in pred_set:
+            result.append([])
+            for word in sent:
+                pred_smpl = pred[word_idx]
+                w = ''.join([entry[0][0]+entry[-1] for entry in pred_smpl])
+                result[-1].append(w)
+                word_idx += 1
         return result
 
     @staticmethod
@@ -77,8 +95,8 @@ class CRF:
             for i, w in enumerate(sent):
                 w_cons = list(w[::2])
                 w_pos = [i]*len(w[::2])
-                sent = [sent_cons]*len(w[::2])
-                d = list(zip(w_cons, w_pos, sent))
+                unif_sent = [sent_cons]*len(w[::2])
+                d = list(zip(w_cons, w_pos, unif_sent))
                 data.append(list(zip(d, list(w[1::2]))))
         return data
 
@@ -128,7 +146,7 @@ if __name__ == '__main__':
     print("Sentence CRF: ")
     for i in range(5):
         crf = CRF()
-        #crf.prep_data().shuffle().split(0).train().predict(['ˀnšym', u'nršmym'])
+        #crf.prep_data().shuffle(0).split(0).train().predict([['ˀnšym', u'nršmym'], [u'twpˁh']])
         if 'conf_mat' in locals():
             conf_mat += crf.prep_data().shuffle(None).split(0.1).train().eval()
         else:

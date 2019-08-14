@@ -168,3 +168,27 @@
 17 הנחשים hnḥšym ha-na-ḥa-šiy*m* a-na-ha-shim 
 #18 ) ) ) 
 #19 . . . 
+
+# sent_id = 88
+# text =  יתר - על - כן , הריבית בישראל במיוחד על משכנתאות היא מהנמוכות ביותר בעולם , אם לא הנמוכה שבהן .
+1 יתר ytr ye-ter* ye-ter 
+#2 - - - 
+3 על ˁl ˁal* al 
+#4 - - - 
+5 כן kn ken* ken 
+#6 , , , 
+7 הריבית hrybyt ha-riy*-biy*t* a-ri-bit 
+8 בישראל byšrˀl be-yiš*-ra-ˀel* be-is-ra-el 
+9 במיוחד bmywḥd bim*-yuw*-ḥad* bim-yu-had 
+10 על ˁl ˁal* al 
+11 משכנתאות mškntˀwt maš*-kan*-ta-ˀow*t* mash-kan-ta-ot 
+12 היא hyˀ hiy*ˀ* yi 
+13 מהנמוכות mhnmwkwt me-ha-ne-muw*-kow*t* me-a-ne-mu-hot 
+14 ביותר bywtr be-yow*-ter* be-yo-ter 
+15 בעולם bˁwlm ba-ˁow*-lam* ba-o-lam 
+#16 , , , 
+17 אם ˀm ˀim* im
+18 לא lˀ loˀ* lo 
+19 הנמוכה hnmwkh ha-ne-muw*-kah* a-ne-mu-ha 
+20 שבהן šbhn še-ba-hen* she-ba-en 
+#21 . . . 

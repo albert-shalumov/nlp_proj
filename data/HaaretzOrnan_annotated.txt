@@ -1695,3 +1695,208 @@
 11 הם hm hem* em 
 12 הפוליטיקאים hpwlyṭyqˀym ha-pow*-liy*-ṭiy*-qaˀ*-yem* a-po-li-ti-ka-yem 
 #13 . . . 
+
+# sent_id = 81
+# text =  אלה לא נופלים כתוצאה משגיאות או ממחדלים , או אפילו מהתנהגות פסולה , אלא רק בשל משחקי כוח פוליטיים .
+1 אלה ˀlh ˀe-leh* e-le 
+2 לא lˀ loˀ* lo 
+3 נופלים nwplym now*p*-liy*m* nof-lim 
+4 כתוצאה ktwçˀh ke-tow*-ça-ˀah* ke-to-tsa-a 
+5 משגיאות mšgyˀwt miš*-giy*-ˀow*t* mish-gi-ot 
+6 או ˀw ˀow* o 
+7 ממחדלים mmḥdlym mi-meḥ*-da-liy*m* mi-meh-da-lim 
+#8 , , , 
+9 או ˀw ˀow* o 
+10 אפילו ˀpylw ˀa-piy*-luw* a-fi-lu 
+11 מהתנהגות mhtnhgwt mi-hit*-na-ha-guw*t* mi-it-na-a-gut 
+12 פסולה pswlh p*suw*-lah* psu-la 
+#13 , , , 
+14 אלא ˀlˀ ˀe-laˀ* e-la 
+15 רק rq raq* rak 
+16 בשל bšl be-šel* be-shel 
+17 משחקי mšḥqy miš*-ḥa-qey* mish-ha-key 
+18 כוח kwḥ kow*-ḥ* ko-ah 
+19 פוליטיים pwlyṭyym pow*-liy*-ṭi-yiy*m* po-li-ti-im 
+#20 . . . 
+
+# sent_id = 82
+# text =  המלצה לפיטורי שר או נושא משרה פוליטית , מצד בית המשפט העליון או מצד ועדת חקירה נופלת תמיד על אוזניים ערלות ; אבל כשאפשר להטיל את האשמה על קצין צבא או משטרה , מוטל גורלם של אלה על כף המאזניים .
+1 המלצה hmlçh ham*-la-çah* am-la-tsa 
+2 לפיטורי lpyṭwry le-piy*-ṭuw*-rey* le-pi-tu-rey 
+3 שר šr šar* sar 
+4 או ˀw ˀow* o 
+5 נושא nwšˀ now*-šeˀ* no-se 
+6 משרה mšrh miš*-rah* mis-ra 
+7 פוליטית pwlyṭyt pow*-liy*-ṭiy*t* po-li-tit 
+#8 , , , 
+9 מצד mçd mi-çad* mi-tsad 
+10 בית byt b*yet* byet 
+11 המשפט hmšpṭ ha-miš*-paṭ* a-mish-pat 
+12 העליון hˁlywn ha-ˁel*-yow*n* a-el-yon 
+13 או ˀw ˀow* o 
+14 מצד mçd mi-çad* mi-tsad 
+15 ועדת wˁdt wa-ˁa-dat* va-a-dat 
+16 חקירה ḥqyrh ḥa-qiy*-rah* ha-ki-ra 
+17 נופלת nwplt now*-pe-let* no-fe-let 
+18 תמיד tmyd ta-miy*d* ta-mid 
+19 על ˁl ˁal* al 
+20 אוזניים ˀwznyym ˀow*z*-na-yiy*m* oz-na-im 
+21 ערלות ˁrlwt ˁa-re-low*t* a-re-lot 
+#22 ; ; ; 
+23 אבל ˀbl ˀa-bal* a-val 
+24 כשאפשר kšˀpšr k*še-ˀep*-šar* kshe-ef-shar 
+25 להטיל lhṭyl la-ha-ṭiy*l* la-a-til 
+26 את ˀt ˀet* et 
+27 האשמה hˀšmh ha-ˀaš*-mah* a-ash-ma 
+28 על ˁl ˁal* al 
+29 קצין qçyn qa-çiy*n* ka-tsin 
+30 צבא çbˀ ça-baˀ* tsa-va 
+31 או ˀw ˀow* o 
+32 משטרה mšṭrh miš*-ṭa-rah* mish-ta-ra 
+#33 , , , 
+34 מוטל mwṭl muw*-ṭal* mu-tal
+35 גורלם gwrlm gow*-ra-lam* go-ra-lam 
+36 של šl šel* shel 
+37 אלה ˀlh ˀe-leh* e-le 
+38 על ˁl ˁal* al 
+39 כף kp kap* kaf 
+40 המאזניים hmˀznyym ha-moˀ*z*-na-yiy*m* a-moz-na-im 
+#41 . . . 
+
+# sent_id = 83
+# text =  אני תמה על " הארץ " שהזדרז לשחק לידיהם של הפוליטיקאים , המעוניינים להיפטר מהמפכ"ל הנוכחי .
+1 אני ˀny ˀa-niy* a-ni 
+2 תמה tmh ta-meh* ta-me 
+3 על ˁl ˁal* al 
+#4 " " " 
+5 הארץ hˀrç ha-ˀa-reç* a-a-rets 
+#6 " " " 
+7 שהזדרז šhzdrz še-hiz*-da-rez* she-iz-da-rez 
+8 לשחק lšḥq le-ša-ḥeq* le-sha-hek 
+9 לידיהם lydyhm ley*-dey*-hem* ley-dey-em 
+10 של šl šel* shel 
+11 הפוליטיקאים hpwlyṭyqˀym ha-pow*-liy*-ṭiy*-qa-ˀiy*m* a-po-li-ti-ka-im 
+#12 , , , 
+13 המעוניינים hmˁwnyynym ha-me-ˁuw*n*-yay*-niy*m* a-me-un-ya-nim 
+14 להיפטר lhypṭr le-hiy*-pa-ṭer* le-i-pa-ter 
+#15 מהמפכ"ל mhmpk"l mhmpk"l 
+16 הנוכחי hnwkḥy ha-now*-ke-ḥiy* a-no-he-hi 
+#17 . . . 
+
+# sent_id = 84
+# text =  בעיתונים רבים פורסם מכתבה של מלי פיליפסבורן , יו"ר ארגון נפגעי המשכנתאות וחסרי הדיור , תחת הכותרת " אל תיגעו במשכנתא " .
+1 בעיתונים bˁytwnym be-ˁiy*-tow*-niy*m* be-i-to-nim 
+2 רבים rbym ra-biy*m* ra-bim 
+3 פורסם pwrsm puw*r*-sam* pur-sam 
+4 מכתבה mktbh mik*-ta-bah* mih-ta-va 
+5 של šl šel* shel 
+6 מלי mly ma-liy* ma-li 
+#7 פיליפסבורן pylypsbwrn pylypsbwrn 
+#8 , , , 
+#9 יו"ר yw"r yw"r 
+10 ארגון ˀrgwn ˀir*-guw*n* ir-gun 
+11 נפגעי npgˁy nip*-ga-ˁey* nif-ga-ey 
+12 המשכנתאות hmškntˀwt ha-maš*-kan*-ta-ˀow*t* a-mash-kan-ta-ot 
+13 וחסרי wḥsry we-ḥas*-rey* ve-has-rey 
+14 הדיור hdywr ha-di-yuw*r* a-di-yur 
+#15 , , , 
+16 תחת tḥt ta-ḥat* ta-hat 
+17 הכותרת hkwtrt ha-kow*-te-ret* a-ko-te-ret 
+#18 " " " 
+19 אל ˀl ˀal* al 
+20 תיגעו tygˁw tiy*g*-ˁuw* tig-u 
+#21 במשכנתא bmškntˀ bmškntˀ 
+#22 " " " 
+#23 . . . 
+
+# sent_id = 85
+# text =  ברצוני להדגיש משפט אחד בדבריה : " אנו , נפגעי המשכנתאות , נקלענו למצבנו הקשה לא בגלל ריבית נמוכה , אלא בגלל האינפלציה וההצמדה " .
+#1 ברצוני brçwny brçwny 
+2 להדגיש lhdgyš le-had*-giy*š* le-ad-gish 
+3 משפט mšpṭ miš*-paṭ* mish-pat 
+4 אחד ˀḥd ˀe-ḥad* e-had 
+#5 בדבריה bdbryh bed*-ba-re-yah* bed-va-re-ya 
+#6 : : : 
+#7 " " " 
+8 אנו ˀnw ˀa-nuw* a-nu 
+#9 , , , 
+10 נפגעי npgˁy nip*-ga-ˁey* nif-ga-ey 
+11 המשכנתאות hmškntˀwt ha-maš*-kan*-ta-ˀow*t* a-mash-kan-ta-ot 
+#12 , , , 
+13 נקלענו nqlˁnw niq*-laˁ*-nuw* nik-la-nu 
+14 למצבנו lmçbnw le-ma-ça-be-nuw* le-ma-tsa-ve-nu 
+15 הקשה hqšh ha-qa-šeh* a-ka-she 
+16 לא lˀ loˀ* lo 
+17 בגלל bgll big*-lal* big-lal 
+18 ריבית rybyt riy*-biy*t* ri-bit 
+19 נמוכה nmwkh ne-muw*-kah* ne-mu-ha 
+#20 , , , 
+21 אלא ˀlˀ ˀe-laˀ* e-la 
+22 בגלל bgll big*-lal* big-lal 
+#23 האינפלציה hˀynplçyh ha-ˀiy*n*-p*laç*-yah* a-in-flats-ya 
+24 וההצמדה whhçmdh we-ha-haç*-ma-dah* ve-a-ats-ma-da 
+#25 " " " 
+#26 . . . 
+
+# sent_id = 86
+# text =  מלים כדורבנות , התואמות במדויק את מה שהחתום מטה טען במשך שנים רבות .
+1 מלים mlym mi-liy*m* mi-lim 
+2 כדורבנות kdwrbnwt ka-dow*r*-ba-now*t* ka-dor-ba-not 
+#3 , , , 
+4 התואמות htwˀmwt ha-tow*-ˀa-mow*t* a-to-a-mot 
+5 במדויק bmdwyq bim*-duw*-yaq* bim-du-yak 
+6 את ˀt ˀet* et 
+7 מה mh mah* ma 
+8 שהחתום šhḥtwm še-ha-ḥa-tuw*m* she-a-ha-tum 
+9 מטה mṭh ma-ṭah* ma-ta 
+10 טען ṭˁn ṭa-ˁan* ta-an 
+11 במשך bmšk be-me-šek* be-me-sheh 
+12 שנים šnym ša-niy*m* sha-nim 
+13 רבות rbwt ra-bow*t* ra-bot 
+#14 . . . 
+
+# sent_id = 87
+# text =  זו לא הריבית שסיבכה את מקבלי המשכנתאות או לקוחות הבנקים האחרים .
+1 זו zw zow* zo 
+2 לא lˀ loˀ* lo 
+3 הריבית hrybyt ha-riy*-biy*t* a-ri-bit 
+4 שסיבכה šsybkh še-siy*b*-kah* she-sib-ha 
+5 את ˀt ˀet* et 
+6 מקבלי mqbly me-qab*-ley* me-kab-ley 
+7 המשכנתאות hmškntˀwt ha-maš*-kan*-ta-ˀow*t* a-mash-kan-ta-ot 
+8 או ˀw ˀow* o 
+#9 לקוחות lqwḥwt lqwḥwt 
+10 הבנקים hbnqym ha-ban*-qiy*m* a-ban-kim 
+11 האחרים hˀḥrym ha-ˀa-ḥe-riy*m* a-a-he-rim 
+#12 . . . 
+
+# sent_id = 89
+# text =  ובאשר להצמדה ולאינפלציה הכתובת אינה הבנקים .
+#1 ובאשר wbˀšr wbˀšr 
+2 להצמדה lhçmdh la-haç*-ma-dah* la-ats-ma-da 
+#3 ולאינפלציה wlˀynplçyh we-la-ˀiy*n*-p*laç*yah* ve-la-in-flats-ya 
+4 הכתובת hktwbt hak*-tow*-bet* ak-to-vet 
+5 אינה ˀynh ˀey*-nah* ey-na 
+6 הבנקים hbnqym ha-ban*-qiy*m* a-ban-kim 
+#7 . . . 
+
+# sent_id = 90
+# text =  ב16 באוקטובר הגיע אל העיר דה מוין , במערב התיכון של ארצות הברית , הנשיא גורג בוש .
+#1 ב16 b16 b16 
+2 באוקטובר bˀwqṭwbr be-ˀow*q*-ṭow*-ber* be-ok-to-ber 
+3 הגיע hgyˁ he-giy*-ˁa e-gi-a
+4 אל ˀl ˀel* el 
+5 העיר hˁyr ha-ˁiy*r* a-ir 
+#6 דה dh dh 
+#7 מוין mwyn mwyn 
+#8 , , , 
+9 במערב bmˁrb be-ma-ˁa-rab* be-ma-a-rav 
+10 התיכון htykwn ha-tiy*-kow*n* a-ti-hon 
+11 של šl šel* shel 
+12 ארצות ˀrçwt ˀar*-çow*t* ar-tsot 
+13 הברית hbryt hab*-riy*t* ab-rit 
+#14 , , , 
+15 הנשיא hnšyˀ ha-na-šiy*ˀ* a-na-si 
+#16 גורג gwrg gwrg 
+#17 בוש bwš bwš 
+#18 . . . 

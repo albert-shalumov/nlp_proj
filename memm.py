@@ -111,7 +111,7 @@ class MEMM:
     def _len(x):
         return len(x) if isinstance(x, str) else int(x)
 
-    MAX_FTR_LEN = 150
+    MAX_FTR_LEN = 200
     @staticmethod
     def _word_ftr(word, i, ftr):
         idx = 0
@@ -146,10 +146,23 @@ class MEMM:
         ftr[idx+MEMM.ARNON_CHARS_IDX[word[-1]]] = 1
         idx += len(MEMM.ARNON_CHARS)
 
+
+
+        # second letter
+        ftr[idx + MEMM.ARNON_CHARS_IDX[word[1]]] = 1
+        idx += len(MEMM.ARNON_CHARS)
+
+        # second last letter
+        ftr[idx + MEMM.ARNON_CHARS_IDX[word[-2]]] = 1
+        idx += len(MEMM.ARNON_CHARS)
+
+
+
         # word length
         l = min(len(word), 5)
         ftr[idx+l] = 1
         idx += 6
+
         assert idx <= MEMM.MAX_FTR_LEN
 
     VOWELS = [u'a',u'e',u'u',u'i',u'o',u'*']

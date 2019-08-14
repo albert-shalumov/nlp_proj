@@ -114,6 +114,7 @@ class Embedding_: # TODO: use polymorphism to support different embedding algori
             self.model = FastText(LineSentence("wiki.txt"), sg=1, size=150, window=6, min_count=2, workers=6)
         logging.root.setLevel(logging.CRITICAL)
         self.model.save(self.type + '_model')
+        return self
 
     def LoadModel(self, trim=False):
         if self.type=='word2vec':
@@ -122,14 +123,15 @@ class Embedding_: # TODO: use polymorphism to support different embedding algori
             self.model = FastText.load(self.type+'_model')
         if trim:
             self.model.init_sims(replace=True)
+        return self
+
     def GetEmbedding(self, word):
         return self.model[word]
 
 if __name__ == '__main__':
     freeze_support()
     embed = FastTextEmb(True)
-    embed.Train()
-    embed.Save()
+    embed.Train()#.Save()
 
 
 

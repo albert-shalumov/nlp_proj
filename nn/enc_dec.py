@@ -62,10 +62,9 @@ class AttnDecoderRNN(nn.Module):
 '''
 Class for Encoder-Decoder RNN method.
 Most functions return self, therefore calls can be chained: nn.shuffle().split().train() etc.
-References:
+Based on:
 1) https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html
-2) https://towardsdatascience.com/how-to-code-the-transformer-in-pytorch-24db27c8f9ec
-3) https://github.com/jadore801120/attention-is-all-you-need-pytorch
+2) https://github.com/jadore801120/attention-is-all-you-need-pytorch
 
 Note:
 -----
@@ -138,7 +137,7 @@ class EncoderDecoder:
         self.valid_inds = None if valid_ratio == 0 else self.inds[num_train:]
         return self
 
-    def train(self):
+    def train(self, epochs=10):
         # Local constants
         teacher_forcing_ratio = 0.7
         lr = 1e-2
@@ -151,7 +150,7 @@ class EncoderDecoder:
         training_pairs = [self._tensor(self.proc_units[i][0]) for i in self.train_inds]
         #validation_pairs = [self._tensor(self.proc_units[i][0]) for i in self.valid_inds]
 
-        for epoch in range(500):
+        for epoch in range(epochs):
             loss_sum = 0
             for iter in range(len(training_pairs)):  # single sample
                 training_pair = training_pairs[iter]

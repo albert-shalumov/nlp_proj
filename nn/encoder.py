@@ -57,7 +57,7 @@ class Encoder:
             self.device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
         else:
             self.device = device
-        self.batch_size = 64
+        self.batch_size = 128
         self.word_embedding = WordEmbedding()
         self.word_embedding.LoadModel(True)
         self.word_emb_size = 150
@@ -84,7 +84,7 @@ class Encoder:
         unit_dict_sets = Encoder.BuildCharSets(self.proc_units)
         unit_dict_sets[0].add(' ')
         unit_dict_sets[1].update(list('euioa*'))
-        unit_dict_sets[1].update(['e-', 'u-', 'i-', 'o-', 'a-', '*-'])
+        #unit_dict_sets[1].update(['e-', 'u-', 'i-', 'o-', 'a-', '*-'])
         self.emb_in_size = len(unit_dict_sets[0])+1
         self.emb_out_size = len(unit_dict_sets[1])+1
 
@@ -101,7 +101,8 @@ class Encoder:
         for i in range(len(self.proc_units)):
             in_word = self.proc_units[i][0][0]
             out_word = self.proc_units[i][0][1]
-            ch_out = [x for x in re.split('[' + in_word + ']', out_word) if len(x) > 0]
+            #ch_out = [x for x in re.split('[' + in_word + ']', out_word) if len(x) > 0]
+            ch_out = list(out_word.replace('-','')[1::2])
             for j, ch in enumerate(in_word):
                 w = in_word[:j+1]
                 w = w.rjust(self.max_len)
@@ -123,9 +124,12 @@ class Encoder:
         return self
 
     def shuffle(self, seed=None):
-        self.inds = np.arange(len(self.proc_units))
+        self.inds = np.arange(self.X.shape[0])
         np.random.seed(seed)
         np.random.shuffle(self.inds)
+        self.X = self.X[self.inds,:]
+        self.Y = self.Y[self.inds]
+        self.Mask = self.Mask[self.inds, :]
         return self
 
     def split(self, valid_ratio=0.1):
@@ -156,6 +160,8 @@ class Encoder:
             optim_alg = optim.ASGD
         elif alg == 'rmsprop':
             optim_alg = optim.RMSprop
+        elif alg=='lr_scan':
+            optim_alg = optim.SGD
         else:
             raise Exception('Incorrect optimizer')
 
@@ -180,10 +186,16 @@ class Encoder:
             # l2 regularization
             for name, param in self.encoder.named_parameters():
                 if 'bias' not in name:
-                    loss += (0.5 * 1e-6 * torch.sum(torch.pow(param, 2)))
+                    pass#loss += (0.5 * 1e-7 * torch.sum(torch.pow(param, 2)))
             loss.backward()
             optimizer.step()
             abort = False
+
+            #print(loss.item())
+            if alg=='lr_scan' and epoch%10==0:
+                lr = 1e-7*2**(epoch//10)
+                for g in optimizer.param_groups:
+                    g['lr'] = lr
 
             if epoch%30 == 0:
                 #print(loss.item())
@@ -196,15 +208,16 @@ class Encoder:
                 #print(epoch, loss.item(), val_loss.item())
                 if val_loss.item()<min_val_loss[0]:
                     min_val_loss = (val_loss.item(), epoch)
-                    #print(loss.item(), min_val_loss)
-                    #print(encoder.predict([[u'ˀnšym', u'nršmym', u'twpˁh']]), '\n')
+                    print(loss.item(), min_val_loss)
+                    print(encoder.predict([[u'ˀnšym', u'nršmym', u'twpˁh']]), '\n')
 
-                if epoch>(min_val_loss[1]+300):  # no decrease for n epochs
+                if epoch>(min_val_loss[1]+500):  # no decrease for n epochs
                     break
 
             if abort:
                 return
-        print(loss.item(), min_val_loss)
+
+        #print(loss.item(), min_val_loss)
 
     def predict(self, pred_set):
         res_set = []
@@ -241,8 +254,8 @@ class Encoder:
             for unit in unit_list:
                 units = list(unit)
                 sets[0].update(list(units[0]))
-                ch_out = [x for x in re.split('[' + units[0] + ']', units[1]) if len(x) > 0]
-                sets[1].update(ch_out)
+                #ch_out = [x for x in re.split('[' + units[0] + ']', units[1]) if len(x) > 0]
+                #sets[1].update(ch_out)
         return sets
 
     @staticmethod
@@ -265,21 +278,21 @@ if __name__=='__main__':
     algs = ['adagrad', 'rprop', 'adamax', 'adamw', 'asgd', 'rmsprop']
     lrs = np.logspace(-3, -1, 50)
     #sys.stdout = open('log.txt', 'w', encoding='utf-8')
-    while True:
-        rand_state = np.random.RandomState()
-        n_layers = rand_state.randint(1,7)
-        dropout = rand_state.random_sample()*0.25
-        lr = 1e-2#lrs[rand_state.randint(0,50)]#
-        alg = 'adamax'#algs[rand_state.randint(0,len(algs))]
-        print('-----------------------------------------')
-        print(n_layers, dropout, lr, alg)
-        print('-----------------------------------------')
-        encoder = Encoder(n_layers, dropout)
-        encoder.prep_model().shuffle(0).split(0.05).train(50000, lr, alg)
-        print(encoder.predict([[u'ˀnšym',u'nršmym',u'twpˁh']]), '\n')
+    #while True:
+    #    rand_state = np.random.RandomState()
+    #    n_layers = rand_state.randint(1,4)
+    #    dropout = 0#rand_state.random_sample()*0.25#
+    #    lr = 1e-2#lrs[rand_state.randint(0,50)]#
+    #    alg = 'adamax'#algs[rand_state.randint(0,len(algs))]
+    #    print('-----------------------------------------')
+    #    print(n_layers, dropout, lr, alg)
+    #    print('-----------------------------------------')
+    #    encoder = Encoder(n_layers, dropout)
+    #    encoder.prep_model().shuffle().split(0.01).train(50000, lr, alg)
+    #    print(encoder.predict([[u'ˀnšym',u'nršmym',u'twpˁh']]), '\n')
 
 
 
-    #encoder = Encoder(1, 0.09947844294016317,device='cpu')
-    #encoder.prep_model().shuffle(0).split(0.95).train(15, 0.002559547922699536)
+    encoder = Encoder(1, 0)
+    encoder.prep_model().shuffle().split(0.05).train(50000, alg='adamax')
     #print(encoder.predict([[u'ˀnšym',u'nršmym',u'twpˁh']]))

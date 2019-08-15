@@ -28,7 +28,7 @@ class AttnDecoderRNN(nn.Module):
         super(AttnDecoderRNN, self).__init__()
         self.hidden_size = hidden_size
         self.output_size = output_size
-        self.dropout_p = dropout_p
+        self.dropout_p = 0#dropout_p
         self.max_length = max_length
 
         self.embedding = nn.Embedding(self.output_size, self.hidden_size)
@@ -139,12 +139,11 @@ class EncoderDecoder:
 
     def train(self, epochs=10):
         # Local constants
-        teacher_forcing_ratio = 0.7
+        teacher_forcing_ratio = 0.3
         lr = 1e-2
-        enc_optim = optim.SGD(self.encoder.parameters(), lr=lr)
-        dec_optim = optim.SGD(self.decoder.parameters(), lr=lr)
-        enc_scheduler = optim.lr_scheduler.ReduceLROnPlateau(enc_optim, factor=0.5)
-        dec_scheduler = optim.lr_scheduler.ReduceLROnPlateau(dec_optim, factor=0.5)
+        abort = False
+        enc_optim = optim.AdamW(self.encoder.parameters(), lr=lr)
+        dec_optim = optim.AdamW(self.decoder.parameters(), lr=lr)
         criterion = nn.NLLLoss()
 
         training_pairs = [self._tensor(self.proc_units[i][0]) for i in self.train_inds]
@@ -199,8 +198,11 @@ class EncoderDecoder:
                 loss_value = loss.item()/target_length
                 loss_sum += loss_value
             print(loss_sum/len(training_pairs))
-            enc_scheduler.step(loss_sum/len(training_pairs))
-            dec_scheduler.step(loss_sum/len(training_pairs))
+            if epoch%10==0:
+                print(self.predict([[u'ˀnšym', u'nršmym', u'twpˁh']]), '\n')
+
+            if abort:
+                return self
 
         return self
 
@@ -280,6 +282,6 @@ class EncoderDecoder:
         return int2char, char2int
 
 if __name__=='__main__':
-    enc_dec = EncoderDecoder(256, (2,2), 1)
-    enc_dec.prep_model().shuffle().split(0).train()
-    #print(enc_dec.predict([[u'ˀnšym',u'nršmym']]))
+    enc_dec = EncoderDecoder(128, (1,1), 1, 'cpu')
+    enc_dec.prep_model().shuffle().split(0).train(50000)
+    print(enc_dec.predict([[u'ˀnšym', u'nršmym', u'twpˁh']]), '\n')

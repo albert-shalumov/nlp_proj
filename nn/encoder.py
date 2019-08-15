@@ -7,50 +7,57 @@ import codecs
 import time
 import numpy as np
 import re
-
+import sys
 
 class EncoderRNN(nn.Module):
-    def __init__(self, input_size, output_size, hidden_dim, n_layers):
+    def __init__(self, input_size, output_size, hidden_dim, n_layers, dropout, device):
         super(EncoderRNN, self).__init__()
-
+        self.bidir = False
         self.output_size = output_size
         self.n_layers = n_layers
         self.hidden_dim = hidden_dim
-        drop_prob = 0.25
+        self.drop_prob = dropout
+        self.device=device
+        self.lstm = nn.LSTM(input_size, hidden_dim, n_layers, dropout=(self.drop_prob if self.n_layers>1 else 0), batch_first=True, bidirectional=self.bidir)
+        self.fc_cat = nn.Linear((2 if self.bidir else 1)*hidden_dim+150, hidden_dim)
+        self.cat_act = nn.LeakyReLU(0.01)
+        self.fc1 = nn.Linear(hidden_dim, output_size)
+        self.fc2 = nn.Linear(hidden_dim+150, hidden_dim)
+        self.act1 = nn.LeakyReLU(0.01)
+        self.dropout2 = nn.Dropout(self.drop_prob)
+        self.fc2 = nn.Linear(output_size, output_size)
 
-        self.lstm = nn.LSTM(input_size, hidden_dim, n_layers, dropout=drop_prob, batch_first=True)
-        self.dropout = nn.Dropout(drop_prob)
-        self.fc = nn.Linear(hidden_dim, output_size)
-
-    def forward(self, input, hidden):
+    def forward(self, input, mask, hidden):
         batch_size = input.size(0)
-        lstm_out, hidden = self.lstm(input, hidden)
-        lstm_out = lstm_out.contiguous().view(-1, self.hidden_dim)
-
-        out = self.dropout(lstm_out)
-        out = self.fc(out)
-
+        lstm_out, hidden = self.lstm(input[:,:,150:]*mask, hidden)
+        out = self.fc_cat(torch.cat((lstm_out, input[:,:,:150]),-1))
+        out = self.cat_act(out)
+        out = out.contiguous().view(-1, self.hidden_dim)
+        out = self.fc1(out)
+        out = self.act1(out)
+        out = self.dropout2(out)
+        out = self.fc2(out)
         out = out.view(-1, self.output_size)
         #out = out[:, -1]
         return out, hidden
 
     def init_hidden(self, batch_size):
-        weight = next(self.parameters()).data
-        hidden = (weight.new(self.n_layers, batch_size, self.hidden_dim).zero_(),
-                  weight.new(self.n_layers, batch_size, self.hidden_dim).zero_())
+        hidden = (torch.zeros(self.n_layers*(2 if self.bidir else 1), batch_size, self.hidden_dim).to(self.device),
+                  torch.zeros(self.n_layers*(2 if self.bidir else 1), batch_size, self.hidden_dim).to(self.device)) # (h_0, c_0) - for lstm
         return hidden
 
 class Encoder:
-    def __init__(self, hidden_dim=250, n_layers=1, device=None):
-        self.hid_dim = hidden_dim
+    def __init__(self, n_layers=1, droput=0.1, device=None):
+        self.hid_dim = None
         self.n_layers = n_layers
         self.proc_units = None
         self.n_layers = n_layers
+        self.dropout = droput
         if device is None:
             self.device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
         else:
             self.device = device
-        self.batch_size = 16
+        self.batch_size = 64
         self.word_embedding = WordEmbedding()
         self.word_embedding.LoadModel(True)
         self.word_emb_size = 150
@@ -73,10 +80,11 @@ class Encoder:
 
         # Calculate max unit length, dictionaries
         self.max_len = Encoder.CalcMaxLen(self.proc_units)+5
+        self.hid_dim = 128
         unit_dict_sets = Encoder.BuildCharSets(self.proc_units)
         unit_dict_sets[0].add(' ')
         unit_dict_sets[1].update(list('euioa*'))
-        unit_dict_sets[1].update(['e-', 'u-', 'i-', 'o-', 'a-', '*-', ' '])
+        unit_dict_sets[1].update(['e-', 'u-', 'i-', 'o-', 'a-', '*-'])
         self.emb_in_size = len(unit_dict_sets[0])+1
         self.emb_out_size = len(unit_dict_sets[1])+1
 
@@ -85,7 +93,7 @@ class Encoder:
         self.output_int2char, self.output_char2int = Encoder.CreateDictionaries(unit_dict_sets[1])
 
         # Create encoder
-        self.encoder = EncoderRNN(self.emb_in_size*self.max_len+self.word_emb_size, self.emb_out_size,self.hid_dim, self.n_layers).to(self.device)
+        self.encoder = EncoderRNN(self.emb_in_size*self.max_len, self.emb_out_size,self.hid_dim, self.n_layers,self.dropout, self.device).to(self.device)
 
         # Build sliding window sequences
         X = []
@@ -103,10 +111,13 @@ class Encoder:
         # Convert to numpy arrays
         self.X = np.zeros((len(X), self.word_emb_size + self.max_len*self.emb_in_size))
         self.Y = np.zeros(len(Y))
+        self.Mask = np.zeros((len(X), self.max_len*self.emb_in_size))
         for i in range(len(X)):
             self.X[i, :self.word_emb_size] = self.word_embedding.GetEmbedding(X[i][1])
             for j,ch in enumerate(X[i][0]):
                 self.X[i, self.word_emb_size + j*self.emb_in_size+self.input_char2int[ch]] = 1
+                if ch!=' ':
+                    self.Mask[i, j*self.emb_in_size:(j+1)*self.emb_in_size] = 1
             self.Y[i] = self.output_char2int[Y[i]]
 
         return self
@@ -118,50 +129,82 @@ class Encoder:
         return self
 
     def split(self, valid_ratio=0.1):
+        assert valid_ratio>0
+
         train_smpls = self.batch_size*int(self.X.shape[0]*(1-valid_ratio)/self.batch_size)
         valid_smpls = self.batch_size*int((self.X.shape[0]-train_smpls)/self.batch_size)
 
         self.train_X = self.X[np.newaxis, :train_smpls, :].reshape(self.batch_size, -1, self.X.shape[-1])
         self.train_Y = self.Y[np.newaxis, :train_smpls].reshape(self.batch_size, -1)
-        if valid_smpls == 0:
-            self.valid_X = None
-            self.valid_Y = None
-        else:
-            self.valid_X = self.X[np.newaxis, train_smpls:train_smpls+valid_smpls, :].reshape(self.batch_size, -1, self.X.shape[-1])
-            self.valid_Y = self.Y[np.newaxis, train_smpls:train_smpls+valid_smpls].reshape(self.batch_size, -1)
+        self.train_Mask = self.Mask[np.newaxis, :train_smpls, :].reshape(self.batch_size, -1, self.Mask.shape[-1])
+        self.valid_X = self.X[np.newaxis, train_smpls:train_smpls+valid_smpls, :].reshape(self.batch_size, -1, self.X.shape[-1])
+        self.valid_Y = self.Y[np.newaxis, train_smpls:train_smpls+valid_smpls].reshape(self.batch_size, -1)
+        self.valid_Mask = self.Mask[np.newaxis, train_smpls:train_smpls+valid_smpls, :].reshape(self.batch_size, -1, self.Mask.shape[-1])
 
         return self
 
-    def train(self, epochs=10):
-        lr = 1e-2
-        optimizer = optim.Adam(self.encoder.parameters(), lr=lr)
-        scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, factor=0.5, verbose=True, cooldown=5)
+    def train(self, epochs=10, lr=1e-2, alg = 'adagrad'):
+        if alg=='adagrad':
+            optim_alg = optim.Adagrad
+        elif alg=='rprop':
+            optim_alg = optim.Rprop
+        elif alg == 'adamax':
+            optim_alg = optim.Adamax
+        elif alg == 'adamw':
+            optim_alg = optim.AdamW
+        elif alg == 'asgd':
+            optim_alg = optim.ASGD
+        elif alg == 'rmsprop':
+            optim_alg = optim.RMSprop
+        else:
+            raise Exception('Incorrect optimizer')
+
+        optimizer = optim_alg(self.encoder.parameters(), lr=lr)
+        #scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, factor=0.5, threshold=1e-4, verbose=False, cooldown=5)
         criterion = nn.CrossEntropyLoss()
 
         train_inp_seq = torch.from_numpy(self.train_X).float().to(self.device)
         train_tgt_seq = torch.Tensor(self.train_Y).long().to(self.device)
-        if self.valid_Y is not None:
-            valid_inp_seq = torch.from_numpy(self.valid_X).float().to(self.device)
-            valid_tgt_seq = torch.Tensor(self.valid_Y).long().to(self.device)
+        train_mask = torch.Tensor(self.train_Mask).to(self.device)
+        valid_inp_seq = torch.from_numpy(self.valid_X).float().to(self.device)
+        valid_tgt_seq = torch.Tensor(self.valid_Y).long().to(self.device)
+        valid_mask = torch.Tensor(self.valid_Mask).to(self.device)
+
+        min_val_loss = (9999, 0)
 
         for epoch in range(1, epochs+1):
             hidden = self.encoder.init_hidden(self.batch_size)
             optimizer.zero_grad()  # Clears existing gradients from previous epoch
-            output, _ = self.encoder(train_inp_seq, hidden)
+            output, _ = self.encoder(train_inp_seq, train_mask, hidden)
             loss = criterion(output, train_tgt_seq.view(-1))
+            # l2 regularization
+            for name, param in self.encoder.named_parameters():
+                if 'bias' not in name:
+                    loss += (0.5 * 1e-6 * torch.sum(torch.pow(param, 2)))
             loss.backward()
             optimizer.step()
+            abort = False
 
-            if epoch%5 == 0:
-                if self.valid_X is None:
-                    scheduler.step(loss.item())
-                    print(epoch, loss.item())
-                else:
-                    with torch.no_grad():
-                        pred, _ = self.encoder(valid_inp_seq, self.encoder.init_hidden(self.batch_size))
-                        val_loss = criterion(pred, valid_tgt_seq.view(-1))
-                        scheduler.step(val_loss.item(),epoch)
-                    print(epoch, loss.item(), val_loss.item())
+            if epoch%30 == 0:
+                #print(loss.item())
+                #print(encoder.predict([[u'ˀnšym', u'nršmym', u'twpˁh']]), '\n')
+
+                with torch.no_grad():
+                    pred, _ = self.encoder(valid_inp_seq, valid_mask, self.encoder.init_hidden(self.batch_size))
+                    val_loss = criterion(pred, valid_tgt_seq.view(-1))
+                    #scheduler.step(loss.item(),epoch)
+                #print(epoch, loss.item(), val_loss.item())
+                if val_loss.item()<min_val_loss[0]:
+                    min_val_loss = (val_loss.item(), epoch)
+                    #print(loss.item(), min_val_loss)
+                    #print(encoder.predict([[u'ˀnšym', u'nršmym', u'twpˁh']]), '\n')
+
+                if epoch>(min_val_loss[1]+300):  # no decrease for n epochs
+                    break
+
+            if abort:
+                return
+        print(loss.item(), min_val_loss)
 
     def predict(self, pred_set):
         res_set = []
@@ -170,14 +213,20 @@ class Encoder:
             for word in sentence:
                 res_set[-1].append([])
                 input = np.zeros((len(word), self.word_emb_size+self.emb_in_size*self.max_len))
+                mask = np.zeros((len(word), self.emb_in_size*self.max_len))
                 input[:,:self.word_emb_size] = self.word_embedding.GetEmbedding(word)
                 for j, ch in enumerate(word):
                     input[j,self.word_emb_size+j*self.emb_in_size+self.input_char2int[ch]] = 1
+                    if ch!=' ':
+                        mask[j,j*self.emb_in_size:(j+1)*self.emb_in_size] = 1
                 input = input.reshape((1,input.shape[0],input.shape[-1]))
-                input = torch.from_numpy(input).float().to('cpu')
+                mask = mask.reshape((1,mask.shape[0],mask.shape[-1]))
+                input = torch.from_numpy(input).float().to(self.device)
+                mask = torch.from_numpy(mask).float().to(self.device)
                 with torch.no_grad():
-                    pred, _ = self.encoder(input, self.encoder.init_hidden(input.size(0)))
-                    y = pred.detach().numpy()
+                    pred, _ = self.encoder(input, mask, self.encoder.init_hidden(input.size(0)))
+                    pred = nn.Softmax(dim=-1)(pred)
+                    y = pred.detach().to('cpu').numpy()#
                     inds = list(np.argmax(y, axis=-1))
                     for j, ch in enumerate(word):
                         res_set[-1][-1].append(ch)
@@ -213,6 +262,24 @@ class Encoder:
         return int2char, char2int
 
 if __name__=='__main__':
-    encoder = Encoder(256, 1, device='cpu')
-    encoder.prep_model().shuffle(0).split(0.99).train(500)
-    print(encoder.predict([[u'ˀnšym',u'nršmym',u'twpˁh']]))
+    algs = ['adagrad', 'rprop', 'adamax', 'adamw', 'asgd', 'rmsprop']
+    lrs = np.logspace(-3, -1, 50)
+    #sys.stdout = open('log.txt', 'w', encoding='utf-8')
+    while True:
+        rand_state = np.random.RandomState()
+        n_layers = rand_state.randint(1,7)
+        dropout = rand_state.random_sample()*0.25
+        lr = 1e-2#lrs[rand_state.randint(0,50)]#
+        alg = 'adamax'#algs[rand_state.randint(0,len(algs))]
+        print('-----------------------------------------')
+        print(n_layers, dropout, lr, alg)
+        print('-----------------------------------------')
+        encoder = Encoder(n_layers, dropout)
+        encoder.prep_model().shuffle(0).split(0.05).train(50000, lr, alg)
+        print(encoder.predict([[u'ˀnšym',u'nršmym',u'twpˁh']]), '\n')
+
+
+
+    #encoder = Encoder(1, 0.09947844294016317,device='cpu')
+    #encoder.prep_model().shuffle(0).split(0.95).train(15, 0.002559547922699536)
+    #print(encoder.predict([[u'ˀnšym',u'nršmym',u'twpˁh']]))

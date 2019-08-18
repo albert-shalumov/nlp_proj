@@ -56,9 +56,12 @@ class CRF:
 
     def predict(self, pred_set):
         result = []
-        predicted = self.model.tag_sents(pred_set)
-        for i, w_cons in enumerate(predicted):
-            result.append(''.join(x+y for x, y in w_cons))
+        for sent in pred_set:
+            pred_sent = []
+            predicted = self.model.tag_sents(sent)
+            for i, w_cons in enumerate(predicted):
+                pred_sent.append(''.join(x+y for x, y in w_cons))
+            result.append(pred_sent)
         return result
 
     @staticmethod

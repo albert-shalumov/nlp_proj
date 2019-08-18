@@ -80,32 +80,18 @@ class MEMM:
         return conf_mat
 
     def predict(self, pred_set):
-        # Extract features, allocate arrays
-        num_cons_chars = reduce((lambda x, y: MEMM._len(x)+MEMM._len(y)), pred_set)
-        X = np.zeros((num_cons_chars, MEMM.MAX_FTR_LEN))
+        result = []
+        for sep_sent in pred_set:
+            pred_sent = []
+            for i, w_cons in enumerate(sep_sent):
+                X = np.zeros((len(w_cons), MEMM.MAX_FTR_LEN))
+                for j in range(len(w_cons)):
+                    MEMM._word_ftr(w_cons, j, X[j, :])  # extract features from words
+                vowels = [MEMM.VOWELS[int(x)] for x in self.model.predict(X)]
+                pred_sent.append(''.join(x+y for x, y in zip(w_cons, vowels)))
+            result.append(pred_sent)
+        return result
 
-        sample=0
-        for w in pred_set:
-            for i in range(len(w)):
-                MEMM._word_ftr(w, i, X[sample, :])  # extract features from words
-                sample += 1
-        predicted = self.model.predict(X)
-        res = []
-        word_idx = 0
-        tot_ch_idx = 0
-        word_ch_idx = 0
-        word_vow = ''
-        while tot_ch_idx < num_cons_chars:
-            word_vow += MEMM.VOWELS[int(predicted[tot_ch_idx])]
-            tot_ch_idx += 1
-            word_ch_idx += 1
-            if word_ch_idx == len(pred_set[word_idx]):
-                res.append(''.join(x+y for x, y in zip(pred_set[word_idx], word_vow)))
-                word_idx += 1
-                word_ch_idx = 0
-                word_vow = ''
-
-        return res
 
     @staticmethod
     def _len(x):

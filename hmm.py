@@ -58,9 +58,12 @@ class HMM:
 
     def predict(self, pred_set):
         result = []
-        for i, w_cons in enumerate(pred_set):
-            predicted = self.model.best_path(HMM._extract_ngrams(w_cons, self.ngram))
-            result.append(''.join(x+y for x, y in zip(w_cons, predicted)))
+        for sep_sent in pred_set:
+            pred_sent = []
+            for i, w_cons in enumerate(sep_sent):
+                predicted = self.model.best_path(HMM._extract_ngrams(w_cons, self.ngram))
+                pred_sent.append(''.join(x+y for x, y in zip(w_cons, predicted)))
+            result.append(pred_sent)
         return result
 
     VOWELS = [u'a',u'e',u'u',u'i',u'o',u'*']

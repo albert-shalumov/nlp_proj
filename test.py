@@ -8,6 +8,7 @@ from metrics import EditDistance
 from hmm import HMM
 from memm import MEMM
 from crf_word import CRF as CRF_WORD
+from crf_sentence import CRF as CRF_SENT
 from post_proc.syllabification import syllabification
 from post_proc.post_processing import romanize
 
@@ -25,19 +26,25 @@ def PrintConfMat(conf_mat):
     print('ConfMat:\n', np.array_str(conf_mat, max_line_width=300, precision=3))
 
 def LoadTestData(file='data/HaaretzOrnan_annotated_test.txt'):
-    words, vow_words, syll_words, rom_words = [], [], [], []
+    sents, vow_words, syll_words, rom_words = [[]], [], [], []
     with codecs.open(file, encoding='utf-8') as f:
         lines = f.readlines()
         for line in lines:
             line = line.rstrip()
-            if line.startswith(u'#') or len(line) == 0:
+            if line.startswith(u'#'):
+                continue
+            if len(line) == 0:
+                if len(sents[-1])>0:
+                    sents.append([])
                 continue
             split_line = line.split(u' ')
-            words.append(split_line[2])
+            sents[-1].append(split_line[2])
             vow_words.append(split_line[3].replace(u'-', u''))
             syll_words.append(split_line[3])
             rom_words.append(split_line[4])
-    return words, vow_words, syll_words, rom_words
+    if len(sents[-1])==0:
+        sents.remove(sents[-1])
+    return sents, vow_words, syll_words, rom_words
 
 def CalcConfMatrix(pred, gold):
     vow = list(u'euioa*')
@@ -52,6 +59,7 @@ def TestModel(model, data):
     dist = [None]
     pred_stage = [None]
     pred_stage.append(model.predict(data[0]))  # predict test data
+    pred_stage[1] = [w for sent in pred_stage[1] for w in sent]  # flatten sentences for metric calculation
     pred_stage.append([syllabification(w) for w in pred_stage[1]])  # calculate syllabification
     pred_stage.append([romanize(w) for w in pred_stage[2]])  # calculate romanization
 
@@ -70,12 +78,12 @@ def test():
     states = [u'a', u'e', u'u', u'i', u'o', u'*']
     state_idx = {x: i for i, x in enumerate(states)}
 
-    (words, voweled_words, syllable_words, romanized_words) = LoadTestData()
+    data = LoadTestData()
 
-    untrained_models = [(HMM(2), 'HMM, ngram=2'), (MEMM(), 'MEMM'), (CRF_WORD(), 'CRF (word level)')]
+    untrained_models = [(HMM(2), 'HMM, ngram=2'), (MEMM(), 'MEMM'), (CRF_WORD(), 'CRF (word level)'), (CRF_SENT(), 'CRF (sentence level)')]
     for model,name in untrained_models:
         trained_model = model.prep_data().shuffle(None).split(0).train()
-        conf_mat, dist = TestModel(trained_model, (words, voweled_words, syllable_words, romanized_words))
+        conf_mat, dist = TestModel(trained_model, data)
         print('\n\n')
         print(name)
         print('='*80)

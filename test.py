@@ -75,11 +75,7 @@ def TestModel(model, data):
     return conf_mat, dist
 
 def test():
-    states = [u'a', u'e', u'u', u'i', u'o', u'*']
-    state_idx = {x: i for i, x in enumerate(states)}
-
     data = LoadTestData()
-
     untrained_models = [(HMM(2), 'HMM, ngram=2'), (MEMM(), 'MEMM'), (CRF_WORD(), 'CRF (word level)'), (CRF_SENT(), 'CRF (sentence level)')]
     for model,name in untrained_models:
         trained_model = model.prep_data().shuffle(None).split(0).train()

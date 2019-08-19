@@ -1880,23 +1880,185 @@
 6 הבנקים hbnqym ha-ban*-qiy*m* a-ban-kim 
 #7 . . . 
 
-# sent_id = 90
-# text =  ב16 באוקטובר הגיע אל העיר דה מוין , במערב התיכון של ארצות הברית , הנשיא גורג בוש .
-#1 ב16 b16 b16 
-2 באוקטובר bˀwqṭwbr be-ˀow*q*-ṭow*-ber* be-ok-to-ber 
-3 הגיע hgyˁ he-giy*-ˁa e-gi-a
-4 אל ˀl ˀel* el 
-5 העיר hˁyr ha-ˁiy*r* a-ir 
-#6 דה dh dh 
-#7 מוין mwyn mwyn 
+# sent_id = 91
+# text =  כאן הוא גם נתקל בהפגנה הראשונה נגד מלחמה במפרץ הפרסי .
+1 כאן kˀn kaˀ*n* kan
+2 הוא hwˀ huw*ˀ* u 
+3 גם gm gam* gam 
+4 נתקל ntql nit*-qal* nit-kal 
+5 בהפגנה bhpgnh ba-hap*-ga-nah* ba-af-ga-na 
+6 הראשונה hrˀšwnh ha-riˀ*-šow*-nah* a-ri-sho-na 
+7 נגד ngd ne-ged* ne-ged 
+8 מלחמה mlḥmh mil*-ḥa-mah* mil-ha-ma 
+9 במפרץ bmprç ba-mip*-raç* ba-mif-rats 
+10 הפרסי hprsy ha-par*-siy* a-par-si
+#11 . . . 
+
+# sent_id = 92
+# text =  " לא נשפוך דם למען נפט " , קראו לעברו כמה צעירים באסיפת בחירות לטובת מועמד רפובליקאי .
+#1 " " " 
+2 לא lˀ loˀ* lo
+3 נשפוך nšpwk niš*-pow*k* nish-poh 
+4 דם dm dam* dam 
+5 למען lmˁn le-ma-ˁan* le-ma-an 
+6 נפט npṭ nep*ṭ* neft 
+#7 " " " 
 #8 , , , 
-9 במערב bmˁrb be-ma-ˁa-rab* be-ma-a-rav 
-10 התיכון htykwn ha-tiy*-kow*n* a-ti-hon 
-11 של šl šel* shel 
-12 ארצות ˀrçwt ˀar*-çow*t* ar-tsot 
-13 הברית hbryt hab*-riy*t* ab-rit 
-#14 , , , 
-15 הנשיא hnšyˀ ha-na-šiy*ˀ* a-na-si 
-#16 גורג gwrg gwrg 
-#17 בוש bwš bwš 
+9 קראו qrˀw qar*-ˀuw* kar-u 
+10 לעברו lˁbrw le-ˁeb*-row* le-ev-ro 
+11 כמה kmh ka-mah* ka-ma 
+12 צעירים çˁyrym çeˁ*-yi-riy*m* tse-i-rim 
+#13 באסיפת bˀsypt baˀasey*pat* ba 
+#14 בחירות bḥyrwt bḥyrwt 
+15 לטובת lṭwbt le-ṭow*-bat* le-to-vat 
+16 מועמד mwˁmd mow*-ˁa-mad* mo-a-mad 
+17 רפובליקאי rpwblyqˀy re-puw*b*-liy*-qa-ˀiy* re-pub-li-ka-i 
 #18 . . . 
+
+# sent_id = 93
+# text =  " לא נפט " , כעס הנשיא , " מדובר פה בתוקפנות גלויה " .
+#1 " " " 
+2 לא lˀ loˀ* lo
+3 נפט npṭ nep*ṭ* neft 
+#4 " " " 
+#5 , , , 
+6 כעס kˁs ka-ˁas* ka-as 
+7 הנשיא hnšyˀ ha-na-šiy*ˀ* a-na-si 
+#8 , , , 
+#9 " " " 
+10 מדובר mdwbr me-duw*-bar* me-du-bar 
+11 פה ph poh* po 
+12 בתוקפנות btwqpnwt be-tow*q*-pa-now*t* be-tok-fa-not 
+13 גלויה glwyh g*luw*-yah* glu-ya 
+#14 " " " 
+#15 . . . 
+
+# sent_id = 94
+# text =  איובה היא מקום לא - שגרתי .
+#1 איובה ˀywbh ˀywbh 
+2 היא hyˀ hiy*ˀ* yi 
+3 מקום mqwm ma-qow*m* ma-kom 
+4 לא lˀ loˀ* lo 
+#5 - - - 
+6 שגרתי šgrty šig*-ra-tiy* shig-ra-ti 
+#7 . . . 
+
+# sent_id = 95
+# text =  אומרים עליה , שיש בה יותר ארגונים פציפיסטיים לקילומטר מרובע מאשר בכל מדינה אחרת של ארה"ב .
+1 אומרים ˀwmrym ˀow*m*-riy*m* om-rim 
+2 עליה ˁlyh ˁa-le-yah* a-le-ya 
+#3 , , , 
+4 שיש šyš še-yeš* she-yesh 
+5 בה bh bah* ba 
+6 יותר ywtr yuw*-ter* yu-ter 
+7 ארגונים ˀrgwnym ˀir*-guw*-niy*m* ir-gu-nim 
+#8 פציפיסטיים pçypysṭyym pçypysṭyym 
+9 לקילומטר lqylwmṭr le-qiy*-low*-me-ṭer* le-ki-lo-me-ter 
+10 מרובע mrwbˁ me-ruw*-baˁ* me-ru-ba 
+11 מאשר mˀšr ma-ˀa-šer* ma-a-sher 
+12 בכל bkl be-kol* be-kol 
+13 מדינה mdynh me-diy*-nah* me-di-na 
+14 אחרת ˀḥrt ˀa-ḥe-ret* a-he-ret 
+15 של šl šel* shel 
+#16 ארה"ב ˀrh"b ˀrh"b 
+#17 . . . 
+
+# sent_id = 96
+# text =  פציפיזם אינו מוגבל באיובה לסטודנטים רדיקליים , אפשר למצוא אותו גם בין חקלאים ופועלי חרושת .
+#1 פציפיזם pçypyzm pçypyzm 
+2 אינו ˀynw ˀey*-now* ey-no 
+3 מוגבל mwgbl muw*g*-bal* mug-bal 
+#4 באיובה bˀywbh bˀywbh 
+#5 לסטודנטים lsṭwdnṭym les*-ṭuw*-den*-ṭiy*m* les-tu-den-tim 
+#6 רדיקליים rdyqlyym ra-diy*-qa-liy-iy*m* ra-di-ka-li-im  
+#7 , , , 
+8 אפשר ˀpšr ˀep*-šar* ef-shar 
+9 למצוא lmçwˀ lim*-çow*ˀ* lim-tso 
+10 אותו ˀwtw ˀow*-tow* o-to 
+11 גם gm gam* gam 
+12 בין byn bey*n* beyn 
+13 חקלאים ḥqlˀym ḥaq*-la-ˀiy*m* hak-la-im 
+14 ופועלי wpwˁly we-pow*-ˁa-ley* ve-po-a-ley 
+15 חרושת ḥrwšt ḥa-row*-šet* ha-ro-shet 
+#16 . . . 
+
+# sent_id = 97
+# text =  איובה היא מאסמי הדגנים של ארה"ב , ולפרנסתה היא מייצאת אותם למדינות כברית המועצות .
+#1 איובה ˀywbh ˀywbh 
+2 היא hyˀ hiy*ˀ* yi 
+3 מאסמי mˀsmy me-ˀa-sa-mey* me-a-sa-mey 
+4 הדגנים hdgnym had*-ga-niy*m* ad-ga-nim 
+5 של šl šel* shel 
+#6 ארה"ב ˀrh"b ˀrh"b 
+#7 , , , 
+8 ולפרנסתה wlprnsth we-le-par*-na-sa-tah* ve-le-par-na-sa-ta 
+9 היא hyˀ hiy*ˀ* yi 
+10 מייצאת myyçˀt mey*-ya-çeˀ*t* mey-ya-tset 
+11 אותם ˀwtm ˀow*-tam* o-tam 
+12 למדינות lmdynwt le-me-diy*-now*t* le-me-di-not 
+#13 כברית kbryt ke-b*riy*t* ke-brit 
+14 המועצות hmwˁçwt ha-mow*-ˁa-çow*t* a-mo-a-tsot 
+#15 . . . 
+
+# sent_id = 98
+# text =  ב0891 נקלעה איובה , יחד עם מדינות חקלאיות אחרות במערב התיכון , לסחרור קשה : הנשיא גימי קרטר החליט להטיל חרם דגנים על הסובייטים , בגלל פלישתם לאפגניסטן .
+#1 ב0891 b0891 b0891 
+2 נקלעה nqlˁh niq*-le-ˁah* nik-le-a 
+#3 איובה ˀywbh ˀywbh 
+#4 , , , 
+5 יחד yḥd ya-ḥad* ya-had 
+6 עם ˁm ˁim* im 
+7 מדינות mdynwt me-diy*-now*t* me-di-not 
+8 חקלאיות ḥqlˀywt ḥaq*-la-ˀi-yow*t* hak-la-i-yot 
+9 אחרות ˀḥrwt ˀa-ḥe-row*t* a-he-rot 
+10 במערב bmˁrb be-ma-ˁa-rab* be-ma-a-rav 
+11 התיכון htykwn ha-tiy*-kow*n* a-ti-hon 
+#12 , , , 
+13 לסחרור lsḥrwr le-siḥ*-ruw*r* le-sih-rur 
+14 קשה qšh qa-šeh* ka-she 
+#15 : : : 
+16 הנשיא hnšyˀ ha-na-šiy*ˀ* a-na-si 
+#17 גימי gymy gymy 
+#18 קרטר qrṭr qrṭr 
+19 החליט hḥlyṭ heḥ*-liy*ṭ* eh-lit 
+20 להטיל lhṭyl le-ha-ṭiy*l* le-a-til 
+21 חרם ḥrm ḥe-rem* he-rem 
+22 דגנים dgnym d*ga-niy*m* dga-nim 
+23 על ˁl ˁal* al 
+#24 הסובייטים hswbyyṭym hasow*b*yey*ṭym 
+#25 , , , 
+26 בגלל bgll big*-lal* big-lal 
+27 פלישתם plyštm p*liy*-ša-tam* pli-sha-tam 
+28 לאפגניסטן lˀpgnysṭn le-ˀap*-ga-niy*s*-ṭan* le-af-ga-nis-tan 
+#29 . . . 
+
+# sent_id = 99
+# text =  איובה שילמה את המחיר עד אמצע שנות ה80 .
+#1 איובה ˀywbh ˀywbh 
+2 שילמה šylmh šiy*l*-mah* shil-ma 
+3 את ˀt ˀet* et 
+4 המחיר hmḥyr ha-me-ḥiy*r* a-me-hir 
+5 עד ˁd ˁad* ad 
+6 אמצע ˀmçˁ ˀem*-çaˁ* em-tsa 
+7 שנות šnwt š*now*t* shnot 
+#8 ה80 h80 h80 
+#9 . . . 
+
+# sent_id = 100
+# text =  כלכלתה היתה שקועה במיתון קשה , בשעה שרוב המדינות האחרות בארה"ב נהנו משגשוג חסר תקדים .
+1 כלכלתה klklth kal*-ka-la-tah* kal-ka-la-ta 
+2 היתה hyth hay*-tah* ay-ta 
+3 שקועה šqwˁh š*quw*-ˁah* shku-a 
+4 במיתון bmytwn be-miy*-tuw*n* be-mi-tun 
+5 קשה qšh qa-šeh* ka-she 
+#6 , , , 
+7 בשעה bšˁh be-ša-ˁah* be-sha-a 
+8 שרוב šrwb še-row*b* she-rov 
+9 המדינות hmdynwt ha-me-diy*-now*t* a-me-di-not 
+10 האחרות hˀḥrwt ha-ˀa-ḥe-row*t* a-a-he-rot 
+#11 בארה"ב bˀrh"b bˀrh"b 
+12 נהנו nhnw ne-he-nuw* ne-e-nu
+13 משגשוג mšgšwg mi-šig*-šuw*g* mi-sig-sug 
+14 חסר ḥsr ḥa-sar* ha-sar 
+15 תקדים tqdym taq*-diy*m* tak-dim 
+#16 . . . 

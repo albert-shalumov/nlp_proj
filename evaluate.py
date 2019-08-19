@@ -141,7 +141,6 @@ def evaluate():
     print('Min: ', min(dError))
     print('Max: ', max(dError))
 
-
     p_syllable_words = list()
     p_romanized_words = list()
     C = CRF_WORD()

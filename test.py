@@ -17,11 +17,15 @@ stage_names = ['', 'Vowels', 'Syllabification', 'Romanization']
 def PrintConfMat(conf_mat):
     precision, recall = metrics.MicroAvg(conf_mat)
     f1 = metrics.Fscore(precision, recall, 1)
-    print('MicroAvg:', precision, recall, f1)
+    print('MicroAvg:')
+    print('   Precision = {}\n   Recall = {}\n   F1 = {}'.format(precision, recall,f1))
+
     precision, recall = metrics.MacroAvg(conf_mat)
     f1 = metrics.Fscore(recall, precision, 1)
-    print('MacroAvg:', precision, recall, f1)
-    print('AvgAcc:', metrics.AvgAcc(conf_mat))
+    print('MacroAvg:')
+    print('   Precision = {}\n   Recall = {}\n   F1 = {}'.format(precision, recall, f1))
+
+    print('Avg Accuracy:', metrics.AvgAcc(conf_mat))
     conf_mat = metrics.NormalizeConfusion(conf_mat)
     print('ConfMat:\n', np.array_str(conf_mat, max_line_width=300, precision=3))
 
@@ -80,7 +84,7 @@ def test():
     for model,name in untrained_models:
         trained_model = model.prep_data().shuffle(None).split(0).train()
         conf_mat, dist = TestModel(trained_model, data)
-        print('\n\n')
+        print('\n')
         print(name)
         print('='*80)
         print('Vowel metrics:')

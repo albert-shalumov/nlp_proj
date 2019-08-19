@@ -192,3 +192,24 @@
 19 הנמוכה hnmwkh ha-ne-muw*-kah* a-ne-mu-ha 
 20 שבהן šbhn še-ba-hen* she-ba-en 
 #21 . . . 
+
+# sent_id = 90
+# text =  ב16 באוקטובר הגיע אל העיר דה מוין , במערב התיכון של ארצות הברית , הנשיא גורג בוש .
+#1 ב16 b16 b16 
+2 באוקטובר bˀwqṭwbr be-ˀow*q*-ṭow*-ber* be-ok-to-ber 
+3 הגיע hgyˁ he-giy*-ˁa e-gi-a
+4 אל ˀl ˀel* el 
+5 העיר hˁyr ha-ˁiy*r* a-ir 
+#6 דה dh dh 
+#7 מוין mwyn mwyn 
+#8 , , , 
+9 במערב bmˁrb be-ma-ˁa-rab* be-ma-a-rav 
+10 התיכון htykwn ha-tiy*-kow*n* a-ti-hon 
+11 של šl šel* shel 
+12 ארצות ˀrçwt ˀar*-çow*t* ar-tsot 
+13 הברית hbryt hab*-riy*t* ab-rit 
+#14 , , , 
+15 הנשיא hnšyˀ ha-na-šiy*ˀ* a-na-si 
+#16 גורג gwrg gwrg 
+#17 בוש bwš bwš 
+#18 . . . 

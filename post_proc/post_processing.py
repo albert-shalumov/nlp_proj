@@ -53,4 +53,4 @@ def romanize(word):
 
 
 if __name__ == "__main__":
-    print(romanize ("ko-ḥ*"))
+    print(romanize (u"ko-ḥ*"))

@@ -1,12 +1,19 @@
 from nltk.tag.hmm import *
+from nltk.probability import *
+from itertools import product
 import codecs
 import numpy as np
 import metrics
 from copy import deepcopy
 
 class HMM:
-    def __init__(self, ngram):
-        self.ngram = ngram
+    def __init__(self, config):
+        self.ngram = config['ngram']
+        self.est = config['est']
+        if self.est == 'add-delta':
+            self.delta = config['delta']
+        if self.est == 'kneser-ney':
+            self.discount = config['discount']
 
     def prep_data(self, file='data/HaaretzOrnan_annotated.txt'):
         ngrams = set()
@@ -41,8 +48,22 @@ class HMM:
         return self
 
     def train(self):
+        ngram_list = []
+        [ngram_list.extend([x[0] for x in w]) for w in self.train_set]
+        freq_dist = FreqDist(ngram_list)
+        if self.est == 'mle':
+            est = lambda fd, bins: MLEProbDist(fd)
+        elif self.est == 'laplace':
+            est = lambda fd, bins: LaplaceProbDist(fd)
+        elif self.est == 'good-turing':
+            est = lambda fd, bins: SimpleGoodTuringProbDist(fd)
+        elif self.est == 'add-delta':
+            est = lambda fd, bins: LidstoneProbDist(fd, gamma=self.delta)
+        else:
+            print('Unknown smoothing "{}". Reverting to MLE.'.format(self.est))
+            est = lambda fd, bins: MLEProbDist(fd)
         hmm_trainer = HiddenMarkovModelTrainer(states = HMM.VOWELS, symbols = self.ngrams)
-        self.model = hmm_trainer.train(labeled_sequences=self.train_set)
+        self.model = hmm_trainer.train_supervised(self.train_set, estimator=est)
         return self
 
     def eval(self):
@@ -68,6 +89,7 @@ class HMM:
 
     VOWELS = [u'a',u'e',u'u',u'i',u'o',u'*']
     VOWELS_IDX = {x:i for i,x in enumerate(VOWELS)}
+    ESTIMATORS = ['mle', 'laplace', 'add-delta', 'kneser-ney', 'good-turing']
     @staticmethod
     def _extract_ngrams(word, ngram):
         start_symb=u'-'
@@ -80,23 +102,32 @@ class HMM:
 
 
 if __name__ == '__main__':
-    for ngram in range(1,5,1):
+    verbose=True
+    ngrams = [{'ngram':x} for x in range(1,8,1)]
+    smooth = [{'est':'mle'}, {'est':'laplace'}, {'est':'good-turing'}]
+    smooth.extend([{'est':'add-delta', 'delta':x/10} for x in range(1,10,1)])
+
+    for config in itertools.product(ngrams, smooth):
+        config = {**config[0], **config[1]}
         if 'conf_mat' in locals():
             del conf_mat
-        for iters in range(5):
-            hmm = HMM(ngram)
+        for iters in range(1):
+            hmm = HMM(config)
             if 'conf_mat' in locals():
                 conf_mat += hmm.prep_data().shuffle(None).split(0.1).train().eval()
             else:
                 conf_mat  = hmm.prep_data().shuffle(None).split(0.1).train().eval()
-        print("|Ngram| = {}: ".format(ngram))
+        print("Configuration = {}: ".format(config))
         precision, recall = metrics.MicroAvg(conf_mat)
         f1 = metrics.Fscore(precision, recall, 1)
-        print('MicroAvg:',precision,recall,f1)
+        if verbose:
+            print('MicroAvg:',precision,recall,f1)
         precision, recall = metrics.MacroAvg(conf_mat)
         f1 = metrics.Fscore(recall, precision, 1)
-        print('MacroAvg:', precision, recall, f1)
+        if verbose:
+            print('MacroAvg:', precision, recall, f1)
         print('AvgAcc:',metrics.AvgAcc(conf_mat))
         conf_mat = metrics.NormalizeConfusion(conf_mat)
-        print('ConfMat:\n', np.array_str(conf_mat, max_line_width=300, precision=4))
-        print('----------------------------------------------')
+        if verbose:
+            print('ConfMat:\n', np.array_str(conf_mat, max_line_width=300, precision=4))
+            print('----------------------------------------------')

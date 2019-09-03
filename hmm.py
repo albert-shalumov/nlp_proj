@@ -9,11 +9,12 @@ from copy import deepcopy
 class HMM:
     def __init__(self, config):
         self.ngram = config['ngram']
+        if config['est'] not in HMM.ESTIMATORS:
+            raise Exception('Unknown estimator {}. See HMM.ESTIMATORS for supported ones.'.format(config['est']))
         self.est = config['est']
         if self.est == 'add-delta':
             self.delta = config['delta']
-        if self.est == 'kneser-ney':
-            self.discount = config['discount']
+
 
     def prep_data(self, file='data/HaaretzOrnan_annotated.txt'):
         ngrams = set()
@@ -89,7 +90,7 @@ class HMM:
 
     VOWELS = [u'a',u'e',u'u',u'i',u'o',u'*']
     VOWELS_IDX = {x:i for i,x in enumerate(VOWELS)}
-    ESTIMATORS = ['mle', 'laplace', 'add-delta', 'kneser-ney', 'good-turing']
+    ESTIMATORS = ['mle', 'laplace', 'add-delta', 'good-turing']
     @staticmethod
     def _extract_ngrams(word, ngram):
         start_symb=u'-'
@@ -107,27 +108,32 @@ if __name__ == '__main__':
     smooth = [{'est':'mle'}, {'est':'laplace'}, {'est':'good-turing'}]
     smooth.extend([{'est':'add-delta', 'delta':x/10} for x in range(1,10,1)])
 
-    for config in itertools.product(ngrams, smooth):
-        config = {**config[0], **config[1]}
-        if 'conf_mat' in locals():
-            del conf_mat
-        for iters in range(1):
-            hmm = HMM(config)
+    with open('hmm_res.csv', 'w') as f:
+        for config in itertools.product(ngrams, smooth):
+            config = {**config[0], **config[1]}
             if 'conf_mat' in locals():
-                conf_mat += hmm.prep_data().shuffle(None).split(0.1).train().eval()
-            else:
-                conf_mat  = hmm.prep_data().shuffle(None).split(0.1).train().eval()
-        print("Configuration = {}: ".format(config))
-        precision, recall = metrics.MicroAvg(conf_mat)
-        f1 = metrics.Fscore(precision, recall, 1)
-        if verbose:
+                del conf_mat
+            for iters in range(5):
+                hmm = HMM(config)
+                if 'conf_mat' in locals():
+                    conf_mat += hmm.prep_data().shuffle(0).split(0.1).train().eval()
+                else:
+                    conf_mat  = hmm.prep_data().shuffle(0).split(0.1).train().eval()
+            res_str = '{};'.format(config)
+            print("Configuration = {}: ".format(config))
+            precision, recall = metrics.MicroAvg(conf_mat)
+            f1 = metrics.Fscore(precision, recall, 1)
+            res_str += '{};'.format(f1)
             print('MicroAvg:',precision,recall,f1)
-        precision, recall = metrics.MacroAvg(conf_mat)
-        f1 = metrics.Fscore(recall, precision, 1)
-        if verbose:
+            precision, recall = metrics.MacroAvg(conf_mat)
+            f1 = metrics.Fscore(recall, precision, 1)
+            res_str += '{};'.format(f1)
             print('MacroAvg:', precision, recall, f1)
-        print('AvgAcc:',metrics.AvgAcc(conf_mat))
-        conf_mat = metrics.NormalizeConfusion(conf_mat)
-        if verbose:
-            print('ConfMat:\n', np.array_str(conf_mat, max_line_width=300, precision=4))
-            print('----------------------------------------------')
+            acc = metrics.AvgAcc(conf_mat)
+            res_str += '{};'.format(acc)
+            print('AvgAcc:', acc)
+            f.write(res_str+'\n')
+            conf_mat = metrics.NormalizeConfusion(conf_mat)
+            if verbose:
+                print('ConfMat:\n', np.array_str(conf_mat, max_line_width=300, precision=4))
+                print('----------------------------------------------')

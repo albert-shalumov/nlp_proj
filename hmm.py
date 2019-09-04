@@ -48,21 +48,8 @@ class HMM:
         self.valid_set = None if valid_ratio==0 else self.data[num_train:]
         return self
 
-    def train(self):
-        ngram_list = []
-        [ngram_list.extend([x[0] for x in w]) for w in self.train_set]
-        freq_dist = FreqDist(ngram_list)
-        if self.est == 'mle':
-            est = lambda fd, bins: MLEProbDist(fd)
-        elif self.est == 'laplace':
-            est = lambda fd, bins: LaplaceProbDist(fd)
-        elif self.est == 'good-turing':
-            est = lambda fd, bins: SimpleGoodTuringProbDist(fd)
-        elif self.est == 'add-delta':
-            est = lambda fd, bins: LidstoneProbDist(fd, gamma=self.delta)
-        else:
-            print('Unknown smoothing "{}". Reverting to MLE.'.format(self.est))
-            est = lambda fd, bins: MLEProbDist(fd)
+    def train(self, load_model=None):
+        est = self._gen_estimator()
         hmm_trainer = HiddenMarkovModelTrainer(states = HMM.VOWELS, symbols = self.ngrams)
         self.model = hmm_trainer.train_supervised(self.train_set, estimator=est)
         return self
@@ -101,9 +88,23 @@ class HMM:
             l.append(''.join(w[i:i+ngram]))
         return l
 
+    def _gen_estimator(self):
+        if self.est == 'mle':
+            est = lambda fd, bins: MLEProbDist(fd)
+        elif self.est == 'laplace':
+            est = lambda fd, bins: LaplaceProbDist(fd)
+        elif self.est == 'good-turing':
+            est = lambda fd, bins: SimpleGoodTuringProbDist(fd)
+        elif self.est == 'add-delta':
+            est = lambda fd, bins: LidstoneProbDist(fd, gamma=self.delta)
+        else:
+            print('Unknown smoothing "{}". Reverting to MLE.'.format(self.est))
+            est = lambda fd, bins: MLEProbDist(fd)
+        return est
+
 
 if __name__ == '__main__':
-    verbose=True
+    verbose=False
     ngrams = [{'ngram':x} for x in range(1,8,1)]
     smooth = [{'est':'mle'}, {'est':'laplace'}, {'est':'good-turing'}]
     smooth.extend([{'est':'add-delta', 'delta':x/10} for x in range(1,10,1)])

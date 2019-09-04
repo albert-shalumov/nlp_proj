@@ -2,10 +2,14 @@ from nltk.tag.crf import CRFTagger
 import codecs
 import numpy as np
 import metrics
+from itertools import combinations
 
 class CRF:
-    def __init__(self):
-        pass
+    def __init__(self, config):
+        self.ftrs = config['ftrs']
+        for ftr in self.ftrs:
+            if ftr not in CRF.CONFIG:
+                raise Exception('Unknown feature {}. See MEMM.CONFIG for supported ones.'.format(CRF.CONFIG))
 
     def prep_data(self, file='data/HaaretzOrnan_annotated.txt'):
         self.data = []
@@ -37,8 +41,9 @@ class CRF:
         self.valid_set = None if valid_ratio==0 else self.data[num_train:]
         return self
 
-    def train(self):
-        self.model = CRFTagger(CRF._extract_ftr, verbose=False,
+    def train(self, load_model=None):
+        _extract_ftr = self._gen_ftr_func()
+        self.model = CRFTagger(_extract_ftr, verbose=False,
                        training_opt={"c1": 0, "c2": 0, "num_memories": 50, "epsilon": 1e-7, "delta": 1e-8})
         self.model.train(self.train_set, 'word_crf_model')
         return self
@@ -70,37 +75,86 @@ class CRF:
 
     VOWELS = [u'a',u'e',u'u',u'i',u'o',u'*']
     VOWELS_IDX = {x:i for i,x in enumerate(VOWELS)}
-    @staticmethod
-    def _extract_ftr(tokens, i):
-        # print(tokens, i, tokens[i])
-        feature_list = []
-        feature_list.append("pos="+str(i))
-        feature_list.append("cur="+tokens[i])
-        feature_list.append("first="+tokens[0])
-        feature_list.append("last="+tokens[-1])
-        feature_list.append("len="+str(len(tokens)))
-        if i > 0:
-            feature_list.append("prev="+tokens[i-1])
-        if i < (len(tokens)-1):
-            feature_list.append("next="+tokens[i+1])
-        return feature_list
+    CONFIG = ['IS_FIRST', 'IS_LAST', 'IDX', 'VAL', 'PRV_VAL', 'NXT_VAL', 'FRST_VAL', 'LST_VAL', 'SCND_VAL',
+              'SCND_LST_VAL', 'LEN']
+
+    def _gen_ftr_func(self):
+        # Closure
+        def _extract_ftr(tokens, i):
+            # print(tokens, i, tokens[i])
+            feature_list = []
+            if 'IS_FIRST' in self.ftrs:
+                feature_list.append("is_first="+str(1 if i == 0 else 0))
+
+            if 'IS_LAST' in self.ftrs:
+                feature_list.append("is_last="+str(1 if i == (len(tokens)-1) else 0))
+
+            if 'IDX' in self.ftrs:
+                feature_list.append("pos="+str(i))
+
+            if 'VAL' in self.ftrs:
+                feature_list.append("cur="+tokens[i])
+
+            if 'PRV_VAL' in self.ftrs:
+                if i > 0:
+                    feature_list.append("prev="+tokens[i-1])
+
+            if 'NXT_VAL' in self.ftrs:
+                if i < (len(tokens)-1):
+                    feature_list.append("next="+tokens[i+1])
+
+            if 'FRST_VAL' in self.ftrs:
+                feature_list.append("first="+tokens[0])
+
+            if 'LST_VAL' in self.ftrs:
+                feature_list.append("last="+tokens[-1])
+
+            if 'LEN' in self.ftrs:
+                feature_list.append("len="+str(len(tokens)))
+
+            if 'SCND_VAL' in self.ftrs:
+                if len(tokens)>1:
+                    feature_list.append("scnd="+tokens[1])
+
+            if 'SCND_LST_VAL' in self.ftrs:
+                if len(tokens)>1:
+                    feature_list.append("scnd_last="+tokens[-2])
+
+            return feature_list
+        return _extract_ftr
+
 
 if __name__ == '__main__':
-    print("Word CRF: ")
-    for i in range(5):
-        crf = CRF()
-        #crf.prep_data().shuffle().split(0).train().predict(['ˀnšym', u'nršmym'])
-        if 'conf_mat' in locals():
-            conf_mat += crf.prep_data().shuffle(None).split(0.1).train().eval()
-        else:
-            conf_mat = crf.prep_data().shuffle(None).split(0.1).train().eval()
-    precision, recall = metrics.MicroAvg(conf_mat)
-    f1 = metrics.Fscore(precision, recall, 1)
-    print('MicroAvg:',precision,recall,f1)
-    precision, recall = metrics.MacroAvg(conf_mat)
-    f1 = metrics.Fscore(recall, precision, 1)
-    print('MacroAvg:', precision, recall, f1)
-    print('AvgAcc:',metrics.AvgAcc(conf_mat))
-    conf_mat = metrics.NormalizeConfusion(conf_mat)
-    print('ConfMat:\n', np.array_str(conf_mat, max_line_width=300, precision=3))
-    print('----------------------------------------------')
+    verbose = False
+    with open('crf_word_res.csv','w') as f:
+        for num_ftrs in range(len(CRF.CONFIG)):
+            num_ftrs += 1
+            for ftrs in combinations(CRF.CONFIG, num_ftrs):
+                config = {'ftrs':ftrs}
+                if 'conf_mat' in locals():
+                    del conf_mat
+                for i in range(5):
+                    crf = CRF(config)
+                    #crf.prep_data().shuffle().split(0).train().predict(['ˀnšym', u'nršmym'])
+                    if 'conf_mat' in locals():
+                        conf_mat += crf.prep_data().shuffle(0).split(0.1).train().eval()
+                    else:
+                        conf_mat = crf.prep_data().shuffle(0).split(0.1).train().eval()
+                res_str = '{};'.format(config)
+                print("Configuration = {}: ".format(config))
+                precision, recall = metrics.MicroAvg(conf_mat)
+                f1 = metrics.Fscore(precision, recall, 1)
+                res_str += '{};'.format(f1)
+                print('MicroAvg:',precision,recall,f1)
+                precision, recall = metrics.MacroAvg(conf_mat)
+                f1 = metrics.Fscore(recall, precision, 1)
+                res_str += '{};'.format(f1)
+                print('MacroAvg:', precision, recall, f1)
+                acc = metrics.AvgAcc(conf_mat)
+                res_str += '{};'.format(acc)
+                print('AvgAcc:',acc)
+                f.write(res_str+'\n')
+                conf_mat = metrics.NormalizeConfusion(conf_mat)
+                if verbose:
+                    print('ConfMat:\n', np.array_str(conf_mat, max_line_width=300, precision=4))
+                    print('----------------------------------------------')

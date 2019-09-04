@@ -63,9 +63,9 @@ class MEMM:
             self.valid_Y = self.Y[self.train_X.shape[0]:]
         return self
 
-    def train(self):
+    def train(self, load_model=None):
         # Train model using logistic regression.
-        # If number of features becomes too big - use PCA reduce
+        # If number of features becomes too big - use PCA or similar to reduce
         self.model = LogisticRegression(multi_class='multinomial', solver='lbfgs', max_iter=5000)
         self.model.fit(self.train_X, self.train_Y)
         return self

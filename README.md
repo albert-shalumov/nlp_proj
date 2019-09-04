@@ -26,3 +26,6 @@ Description: Final project in "Intro. to NLP" course.
  - memm.py - Contains MEMM implementation (using sklearn for optimization). If called directly,
  scans over combinations of possible features: ['IS_FIRST', 'IS_LAST', 'IDX', 'VAL', 'PRV_VAL', 'NXT_VAL', 'FRST_VAL', 'LST_VAL', 'SCND_VAL', 'SCND_LST_VAL', 'LEN'].
  Seed is fixed to 0 to ensure reproducability. 
+ - crf_word.py - Contains CRF implementation using word scope only. If called directly,
+ scans over combinations of possible features: ['IS_FIRST', 'IS_LAST', 'IDX', 'VAL', 'PRV_VAL', 'NXT_VAL', 'FRST_VAL', 'LST_VAL', 'SCND_VAL', 'SCND_LST_VAL', 'LEN'].
+ Seed is fixed to 0 to ensure reproducability.  

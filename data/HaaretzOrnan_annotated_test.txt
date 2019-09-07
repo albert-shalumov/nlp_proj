@@ -44,7 +44,7 @@
 6 המדיניות hmdynywt ha-me-diy*-ni-yuw*t* a-me-di-ni-yut 
 7 בנושא bnwšˀ be-now*-šeˀ* be-no-se 
 8 העסקת hˁsqt ha-ˁa-sa-qat* a-a-sa-kat 
-9 תאילנדים tˀylndym taˀiy*-lan*-diy*m* tai-lan-dim 
+9 תאילנדים tˀylndym ta-ˀiy*-lan*-diy*m* ta-i-lan-dim 
 10 בחקלאות bḥqlˀwt ba-ḥaq*-la-ˀuw*t* ba-hak-la-ut 
 #11 , , , 
 12 אלא ˀlˀ ˀe-laˀ* e-la 
@@ -74,7 +74,7 @@
 2 זה zh zeh* ze
 3 משובצת mšwbçt me-šuw*-be-çet* me-shu-be-tset 
 4 גם gm gam* gam 
-5 יוון ywwn ya-w*wan* ya-van 
+5 יוון ywwn ya-waw*n* ya-van 
 #6 . . . 
 
 # sent_id = 48
@@ -153,7 +153,7 @@
 2 כותב kwtb kow*-teb* ko-tev 
 3 זאת zˀt zoˀ*t* zot 
 4 בצער bçˁr be-ça-ˁar* be-tsa-ar 
-5 וברגשי wbrgšy wu-be-rig*-šey* u-be-rig-shey 
+#5 וברגשי wbrgšy wu-be-rig*-šey* u-be-rig-shey 
 6 אשם ˀšm ˀa-šam* a-sham 
 #7 ; ; ; 
 8 פעם pˁm pa-ˁam* pa-am 
@@ -213,3 +213,224 @@
 #16 גורג gwrg gwrg 
 #17 בוש bwš bwš 
 #18 . . . 
+
+# sent_id = 98
+# text =  ב0891 נקלעה איובה , יחד עם מדינות חקלאיות אחרות במערב התיכון , לסחרור קשה : הנשיא גימי קרטר החליט להטיל חרם דגנים על הסובייטים , בגלל פלישתם לאפגניסטן .
+#1 ב0891 b0891 b0891 
+2 נקלעה nqlˁh niq*-le-ˁah* nik-le-a 
+#3 איובה ˀywbh ˀywbh 
+#4 , , , 
+5 יחד yḥd ya-ḥad* ya-had 
+6 עם ˁm ˁim* im 
+7 מדינות mdynwt me-diy*-now*t* me-di-not 
+8 חקלאיות ḥqlˀywt ḥaq*-la-ˀi-yow*t* hak-la-i-yot 
+9 אחרות ˀḥrwt ˀa-ḥe-row*t* a-he-rot 
+10 במערב bmˁrb be-ma-ˁa-rab* be-ma-a-rav 
+11 התיכון htykwn ha-tiy*-kow*n* a-ti-hon 
+#12 , , , 
+13 לסחרור lsḥrwr le-siḥ*-ruw*r* le-sih-rur 
+14 קשה qšh qa-šeh* ka-she 
+#15 : : : 
+16 הנשיא hnšyˀ ha-na-šiy*ˀ* a-na-si 
+#17 גימי gymy gymy 
+#18 קרטר qrṭr qrṭr 
+19 החליט hḥlyṭ heḥ*-liy*ṭ* eh-lit 
+20 להטיל lhṭyl le-ha-ṭiy*l* le-a-til 
+21 חרם ḥrm ḥe-rem* he-rem 
+22 דגנים dgnym d*ga-niy*m* dga-nim 
+23 על ˁl ˁal* al 
+#24 הסובייטים hswbyyṭym hasow*b*yey*ṭym 
+#25 , , , 
+26 בגלל bgll big*-lal* big-lal 
+27 פלישתם plyštm p*liy*-ša-tam* pli-sha-tam 
+28 לאפגניסטן lˀpgnysṭn le-ˀap*-ga-niy*s*-ṭan* le-af-ga-nis-tan 
+#29 . . . 
+
+# sent_id = 161
+# text =  כמותו אתם שולחים אלי מדי פעם והוא נזרק ישר לפח .
+1 כמותו kmwtw k*mow*-tow* kmo-to 
+2 אתם ˀtm ˀa-tem* a-tem 
+3 שולחים šwlḥym šow*l*-ḥiy*m* shol-him 
+4 אלי ˀly ˀe-lay* e-lay 
+5 מדי mdy mi-dey* mi-dey 
+6 פעם pˁm pa-ˁam* pa-am 
+7 והוא whwˀ we-huw*ˀ* ve-u 
+8 נזרק nzrq niz*-raq* niz-rak 
+9 ישר yšr ya-šar* ya-shar 
+10 לפח lpḥ la-paḥ* la-pah 
+#11 . . . 
+
+# sent_id = 239
+# text =  אנשים במרכז אותה תנועה מדגישים כי לא היתה זו מזימה של הימין .
+1 אנשים ˀnšym ˀa-na-šiy*m* a-na-shim 
+2 במרכז bmrkz be-mer*-kaz* be-mer-kaz 
+3 אותה ˀwth ˀow*-tah* o-ta 
+4 תנועה tnwˁh t*nuw*-ˁah* tnu-a 
+5 מדגישים mdgyšym mad*-giy*-šiy*m* mad-gi-shim 
+6 כי ky kiy* ki 
+7 לא lˀ loˀ* lo
+8 היתה hyth hay*-tah* ay-ta 
+9 זו zw zow* zo 
+10 מזימה mzymh me-ziy*-mah* me-zi-ma 
+11 של šl šel* shel 
+12 הימין hymyn ha-ya-miy*n* a-ya-min 
+#13 . . . 
+
+# sent_id = 423
+# text =  ב4891 הודיע לו שופט - חוקר כי הוגשו נגדו תלונות נוספות .
+#1 ב4891 b4891 b4891 
+2 הודיע hwdyˁ how*-diy*-ˁa o-di-a 
+3 לו lw low* lo 
+4 שופט šwpṭ šow*-peṭ* sho-fet 
+#5 - - - 
+6 חוקר ḥwqr ḥow*-qer* ho-ker 
+7 כי ky kiy* ki 
+8 הוגשו hwgšw huw*g*-šuw* ug-su 
+9 נגדו ngdw neg*-dow* neg-do 
+10 תלונות tlwnwt t*low*-now*t* tlo-not 
+11 נוספות nwspwt now*-sa-pow*t* no-sa-fot 
+#12 . . . 
+
+# sent_id = 549
+# text =  אתמול הושלכו ששה בקבוקי תבערה על סיורים של צה"ל ברפיח .
+1 אתמול ˀtmwl ˀet*-muw*l* et-mul 
+2 הושלכו hwšlkw huw*š*-le-kuw* ush-le-hu 
+3 ששה ššh ši-šah* shi-sha 
+4 בקבוקי bqbwqy baq*-buw*-qey* bak-bu-key 
+5 תבערה tbˁrh tab*-ˁe-rah* tav-e-ra 
+6 על ˁl ˁal* al 
+7 סיורים sywrym si-yuw*-riy*m* si-yu-rim 
+8 של šl šel* shel 
+#9 צה"ל çh"l çh"l 
+10 ברפיח brpyḥ be-ra-piy*ḥ* be-ra-fih 
+#11 . . . 
+
+# sent_id = 563
+# text =  מקורות צבאיים מסרו כי ביום ששי הושלך בקבוק תבערה לעבר כוח משמר הגבול ברחבת כנסיית המולד בבית לחם , אך הוא התנפץ מבלי להתלקח ומבלי לגרום לנזק או לנפגעים .
+1 מקורות mqwrwt me-qow*-row*t* me-ko-rot 
+2 צבאיים çbˀyym ç*ba-ˀi-yiy*m* tsva-i-im 
+3 מסרו msrw mas*-ruw* mas-ru
+4 כי ky kiy* ki
+5 ביום bywm be-yow*m* be-yom
+6 ששי ššy ši-šiy* shi-shi
+7 הושלך hwšlk huw*š*-lak* ush-lah 
+8 בקבוק bqbwq baq*-buw*q* bak-buk
+9 תבערה tbˁrh tab*-ˁe-rah* tav-e-ra
+10 לעבר lˁbr le-ˁe-ber* le-e-ver
+11 כוח kwḥ kow*-ḥ* ko-ah
+12 משמר mšmr miš*-mar* mish-mar
+13 הגבול hgbwl hag*-buw*l* ag-vul
+14 ברחבת brḥbt be-re-ḥa-bat* be-re-ha-vat
+15 כנסיית knsyyt k*ne-siy*-yat* kne-si-yat
+16 המולד hmwld ha-mow*-lad* a-mo-lad
+17 בבית bbyt be-bey*t* be-beyt
+18 לחם lḥm le-ḥem* le-hem
+#19 , , , 
+20 אך ˀk ˀak* ah
+21 הוא hwˀ huw*ˀ* u 
+22 התנפץ htnpç hit*-na-peç* it-na-pets
+23 מבלי mbly mib*-liy* mib-li
+#24 להתלקח lhtlqḥ le-hit*-la-qeḥ* le-it-la-ke-ah 
+#25 ומבלי wmbly wu-mib*-liy* u-mib-li
+26 לגרום lgrwm lig*-row*m* lig-rom
+27 לנזק lnzq le-ne-zeq* le-ne-zek
+28 או ˀw ˀow* o
+29 לנפגעים lnpgˁym le-nip*-ga-ˁiy*m* le-nif-ga-im
+#30 . . . 
+
+# sent_id = 655
+# text =  איש אינו מכריח אותו לנסוע , והוא נוסע מפני שמה שהוא עתיד למצוא שם חשוב לו עוד כאן , כשהוא נמצא בארץ .
+1 איש ˀyš ˀiy*š* ish 
+2 אינו ˀynw ˀey*-now* ey-no 
+3 מכריח mkryḥ mak*-riy*-ḥ* mah-ri-ah  
+4 אותו ˀwtw ˀow*-tow* o-to 
+5 לנסוע lnswˁ lin*-sow*-ˁa lin-so-a 
+#6 , , , 
+7 והוא whwˀ we-huw*ˀ* ve-u 
+8 נוסע nwsˁ now*-se-ˁa no-se-a
+9 מפני mpny mip*-ney* mip-ney 
+10 שמה šmh še-mah* she-ma 
+11 שהוא šhwˀ še-huw*ˀ* she-u 
+12 עתיד ˁtyd ˁa-tiy*d* a-tid 
+13 למצוא lmçwˀ lim*-çow*ˀ* lim-tso 
+14 שם šm šam* sham 
+15 חשוב ḥšwb ḥa-šuw*b* ha-shuv 
+16 לו lw low* lo 
+17 עוד ˁwd ˁow*d* od 
+18 כאן kˀn kaˀ*n* kan 
+#19 , , , 
+20 כשהוא kšhwˀ k*še-huw*ˀ* kshe-u 
+21 נמצא nmçˀ nim*-çaˀ* nim-tsa 
+22 בארץ bˀrç ba-ˀa-reç* ba-a-rets 
+#23 . . . 
+
+# sent_id = 712
+# text =  על הממשלה בכלל , ועל ראש הממשלה בפרט , מוטלת החובה לחזק את הרגשתם של כל העוסקים בביטחון המדינה כי עליהם לפעול בתקיפות נגד כל מי שמפר את החוק אחת היא אם מדובר בערבי או ביהודי .
+1 על ˁl ˁal* al 
+2 הממשלה hmmšlh ha-mem*-ša-lah* a-mem-sha-la 
+3 בכלל bkll bik*-lal* bih-lal 
+#4 , , , 
+5 ועל wˁl we-ˁal* ve-al 
+6 ראש rˀš roˀ*š* rosh 
+7 הממשלה hmmšlh ha-mem*-ša-lah* a-mem-sha-la 
+8 בפרט bprṭ bip*-raṭ* bif-rat 
+#9 , , , 
+10 מוטלת mwṭlt muw*-ṭe-let* mu-te-let 
+11 החובה hḥwbh ha-ḥow*-bah* a-ho-va 
+12 לחזק lḥzq le-ḥa-zeq* le-ha-zek 
+13 את ˀt ˀet* et 
+14 הרגשתם hrgštm har*-ga-ša-tam* ar-ga-sha-tam 
+15 של šl šel* shel 
+16 כל kl kol* kol 
+17 העוסקים hˁwsqym ha-ˁow*s*-qiy*m* a-os-kim 
+18 בביטחון bbyṭḥwn be-biy*-ṭa-ḥow*n* be-bi-ta-hon 
+19 המדינה hmdynh ha-me-diy*-nah* a-me-di-na 
+20 כי ky kiy* ki 
+21 עליהם ˁlyhm ˁa-ley*-hem* a-ley-em 
+22 לפעול lpˁwl lip*-ˁow*l* lif-ol 
+23 בתקיפות btqypwt bet*-qiy*-puw*t* bet-ki-fut 
+24 נגד ngd ne-ged* ne-ged 
+25 כל kl kol* kol 
+26 מי my miy* mi 
+27 שמפר šmpr še-ma-per* she-ma-fer 
+28 את ˀt ˀet* et
+29 החוק hḥwq ha-ḥow*q* a-hok 
+30 אחת ˀḥt ˀa-ḥat* a-hat 
+31 היא hyˀ hiy*ˀ* yi 
+32 אם ˀm ˀim* im 
+33 מדובר mdwbr me-duw*-bar* me-du-bar 
+34 בערבי bˁrby be-ˁa-ra-biy* be-a-ra-vi 
+35 או ˀw ˀow* o 
+36 ביהודי byhwdy be-ye-huw*-diy* be-ye-u-di 
+#37 . . .
+
+# sent_id = 773
+# text =  הבעיה ככל שתהיה פשוטה לתיאור איננה ניתנת בדרך כלל לפתרון .
+1 הבעיה hbˁyh ha-be-ˁa-yah* a-be-a-ya 
+2 ככל kkl ke-kol* ke-hol 
+3 שתהיה šthyh še-ti-hi-yeh* she-ti-i-ye 
+4 פשוטה pšwṭh p*šuw*-ṭah* pshu-ta 
+5 לתיאור ltyˀwr le-tiy*-ˀuw*r* le-ti-ur 
+6 איננה ˀynnh ˀey*-ne-nah* ey-ne-na 
+7 ניתנת nytnt niy*-te-net* ni-te-net 
+8 בדרך bdrk be-de-rek* be-de-reh 
+9 כלל kll k*lal* klal 
+10 לפתרון lptrwn le-pi-ta-row*n* le-pi-ta-ron 
+#11 . . . 
+
+# sent_id = 820
+# text =  הפולנים שישבו שם נצטוו לפנות את דירותיהם ואת בתי - העסק שלהם .
+1 הפולנים hpwlnym ha-pow*-la-niy*m* a-po-la-nim 
+2 שישבו šyšbw še-yaš*-buw* she-yash-vu 
+3 שם šm šam* sham 
+4 נצטוו nçṭww niç*-ṭa-wuw* nits-ta-vu 
+5 לפנות lpnwt le-pa-now*t* le-fa-not 
+6 את ˀt ˀet* et 
+7 דירותיהם dyrwtyhm diy*-row*-tey*-hem* di-ro-tey-em 
+8 ואת wˀt we-ˀet* ve-et 
+9 בתי bty ba-tey* ba-tey 
+#10 - - - 
+11 העסק hˁsq ha-ˁe-seq* a-e-sek 
+12 שלהם šlhm še-la-hem* she-la-em 
+#13 . . . 
+

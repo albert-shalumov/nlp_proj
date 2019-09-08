@@ -80,9 +80,12 @@ def TestModel(model, data):
 
 def test():
     data = LoadTestData()
-    untrained_models = [(HMM(2), 'HMM, ngram=2'), (MEMM(), 'MEMM'), (CRF_WORD(), 'CRF (word level)'), (CRF_SENT(), 'CRF (sentence level)')]
+    untrained_models = []
+    config = {'ngram': 3, 'est': 'add-delta', 'delta': 0.2}
+    untrained_models.append((HMM(config), 'HMM. config: {}'.format(config)))
+    #[(HMM(2), 'HMM,{}'.format()), (MEMM(), 'MEMM'), (CRF_WORD(), 'CRF (word level)'), (CRF_SENT(), 'CRF (sentence level)')]
     for model,name in untrained_models:
-        trained_model = model.prep_data().shuffle(None).split(0).train()
+        trained_model = model.prep_data().shuffle(0xfab1e).split(0).train()
         conf_mat, dist = TestModel(trained_model, data)
         print('\n')
         print(name)

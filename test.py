@@ -83,6 +83,9 @@ def test():
     untrained_models = []
     config = {'ngram': 3, 'est': 'add-delta', 'delta': 0.2}
     untrained_models.append((HMM(config), 'HMM. config: {}'.format(config)))
+    config = {'ftrs':['IS_LAST', 'IDX', 'VAL', 'PRV_VAL', 'NXT_VAL', 'FRST_VAL', 'LST_VAL', 'SCND_VAL', 'LEN']}
+    untrained_models.append((MEMM(config), 'MEMM. config: {}'.format(config)))
+
     #[(HMM(2), 'HMM,{}'.format()), (MEMM(), 'MEMM'), (CRF_WORD(), 'CRF (word level)'), (CRF_SENT(), 'CRF (sentence level)')]
     for model,name in untrained_models:
         trained_model = model.prep_data().shuffle(0xfab1e).split(0).train()

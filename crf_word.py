@@ -8,8 +8,8 @@ class CRF:
     def __init__(self, config):
         self.ftrs = config['ftrs']
         for ftr in self.ftrs:
-            if ftr not in CRF.CONFIG:
-                raise Exception('Unknown feature {}. See MEMM.CONFIG for supported ones.'.format(CRF.CONFIG))
+            if ftr not in CRF.WORD_FTRS:
+                raise Exception('Unknown feature {}. See CRF.CONFIG for supported ones.'.format(CRF.WORD_FTRS))
 
     def prep_data(self, file='data/HaaretzOrnan_annotated.txt'):
         self.data = []
@@ -44,7 +44,7 @@ class CRF:
     def train(self, load_model=None):
         _extract_ftr = self._gen_ftr_func()
         self.model = CRFTagger(_extract_ftr, verbose=False,
-                       training_opt={"c1": 0, "c2": 0, "num_memories": 50, "epsilon": 1e-7, "delta": 1e-8})
+                       training_opt={"num_memories": 500, "delta": 1e-8})
         self.model.train(self.train_set, 'word_crf_model')
         return self
 
@@ -75,8 +75,7 @@ class CRF:
 
     VOWELS = [u'a',u'e',u'u',u'i',u'o',u'*']
     VOWELS_IDX = {x:i for i,x in enumerate(VOWELS)}
-    CONFIG = ['IS_FIRST', 'IS_LAST', 'IDX', 'VAL', 'PRV_VAL', 'NXT_VAL', 'FRST_VAL', 'LST_VAL', 'SCND_VAL',
-              'SCND_LST_VAL', 'LEN']
+    WORD_FTRS = ['IS_FIRST', 'IS_LAST', 'IDX', 'VAL', 'PRV_VAL', 'NXT_VAL', 'FRST_VAL', 'LST_VAL', 'SCND_VAL','LEN']
 
     def _gen_ftr_func(self):
         # Closure
@@ -127,9 +126,9 @@ class CRF:
 if __name__ == '__main__':
     verbose = False
     with open('crf_word_res.csv','w') as f:
-        for num_ftrs in range(len(CRF.CONFIG)):
+        for num_ftrs in range(len(CRF.WORD_FTRS)):
             num_ftrs += 1
-            for ftrs in combinations(CRF.CONFIG, num_ftrs):
+            for ftrs in combinations(CRF.WORD_FTRS, num_ftrs):
                 config = {'ftrs':ftrs}
                 if 'conf_mat' in locals():
                     del conf_mat

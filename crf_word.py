@@ -3,6 +3,7 @@ import codecs
 import numpy as np
 import metrics
 from itertools import combinations
+import sys
 
 class CRF:
     def __init__(self, config):
@@ -75,7 +76,7 @@ class CRF:
 
     VOWELS = [u'a',u'e',u'u',u'i',u'o',u'*']
     VOWELS_IDX = {x:i for i,x in enumerate(VOWELS)}
-    WORD_FTRS = ['IS_FIRST', 'IS_LAST', 'IDX', 'VAL', 'PRV_VAL', 'NXT_VAL', 'FRST_VAL', 'LST_VAL', 'SCND_VAL','LEN']
+    WORD_FTRS = ['IS_FIRST', 'IS_LAST', 'IDX', 'VAL', 'PRV_VAL', 'NXT_VAL', 'FRST_VAL', 'LST_VAL', 'SCND_VAL', 'SCND_LST_VAL', 'LEN']
 
     def _gen_ftr_func(self):
         # Closure
@@ -122,8 +123,7 @@ class CRF:
             return feature_list
         return _extract_ftr
 
-
-if __name__ == '__main__':
+def search_hparams():
     verbose = False
     with open('crf_word_res.csv','w') as f:
         for num_ftrs in range(len(CRF.WORD_FTRS)):
@@ -132,13 +132,12 @@ if __name__ == '__main__':
                 config = {'ftrs':ftrs}
                 if 'conf_mat' in locals():
                     del conf_mat
-                for i in range(5):
+                for i in range(7):
                     crf = CRF(config)
-                    #crf.prep_data().shuffle().split(0).train().predict(['ˀnšym', u'nršmym'])
                     if 'conf_mat' in locals():
-                        conf_mat += crf.prep_data().shuffle(0).split(0.1).train().eval()
+                        conf_mat += crf.prep_data().shuffle(None).split(0.1).train().eval()
                     else:
-                        conf_mat = crf.prep_data().shuffle(0).split(0.1).train().eval()
+                        conf_mat = crf.prep_data().shuffle(None).split(0.1).train().eval()
                 res_str = '{};'.format(config)
                 print("Configuration = {}: ".format(config))
                 precision, recall = metrics.MicroAvg(conf_mat)
@@ -157,3 +156,34 @@ if __name__ == '__main__':
                 if verbose:
                     print('ConfMat:\n', np.array_str(conf_mat, max_line_width=300, precision=4))
                     print('----------------------------------------------')
+
+def check_seeds():
+    config = {'ftrs': ('IS_FIRST', 'IS_LAST', 'IDX', 'VAL', 'PRV_VAL', 'NXT_VAL', 'FRST_VAL', 'LST_VAL', 'SCND_VAL', 'SCND_LST_VAL')}
+    print("seed, accuracy")
+    for seed in range(11):
+        if 'conf_mat' in locals():
+            del conf_mat
+        for iters in range(7):
+            crf = CRF(config)
+            if 'conf_mat' in locals():
+                conf_mat += crf.prep_data().shuffle(seed).split(0.1).train().eval()
+            else:
+                conf_mat = crf.prep_data().shuffle(seed).split(0.1).train().eval()
+        acc = metrics.AvgAcc(conf_mat)
+        print(seed, acc)
+
+def print_usage():
+    print("Usage:")
+    print("crf_word.py [search/seeds]")
+    print("search - searches for best configuration")
+    print("seeds - checks various seeds")
+
+if __name__ == '__main__':
+    if len(sys.argv) != 2:
+        print_usage()
+    elif sys.argv[1] == 'search':
+        search_hparams()
+    elif sys.argv[1] == 'seeds':
+        check_seeds()
+    else:
+        print_usage()

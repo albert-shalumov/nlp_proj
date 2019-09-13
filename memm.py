@@ -216,11 +216,11 @@ def check_seeds():
         if 'conf_mat' in locals():
             del conf_mat
         for iters in range(7):
-            hmm = MEMM(config)
+            memm = MEMM(config)
             if 'conf_mat' in locals():
-                conf_mat += hmm.prep_data().shuffle(seed).split(0.1).train().eval()
+                conf_mat += memm.prep_data().shuffle(seed).split(0.1).train().eval()
             else:
-                conf_mat = hmm.prep_data().shuffle(seed).split(0.1).train().eval()
+                conf_mat = memm.prep_data().shuffle(seed).split(0.1).train().eval()
         acc = metrics.AvgAcc(conf_mat)
         print(seed, acc)
 

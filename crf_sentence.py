@@ -3,6 +3,7 @@ import codecs
 import numpy as np
 import metrics
 from itertools import combinations
+import sys
 
 class CRF:
     def __init__(self,config):
@@ -60,7 +61,7 @@ class CRF:
     def train(self, load_model=None):
         train_set = CRF._fin_data_prep(self.train_set)
         _extract_ftr = self._gen_ftr_func()
-        self.model = CRFTagger(_extract_ftr, verbose=False, training_opt={"num_memories": 50, "delta": 1e-8})
+        self.model = CRFTagger(_extract_ftr, verbose=False, training_opt={"num_memories": 500, "delta": 1e-8})
         self.model.train(train_set, 'stc_crf_model')
         return self
 
@@ -117,22 +118,58 @@ class CRF:
 
     VOWELS = [u'a',u'e',u'u',u'i',u'o',u'*']
     VOWELS_IDX = {x:i for i,x in enumerate(VOWELS)}
-    WORD_FTRS = ['IS_FIRST', 'IS_LAST', 'IDX', 'VAL', 'PRV_VAL', 'NXT_VAL', 'FRST_VAL', 'LST_VAL', 'SCND_VAL', 'LEN']
+    WORD_FTRS = ['IS_FIRST', 'IS_LAST', 'IDX', 'VAL', 'PRV_VAL', 'NXT_VAL', 'FRST_VAL', 'LST_VAL', 'SCND_VAL', 'SCND_LST_VAL', 'LEN']
     STC_FTRS = ['IS_FIRST', 'IS_LAST', 'IDX']
 
     def _gen_ftr_func(self):
         # Closure
         def _extract_ftr(tokens, i):
-            def _extract_wrd_ftr(word, i, suff):
-                pass
+            def _extract_wrd_ftr(tokens, i, suff):
+                feature_list = []
+
+                if i is not None:
+                    if 'IS_FIRST' in self.word_ftrs:
+                        feature_list.append("is_first{}={}".format(suff,1 if i == 0 else 0))
+
+                    if 'IS_LAST' in self.word_ftrs:
+                        feature_list.append("is_last{}={}".format(suff,1 if i == (len(tokens)-1) else 0))
+
+                    if 'IDX' in self.word_ftrs:
+                        feature_list.append("pos{}={}".format(suff,i))
+
+                    if 'VAL' in self.word_ftrs:
+                        feature_list.append("cur{}={}".format(suff,tokens[i]))
+
+                    if 'PRV_VAL' in self.word_ftrs:
+                        if i > 0:
+                            feature_list.append("prev{}={}".format(suff,tokens[i-1]))
+
+                    if 'NXT_VAL' in self.word_ftrs:
+                        if i < (len(tokens)-1):
+                            feature_list.append("next{}={}".format(suff,tokens[i+1]))
+
+                if 'FRST_VAL' in self.word_ftrs:
+                    feature_list.append("first{}={}".format(suff,tokens[0]))
+
+                if 'LST_VAL' in self.word_ftrs:
+                    feature_list.append("last{}={}".format(suff,tokens[-1]))
+
+                if 'LEN' in self.word_ftrs:
+                    feature_list.append("len{}={}".format(suff,len(tokens)))
+
+                if 'SCND_VAL' in self.word_ftrs:
+                    if len(tokens) > 1:
+                        feature_list.append("scnd{}={}".format(suff,tokens[1]))
+
+                if 'SCND_LST_VAL' in self.word_ftrs:
+                    if len(tokens) > 1:
+                        feature_list.append("scnd_last{}={}".format(suff,tokens[-2]))
+
+                return feature_list
 
             feature_list = []
             word_pos = tokens[0][1]
             sent = tokens[0][2].split(' ')
-            word = sent[word_pos]
-
-            # Word features
-            #feature_list += CRF._extract_wrd_ftr(word, i, "_0")
 
             # Sentence features
             if 'IS_FIRST' in self.stc_ftrs:
@@ -144,73 +181,34 @@ class CRF:
             if 'IDX' in self.stc_ftrs:
                 feature_list.append("idx="+str(word_pos))
 
+            # word features
             for rel_pos in self.words_ids:
                 word_pos = tokens[0][1]+rel_pos
                 if word_pos>=0 and word_pos<len(sent):
                     word = sent[word_pos]
-                    feature_list.append(_extract_wrd_ftr(word, i if rel_pos==0 else None, '_w{}'.format(rel_pos)))
-                    
-
-
+                    feature_list +=_extract_wrd_ftr(word, i if rel_pos==0 else None, '_w{}'.format(rel_pos))
 
             return feature_list
 
         return _extract_ftr
 
-    @staticmethod
-    def _extract_stc_ftr(tokens, i):
-        feature_list = []
-        word_pos = tokens[0][1]
-        sent = tokens[0][2].split(' ')
-        word = sent[word_pos]
-
-        # Word features
-        feature_list += CRF._extract_wrd_ftr(word, i, "_0")
-
-        # Sentence features
-        if word_pos == 0:
-            feature_list.append('FIRST_WORD')
-
-        if word_pos == (len(sent)-1):
-            feature_list.append('LAST_WORD')
-
-        if word_pos > 0:
-            feature_list.append("prev_w_last_ch="+sent[word_pos-1][-1])
-
-        return feature_list
-
-    @staticmethod
-    def _extract_wrd_ftr(word, i, suff):
-        feature_list = []
-        feature_list.append("pos{}={}".format(suff,str(i)))
-        feature_list.append("cur{}={}".format(suff,word[i]))
-        feature_list.append("first{}={}".format(suff,word[0]))
-        feature_list.append("last{}={}".format(suff,word[-1]))
-        feature_list.append("len{}={}".format(suff,str(len(word))))
-        if i > 0:
-            feature_list.append("prev{}={}".format(suff,word[i-1]))
-        if i < (len(word)-1):
-            feature_list.append("next{}={}".format(suff,word[i+1]))
-        return feature_list
-
-if __name__ == '__main__':
+def search_hparams():
     verbose = False
     with open('crf_sentence_res.csv','w') as f:
-        poss_words_ids = [[0],[-1,0],[0,1],[-1,0,1],[-2,0]]
+        poss_words_ids = [[0],[-1,0,1],[-2, 0, 2],[-2, -1, 0, 1, 2]]
         for poss_words_id in poss_words_ids:
             config = {'extr_word_idx':poss_words_id}
-            for num_word_ftrs in range(len(CRF.WORD_FTRS)):
+            for num_word_ftrs in range(6,len(CRF.WORD_FTRS)):
                 num_word_ftrs += 1
                 for word_ftrs in combinations(CRF.WORD_FTRS, num_word_ftrs):
                     config['word_ftrs'] = word_ftrs
-                    for num_stc_ftrs in range(len(CRF.STC_FTRS)):
-                        num_stc_ftrs += 1
+                    for num_stc_ftrs in range(len(CRF.STC_FTRS)+1):
                         for stc_ftrs in combinations(CRF.STC_FTRS, num_stc_ftrs):
                             config['stc_ftrs'] = stc_ftrs
                             if 'conf_mat' in locals():
                                 del conf_mat
-                            for i in range(5):
-                                print(config)
+                            for i in range(7):
+                                #print(config)
                                 crf = CRF(config)
                                 if 'conf_mat' in locals():
                                     conf_mat += crf.prep_data().shuffle(0).split(0.1).train().eval()
@@ -235,3 +233,33 @@ if __name__ == '__main__':
                                 print('ConfMat:\n', np.array_str(conf_mat, max_line_width=300, precision=4))
                                 print('----------------------------------------------')
 
+def check_seeds():
+    config = {'extr_word_idx': [0], 'word_ftrs': ('IS_FIRST', 'IS_LAST', 'IDX', 'VAL', 'PRV_VAL', 'NXT_VAL', 'FRST_VAL', 'LST_VAL', 'SCND_VAL'), 'stc_ftrs': ('IDX',)}
+    print("seed, accuracy")
+    for seed in range(11):
+        if 'conf_mat' in locals():
+            del conf_mat
+        for iters in range(7):
+            crf = CRF(config)
+            if 'conf_mat' in locals():
+                conf_mat += crf.prep_data().shuffle(seed).split(0.1).train().eval()
+            else:
+                conf_mat = crf.prep_data().shuffle(seed).split(0.1).train().eval()
+        acc = metrics.AvgAcc(conf_mat)
+        print(seed, acc)
+
+def print_usage():
+    print("Usage:")
+    print("crf_sentence.py [search/seeds]")
+    print("search - searches for best configuration")
+    print("seeds - checks various seeds")
+
+if __name__ == '__main__':
+    if len(sys.argv) != 2:
+        print_usage()
+    elif sys.argv[1] == 'search':
+        search_hparams()
+    elif sys.argv[1] == 'seeds':
+        check_seeds()
+    else:
+        print_usage()

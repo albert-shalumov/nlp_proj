@@ -26,8 +26,8 @@ def PrintConfMat(conf_mat):
     print('   Precision = {}\n   Recall = {}\n   F1 = {}'.format(precision, recall, f1))
 
     print('Avg Accuracy:', metrics.AvgAcc(conf_mat))
-    conf_mat = metrics.NormalizeConfusion(conf_mat)
-    print('ConfMat:\n', np.array_str(conf_mat, max_line_width=300, precision=3))
+    #conf_mat = metrics.NormalizeConfusion(conf_mat)
+    #print('ConfMat:\n', np.array_str(conf_mat, max_line_width=300, precision=3))
 
 def LoadTestData(file='data/HaaretzOrnan_annotated_test.txt'):
     sents, vow_words, syll_words, rom_words = [[]], [], [], []
@@ -81,14 +81,15 @@ def TestModel(model, data):
 def test():
     data = LoadTestData()
     untrained_models = []
-    config = {'ngram': 3, 'est': 'add-delta', 'delta': 0.2}
+    config = {'ngram': 3, 'est': 'add-delta', 'delta': 0.3}
     untrained_models.append((HMM(config), 'HMM. config: {}'.format(config)))
-    config = {'ftrs':['IS_LAST', 'IDX', 'VAL', 'PRV_VAL', 'NXT_VAL', 'FRST_VAL', 'LST_VAL', 'SCND_VAL', 'LEN']}
+    config = {'ftrs': ('IS_FIRST', 'IS_LAST', 'VAL', 'PRV_VAL', 'NXT_VAL', 'FRST_VAL', 'LST_VAL', 'SCND_VAL', 'SCND_LST_VAL')}
     untrained_models.append((MEMM(config), 'MEMM. config: {}'.format(config)))
-
-    #[(HMM(2), 'HMM,{}'.format()), (MEMM(), 'MEMM'), (CRF_WORD(), 'CRF (word level)'), (CRF_SENT(), 'CRF (sentence level)')]
-    for model,name in untrained_models:
-        trained_model = model.prep_data().shuffle(0xfab1e).split(0).train()
+    config = {'ftrs': ('IS_FIRST', 'IS_LAST', 'IDX', 'VAL', 'PRV_VAL', 'NXT_VAL', 'FRST_VAL', 'LST_VAL', 'SCND_VAL', 'SCND_LST_VAL')}
+    untrained_models.append((CRF_WORD(config), 'CRF. config: {}'.format(config)))
+    trained_models = [(model.prep_data().shuffle(0xfab1e).split(0).train(),name) for model,name in untrained_models]
+    for model,name in trained_models:
+        trained_model = model
         conf_mat, dist = TestModel(trained_model, data)
         print('\n')
         print(name)

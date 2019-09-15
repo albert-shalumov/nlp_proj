@@ -7,12 +7,6 @@ import torch.nn.functional as F
 import torch.optim as optim
 from torch.autograd import Variable
 
-
-
-'''
-Use multi-dimensional scaling to map consonant to fewer dimension.
-Distance between consonants calculated as Wasserstein distance(=Earth Mover Distance) between vowel co-appearance distribution 
-'''
 class Embedding:
     def __init__(self):
         self.mapping = np.identity(len(Embedding.ARNON_CHARS))
@@ -27,8 +21,8 @@ class Embedding:
                 emb_dim_size = size_out
                 self.fc1_1 = nn.Linear(size_in, size_in)
                 self.act1_1 = nn.PReLU()
-                self.fc1 = nn.Linear(size_in, size_in)
-                self.act1 = nn.PReLU()
+                #self.fc1 = nn.Linear(size_in, size_in)
+                #self.act1 = nn.PReLU()
                 self.fc2 = nn.Linear(size_in, emb_dim_size) # embedding
 
                 self.act2_1 = nn.PReLU()
@@ -37,27 +31,25 @@ class Embedding:
                 self.fc4 = nn.Linear(emb_dim_size, size_in)
                 self.softmax = nn.Softmax(dim=-1)
 
-
             def forward(self, input):
-                out1 = self.fc2(self.act1(self.fc1(self.act1_1(self.fc1_1(input)))))
+                out1 = self.fc2((self.act1_1(self.fc1_1(input))))
                 out2 = torch.log2(self.softmax(self.fc4(self.act2(self.fc4_1(self.act2_1(out1)))))+1e-7)
                 return out1, out2
 
-
         criterion2 = nn.NLLLoss()
-        emb = embedder(self.mapping.shape[0], 5)
+        emb_net = embedder(self.mapping.shape[0], len(Embedding.VOWELS))
         inp = torch.from_numpy(self.mapping).float().to('cpu')
         tgt_out1 = torch.from_numpy(dist).float().to('cpu')
         tgt_out2 = torch.from_numpy(np.argmax(self.mapping,-1)).long().to('cpu')
 
         d = Variable()
         reg = Variable()
-        optimizer = optim.Adam(emb.parameters(), lr=1e-2)
+        optimizer = optim.Adam(emb_net.parameters(), lr=1e-2)
         best_loss = np.inf
         best_mapping = None
-        for i in range(50000):
+        for i in range(50):
             optimizer.zero_grad()  # Clears existing gradients from previous epoch
-            out1, out2 = emb(inp)
+            out1, out2 = emb_net(inp)
             d = 0
             reg = 0
             for j in range(self.mapping.shape[0]):
@@ -84,7 +76,9 @@ class Embedding:
                     print(i, rmse_dist.item(), dec_err.item(), loss.item())
                     if loss.item()<best_loss:
                         best_loss=loss.item()
-                        best_mapping = out1.detach().numpy()#
+                        best_mapping = out1.detach().numpy()
+        self.mapping = best_mapping
+
     def save(self, file):
         np.save(file, self.mapping)
 
@@ -95,7 +89,7 @@ class Embedding:
         return self.mapping.shape[0]
 
     def __getitem__(self, ch):
-        return self.mapping[:, Embedding.ARNON_CHARS_IDX[ch]]
+        return self.mapping[Embedding.ARNON_CHARS_IDX[ch],:]
 
     VOWELS = [u'a', u'e', u'u', u'i', u'o', u'*']
     VOWELS_IDX = {x: i for i, x in enumerate(VOWELS)}

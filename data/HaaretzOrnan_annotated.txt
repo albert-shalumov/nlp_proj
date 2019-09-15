@@ -142,7 +142,7 @@
 4 תציב tçyb ta-çiy*b* ta-tsiv
 5 הצעת hçˁt ha-ça-ˁat* a-tsa-at
 6 החוק hḥwq ha-ḥow*q* a-hok
-7 עונשי ˁwnšy ˁow*n*-šeyi on-shei
+7 עונשי ˁwnšy ˁow*n*-šey* on-shey
 8 מאסר mˀsr ma-ˀa-sar* ma-a-sar
 9 והטלת whṭlt we-ha-ṭa-lat* ve-a-ta-lat
 10 קנסות qnswt q*na-sow*t* kna-sot
@@ -163,7 +163,7 @@
 4 הממונה hmmwnh ha-me-muw*-neh* a-me-mu-ne
 5 על ˁl ˁal* al
 6 מתן mtn ma-tan* ma-tan
-7 היתרי hytry hey*-te-r*ye e-te-rye
+#7 היתרי hytry hey*-te-r*ye e-te-rye
 8 עבודה ˁbwdh ˁa-bow*-dah* a-vo-da
 9 לזרים lzrym le-za-riy*m* le-za-rim
 10 בשירות bšyrwt be-šiy*-row*t* be-shi-rot
@@ -384,7 +384,7 @@
 4 התופעה htwpˁh ha-tow*-pa-ˁah* a-to-fa-a 
 5 ולמתן wlmtn we-le-ma-tan* ve-le-ma-tan 
 6 תשלומים tšlwmym taš*-luw*-miy*m* tash-lu-mim 
-7 רטרואקטיוויים rṭrwˀqṭywwyym reṭ*-row*-ˀaq*-ṭiy*-w*wiy*-yim* ret-ro-ak-ti-vi-im 
+7 רטרואקטיוויים rṭrwˀqṭywwyym reṭ*-row*-ˀaq*-ṭiy*-wiw*y*-yim* ret-ro-ak-ti-viy-im 
 8 לתאילנדים ltˀylndym la-ta-ˀiy*-lan*-diy*m* la-ta-i-lan-dim 
 #9 , , , 
 10 שישלימו šyšlymw še-yaš*-liy*-muw* she-yash-li-mu 
@@ -487,7 +487,7 @@
 2 ואוסטרליה wˀwsṭrlyh we-ˀow*s*ṭ*-ral*-yah* ve-ost-ral-ya 
 3 יתמודדו ytmwddw yit*-mow*-de-duw* it-mo-de-du 
 4 עם ˁm ˁim* im
-5 ניו nyw neyuw* neyu 
+5 ניו nyw n*yuw* nyu 
 6 זילנד zylnd ziy*-lan*d* zi-land 
 7 בטורניר bṭwrnyr be-ṭuw*r*-niy*r* be-tur-nir 
 8 הקדם hqdm haq*-dam* ak-dam 
@@ -533,7 +533,7 @@
 10 אתמול ˀtmwl ˀet*-mow*l* et-mol 
 #11 : : : 
 #12 " " " 
-13 אין ˀyn ˀeyin* ein
+13 אין ˀyn ˀey*n* eyn
 14 לי ly liy* li
 15 מה mh mah*  ma
 16 להשיב lhšyb le-ha-šiy*b* le-a-shiv 
@@ -644,7 +644,7 @@
 4 תכניתו tknytw tok*-niy*-tow* toh-ni-to 
 5 של šl šel* shel 
 6 רז rz raz* raz 
-7 לצאת lçˀt la-ç*ˀet* la-tset
+7 לצאת lçˀt la-çeˀ*t* la-tset
 8 לטורקיה lṭwrqyh le-ṭuw*r*-qi-yah* le-tur-ki-ya 
 9 כדי kdy ke-dey* ke-dey 
 10 לעקוב lˁqwb la-ˁa-qow*b* la-a-kov 
@@ -1064,7 +1064,7 @@
 3 ועלילה wˁlylh we-ˁa-liy*-lah* ve-a-li-la 
 4 זדונית zdwnyt z*duw*-niy*t* zdu-nit 
 5 באים bˀym ba-ˀiy*m* ba-im 
-6 לביטוי lbyṭwy le-biy*-ṭow*y* le-bi-toi  
+6 לביטוי lbyṭwy le-biy*-ṭow*y* le-bi-toy  
 7 בקטע bqṭˁ ba-qe-ṭaˁ* ba-ke-ta 
 8 המאמר hmˀmr ha-ma-ˀa-mar* a-ma-a-mar 
 9 הדן hdn ha-dan* a-dan 
@@ -1143,7 +1143,7 @@
 # text =  איש לא התכוון לכך .
 1 איש ˀyš ˀiy*š* ish 
 2 לא lˀ loˀ* lo 
-3 התכוון htkwwn hit*-ka-w*wen* it-ka-ven 
+3 התכוון htkwwn hit*-ka-wew*n* it-ka-ven 
 4 לכך lkk le-kak* le-kah 
 #5 . . . 
 
@@ -1192,7 +1192,7 @@
 # sent_id = 61
 # text =  אני הייתי שם , וכל תיאור הגווייה ( " זה היה מראה איום של דם ובשר ואיברי מין " ) הוא שקר וכזב .
 1 אני ˀny ˀa-niy* a-ni 
-2 הייתי hyyty ha-yiy*-tiy* a-yi-ti 
+2 הייתי hyyty ha-yiy*-tiy* a-i-ti 
 3 שם šm šam* sham 
 #4 , , , 
 5 וכל wkl we-kol* ve-kol 
@@ -2000,38 +2000,6 @@
 14 המועצות hmwˁçwt ha-mow*-ˁa-çow*t* a-mo-a-tsot 
 #15 . . . 
 
-# sent_id = 98
-# text =  ב0891 נקלעה איובה , יחד עם מדינות חקלאיות אחרות במערב התיכון , לסחרור קשה : הנשיא גימי קרטר החליט להטיל חרם דגנים על הסובייטים , בגלל פלישתם לאפגניסטן .
-#1 ב0891 b0891 b0891 
-2 נקלעה nqlˁh niq*-le-ˁah* nik-le-a 
-#3 איובה ˀywbh ˀywbh 
-#4 , , , 
-5 יחד yḥd ya-ḥad* ya-had 
-6 עם ˁm ˁim* im 
-7 מדינות mdynwt me-diy*-now*t* me-di-not 
-8 חקלאיות ḥqlˀywt ḥaq*-la-ˀi-yow*t* hak-la-i-yot 
-9 אחרות ˀḥrwt ˀa-ḥe-row*t* a-he-rot 
-10 במערב bmˁrb be-ma-ˁa-rab* be-ma-a-rav 
-11 התיכון htykwn ha-tiy*-kow*n* a-ti-hon 
-#12 , , , 
-13 לסחרור lsḥrwr le-siḥ*-ruw*r* le-sih-rur 
-14 קשה qšh qa-šeh* ka-she 
-#15 : : : 
-16 הנשיא hnšyˀ ha-na-šiy*ˀ* a-na-si 
-#17 גימי gymy gymy 
-#18 קרטר qrṭr qrṭr 
-19 החליט hḥlyṭ heḥ*-liy*ṭ* eh-lit 
-20 להטיל lhṭyl le-ha-ṭiy*l* le-a-til 
-21 חרם ḥrm ḥe-rem* he-rem 
-22 דגנים dgnym d*ga-niy*m* dga-nim 
-23 על ˁl ˁal* al 
-#24 הסובייטים hswbyyṭym hasow*b*yey*ṭym 
-#25 , , , 
-26 בגלל bgll big*-lal* big-lal 
-27 פלישתם plyštm p*liy*-ša-tam* pli-sha-tam 
-28 לאפגניסטן lˀpgnysṭn le-ˀap*-ga-niy*s*-ṭan* le-af-ga-nis-tan 
-#29 . . . 
-
 # sent_id = 99
 # text =  איובה שילמה את המחיר עד אמצע שנות ה80 .
 #1 איובה ˀywbh ˀywbh 
@@ -2062,3 +2030,1393 @@
 14 חסר ḥsr ḥa-sar* ha-sar 
 15 תקדים tqdym taq*-diy*m* tak-dim 
 #16 . . . 
+
+# sent_id = 116
+# text =  שניהם תומכים בנשיא , ושניהם מאמינים בצורך בזהירות .
+1 שניהם šnyhm š*ney*-hem* shney-em 
+2 תומכים twmkym tow*m*-kiy*m* tom-him 
+3 בנשיא bnšyˀ ba-na-šiy*ˀ* ba-na-si 
+#4 , , , 
+5 ושניהם wšnyhm weš*-ney*-hem* vesh-ney-em 
+6 מאמינים mˀmynym ma-ˀa-miy*-niy*m* ma-a-mi-nim 
+7 בצורך bçwrk ba-çow*-rek* ba-tso-reh 
+8 בזהירות bzhyrwt be-ze-hiy*-row*t* be-ze-i-rot 
+#9 . . . 
+
+# sent_id = 147
+# text =  הגורמים , שטיפלו בדבר בארץ , לא קישרו את שמו עם תפקידו .
+1 הגורמים hgwrmym ha-gow*r*-miy*m* a-gor-mim 
+#2 , , , 
+3 שטיפלו šṭyplw še-ṭiy*p*-luw* she-tip-lu 
+4 בדבר bdbr ba-da-bar* ba-da-var 
+5 בארץ bˀrç ba-ˀa-reç* ba-a-rets 
+#6 , , , 
+7 לא lˀ loˀ* lo 
+8 קישרו qyšrw qiy*š*-ruw* kish-ru 
+9 את ˀt ˀet* et 
+10 שמו šmw š*mow* shmo 
+11 עם ˁm ˁim* im 
+12 תפקידו tpqydw tap*-qiy*-dow* taf-ki-do 
+#13 . . . 
+
+# sent_id = 168
+# text =  העלים מזהיבים .
+1 העלים hˁlym ha-ˁa-liy*m* a-a-lim 
+2 מזהיבים mzhybym maz*-hiy*-biy*m* maz-i-vim 
+#3 . . . 
+
+# sent_id = 181
+# text =  להלן כמה עצות .
+1 להלן lhln le-ha-lan* le-a-lan 
+2 כמה kmh ka-mah* ka-ma 
+3 עצות ˁçwt ˁe-çow*t* e-tsot 
+#4 . . . 
+
+# sent_id = 196
+# text =  לך להיות זמר אופרה או ביולוג מולקולרי .
+1 לך lk lek* leh 
+2 להיות lhywt li-hi-yow*t* li-i-yot 
+3 זמר zmr za-mar* za-mar 
+4 אופרה ˀwprh ˀow*-pe-rah* o-pe-ra 
+5 או ˀw ˀow* o 
+6 ביולוג bywlwg bi-yow*-low*g* bi-yo-log 
+7 מולקולרי mwlqwlry muw*-le-quw*-la-riy* mu-le-ku-la-ri 
+#8 . . . 
+
+# sent_id = 204
+# text =  עצה מספר 3 .
+1 עצה ˁçh ˁe-çah* e-tsa 
+2 מספר mspr mis*-par* mis-par 
+#3 3 3 3 
+#4 . . . 
+
+# sent_id = 205
+# text =  הייה מודע להשלכות המרובות של עבודתך .
+#1 הייה hyyh hyyh 
+2 מודע mwdˁ muw*-daˁ* mu-da 
+3 להשלכות lhšlkwt la-haš*-la-kow*t* la-ash-la-hot 
+4 המרובות hmrwbwt ha-me-ruw*-bow*t* a-me-ru-bot 
+5 של šl šel* shel 
+6 עבודתך ˁbwdtk ˁa-bow*-dat*-ka a-vo-dat-ha 
+#7 . . . 
+
+# sent_id = 210
+# text =  תבטיח להציל את העולם .
+1 תבטיח tbṭyḥ tab*-ṭiy*-ḥ* tav-ti-ah 
+2 להציל lhçyl le-ha-çiy*l* le-a-tsil 
+3 את ˀt ˀet* et 
+4 העולם hˁwlm ha-ˁow*-lam* a-o-lam 
+#5 . . . 
+
+# sent_id = 213
+# text =  ניסיונו האחרון של מילר להשיג כספים מקרן פורד היה בתחילת שנות ה07 .
+1 ניסיונו nysywnw niy*s*-yow*-now* nis-yo-no 
+2 האחרון hˀḥrwn ha-ˀa-ḥa-row*n* a-a-ha-ron 
+3 של šl šel* shel 
+4 מילר mylr miy*-ler* mi-ler 
+5 להשיג lhšyg le-ha-šiy*g* le-a-sig 
+6 כספים kspym k*sa-piy*m* ksa-fim 
+7 מקרן mqrn mi-qe-ren* mi-ke-ren 
+8 פורד pwrd pow*r*d* ford 
+9 היה hyh ha-yah* a-ya 
+10 בתחילת btḥylt bet*-ḥiy*-lat* bet-hi-lat 
+11 שנות šnwt š*now*t* shnot
+#12 ה07 h07 h07 
+#13 . . . 
+
+# sent_id = 217
+# text =  אך זה לא היה מספיק טוב לקרן .
+1 אך ˀk ˀak* ah 
+2 זה zh zeh* ze 
+3 לא lˀ loˀ* lo 
+4 היה hyh ha-yah* a-ya 
+5 מספיק mspyq mas*-piy*q* mas-pik 
+6 טוב ṭwb ṭow*b* tov 
+7 לקרן lqrn la-qe-ren* la-ke-ren 
+#8 . . . 
+
+# sent_id = 223
+# text =  יש אנשים המתקשים להבטיח בפרצוף פוקר שהם יציעו פתרון לבעיה חברתית מרכזית .
+1 יש yš yeš* yesh 
+2 אנשים ˀnšym ˀa-na-šiy*m* a-na-shim 
+3 המתקשים hmtqšym ha-mit*-qa-šiy*m* a-mit-ka-shim 
+4 להבטיח lhbṭyḥ le-hab*-ṭiy*-ḥ* le-av-ti-ah 
+5 בפרצוף bprçwp be-par*-çuw*p* be-par-tsuf 
+6 פוקר pwqr pow*-qer* po-ker 
+7 שהם šhm še-hem* she-em 
+8 יציעו yçyˁw ya-çiy*-ˁuw* ya-tsi-u 
+9 פתרון ptrwn pi-ta-row*n* pi-ta-ron 
+10 לבעיה lbˁyh le-be-ˁa-yah* le-be-a-ya 
+11 חברתית ḥbrtyt ḥeb*-ra-tiy*t* hev-ra-tit 
+12 מרכזית mrkzyt mer*-ka-ziy*t* mer-ka-zit 
+#13 . . . 
+
+# sent_id = 255
+# text =  ואין ספק שחלק נכבד מבין 50 אלף הצקים שעליהם חותמת הקרן נמסר לקבוצות כמו " פראפראז " , כדי " לשרטט את מסלול המורשת השחורה באיסט סייד התחתית של ניו - יורק " .
+1 ואין wˀyn we-ˀey*n* ve-eyn 
+2 ספק spq sa-peq* sa-fek
+3 שחלק šḥlq še-ḥe-leq* she-he-lek 
+4 נכבד nkbd nik*-bad* nih-bad
+5 מבין mbyn mi-bey*n* mi-beyn 
+#6 50 50 50 
+7 אלף ˀlp ˀe-lep* e-lef  
+#8 הצקים hçqym hçqym 
+9 שעליהם šˁlyhm še-ˁa-ley*-hem* she-a-ley-em 
+10 חותמת ḥwtmt ḥow*-te-met* ho-te-met 
+11 הקרן hqrn ha-qe-ren* a-ke-ren 
+12 נמסר nmsr nim*-sar* nim-sar 
+13 לקבוצות lqbwçwt leq*-buw*-çow*t* lek-vu-tsot 
+14 כמו kmw ke-mow* ke-mo 
+#15 " " " 
+#16 פראפראז prˀprˀz prˀprˀz 
+#17 " " " 
+#18 , , , 
+19 כדי kdy ke-dey* ke-dey 
+#20 " " " 
+21 לשרטט lšrṭṭ le-šar*-ṭeṭ* le-sar-tet 
+22 את ˀt ˀet* et 
+23 מסלול mslwl mas*-low*l* mas-lol 
+24 המורשת hmwršt ha-mow*-re-šet* a-mo-re-shet 
+25 השחורה hšḥwrh haš*-ḥow*-rah* ash-ho-ra 
+26 באיסט bˀysṭ be-ˀiy*s*ṭ* be-ist 
+27 סייד syyd say*y*d* sayd 
+28 התחתית htḥtyt ha-taḥ*-tiy*t* a-tah-tit 
+29 של šl šel* shel 
+#30 ניו nyw nyw 
+#31 - - - 
+#32 יורק ywrq ywrq 
+#33 " " " 
+#34 . . . 
+
+# sent_id = 301
+# text =  הוא הדהים את מפלגתו , את מדינתו ואת ארה"ב בניצחון .
+1 הוא hwˀ huw*ˀ* u 
+2 הדהים hdhym hed*-hiy*m* ed-im 
+3 את ˀt ˀet* et 
+4 מפלגתו mplgtw mip*-lag*-tow* mif-lag-to 
+#5 , , , 
+6 את ˀt ˀet* et 
+7 מדינתו mdyntw me-diy*-na-tow* me-di-na-to 
+8 ואת wˀt we-ˀet* ve-et 
+#9 ארה"ב ˀrh"b ˀrh"b 
+10 בניצחון bnyçḥwn ba-niy*-ça-ḥow*n* ba-ni-tsa-hon 
+#11 . . . 
+
+# sent_id = 327
+# text =  הוא היה אפילו מסוגל לראותו מכהן בבית הלבן .
+1 הוא hwˀ huw*ˀ* u 
+2 היה hyh ha-yah* a-ya 
+3 אפילו ˀpylw ˀa-piy*-luw* a-fi-lu 
+4 מסוגל mswgl me-suw*-gal* me-su-gal 
+5 לראותו lrˀwtw lir*-ˀow*-tow* lir-o-to 
+6 מכהן mkhn me-ka-hen* me-ha-en 
+7 בבית bbyt ba-ba-yit* ba-ba-it 
+8 הלבן hlbn ha-la-ban* a-la-van 
+#9 . . . 
+
+# sent_id = 335
+# text =  רק ארבע פעמים ב521 השנה האחרונות לא הצליח נשיא לחזור ולהיבחר , אם רצה .
+1 רק rq raq* rak 
+#2 ארבע ˀrbˁ ˀ*r*-baˁ* 
+3 פעמים pˁmym pe-ˁa-miy*m* pe-a-mim 
+#4 ב521 b521 b521 
+5 השנה hšnh ha-ša-nah* a-sha-na 
+6 האחרונות hˀḥrwnwt ha-ˀaḥ*-row*-now*t* a-ah-ro-not 
+7 לא lˀ loˀ* lo
+8 הצליח hçlyḥ heç*-liy*-ḥ* ets-li-ah 
+9 נשיא nšyˀ na-šiy*ˀ* na-si 
+10 לחזור lḥzwr laḥ*-zow*r* lah-zor 
+11 ולהיבחר wlhybḥr we-le-hiy*-ba-ḥer* ve-le-i-ba-her 
+#12 , , , 
+13 אם ˀm ˀim* im
+14 רצה rçh ra-çah* ra-tsa 
+#15 . . . 
+
+# sent_id = 353
+# text =  כהונת מושל במדינה גדולה היא קרש קפיצה אל מרכז תשומת הלב הלאומית .
+1 כהונת khwnt ke-huw*-nat* ke-u-nat 
+2 מושל mwšl mow*-šel* mo-shel 
+3 במדינה bmdynh be-me-diy*-nah* be-me-di-na 
+4 גדולה gdwlh g*dow*-lah* gdo-la 
+5 היא hyˀ hiy*ˀ* yi 
+6 קרש qrš qe-reš* ke-resh 
+7 קפיצה qpyçh q*piy*-çah* kfi-tsa 
+8 אל ˀl ˀel* el 
+9 מרכז mrkz mer*-kaz* mer-kaz 
+10 תשומת tšwmt t*šuw*-mat* tsu-mat 
+11 הלב hlb ha-leb* a-lev 
+12 הלאומית hlˀwmyt ha-le-ˀuw*-miy*t* a-le-u-mit 
+#13 . . . 
+
+# sent_id = 400
+# text =  הוא לא חשב שהיה משהו פגום בהתנהגותו שלו .
+1 הוא hwˀ huw*ˀ* u 
+2 לא lˀ loˀ* lo 
+3 חשב ḥšb ḥa-šab* ha-shav 
+4 שהיה šhyh še-ha-yah* she-a-ya 
+5 משהו mšhw ma-še-huw* ma-she-u
+6 פגום pgwm pa-guw*m* pa-gum 
+7 בהתנהגותו bhtnhgwtw be-hit*-na-ha-guw*-tow* be-it-na-a-gu-to  
+8 שלו šlw še-low* she-lo 
+#9 . . . 
+
+# sent_id = 407
+# text =  הוא מולטי - מיליונר , המסוגל תמיד להלוות לעצמו כסף .
+1 הוא hwˀ huw*ˀ* u 
+2 מולטי mwlṭy muw*l*-ṭiy* mul-ti 
+#3 - - - 
+4 מיליונר mylywnr miy*l*-yow*-ner* mil-yo-ner 
+#5 , , , 
+6 המסוגל hmswgl ha-me-suw*-gal* a-me-su-gal 
+7 תמיד tmyd ta-miy*d* ta-mid 
+8 להלוות lhlwwt le-hal*-wow*t* le-al-vot 
+9 לעצמו lˁçmw le-ˁaç*-mow* le-ats-mo 
+10 כסף ksp ke-sep* ke-sef 
+#11 . . . 
+
+# sent_id = 414
+# text =  שלא בפניו נידון למוות , אך הדבר לא הפריע לו לחיות בגלות נינוחה בספרד .
+1 שלא šlˀ še-loˀ* she-lo 
+2 בפניו bpnyw be-pa-nay*w* be-fa-nav 
+3 נידון nydwn niy*-dow*n* ni-don 
+4 למוות lmwwt la-ma-wew*t* la-ma-vet 
+#5 , , , 
+6 אך ˀk ˀak* ah 
+7 הדבר hdbr ha-da-bar* a-da-var 
+8 לא lˀ loˀ* lo 
+9 הפריע hpryˁ hep*-riy*-ˁa ef-ri-a 
+10 לו lw low* lo
+11 לחיות lḥywt liḥ*-yow*t* lih-yot 
+12 בגלות bglwt be-ga-luw*t* be-ga-lut 
+13 נינוחה nynwḥh niy*-nuw*-ḥah* ni-nu-ha 
+#14 בספרד bsprd bes*-pa-rad* bes-fa-rad 
+#15 . . . 
+
+# sent_id = 422
+# text =  ב3891 , בעקבות חקירה מחודשת , נקבע כי יש מקום להגיש נגדו כתב אישום בגין סיוע למעצרם של יהודים כדרישת הגרמנים .
+#1 ב3891 b3891 b3891 
+#2 , , , 
+3 בעקבות bˁqbwt be-ˁiq*-bow*t* be-ik-vot 
+4 חקירה ḥqyrh ḥa-qiy*-rah* ha-ki-ra 
+5 מחודשת mḥwdšt me-ḥuw*-de-šet* me-hu-de-shet 
+#6 , , , 
+7 נקבע nqbˁ niq*-baˁ* nik-ba 
+8 כי ky kiy* ki
+9 יש yš yeš* yesh 
+10 מקום mqwm ma-qow*m* ma-kom 
+11 להגיש lhgyš le-ha-giy*š*  le-a-gish
+12 נגדו ngdw neg*-dow* neg-do 
+13 כתב ktb k*tab* ktav 
+14 אישום ˀyšwm ˀiy*-šuw*m* i-sum 
+15 בגין bgyn be-giy*n* be-gin 
+16 סיוע sywˁ si-yuw*-ˁa si-yu-a 
+17 למעצרם lmˁçrm le-ma-ˁa-ça-ram* le-ma-a-tsa-ram 
+18 של šl šel* shel 
+19 יהודים yhwdym ye-huw*-diy*m* ye-u-dim
+20 כדרישת kdryšt ked*-riy*-šat* ked-ri-shat 
+21 הגרמנים hgrmnym ha-ger*-ma-niy*m* a-ger-ma-nim
+#22 . . . 
+
+# sent_id = 436
+# text =  אין זה מקרה ששלושת האנשים הללו לא נשפטו עד כה .
+1 אין ˀyn ˀey*n* eyn 
+2 זה zh zeh* ze 
+3 מקרה mqrh miq*-reh* mik-re 
+#4 ששלושת ššlwšt še-š*low*-šet* she-shlo-shet 
+5 האנשים hˀnšym ha-ˀa-na-šiy*m* a-a-na-shim 
+6 הללו hllw ha-la-luw* a-la-lu 
+7 לא lˀ loˀ* lo
+8 נשפטו nšpṭw niš*-pe-ṭuw* nish-pe-tu 
+9 עד ˁd ˁad* ad 
+10 כה kh koh* ko 
+#11 . . . 
+
+# sent_id = 439
+# text =  לא תובעים לדין שר או ממונה על המשטרה , משום שהוא שייך לחוג של אנשים שאינו רוצה שיכבסו את הכביסה המלוכלכת " .
+1 לא lˀ loˀ* lo 
+2 תובעים twbˁym tow*b*-ˁiy*m* tov-im 
+3 לדין ldyn la-diy*n* la-din 
+4 שר šr šar* sar 
+5 או ˀw ˀow* o 
+6 ממונה mmwnh me-muw*-neh* me-mu-ne 
+7 על ˁl ˁal* al 
+8 המשטרה hmšṭrh ha-miš*-ṭa-rah* a-mish-ta-ra 
+#9 , , , 
+10 משום mšwm mi-šuw*m* mi-shum 
+11 שהוא šhwˀ še-huw*ˀ* she-u 
+12 שייך šyyk ša-yay*k* sha-yah 
+13 לחוג lḥwg le-ḥuw*g* le-hug 
+14 של šl šel* shel 
+15 אנשים ˀnšym ˀa-na-šiy*m* a-na-shim 
+16 שאינו šˀynw še-ˀey*-now* she-ey-no 
+17 רוצה rwçh row*-çeh* ro-tse 
+18 שיכבסו šykbsw še-ye-kab*-suw* she-ye-hab-su 
+19 את ˀt ˀet* et 
+20 הכביסה hkbysh hak*-biy*-sah* ak-vi-sa 
+21 המלוכלכת hmlwklkt ha-me-luw*k*-le-ket* a-me-luh-le-het 
+#22 " " " 
+#23 . . . 
+
+# sent_id = 446
+# text =  ארבע וחצי שעות צעדו אתמול בירושלים עשרות אלפים אחרי ארונו של מאיר כהנא במסע הלווייה פרוע , רצוף קריאות הסתה לפגיעות בערבים , בעיתונאים ובשוטרים .
+1 ארבע ˀrbˁ ˀar*-baˁ* ar-ba 
+2 וחצי wḥçy wa-ḥe-çiy* va-he-tsi 
+3 שעות šˁwt ša-ˁow*t* sha-ot 
+4 צעדו çˁdw ça-ˁa-dow* tsa-a-do 
+5 אתמול ˀtmwl ˀet*-muw*l* et-mul 
+#6 בירושלים byrwšlym byrwšlym 
+7 עשרות ˁšrwt ˁeš*-row*t* es-rot 
+8 אלפים ˀlpym ˀa-la-piy*m* a-la-fim 
+9 אחרי ˀḥry ˀa-ḥa-rey* a-ha-rey 
+10 ארונו ˀrwnw ˀa-row*-now* a-ro-no 
+11 של šl šel* shel 
+12 מאיר mˀyr me-ˀiy*r* me-ir 
+13 כהנא khnˀ ka-ha-naˀ* ka-a-na 
+14 במסע bmsˁ be-ma-saˁ* be-ma-sa 
+15 הלווייה hlwwyyh hal*-waw*-yay*h* al-va-ya 
+16 פרוע prwˁ pa-ruw*-ˁa pa-ru-a 
+#17 , , , 
+18 רצוף rçwp re-çuw*p* re-tsuf 
+19 קריאות qryˀwt q*riy*-ˀow*t* kri-ot 
+20 הסתה hsth ha-sa-tah* a-sa-ta 
+21 לפגיעות lpgyˁwt lep*-giy*-ˁow*t* lep-gi-ot 
+22 בערבים bˁrbym ba-ˁa-ra-biy*m* ba-a-ra-vim 
+#23 , , , 
+24 בעיתונאים bˁytwnˀym be-ˁiy*-tow*-na-ˀiy*m* be-i-to-na-im 
+#25 ובשוטרים wbšwṭrym wu-be-šow*ṭ*-riy*m* u-be-shot-rim 
+#26 . . . 
+
+# sent_id = 449
+# text =  החל משעות הצהרים התקבצו אלפים סביב ישיבת הרעיון היהודי בשכונת שמואל הנביא .
+1 החל hḥl ha-ḥel* a-hel 
+2 משעות mšˁwt miš*-ˁow*t* mish-ot 
+3 הצהרים hçhrym ha-ça-ha-ra-yim* a-tsa-a-ra-im 
+4 התקבצו htqbçw hit*-qab*-çuw* it-kab-tsu 
+5 אלפים ˀlpym ˀa-la-piy*m* a-la-fim 
+6 סביב sbyb s*biy*b* sviv 
+7 ישיבת yšybt ye-šiy*-bat* ye-shi-vat 
+8 הרעיון hrˁywn ha-ra-ˁa-yow*n* a-ra-a-yon 
+9 היהודי hyhwdy ha-ye-huw*-diy* a-ye-u-di 
+10 בשכונת bškwnt beš*-kuw*-nat* besh-hu-nat 
+11 שמואל šmwˀl š*muw*-ˀel* shmu-el 
+12 הנביא hnbyˀ ha-na-biy*ˀ* a-na-vi 
+#13 . . . 
+
+# sent_id = 465
+# text =  לקול צפירות האמבולנס שמיהר עמו לבית החולים , פתח הרב הראשי את שורת ההספדים .
+1 לקול lqwl le-qow*l* le-kol 
+2 צפירות çpyrwt ç*piy*-row*t* tsfi-rot 
+3 האמבולנס hˀmbwlns ha-ˀam*-buw*-lan*s* a-am-bu-lans
+4 שמיהר šmyhr še-miy*-her* she-mi-er 
+5 עמו ˁmw ˁi-mow* i-mo 
+6 לבית lbyt le-bey*t* le-beyt 
+7 החולים hḥwlym ha-ḥow*-liy*m* a-ho-lim 
+#8 , , , 
+9 פתח ptḥ pa-taḥ* pa-tah  
+10 הרב hrb ha-rab* a-rav 
+11 הראשי hrˀšy ha-raˀ*-šiy* a-ra-shi 
+12 את ˀt ˀet* et 
+13 שורת šwrt šuw*-rat* shu-rat 
+14 ההספדים hhspdym ha-hes*-pe-diy*m* a-es-pe-dim 
+#15 . . . 
+
+# sent_id = 476
+# text =  עכשיו עת להרוג .
+1 עכשיו ˁkšyw ˁak*-šay*w* ah-shav 
+2 עת ˁt ˁet* et 
+3 להרוג lhrwg la-ha-row*g* la-a-rog 
+#4 . . . 
+
+# sent_id = 481
+# text =  זה הזמן לנקום נקמתו של כל יהודי " .
+1 זה zh zeh* ze 
+2 הזמן hzmn haz*-man* az-man 
+3 לנקום lnqwm lin*-qow*m* lin-kom 
+4 נקמתו nqmtw niq*-ma-tow* nik-ma-to 
+5 של šl šel* shel 
+6 כל kl kol* kol 
+7 יהודי yhwdy ye-huw*-diy* ye-u-di 
+#8 " " " 
+#9 . . . 
+
+# sent_id = 517
+# text =  עכשיו קוראים את הקדיש , והקהל עונה אמן .
+1 עכשיו ˁkšyw ˁak*-šay*w* ah-shav 
+2 קוראים qwrˀym qow*r*-ˀiy*m* kor-im 
+3 את ˀt ˀet* et
+4 הקדיש hqdyš ha-qa-diy*š* a-ka-dish 
+#5 , , , 
+6 והקהל whqhl we-ha-qa-hal* ve-a-ka-al 
+7 עונה ˁwnh ˁow*-neh* o-ne 
+8 אמן ˀmn ˀa-men* a-men 
+#9 . . . 
+
+# sent_id = 532
+# text =  חמישה חיילי צה"ל נפצעו באורח קל בתקריות קשות שהיו בסוף השבוע ברצועת עזה .
+1 חמישה ḥmyšh ḥa-miy*-šah* ha-mi-sha 
+2 חיילי ḥyyly ḥa-yay*-ley* ha-ya-ley 
+#3 צה"ל çh"l çh"l 
+4 נפצעו npçˁw nip*-çe-ˁuw* nif-tse-u 
+5 באורח bˀwrḥ be-ˀow*-reḥ* be-o-reh 
+6 קל ql qal* kal 
+7 בתקריות btqrywt be-taq*-ri-yow*t* be-tak-ri-yot 
+8 קשות qšwt qa-šow*t* ka-shot 
+9 שהיו šhyw še-ha-yuw* she-a-yu 
+10 בסוף bswp be-sow*p* be-sof 
+11 השבוע hšbwˁ ha-ša-buw*-ˁa a-sha-vu-a 
+12 ברצועת brçwˁt bir*-çuw*-ˁat* bir-tsu-at 
+13 עזה ˁzh ˁa-zah* a-za 
+#14 . . . 
+
+# sent_id = 554
+# text =  הוא נפצע קשה והועבר לבית החולים שיפא בעזה .
+1 הוא hwˀ huw*ˀ* u 
+2 נפצע npçˁ nip*-çaˁ* nif-tsa 
+3 קשה qšh qa-šeh* ka-she 
+4 והועבר whwˁbr we-huw*-ˁa-bar* ve-u-a-var 
+5 לבית lbyt le-bey*t* le-beyt 
+6 החולים hḥwlym ha-ḥuw*-liy*m* a-hu-lim 
+7 שיפא šypˀ šiy*-paˀ* shi-fa 
+8 בעזה bˁzh be-ˁa-zah* be-a-za 
+#9 . . . 
+
+# sent_id = 558
+# text =  רופא צבאי אשר הגיע למקום קבע את מותו .
+1 רופא rwpˀ row*-peˀ* ro-fe 
+2 צבאי çbˀy ç*ba-ˀiy* tsva-i 
+3 אשר ˀšr ˀa-šer* a-sher 
+4 הגיע hgyˁ he-giy*-ˁa e-gi-a 
+5 למקום lmqwm la-ma-qow*m* la-ma-kom 
+6 קבע qbˁ qa-baˁ* ka-va 
+7 את ˀt ˀet* et 
+8 מותו mwtw mow*-tow* mo-to 
+#9 . . . 
+
+# sent_id = 564
+# text =  כתוצאה מזריקת אבנים לעבר אוטובוס ישראלי בחלחול , נפצעה ביום ששי קל תיירת בראשה , והיא טופלה במקום .
+1 כתוצאה ktwçˀh ke-tow*-ça-ˀah* ke-to-tsa-a 
+2 מזריקת mzryqt miz*-riy*-qat* miz-ri-kat 
+3 אבנים ˀbnym ˀa-ba-niy*m* a-va-nim 
+4 לעבר lˁbr le-ˁe-ber* le-e-ver 
+5 אוטובוס ˀwṭwbws ˀow*-ṭow*-buw*s* o-to-bus 
+6 ישראלי yšrˀly yiš*-ra-ˀe-liy* is-ra-e-li 
+7 בחלחול bḥlḥwl be-ḥal*-ḥuw*l* be-hal-hul 
+#8 , , , 
+9 נפצעה npçˁh nip*-çe-ˁah* nif-tse-a 
+10 ביום bywm be-yow*m* be-yom 
+11 ששי ššy ši-šiy* shi-shi 
+12 קל ql qal* kal 
+13 תיירת tyyrt ta-yey*-ret* ta-ye-ret 
+14 בראשה brˀšh be-roˀ*-šah* be-ro-sha 
+#15 , , , 
+16 והיא whyˀ we-hiy*ˀ* ve-i 
+17 טופלה ṭwplh ṭuw*p*-lah* tup-la 
+18 במקום bmqwm ba-ma-qow*m* ba-ma-kom 
+#19 . . . 
+
+# sent_id = 571
+# text =  קצין בכיר הגדיר את המתרחש ברצועה ביומיים האחרונים כמלחמה .
+1 קצין qçyn qa-çiy*n* ka-tsin 
+2 בכיר bkyr ba-kiy*r* ba-hir 
+3 הגדיר hgdyr heg*-diy*r* eg-dir 
+4 את ˀt ˀet* et 
+5 המתרחש hmtrḥš ha-mit*-ra-ḥeš* a-mit-ra-hesh 
+6 ברצועה brçwˁh ba-re-çuw*-ˁah* ba-re-tsu-a 
+7 ביומיים bywmyym ba-yow*-ma-yiy*m* ba-yo-ma-im 
+8 האחרונים hˀḥrwnym ha-ˀaḥ*-row*-niy*m* a-ah-ro-nim 
+9 כמלחמה kmlḥmh ke-mil*-ḥa-mah* ke-mil-ha-ma 
+#10 . . . 
+
+# sent_id = 578
+# text =  החייל ירה ברגלו ופצע אותו באופן בינוני .
+1 החייל hḥyyl ha-ḥa-yay*l* a-ha-yal 
+2 ירה yrh ya-rah* ya-ra 
+3 ברגלו brglw be-rag*-low*  be-rag-lo
+4 ופצע wpçˁ we-pa-çaˁ* ve-pa-tsa 
+5 אותו ˀwtw ˀow*-tow* o-to 
+6 באופן bˀwpn be-ˀow*-pen* be-o-fen 
+7 בינוני bynwny bey*-now*-niy* bey-no-ni 
+#8 . . . 
+
+# sent_id = 600
+# text =  מקורות צבאיים מסרו כי שלושת הבקבוקים התנפצו , אך לא נגרם כל נזק ואין נפגעים .
+1 מקורות mqwrwt me-qow*-row*t* me-ko-rot 
+2 צבאיים çbˀyym ç*baˀ*-yi-yim* tsva-i-im 
+3 מסרו msrw mas*-ruw* mas-ru 
+4 כי ky kiy* ki 
+5 שלושת šlwšt š*low*-šet* shlo-shet 
+6 הבקבוקים hbqbwqym ha-baq*-buw*-qiy*m* a-bak-bu-kim 
+7 התנפצו htnpçw hit*-nap*-çuw* it-nap-tsu 
+#8 , , , 
+9 אך ˀk ˀak* ah 
+10 לא lˀ loˀ* lo 
+11 נגרם ngrm nig*-ram* nig-ram 
+12 כל kl kol* kol 
+13 נזק nzq ne-zeq* ne-zek 
+14 ואין wˀyn we-ˀey*n* ve-eyn 
+15 נפגעים npgˁym nip*-ga-ˁiy*m* nif-ga-im 
+#16 . . . 
+
+# sent_id = 611
+# text =  ההנחה היא שאם משהו מרגש את הימין , סימן שהוא מסוכן לשמאל , ועל כן צריך להיות מאוס ומגונה בעיניו .
+1 ההנחה hhnḥh ha-ha-na-ḥah* a-a-na-ha 
+2 היא hyˀ hiy*ˀ* yi 
+3 שאם šˀm še-ˀim* she-im 
+4 משהו mšhw ma-še-huw* ma-she-u 
+5 מרגש mrgš me-ra-geš* me-ra-gesh 
+6 את ˀt ˀet* et 
+7 הימין hymyn ha-ya-miy*n* a-ya-min 
+#8 , , , 
+9 סימן symn siy*-man* si-man 
+10 שהוא šhwˀ še-huw*ˀ* she-u 
+11 מסוכן mswkn me-suw*-kan* me-su-kan 
+12 לשמאל lšmˀl laš*-moˀ*l* las-mol 
+#13 , , , 
+14 ועל wˁl we-ˁal* ve-al 
+15 כן kn ken* ken 
+16 צריך çryk ça-riy*k* tsa-rih 
+17 להיות lhywt lih*-yow*t* li-yot 
+18 מאוס mˀws ma-ˀuw*s* ma-us 
+#19 ומגונה wmgwnh wu-me-guw*-neh* u-me-gu-ne 
+20 בעיניו bˁynyw be-ˁey*-nay*w* be-ey-nav 
+#21 . . . 
+
+# sent_id = 628
+# text =  כהיסטוריון , הוא בוודאי רוצה שנתעד , נלמד ונשתדל להבין את הרקע שהוליד את התופעה הנאצית .
+1 כהיסטוריון khysṭwrywn ke-hiy*s*-ṭow*r*-yow*n* ke-is-tor-yon 
+#2 , , , 
+3 הוא hwˀ huw*ˀ* u 
+4 בוודאי bwwdˀy be-waw*-daˀ*y* be-va-day 
+5 רוצה rwçh row*-çeh* ro-tse 
+6 שנתעד šntˁd še-ne-ta-ˁed* she-ne-ta-ed 
+#7 , , , 
+8 נלמד nlmd nil*-mad* nil-mad 
+9 ונשתדל wnštdl we-niš*-ta-del* ve-nish-ta-del 
+10 להבין lhbyn le-ha-biy*n* le-a-vin 
+11 את ˀt ˀet* et 
+12 הרקע hrqˁ ha-re-qaˁ* a-re-ka 
+13 שהוליד šhwlyd še-how*-liy*d* she-o-lid 
+14 את ˀt ˀet* et 
+15 התופעה htwpˁh ha-tow*-pa-ˁah* a-to-fa-a 
+16 הנאצית hnˀçyt ha-naˀ*-çiy*t* a-na-tsit 
+#17 . . . 
+
+# sent_id = 635
+# text =  הבעיה , אם כן , איננה בעצם המאמץ להתמודד עם תופעת המוות .
+1 הבעיה hbˁyh ha-be-ˁa-yah* a-be-a-ya 
+#2 , , , 
+3 אם ˀm ˀim* im 
+4 כן kn ken* ken 
+#5 , , , 
+6 איננה ˀynnh ˀey*-ne-nah* ey-ne-na 
+7 בעצם bˁçm be-ˁe-çem* be-e-tsem 
+8 המאמץ hmˀmç ha-ma-ˀa-maç* a-ma-a-mats 
+9 להתמודד lhtmwdd le-hit*-mow*-ded* le-it-mo-ded 
+10 עם ˁm ˁim* im 
+11 תופעת twpˁt tow*-pa-ˁat* to-fa-at 
+12 המוות hmwwt ha-ma-wew*t* a-ma-vet 
+#13 . . . 
+
+# sent_id = 641
+# text =  ועכשיו לך תוכיח שלדברים אין שחר .
+1 ועכשיו wˁkšyw we-ˁak*-šay*w* ve-ah-shav 
+2 לך lk lek* leh 
+3 תוכיח twkyḥ tow*-kiy*-ḥ* to-hi-ah  
+4 שלדברים šldbrym še-lad*-ba-riy*m* she-lad-va-rim 
+5 אין ˀyn ˀey*n* eyn 
+6 שחר šḥr ša-ḥar* sha-har 
+#7 . . . 
+
+# sent_id = 642
+# text =  לך תוכיח שסמלים ורגשות לאומיים אינם בהכרח ימניים .
+1 לך lk lek* leh 
+2 תוכיח twkyḥ tow*-kiy*-ḥ* to-hi-ah 
+#3 שסמלים šsmlym šsmalym 
+4 ורגשות wrgšwt we-re-ga-šow*t* ve-re-ga-shot 
+5 לאומיים lˀwmyym le-ˀuw*-miy*-yim* le-u-mi-im 
+6 אינם ˀynm ˀey*-nam* ey-nam 
+7 בהכרח bhkrḥ be-hek*-raḥ* be-eh-rah 
+8 ימניים ymnyym ye-ma-niy*-yim* ye-ma-ni-im 
+#9 . . . 
+
+# sent_id = 654
+# text =  אבל מי שנוסע לפולין יודע מה הוא עתיד למצוא שם .
+1 אבל ˀbl ˀa-bal* a-val 
+2 מי my miy* mi 
+3 שנוסע šnwsˁ še-now*-se-ˁa she-no-se-a
+4 לפולין lpwlyn le-pow*-liy*n* le-po-lin 
+5 יודע ywdˁ yow*-de-ˁa yo-de-a
+6 מה mh mah* ma 
+7 הוא hwˀ huw*ˀ* u 
+8 עתיד ˁtyd ˁa-tiy*d* a-tid 
+9 למצוא lmçwˀ lim*-çow*ˀ* lim-tso 
+10 שם šm šam* sham 
+#11 . . . 
+
+# sent_id = 666
+# text =  מה לעשות והשואה הנוראה אכן קרתה .
+1 מה mh mah* ma 
+2 לעשות lˁšwt la-ˁa-šow*t* la-a-sot 
+3 והשואה whšwˀh we-ha-šow*-ˀah* ve-a-sho-a 
+4 הנוראה hnwrˀh ha-now*-ra-ˀah* a-no-ra-a 
+5 אכן ˀkn ˀa-ken* a-hen 
+6 קרתה qrth qar*-tah* kar-ta 
+#7 . . . 
+
+# sent_id = 701
+# text =  אין ודאות כי חברי התנועה המאורגנים יבקשו לנצל את ההיתר הזה , אם כי אין להקל ראש בידיעה כי " ייתכן שבודדים בתנועה מכינים , או יכינו בימים הקרובים , רשימות של ערבים , אנשי שמאל ותקשורת ויסמנו אותם כמטרות לפגיעה " ( " הארץ " , 811 ) .
+1 אין ˀyn ˀey*n* eyn 
+2 ודאות wdˀwt wa-da-ˀuw*t* va-da-ut 
+3 כי ky kiy* ki 
+4 חברי ḥbry ḥab*-rey* hav-rey 
+5 התנועה htnwˁh hat*-nuw*-ˁah* at-nu-a 
+6 המאורגנים hmˀwrgnym ha-me-ˀuw*r*-ga-niy*m* a-me-ur-ga-nim  
+7 יבקשו ybqšw ye-baq*-šuw* ye-vak-shu
+8 לנצל lnçl le-na-çel* le-na-tsel
+9 את ˀt ˀet* et
+10 ההיתר hhytr ha-hey*-ter* a-e-ter
+11 הזה hzh ha-zeh* a-ze
+#12 , , , 
+13 אם ˀm ˀim* im
+14 כי ky kiy* ki
+15 אין ˀyn ˀey*n* eyn
+16 להקל lhql le-ha-qel* le-a-kel
+17 ראש rˀš roˀ*š* rosh
+18 בידיעה bydyˁh ba-ye-diy*-ˁah* ba-ye-di-a
+19 כי ky kiy* ki
+#20 " " " 
+21 ייתכן yytkn yiy*-ta-ken* i-ta-hen
+22 שבודדים šbwddym še-bow*-de-diy*m* she-bo-de-dim
+23 בתנועה btnwˁh bat*-nuw*-ˁah* bat-nu-a
+24 מכינים mkynym me-kiy*-niy*m* me-hi-nim
+#25 , , , 
+26 או ˀw ˀow* o
+27 יכינו ykynw ya-kiy*-nuw* ya-hi-nu
+28 בימים bymym ba-ya-miy*m* ba-ya-mim
+29 הקרובים hqrwbym haq*-row*-biy*m* ak-ro-vim
+#30 , , , 
+31 רשימות ršymwt re-šiy*-mow*t* re-shi-mot
+32 של šl šel* shel
+33 ערבים ˁrbym ˁa-ra-biy*m* a-ra-vim
+#34 , , , 
+35 אנשי ˀnšy ˀan*-šey* an-shey
+36 שמאל šmˀl š*moˀ*l* smol
+37 ותקשורת wtqšwrt we-tiq*-šow*-ret* ve-tik-sho-ret 
+38 ויסמנו wysmnw we-ye-sam*-nuw* ve-ye-sam-nu
+39 אותם ˀwtm ˀow*-tam* o-tam
+40 כמטרות kmṭrwt ke-ma-ṭa-row*t* ke-ma-ta-rot
+41 לפגיעה lpgyˁh lep*-giy*-ˁah* lep-gi-a
+#42 " " " 
+#43 ( ( ( 
+#44 " " " 
+45 הארץ hˀrç ha-ˀa-reç* a-a-rets
+#46 " " " 
+#47 , , , 
+#48 811 811 811 
+#49 ) ) ) 
+#50 . . . 
+
+# sent_id = 706
+# text =  אם תחזית זו תתאמת , נעמוד גם בפני מלחמת אזרחים .
+1 אם ˀm ˀim* im 
+2 תחזית tḥzyt ta-ḥa-ziy*t* ta-ha-zit 
+3 זו zw zow* zo 
+4 תתאמת ttˀmt tit*-ˀa-met* tit-a-met 
+#5 , , , 
+6 נעמוד nˁmwd na-ˁa-mow*d* na-a-mod 
+7 גם gm gam* gam 
+8 בפני bpny bip*-ney* bif-ney 
+9 מלחמת mlḥmt mil*-ḥe-met* mil-he-met 
+10 אזרחים ˀzrḥym ˀez*-ra-ḥiy*m* ez-ra-him 
+#11 . . . 
+
+# sent_id = 711
+# text =  חלק מהמתפרעים קיללו שלשום לא רק ערבים ועיתונאים , אלא גם שוטרים .
+1 חלק ḥlq ḥe-leq* he-lek 
+2 מהמתפרעים mhmtprˁym me-ha-mit*-par*-ˁiy*m* me-a-mit-par-im 
+3 קיללו qyllw qiy*-le-luw* ki-le-lu 
+4 שלשום šlšwm šil*-šow*m* shil-shom 
+5 לא lˀ loˀ* lo 
+6 רק rq raq* rak 
+7 ערבים ˁrbym ˁa-ra-biy*m* a-ra-vim 
+8 ועיתונאים wˁytwnˀym we-ˁiy*-tow*-na-ˀiy*m* ve-i-to-na-im 
+#9 , , , 
+10 אלא ˀlˀ ˀe-laˀ* e-la 
+11 גם gm gam* gam 
+12 שוטרים šwṭrym šow*ṭ*-riy*m* shot-rim 
+#13 . . .  
+
+# sent_id = 722
+# text =  העמדות בפוליטיקה הישראלית נחלקות לשלוש קבוצות .
+1 העמדות hˁmdwt ha-ˁa-ma-dow*t* a-a-ma-dot 
+2 בפוליטיקה bpwlyṭyqh ba-pow*-liy*-ṭiy*-qah* ba-po-li-ti-ka 
+3 הישראלית hyšrˀlyt ha-yiš*-ra-ˀe-liy*t* a-is-ra-e-lit 
+4 נחלקות nḥlqwt niḥ*-la-qow*t* nih-la-kot 
+5 לשלוש lšlwš le-ša-low*š* le-sha-losh 
+6 קבוצות qbwçwt q*buw*-çuw*t* kvu-tsut 
+#7 . . . 
+
+# sent_id = 737
+# text =  אין ביניהם אנשי ציבור הרצים לכנסת בשם פתרונותיהם .
+1 אין ˀyn ˀey*n* eyn 
+2 ביניהם bynyhm bey*-ney*-hem* bey-ney-em 
+3 אנשי ˀnšy ˀan*-šey* an-shey 
+4 ציבור çybwr çiy*-buw*r* tsi-bur 
+5 הרצים hrçym ha-ra-çiy*m* a-ra-tsim 
+6 לכנסת lknst lak*-ne-set* lak-ne-set 
+7 בשם bšm be-šem* be-shem 
+8 פתרונותיהם ptrwnwtyhm pit*-row*-now*-tey*-hem* pit-ro-no-tey-em 
+#9 . . . 
+
+# sent_id = 755
+# text =  הוא אוהב להזכיר את צפון אירלנד .
+1 הוא hwˀ huw*ˀ* u 
+2 אוהב ˀwhb ˀow*-heb* o-ev 
+3 להזכיר lhzkyr le-haz*-kiy*r* le-az-kir 
+4 את ˀt ˀet* et 
+5 צפון çpwn ç*pow*n* tsfon 
+6 אירלנד ˀyrlnd ˀiy*r*-lan*d* ir-land 
+#7 . . . 
+
+# sent_id = 778
+# text =  רוב הבאים להספידו , אני מנחש , לא היו מצביעים עבורו .
+1 רוב rwb row*b* rov 
+2 הבאים hbˀym ha-ba-ˀiy*m* a-ba-im 
+3 להספידו lhspydw le-has*-piy*-dow* le-as-pi-do 
+#4 , , , 
+5 אני ˀny ˀa-niy* a-ni 
+6 מנחש mnḥš me-na-ḥeš* me-na-hesh 
+#7 , , , 
+8 לא lˀ loˀ* lo 
+9 היו hyw ha-yuw* a-yu 
+10 מצביעים mçbyˁym maç*-biy*-ˁiy*m* mats-bi-im 
+11 עבורו ˁbwrw ˁa-buw*-row* a-vu-ro 
+#12 . . . 
+
+# sent_id = 783
+# text =  הציונות , כמו גלידה אמריקאית , באה בטעמים רבים .
+1 הציונות hçywnwt ha-çi-yow*-nuw*t* a-tsi-yo-nut 
+#2 , , , 
+3 כמו kmw ke-mow* ke-mo 
+4 גלידה glydh g*liy*-dah* gli-da 
+5 אמריקאית ˀmryqˀyt ˀa-me-riy*-qa-ˀiy*t* a-me-ri-ka-it 
+#6 , , , 
+7 באה bˀh ba-ˀah* ba-a 
+8 בטעמים bṭˁmym be-ṭe-ˁa-miy*m* be-te-a-mim 
+9 רבים rbym ra-biy*m* ra-bim 
+#10 . . . 
+
+# sent_id = 792
+# text =  לפעמים היה שולף מכיסו סמרטוט צבעוני וקורע אותו לגזרים , כמו היה דגל אש"ף .
+1 לפעמים lpˁmym lip*-ˁa-miy*m* lif-a-mim 
+2 היה hyh ha-yah* a-ya 
+3 שולף šwlp šow*-lep* sho-lef 
+4 מכיסו mkysw me-kiy*-sow*  me-ki-so
+5 סמרטוט smrṭwṭ s*mar*-ṭow*ṭ* smar-tot 
+6 צבעוני çbˁwny çib*-ˁow*-niy* tsiv-o-ni 
+7 וקורע wqwrˁ we-qow*-re-ˁa ve-ko-re-a
+8 אותו ˀwtw ˀow*-tow* o-to 
+9 לגזרים lgzrym leg*-za-riy*m* leg-za-rim 
+#10 , , , 
+11 כמו kmw ke-mow* ke-mo 
+12 היה hyh ha-yah* a-ya 
+13 דגל dgl de-gel* de-gel 
+#14 אש"ף ˀš"p ˀš"p 
+#15 . . . 
+
+# sent_id = 806
+# text =  המטרה המיידית היא להיפטר מהערבים , אפילו במחיר כליאתם בתוך גטו ענקי .
+1 המטרה hmṭrh ha-ma-ṭa-rah* a-ma-ta-ra 
+2 המיידית hmyydyt ha-miy*-ya-diy*t* a-mi-ya-dit 
+3 היא hyˀ hiy*ˀ* yi 
+4 להיפטר lhypṭr le-hiy*-pa-ṭer* le-i-pa-ter 
+5 מהערבים mhˁrbym me-ha-ˁa-ra-biy*m* me-a-a-ra-vim 
+#6 , , , 
+7 אפילו ˀpylw ˀa-piy*-luw* a-fi-lu 
+8 במחיר bmḥyr be-me-ḥiy*r* be-me-hir 
+9 כליאתם klyˀtm k*liy*-ˀa-tam* kli-a-tam 
+10 בתוך btwk be-tow*k* be-toh 
+11 גטו gṭw ge-ṭow* ge-to 
+12 ענקי ˁnqy ˁa-na-qiy* a-na-ki 
+#13 . . . 
+
+# sent_id = 819
+# text =  כשנה וחצי לאחר מכן הוכרחו היהודים שנותרו בעיר להתרכז בגטו .
+1 כשנה kšnh ke-ša-nah* ke-sha-na 
+2 וחצי wḥçy wa-ḥe-çiy* va-he-tsi 
+3 לאחר lˀḥr le-ˀa-ḥar* le-a-har 
+4 מכן mkn mi-ken* mi-ken 
+5 הוכרחו hwkrḥw huw*k*-re-ḥuw* uh-re-hu  
+6 היהודים hyhwdym ha-ye-huw*-diy*m* a-ye-u-dim 
+7 שנותרו šnwtrw še-now*t*-ruw* she-not-ru 
+8 בעיר bˁyr ba-ˁiy*r* ba-ir 
+9 להתרכז lhtrkz le-hit*-ra-kez* le-it-ra-kez 
+10 בגטו bgṭw ba-ge-ṭow* ba-ge-to 
+#11 . . . 
+
+# sent_id = 834
+# text =  מה זאת אומרת למה , חזר על השאלה , הלא זה בית המרקחת שיסד אביו , בראשית המאה .
+1 מה mh mah* ma 
+2 זאת zˀt zoˀ*t* zot 
+3 אומרת ˀwmrt ˀow*-me-ret* o-me-ret 
+4 למה lmh la-mah* la-ma 
+#5 , , , 
+6 חזר ḥzr ḥa-zar* ha-zar 
+7 על ˁl ˁal* al 
+8 השאלה hšˀlh ha-še-ˀe-lah* a-she-e-la 
+#9 , , , 
+10 הלא hlˀ ha-loˀ* a-lo 
+11 זה zh zeh* ze 
+12 בית byt bey*t* beyt 
+13 המרקחת hmrqḥt ha-mer*-qa-ḥat* a-mer-ka-hat 
+14 שיסד šysd še-yi-sed* she-i-sed 
+15 אביו ˀbyw ˀa-biy*w* a-viv 
+#16 , , , 
+17 בראשית brˀšyt be-reˀ*-šiy*t* be-re-shit 
+18 המאה hmˀh ha-me-ˀah* a-me-a 
+#19 . . . 
+
+# sent_id = 839
+# text =  והתשובה היא פשוטה כל כך : הם לא יכלו לעשות דבר .
+1 והתשובה whtšwbh we-hat*-šuw*-bah* ve-at-shu-va 
+2 היא hyˀ hiy*ˀ* yi 
+3 פשוטה pšwṭh p*šuw*-ṭah* pshu-ta 
+4 כל kl kol* kol
+5 כך kk kak* kah 
+#6 : : : 
+7 הם hm hem* em 
+8 לא lˀ loˀ* lo 
+9 יכלו yklw yak*-luw* yah-lu 
+10 לעשות lˁšwt la-ˁa-šow*t* la-a-sot 
+11 דבר dbr da-bar* da-var 
+#12 . . .
+
+# sent_id = 849
+# text =  אבל אולי זה תלוי בחינוך , אולי במבנה הנפשי , אולי באמונה .
+1 אבל ˀbl ˀa-bal* a-val 
+2 אולי ˀwly ˀuw*-lay* u-lay 
+3 זה zh zeh* ze 
+4 תלוי tlwy ta-luw*y* ta-luy 
+5 בחינוך bḥynwk ba-ḥiy*-nuw*k* ba-hi-nuh 
+#6 , , , 
+7 אולי ˀwly ˀuw*-lay* u-lay 
+8 במבנה bmbnh ba-mib*-neh* ba-miv-ne 
+9 הנפשי hnpšy ha-nap*-šiy* a-naf-shi 
+#10 , , , 
+11 אולי ˀwly ˀuw*-lay* u-lay 
+12 באמונה bˀmwnh be-ˀe-muw*-nah* be-e-mu-na 
+#13 . . .
+
+# sent_id = 861
+# text =  רק שעון הכנסייה הפיץ אור צהבהב .
+1 רק rq raq* rak 
+2 שעון šˁwn š*ˁow*n* shon 
+3 הכנסייה hknsyyh hak*-ne-siy*-yah* ak-ne-si-ya 
+4 הפיץ hpyç he-piy*ç* e-fits 
+5 אור ˀwr ˀow*r* or 
+6 צהבהב çhbhb çe-hab*-hab* tse-av-av 
+#7 . . . 
+
+# sent_id = 871
+# text =  הוא יודע שהתיישבה בעכו והתחתנה עם מלח .
+1 הוא hwˀ huw*ˀ* u 
+2 יודע ywdˁ yow*-deˁ* yo-de 
+3 שהתיישבה šhtyyšbh še-hit*-yay*š*-bah* she-it-yash-va 
+4 בעכו bˁkw be-ˁa-kow* be-a-ko 
+5 והתחתנה whtḥtnh we-hit*-ḥat*-nah* ve-it-hat-na 
+6 עם ˁm ˁim* im 
+7 מלח mlḥ ma-laḥ* ma-lah 
+#8 . . . 
+
+# sent_id = 875
+# text =  אמא שלו עוד חיה .
+1 אמא ˀmˀ ˀi-maˀ* i-ma 
+2 שלו šlw še-low* she-lo 
+3 עוד ˁwd ˁow*d* od 
+4 חיה ḥyh ḥa-yah* ha-ya 
+#5 . . . 
+
+# sent_id = 899
+# text =  זו היתה התפילה הקשה ביותר בחיי .
+1 זו zw zow* zo 
+2 היתה hyth hay*-tah* ay-ta 
+3 התפילה htpylh hat*-piy*-lah* at-fi-la 
+4 הקשה hqšh ha-qa-šah* a-ka-sha 
+5 ביותר bywtr be-yow*-ter* be-yo-ter 
+6 בחיי bḥyy be-ḥa-yay* be-ha-yay 
+#7 . . . 
+
+# sent_id = 904
+# text =  הרגשתי שמח שיש לנו מדינה ומקום לחיות בו : כן , " יהיה מה שיהיה " אני נשאר כאן .
+1 הרגשתי hrgšty her*-gaš*-tiy* er-gash-ti 
+2 שמח šmḥ ša-me-ḥ* sa-me-ah 
+3 שיש šyš še-yeš* she-yesh 
+4 לנו lnw la-nuw* la-nu 
+5 מדינה mdynh me-diy*-nah* me-di-na 
+6 ומקום wmqwm we-ma-qow*m* ve-ma-kom 
+7 לחיות lḥywt liḥ*-yow*t* lih-yot 
+8 בו bw bow* bo 
+#9 : : : 
+10 כן kn ken* ken 
+#11 , , , 
+#12 " " " 
+13 יהיה yhyh yi-hi-yeh* i-i-ye 
+14 מה mh mah* ma 
+15 שיהיה šyhyh še-yi-hi-yeh* she-i-i-ye 
+#16 " " " 
+17 אני ˀny ˀa-niy* a-ni 
+18 נשאר nšˀr niš*-ˀar* nish-ar 
+19 כאן kˀn kaˀ*n* kan 
+#20 . . . 
+
+# sent_id = 907
+# text =  אנחנו עם אשר מאז ומתמיד סבל מגזענות ומשנאה .
+1 אנחנו ˀnḥnw ˀa-naḥ*-nuw* a-nah-nu 
+2 עם ˁm ˁam* am 
+3 אשר ˀšr ˀa-šer* a-sher 
+4 מאז mˀz me-ˀaz* me-az 
+5 ומתמיד wmtmyd wu-mi-ta-miy*d* u-mi-ta-mid 
+6 סבל sbl sa-bal* sa-val 
+7 מגזענות mgzˁnwt mi-giz*-ˁa-nuw*t* mi-giz-a-nut 
+8 ומשנאה wmšnˀh wu-mi-šin*-ˀah* u-mi-sin-a 
+#9 . . . 
+
+# sent_id = 910
+# text =  אני מסכים לגמרי שיש צורך לשלב בנסיעה הזו היכרות עם פולין של היום .
+1 אני ˀny ˀa-niy* a-ni 
+2 מסכים mskym mas*-kiy*m* mas-kim 
+3 לגמרי lgmry le-gam*-rey* le-gam-rey 
+4 שיש šyš še-yeš* she-yesh 
+5 צורך çwrk çow*-rek* tso-reh 
+6 לשלב lšlb le-ša-leb* le-sha-lev 
+7 בנסיעה bnsyˁh ba-ne-siy*-ˁah* ba-ne-si-a 
+8 הזו hzw ha-zow* a-zo 
+9 היכרות hykrwt hey*-ke-row*t* ey-ke-rot 
+10 עם ˁm ˁim* im 
+11 פולין pwlyn pow*-liy*n* po-lin 
+12 של šl šel* shel 
+13 היום hywm ha-yow*m* a-yom 
+#14 . . . 
+
+# sent_id = 911
+# text =  צריך להדגיש את זה הרבה יותר .
+1 צריך çryk ça-riy*k* tsa-rih 
+2 להדגיש lhdgyš le-had*-giy*š* le-ad-gish 
+3 את ˀt ˀet* et 
+4 זה zh zeh* ze 
+5 הרבה hrbh har*-beh* ar-be 
+6 יותר ywtr yow*-ter* yo-ter 
+#7 . . . 
+
+# sent_id = 913
+# text =  החברה שלנו צריכה להיות פתוחה יותר .
+1 החברה hḥbrh ha-ḥeb*-rah* a-hev-ra 
+2 שלנו šlnw še-la-nuw* she-la-nu 
+3 צריכה çrykh ç*riy*-kah* tsri-ha 
+4 להיות lhywt li-hi-yow*t* li-i-yot 
+5 פתוחה ptwḥh p*tuw*-ḥah* ptu-ha 
+6 יותר ywtr yow*-ter* yo-ter 
+#7 . . . 
+
+# sent_id = 919
+# text =  פתאום חשבתי על משפחתה של סבתי שכולם היו חסידים .
+1 פתאום ptˀwm pit*-ˀow*m* pit-om 
+2 חשבתי ḥšbty ḥa-šab*-tiy* ha-shav-ti 
+3 על ˁl ˁal* al 
+4 משפחתה mšpḥth miš*-paḥ*-tah* mish-pah-ta 
+5 של šl šel* shel 
+6 סבתי sbty sab*-tiy* sav-ti 
+7 שכולם škwlm še-kuw*-lam* she-ku-lam 
+8 היו hyw ha-yuw* a-yu 
+9 חסידים ḥsydym ḥa-siy*-diy*m* ha-si-dim 
+#10 . . . 
+
+# sent_id = 921
+# text =  אבל כשחשבתי על זה אחר כך , הגעתי למסקנה שזו היתה רק אמירה שגרתית שלא ביטאה שנאה או מחשבה .
+1 אבל ˀbl ˀa-bal* a-val 
+2 כשחשבתי kšḥšbty k*še-ḥa-šab*-tiy* kshe-ha-shav-ti 
+3 על ˁl ˁal* al 
+4 זה zh zeh* ze 
+5 אחר ˀḥr ˀa-ḥar* a-har 
+6 כך kk kak* kah 
+#7 , , , 
+8 הגעתי hgˁty he-gaˁ*-tiy* e-ga-ti 
+9 למסקנה lmsqnh le-mas*-qa-nah* le-mas-ka-na 
+10 שזו šzw še-zow* she-zo 
+11 היתה hyth hay*-tah* ay-ta 
+12 רק rq raq* rak 
+13 אמירה ˀmyrh ˀa-miy*-rah* a-mi-ra 
+14 שגרתית šgrtyt šig*-ra-tiy*t* shig-ra-tit 
+15 שלא šlˀ še-loˀ* she-lo 
+16 ביטאה byṭˀh biy*ṭ*-ˀah* bit-a  
+17 שנאה šnˀh šin*-ˀah* sin-a 
+18 או ˀw ˀow* o 
+19 מחשבה mḥšbh maḥ*-ša-bah* mah-sha-va 
+#20 . . . 
+
+# sent_id = 943
+# text =  אז חיפשנו פרצה בגדרות , על מנת לקצר את הדרך למחנה הצוענים .
+1 אז ˀz ˀaz* az 
+2 חיפשנו ḥypšnw ḥiy*-paš*-nuw* hi-pas-nu 
+3 פרצה prçh pir*-çah* pir-tsa 
+4 בגדרות bgdrwt bag*-de-row*t* bag-de-rot 
+#5 , , , 
+6 על ˁl ˁal* al 
+7 מנת mnt me-nat* me-nat 
+8 לקצר lqçr le-qa-çer* le-ka-tser 
+9 את ˀt ˀet* et 
+10 הדרך hdrk ha-de-rek* a-de-reh 
+11 למחנה lmḥnh le-ma-ḥa-neh* le-ma-ha-ne 
+12 הצוענים hçwˁnym ha-çow*-ˁa-niy*m* a-tso-a-nim 
+#13 . . . 
+
+# sent_id = 955
+# text =  כיצד זה השפיע על הנוער ?
+1 כיצד kyçd key*-çad* key-tsad 
+2 זה zh zeh* ze 
+3 השפיע hšpyˁ heš*-piy*-ˁa esh-pi-a 
+4 על ˁl ˁal* al 
+5 הנוער hnwˁr ha-now*-ˁar* a-no-ar 
+#6 ? ? ? 
+
+# sent_id = 966
+# text =  יש לי הרגשה שהיום אנחנו לא רחוקים מהמצב הזה .
+1 יש yš yeš* yesh 
+2 לי ly liy* li 
+3 הרגשה hrgšh har*-ga-šah* ar-ga-sha 
+4 שהיום šhywm še-ha-yow*m* she-a-yom 
+5 אנחנו ˀnḥnw ˀa-naḥ*-nuw* a-nah-nu 
+6 לא lˀ loˀ* lo 
+7 רחוקים rḥwqym re-ḥow*-qiy*m* re-ho-kim 
+8 מהמצב mhmçb me-ha-ma-çab* me-a-ma-tsav 
+9 הזה hzh ha-zeh* a-ze 
+#10 . . . 
+
+# sent_id = 971
+# text =  אבל למען האמת אני לא רואה אדם כזה שכולם יסכימו לסור למרותו .
+1 אבל ˀbl ˀa-bal* a-val 
+2 למען lmˁn le-ma-ˁan* le-ma-an 
+3 האמת hˀmt ha-ˀe-met* a-e-met 
+4 אני ˀny ˀa-niy* a-ni 
+5 לא lˀ loˀ* lo 
+6 רואה rwˀh row*-ˀeh* ro-e 
+7 אדם ˀdm ˀa-dam* a-dam 
+8 כזה kzh ka-zeh* ka-ze 
+9 שכולם škwlm še-kuw*-lam* she-ku-lam 
+10 יסכימו yskymw yas*-kiy*-muw* yas-ki-mu 
+11 לסור lswr la-suw*r* la-sur 
+12 למרותו lmrwtw le-ma-ruw*-tuw* le-ma-ru-tu 
+#13 . . . 
+
+# sent_id = 977
+# text =  אם הייתי צריך לשים כסף על הימור , הייתי מהמר שתוך שנה , מבחינה ארגונית , התנועה לא תמשיך לפעול .
+1 אם ˀm ˀim* im 
+2 הייתי hyyty ha-yiy*-tiy* a-i-ti 
+3 צריך çryk ça-riy*k* tsa-rih 
+4 לשים lšym la-šiy*m* la-sim 
+5 כסף ksp ke-sep* ke-sef 
+6 על ˁl ˁal* al 
+7 הימור hymwr hiy*-muw*r* i-mur 
+#8 , , , 
+9 הייתי hyyty ha-yiy*-tiy* a-i-ti 
+10 מהמר mhmr me-ha-mer* me-a-mer 
+11 שתוך štwk še-tow*k* she-toh 
+12 שנה šnh ša-nah* sha-na 
+#13 , , , 
+14 מבחינה mbḥynh mib*-ḥiy*-nah* mib-hi-na 
+15 ארגונית ˀrgwnyt ˀir*-guw*-niy*t* ir-gu-nit 
+#16 , , , 
+17 התנועה htnwˁh hat*-nuw*-ˁah* at-nu-a 
+18 לא lˀ loˀ* lo
+19 תמשיך tmšyk tam*-šiy*k* tam-shih 
+20 לפעול lpˁwl lip*-ˁow*l* lif-ol 
+#21 . . . 
+
+# sent_id = 983
+# text =  הוא הצליח לגייס למענה מאות אלפי דולרים בשנה .
+1 הוא hwˀ huw*ˀ* u 
+2 הצליח hçlyḥ heç*-liy*-ḥ* ets-li-ah 
+3 לגייס lgyys le-ga-yey*s* le-ga-yes 
+4 למענה lmˁnh le-ma-ˁa-nah* le-ma-a-na 
+5 מאות mˀwt me-ˀow*t* me-ot 
+6 אלפי ˀlpy ˀal*-pey* al-fey 
+7 דולרים dwlrym dow*-la-riy*m* do-la-rim 
+8 בשנה bšnh be-ša-nah* be-sha-na 
+#9 . . . 
+
+# sent_id = 1019
+# text =  הסיכום שלו היה : כבר עשיתי מה שאני יכול בנושא הזה , ועכשיו הכל בידי שמים .
+1 הסיכום hsykwm ha-siy*-kuw*m* a-si-kum 
+2 שלו šlw še-low* she-lo 
+3 היה hyh ha-yah* a-ya 
+#4 : : : 
+5 כבר kbr k*bar* kvar  
+6 עשיתי ˁšyty ˁa-šiy*-tiy* a-si-ti 
+7 מה mh mah* ma 
+8 שאני šˀny še-ˀa-niy* she-a-ni 
+9 יכול ykwl ya-kow*l* ya-hol 
+10 בנושא bnwšˀ ba-now*-šeˀ* ba-no-se 
+11 הזה hzh ha-zeh* a-ze 
+#12 , , , 
+13 ועכשיו wˁkšyw we-ˁak*-šay*w* ve-ah-shav 
+14 הכל hkl ha-kol* a-kol 
+15 בידי bydy bey*-dey* bey-dey 
+16 שמים šmym ša-ma-yim* sha-ma-im 
+#17 . . . 
+
+# sent_id = 1608
+# text =  ואמנם , בהקשר שבו נעשה ההיקש הוא בלתי - הולם עד גיחוך .
+1 ואמנם wˀmnm we-ˀum*-nam* ve-um-nam 
+#2 , , , 
+3 בהקשר bhqšr ba-heq*-šer* ba-ek-sher 
+4 שבו šbw še-bow* she-bo 
+5 נעשה nˁšh ne-ˁe-šah* ne-e-sa 
+6 ההיקש hhyqš ha-hey*-qeš* a-ey-kesh 
+7 הוא hwˀ huw*ˀ* u 
+8 בלתי blty bil*-tiy* bil-ti 
+#9 - - - 
+10 הולם hwlm how*-lem* o-lem 
+11 עד ˁd ˁad* ad 
+12 גיחוך gyḥwk giy*-ḥuw*k* gi-huh 
+#13 . . . 
+
+# sent_id = 1616
+# text =  זמנים אלה חלפו , אולי ללא שוב .
+1 זמנים zmnym z*ma-niy*m* zma-nim 
+2 אלה ˀlh ˀe-leh* e-le 
+3 חלפו ḥlpw ḥal*-puw* hal-fu 
+#4 , , , 
+5 אולי ˀwly ˀuw*-lay* u-lay 
+6 ללא llˀ le-loˀ* le-lo 
+7 שוב šwb šuw*b* shuv 
+#8 . . .
+
+# sent_id = 1649
+# text =  אבל אפשר שהאמריקאים לומדים בימים אלה פרק חשוב בהבנת המזרח התיכון .
+1 אבל ˀbl ˀa-bal* a-val 
+2 אפשר ˀpšr ˀep*-šar* ef-shar
+3 שהאמריקאים šhˀmryqˀym še-ha-ˀa-me-riy*-qa-ˀiy*m* she-a-a-me-ri-ka-im
+4 לומדים lwmdym low*m*-diy*m* lom-dim
+5 בימים bymym be-ya-miy*m* be-ya-mim 
+6 אלה ˀlh ˀe-leh* e-le
+7 פרק prq pe-req* pe-rek
+8 חשוב ḥšwb ḥa-šuw*b* ha-shuv
+9 בהבנת bhbnt be-ha-ba-nat* be-a-va-nat
+10 המזרח hmzrḥ ha-miz*-raḥ* a-miz-rah
+11 התיכון htykwn ha-tiy*-kow*n* a-ti-hon 
+#12 . . . 
+
+# sent_id = 1654
+# text =  כך , בלי משים , מזכיר כאן נתניהו כי אין שום חידוש בעמדה שנוקטת ארה"ב בימים אלה בנושא ירושלים .
+1 כך kk kak* kah 
+#2 , , , 
+3 בלי bly b*liy* bli 
+4 משים mšym ma-šiy*m* ma-sim 
+#5 , , , 
+6 מזכיר mzkyr maz*-kiy*r* maz-kir 
+7 כאן kˀn kaˀ*n* kan 
+8 נתניהו ntnyhw ne-tan*-ya-huw* ne-tan-ya-u 
+9 כי ky kiy* ki 
+10 אין ˀyn ˀey*n* eyn 
+11 שום šwm šuw*m* shum 
+12 חידוש ḥydwš ḥiy*-duw*š* hi-dush 
+13 בעמדה bˁmdh ba-ˁem*-dah* ba-em-da 
+14 שנוקטת šnwqṭt še-now*-qe-ṭet* she-no-ke-tet 
+#15 ארה"ב ˀrh"b ˀrh"b 
+16 בימים bymym be-ya-miy*m* be-ya-mim 
+17 אלה ˀlh ˀe-leh* e-le 
+18 בנושא bnwšˀ be-nuw*-šeˀ* be-nu-se 
+19 ירושלים yrwšlym ye-ruw*-ša-la-yim* ye-ru-sha-la-im 
+#20 . . . 
+
+# sent_id = 1659
+# text =  לדעתו , דחייה לא תשפר את המצב .
+1 לדעתו ldˁtw le-da-ˁa-tow* le-da-a-to 
+#2 , , , 
+3 דחייה dḥyyh d*ḥiy*-yah* dhi-ya 
+4 לא lˀ loˀ* lo
+5 תשפר tšpr te-ša-per* te-sha-per 
+6 את ˀt ˀet* et 
+7 המצב hmçb ha-ma-çab* a-ma-tsav 
+#8 . . . 
+
+# sent_id = 1694
+# text =  ניצחון יבטיח לה יתרון בן 4 נקודות , לפחות , בפיסגה .
+1 ניצחון nyçḥwn niy*-ça-ḥow*n* ni-tsa-hon
+2 יבטיח ybṭyḥ yab*-ṭiy*-ḥ* yav-ti-ah 
+3 לה lh lah* la
+4 יתרון ytrwn yi-ta-row*n* i-ta-ron
+5 בן bn ben* ben
+#6 4 4 4 
+7 נקודות nqwdwt ne-quw*-dow*t* ne-ku-dot
+#8 , , , 
+9 לפחות lpḥwt le-pa-ḥow*t* le-fa-hot 
+#10 , , , 
+11 בפיסגה bpysgh ba-piy*s*-gah* ba-pis-ga 
+#12 . . . 
+
+# sent_id = 1706
+# text =  אליהם יצטרף בתחילת השבוע הבא איגור דנדיק , הנחשב בין הטובים בעולם במשקל עד 001 ק"ג .
+1 אליהם ˀlyhm ˀe-ley*-hem* e-ley-em 
+2 יצטרף yçṭrp yiç*-ṭa-rep* its-ta-ref 
+3 בתחילת btḥylt bet*-ḥiy*-lat* bet-hi-lat
+4 השבוע hšbwˁ ha-ša-buw*-ˁa a-sha-vu-a 
+5 הבא hbˀ ha-baˀ* a-ba
+6 איגור ˀygwr ˀiy*-gow*r* i-gor
+#7 דנדיק dndyq dndyq 
+#8 , , , 
+9 הנחשב hnḥšb ha-niḥ*-šab* a-nih-shav 
+10 בין byn bey*n* beyn
+11 הטובים hṭwbym ha-ṭow*-biy*m* a-to-vim 
+12 בעולם bˁwlm ba-ˁow*-lam* ba-o-lam
+13 במשקל bmšql be-miš*-qal* be-mish-kal 
+14 עד ˁd ˁad* ad 
+#15 001 001 001 
+#16 ק"ג q"g q"g 
+#17 . . . 
+
+# sent_id = 1713
+# text =  שני האתלטים המושעים מכחישים בתוקף שימוש בסמים .
+1 שני šny š*ney* shney
+2 האתלטים hˀtlṭym ha-ˀat*-le-ṭiy*m* a-at-le-tim
+3 המושעים hmwšˁym ha-muw*š*-ˁiy*m* a-mush-im
+4 מכחישים mkḥyšym mak*-ḥiy*-šiy*m* mak-hi-shim
+5 בתוקף btwqp be-tow*-qep* be-to-kef
+6 שימוש šymwš šiy*-muw*š* shi-mush
+7 בסמים bsmym be-sa-miy*m* be-sa-mim  
+#8 . . . 
+
+# sent_id = 1726
+# text =  אני מהמר על נתניה מפני שיש לה התקפה שמסוגלת לנצח והמשחק לא יהיה בימק"א .
+1 אני ˀny ˀa-niy* a-ni 
+2 מהמר mhmr me-ha-mer* me-a-mer 
+3 על ˁl ˁal* al 
+4 נתניה ntnyh na-tan*-yah* na-tan-ya 
+5 מפני mpny mip*-ney* mip-ney 
+6 שיש šyš še-yeš* she-yesh 
+7 לה lh lah* la 
+8 התקפה htqph hat*-qa-pah* at-ka-fa 
+9 שמסוגלת šmswglt še-me-suw*-ge-let* she-me-su-ge-let 
+10 לנצח lnçḥ le-na-çe-ḥ* le-na-tse-ah  
+11 והמשחק whmšḥq we-ha-miš*-ḥaq* ve-a-mis-hak 
+12 לא lˀ loˀ* lo 
+13 יהיה yhyh yi-hi-yeh* i-i-ye 
+#14 בימק"א bymq"ˀ bymq"ˀ 
+#15 . . . 
+
+# sent_id = 1731
+# text =  כיום כפר סבא היא אחת משתי החלשות בליגה .
+1 כיום kywm ka-yow*m* ka-yom
+2 כפר kpr k*par* kfar
+3 סבא sbˀ sa-baˀ* sa-ba
+4 היא hyˀ hiy*ˀ* yi
+5 אחת ˀḥt ˀa-ḥat* a-hat
+6 משתי mšty miš*-tey* mish-tey
+7 החלשות hḥlšwt ha-ḥa-la-šow*t* a-ha-la-shot
+8 בליגה blygh ba-liy*-gah* ba-li-ga 
+#9 . . . 
+
+# sent_id = 1756
+# text =  דקות חרדה עברו על אנשי ירושלים עד שקידר חזר להכרה מלאה .
+1 דקות dqwt da-qow*t* da-kot
+2 חרדה ḥrdh ḥa-ra-dah* ha-ra-da
+3 עברו ˁbrw ˁab*-ruw* av-ru
+4 על ˁl ˁal* al
+5 אנשי ˀnšy ˀan*-šey* an-shey
+6 ירושלים yrwšlym ye-ruw*-ša-la-yim* ye-ru-sha-la-im
+7 עד ˁd ˁad* ad
+#8 שקידר šqydr šqydr 
+9 חזר ḥzr ḥa-zar* ha-zar 
+10 להכרה lhkrh le-ha-ka-rah* le-a-ka-ra 
+11 מלאה mlˀh me-le-ˀah* me-le-a
+#12 . . . 
+
+# sent_id = 1757
+# text =  הוא גם נחבל קשה בסנטרו והובהל לבית חולים .
+1 הוא hwˀ huw*ˀ* u
+2 גם gm gam* gam
+3 נחבל nḥbl niḥ*-bal* nih-bal
+4 קשה qšh qa-šeh* ka-she
+5 בסנטרו bsnṭrw be-san*-ṭe-row* be-san-te-ro
+6 והובהל whwbhl we-huw*b*-hal* ve-uv-al
+7 לבית lbyt le-bey*t* le-beyt
+8 חולים ḥwlym ḥow*-liy*m* ho-lim 
+#9 . . . 
+
+# sent_id = 1777
+# text =  ניתן ללמוד מכך שלחוסיין אין תשובה לתהליכים הפנימיים המתרחשים בארצו .
+1 ניתן nytn niy*-tan* ni-tan
+2 ללמוד llmwd lil*-mow*d* lil-mod 
+3 מכך mkk mi-kak* mi-kah 
+#4 שלחוסיין šlḥwsyyn šeleḥuw*sey*yen* 
+5 אין ˀyn ˀey*n* eyn 
+6 תשובה tšwbh t*šuw*-bah* tshu-va 
+7 לתהליכים lthlykym la-ta-ha-liy*-kiy*m* la-ta-a-li-him 
+8 הפנימיים hpnymyym hap*-niy*-miy*-yim* ap-ni-mi-im 
+9 המתרחשים hmtrḥšym ha-mit*-raḥ*-šiy*m* a-mit-rah-shim 
+10 בארצו bˀrçw be-ˀar*-çow* be-ar-tso 
+#11 . . . 
+
+# sent_id = 1782
+# text =  תפוקה דלה כזו משלושה שחקנים , האמורים להריץ את מכבי , יכולה היתה להיות מכרעת .
+1 תפוקה tpwqh t*puw*-qah* tfu-ka 
+2 דלה dlh da-lah* da-la 
+3 כזו kzw ka-zow* ka-zo 
+4 משלושה mšlwšh miš*-low*-šah* mish-lo-sha 
+5 שחקנים šḥqnym šaḥ*-qa-niy*m* sah-ka-nim 
+#6 , , , 
+7 האמורים hˀmwrym ha-ˀa-muw*-riy*m* a-a-mu-rim 
+8 להריץ lhryç le-ha-riy*ç* le-a-rits 
+9 את ˀt ˀet* et 
+10 מכבי mkby ma-ka-biy* ma-ka-bi 
+#11 , , , 
+12 יכולה ykwlh ye-kow*-lah* ye-ho-la 
+13 היתה hyth hay*-tah* ay-ta 
+14 להיות lhywt lih*-yow*t* li-yot 
+15 מכרעת mkrˁt mak*-ra-ˁat* mah-ra-at 
+#16 . . . 
+
+# sent_id = 1811
+# text =  בהארכה נראתה במגרש קבוצה אחת בלבד , הפועל תל אביב .
+1 בהארכה bhˀrkh ba-haˀ*-ra-kah* ba-a-ra-ha 
+2 נראתה nrˀth nir*-ˀe-tah* nir-e-ta 
+3 במגרש bmgrš ba-mig*-raš* ba-mig-rash 
+4 קבוצה qbwçh q*buw*-çah* kvu-tsa 
+5 אחת ˀḥt ˀa-ḥat* a-hat 
+6 בלבד blbd bil*-bad* bil-vad 
+#7 , , , 
+8 הפועל hpwˁl ha-pow*-ˁel* a-po-el 
+9 תל tl tel* tel 
+10 אביב ˀbyb ˀa-biy*b* a-viv 
+#11 . . . 
+
+# sent_id = 1818
+# text =  מחירי הנפט נפלו בכדולר לחבית באירופה .
+1 מחירי mḥyry me-ḥiy*-rey* me-hi-rey 
+2 הנפט hnpṭ ha-nep*ṭ* a-neft 
+3 נפלו nplw nap*-luw* naf-lu 
+4 בכדולר bkdwlr be-ke-dow*-lar* be-ke-do-lar 
+5 לחבית lḥbyt le-ḥa-biy*t* le-ha-vit 
+6 באירופה bˀyrwph be-ˀey*-row*-pah* be-ey-ro-pa 
+#7 . . . 
+
+# sent_id = 1822
+# text =  53 דולר לחבית , אם כי בחלק מהחוזים נרשמו בתום יום המסחר ירידות של כ08 סנט לחבית .
+#1 53 53 53 
+2 דולר dwlr dow*-lar* do-lar
+3 לחבית lḥbyt le-ḥa-biy*t* le-ha-vit
+#4 , , , 
+5 אם ˀm ˀim* im
+6 כי ky kiy* ki
+7 בחלק bḥlq be-ḥe-leq* be-he-lek 
+8 מהחוזים mhḥwzym me-ha-ḥow*-ziy*m* me-a-ho-zim 
+9 נרשמו nršmw nir*-še-muw* nir-she-mu 
+10 בתום btwm be-tow*m* be-tom 
+11 יום ywm yow*m* yom 
+12 המסחר hmsḥr ha-mis*-ḥar* a-mis-har 
+13 ירידות yrydwt ye-riy*-dow*t* ye-ri-dot 
+14 של šl šel* shel 
+#15 כ08 k08 k08 
+16 סנט snṭ sen*ṭ* sent
+17 לחבית lḥbyt le-ḥa-biy*t* le-ha-vit 
+#18 . . . 

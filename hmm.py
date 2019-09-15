@@ -5,7 +5,7 @@ import codecs
 import numpy as np
 import metrics
 from copy import deepcopy
-
+import sys
 class HMM:
     def __init__(self, config):
         self.ngram = config['ngram']
@@ -102,8 +102,7 @@ class HMM:
             est = lambda fd, bins: MLEProbDist(fd)
         return est
 
-
-if __name__ == '__main__':
+def search_hparams():
     verbose=False
     ngrams = [{'ngram':x} for x in range(1,8,1)]
     smooth = [{'est':'mle'}, {'est':'laplace'}, {'est':'good-turing'}]
@@ -114,12 +113,12 @@ if __name__ == '__main__':
             config = {**config[0], **config[1]}
             if 'conf_mat' in locals():
                 del conf_mat
-            for iters in range(5):
+            for iters in range(7):
                 hmm = HMM(config)
                 if 'conf_mat' in locals():
-                    conf_mat += hmm.prep_data().shuffle(0).split(0.1).train().eval()
+                    conf_mat += hmm.prep_data().shuffle(None).split(0.1).train().eval()
                 else:
-                    conf_mat  = hmm.prep_data().shuffle(0).split(0.1).train().eval()
+                    conf_mat  = hmm.prep_data().shuffle(None).split(0.1).train().eval()
             res_str = '{};'.format(config)
             print("Configuration = {}: ".format(config))
             precision, recall = metrics.MicroAvg(conf_mat)
@@ -138,3 +137,34 @@ if __name__ == '__main__':
             if verbose:
                 print('ConfMat:\n', np.array_str(conf_mat, max_line_width=300, precision=4))
                 print('----------------------------------------------')
+
+def check_seeds():
+    config = {'ngram': 3, 'est': 'add-delta', 'delta': 0.3}
+    print("seed, accuracy")
+    for seed in range(11):
+        if 'conf_mat' in locals():
+            del conf_mat
+        for iters in range(7):
+            hmm = HMM(config)
+            if 'conf_mat' in locals():
+                conf_mat += hmm.prep_data().shuffle(seed).split(0.1).train().eval()
+            else:
+                conf_mat = hmm.prep_data().shuffle(seed).split(0.1).train().eval()
+        acc = metrics.AvgAcc(conf_mat)
+        print(seed, acc)
+
+def print_usage():
+    print("Usage:")
+    print("hmm.py [search/seeds]")
+    print("search - searches for best configuration")
+    print("seeds - checks various seeds")
+
+if __name__ == '__main__':
+    if len(sys.argv) != 2:
+        print_usage()
+    elif sys.argv[1] == 'search':
+        search_hparams()
+    elif sys.argv[1] == 'seeds':
+        check_seeds()
+    else:
+        print_usage()

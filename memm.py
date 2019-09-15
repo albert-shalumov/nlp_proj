@@ -4,6 +4,7 @@ import metrics
 from sklearn.linear_model import LogisticRegression
 from functools import reduce as reduce
 from itertools import combinations
+import sys
 
 '''
 Class for MEMM method.
@@ -174,7 +175,7 @@ class MEMM:
     ARNON_CHARS_IDX = {x:i for i,x in enumerate(ARNON_CHARS)}
     CONFIG = ['IS_FIRST', 'IS_LAST', 'IDX', 'VAL', 'PRV_VAL', 'NXT_VAL', 'FRST_VAL', 'LST_VAL', 'SCND_VAL', 'SCND_LST_VAL', 'LEN']
 
-if __name__ == '__main__':
+def search_hparams():
     verbose = False
     with open('memm_res.csv','w') as f:
         for num_ftrs in range(len(MEMM.CONFIG)):
@@ -183,12 +184,12 @@ if __name__ == '__main__':
                 config = {'ftrs':ftrs}
                 if 'conf_mat' in locals():
                     del conf_mat
-                for i in range(5):
+                for i in range(7):
                     memm = MEMM(config)
                     if 'conf_mat' in locals():
-                        conf_mat += memm.prep_data().shuffle(0).split(0.1).train().eval()
+                        conf_mat += memm.prep_data().shuffle(None).split(0.1).train().eval()
                     else:
-                        conf_mat = memm.prep_data().shuffle(0).split(0.1).train().eval()
+                        conf_mat = memm.prep_data().shuffle(None).split(0.1).train().eval()
                 res_str = '{};'.format(config)
                 print("Configuration = {}: ".format(config))
                 precision, recall = metrics.MicroAvg(conf_mat)
@@ -207,3 +208,34 @@ if __name__ == '__main__':
                 if verbose:
                     print('ConfMat:\n', np.array_str(conf_mat, max_line_width=300, precision=4))
                     print('----------------------------------------------')
+
+def check_seeds():
+    config = {'ftrs': ('IS_FIRST', 'IS_LAST', 'VAL', 'PRV_VAL', 'NXT_VAL', 'FRST_VAL', 'LST_VAL', 'SCND_VAL', 'SCND_LST_VAL')}
+    print("seed, accuracy")
+    for seed in range(11):
+        if 'conf_mat' in locals():
+            del conf_mat
+        for iters in range(7):
+            memm = MEMM(config)
+            if 'conf_mat' in locals():
+                conf_mat += memm.prep_data().shuffle(seed).split(0.1).train().eval()
+            else:
+                conf_mat = memm.prep_data().shuffle(seed).split(0.1).train().eval()
+        acc = metrics.AvgAcc(conf_mat)
+        print(seed, acc)
+
+def print_usage():
+    print("Usage:")
+    print("memm.py [search/seeds]")
+    print("search - searches for best configuration")
+    print("seeds - checks various seeds")
+
+if __name__ == '__main__':
+    if len(sys.argv) != 2:
+        print_usage()
+    elif sys.argv[1] == 'search':
+        search_hparams()
+    elif sys.argv[1] == 'seeds':
+        check_seeds()
+    else:
+        print_usage()

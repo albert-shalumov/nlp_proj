@@ -8,30 +8,34 @@ Distance between consonants calculated as Wasserstein distance(=Earth Mover Dist
 '''
 class Embedding:
     def __init__(self):
-        self.mapping = np.identity(len(Embedding.ARNON_CHARS))
+        self.mapping = np.identity(len(Embedding.ARNON_CHARS)) # default to 1-hot encoding
 
+    '''
+    Ref.:
+    https://www.stat.pitt.edu/sungkyu/course/2221Fall13/lec8_mds_combined.pdf
+    '''
     def learn(self, file='../data/HaaretzOrnan_annotated.txt'):
-        prob_distr = Embedding._calc_corpus_dist(file)
+        prob_distr = Embedding._calc_corpus_dist(file) # calculate probability distribution with smoothing
         dist = Embedding._calc_dist(prob_distr)
         n = prob_distr.shape[0]
         A = -0.5 * dist * dist
         H = np.identity(n) - np.ones((n, n)) / n
         B = np.linalg.multi_dot([H, A, H])
-        V, D = np.linalg.eig(B)
-        ids = np.argsort(V)[::-1]
-        eig_mat = np.diag(V[ids])
+        V, D = np.linalg.eig(B) # eigenvalues and eigenvectors
+        V, D = np.real(V), np.real(D)
+        ids = np.argsort(V)[::-1] # get sorting indices, in decreasing size
+        eig_mat = np.diag(V[ids]) # diagonal matrix of eigenvalues
         D = D[:, ids]
         err_mat = np.zeros(n)+np.inf
-        for i in range(1, n):
-            err = Embedding._calc_err(dist, D, eig_mat, i)
+        for i in range(1, prob_distr.shape[0]+1):
+            err = Embedding._calc_err(dist, D, eig_mat, i) # calculate reprojection error
             if np.isfinite(err):
                 err_mat[i] = err
-        min_ind = np.argmin(err_mat)
-
-        self.mapping = np.empty((min_ind+1,dist.shape[0]))
-        for i in range(dist.shape[0]):
-            for j in range(min_ind+1):
-                self.mapping[j,i] = D[i,j]*np.sqrt(eig_mat[j,j])
+        min_ind = np.argmin(err_mat) # find number of dimenstion minimizing reprojection error
+        self.mapping = np.empty((dist.shape[0], min_ind))
+        for i in range(dist.shape[0]): # calculate new vectors
+            for j in range(int(min_ind)):
+                self.mapping[i,j] = D[i,j]*np.sqrt(eig_mat[j,j])
 
 
     def save(self, file):
@@ -41,10 +45,10 @@ class Embedding:
         self.mapping = np.load(file)
 
     def len(self):
-        return self.mapping.shape[0]
+        return self.mapping.shape[1]
 
     def __getitem__(self, ch):
-        return self.mapping[:, Embedding.ARNON_CHARS_IDX[ch]]
+        return self.mapping[Embedding.ARNON_CHARS_IDX[ch], :]
 
     VOWELS = [u'a', u'e', u'u', u'i', u'o', u'*']
     VOWELS_IDX = {x: i for i, x in enumerate(VOWELS)}
@@ -66,7 +70,8 @@ class Embedding:
                 w = w.replace(u'-', u'')
                 for i in range(len(w) // 2):
                     prob_distr[Embedding.ARNON_CHARS_IDX[w[i * 2]], Embedding.VOWELS_IDX[w[i * 2 + 1]]] += 1
-        prob_distr += 0.1  # smoothing
+
+        prob_distr += 0.3  # smoothing
         prob_distr = prob_distr / np.sum(prob_distr, 1)[:, np.newaxis]  # prob distrib
         return prob_distr
 
@@ -104,10 +109,11 @@ class Embedding:
 
         return avg_err
 
-
 if __name__ == '__main__':
     emb = Embedding()
-    emb.learn('../data/HaaretzOrnan_annotated.txt')
-    emb.save('emb_model')
+    emb.learn('data/HaaretzOrnan_annotated.txt')
+    emb.save('emb_model_mds')
+    for i in range(emb.mapping.shape[0]):
+        print(emb.mapping[i], "'"+Embedding.ARNON_CHARS[i]+"'")
     print(emb.len())
-    print(emb['t'])
+    #print(emb['t'])

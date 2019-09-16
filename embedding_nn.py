@@ -19,52 +19,54 @@ class Embedding:
             def __init__(self, size_in, size_out):
                 super(embedder, self).__init__()
                 emb_dim_size = size_out
-                self.fc1_1 = nn.Linear(size_in, size_in)
-                self.act1_1 = nn.PReLU()
-                #self.fc1 = nn.Linear(size_in, size_in)
-                #self.act1 = nn.PReLU()
+                self.fc1 = nn.Linear(size_in, size_in)
+                self.act1 = nn.PReLU()
                 self.fc2 = nn.Linear(size_in, emb_dim_size) # embedding
 
-                self.act2_1 = nn.PReLU()
-                self.fc4_1 = nn.Linear(emb_dim_size, emb_dim_size)
                 self.act2 = nn.PReLU()
+                self.fc3 = nn.Linear(emb_dim_size, emb_dim_size)
+                self.act3 = nn.PReLU()
                 self.fc4 = nn.Linear(emb_dim_size, size_in)
                 self.softmax = nn.Softmax(dim=-1)
 
             def forward(self, input):
-                out1 = self.fc2((self.act1_1(self.fc1_1(input))))
-                out2 = torch.log2(self.softmax(self.fc4(self.act2(self.fc4_1(self.act2_1(out1)))))+1e-7)
+                out1 = self.fc2((self.act1(self.fc1(input))))
+                out2 = torch.log2(self.softmax(self.fc4(self.act3(self.fc3(self.act2(out1)))))+1e-7)
                 return out1, out2
 
         criterion2 = nn.NLLLoss()
-        emb_net = embedder(self.mapping.shape[0], len(Embedding.VOWELS))
+        emb_net = embedder(self.mapping.shape[0], 8)
         inp = torch.from_numpy(self.mapping).float().to('cpu')
         tgt_out1 = torch.from_numpy(dist).float().to('cpu')
         tgt_out2 = torch.from_numpy(np.argmax(self.mapping,-1)).long().to('cpu')
 
         d = Variable()
+        l = Variable()
         reg = Variable()
         optimizer = optim.Adam(emb_net.parameters(), lr=1e-2)
         best_loss = np.inf
         best_mapping = None
-        for i in range(50):
+        best_loss = np.inf
+        for i in range(5000):
             optimizer.zero_grad()  # Clears existing gradients from previous epoch
             out1, out2 = emb_net(inp)
             d = 0
+            l = 0
             reg = 0
             for j in range(self.mapping.shape[0]):
                 for k in range(j+1, self.mapping.shape[0]):
                     tmp = out1[j,:]-out1[k,:]
-                    est_dist = torch.t(tmp).matmul(tmp)
-                    d += (est_dist-tgt_out1[j,k]**2)**2
-            rmse_dist = 100*d
+                    est_dist_sqr = torch.t(tmp).matmul(tmp)
+                    d += (est_dist_sqr-tgt_out1[j,k]**2)**2
+
+            distr_dist = 100*d
             dec_err = criterion2(out2, tgt_out2)
 
-            #for name, param in emb.named_parameters():
+            #for name, param in emb_net.named_parameters():
             #    if 'bias' not in name:
-            #        reg += (0.5 * 1e-4 * torch.sum(torch.pow(param, 2)))
-
-            loss = rmse_dist + dec_err+reg
+            #        reg += (0.5 * 1e-3 * torch.sum(torch.pow(param, 2)))
+#
+            loss = distr_dist + dec_err+reg
             loss.backward()
             optimizer.step()
 
@@ -73,11 +75,12 @@ class Embedding:
                     #for name, param in emb.named_parameters():
                     #    if 'fc' in name:
                     #        #print(name, torch.min(param), torch.max(param))
-                    print(i, rmse_dist.item(), dec_err.item(), loss.item())
+                    print(i, d.item(), dec_err.item(), loss.item())
                     if loss.item()<best_loss:
                         best_loss=loss.item()
                         best_mapping = out1.detach().numpy()
         self.mapping = best_mapping
+        print("Best loss:",best_loss)
 
     def save(self, file):
         np.save(file, self.mapping)
@@ -86,7 +89,7 @@ class Embedding:
         self.mapping = np.load(file)
 
     def len(self):
-        return self.mapping.shape[0]
+        return self.mapping.shape[1]
 
     def __getitem__(self, ch):
         return self.mapping[Embedding.ARNON_CHARS_IDX[ch],:]
@@ -111,7 +114,7 @@ class Embedding:
                 w = w.replace(u'-', u'')
                 for i in range(len(w) // 2):
                     prob_distr[Embedding.ARNON_CHARS_IDX[w[i * 2]], Embedding.VOWELS_IDX[w[i * 2 + 1]]] += 1
-        prob_distr += 0.1  # smoothing
+        prob_distr += 0.3  # smoothing
         prob_distr = prob_distr / np.sum(prob_distr, 1)[:, np.newaxis]  # prob distrib
         return prob_distr
 
@@ -154,5 +157,7 @@ if __name__ == '__main__':
     emb = Embedding()
     emb.learn('data/HaaretzOrnan_annotated.txt')
     emb.save('emb_model_nn')
+    for i in range(emb.mapping.shape[0]):
+        print(emb.mapping[i], "'"+Embedding.ARNON_CHARS[i]+"'")
     print(emb.len())
-    print(emb['t'])
+    #print(emb['t'])

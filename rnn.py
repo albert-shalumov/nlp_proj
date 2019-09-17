@@ -144,22 +144,6 @@ class Encoder:
 
         return self
 
-    def split_(self, valid_ratio=0.1):
-        assert valid_ratio>0
-        self.batch_size=32
-
-        train_smpls = self.batch_size*int(self.X.shape[0]*(1-valid_ratio)/self.batch_size)
-        valid_smpls = self.batch_size*int((self.X.shape[0]-train_smpls)/self.batch_size)
-
-        self.train_X = self.X[np.newaxis, :train_smpls, ...].reshape(self.batch_size, -1, self.X.shape[-2],self.X.shape[-1])
-        self.train_Y = self.Y[np.newaxis, :train_smpls].reshape(self.batch_size, -1)
-        self.train_Mask = self.Mask[np.newaxis, :train_smpls, ...].reshape(self.batch_size, -1, self.Mask.shape[-2],self.Mask.shape[-1])
-        self.valid_X = self.X[np.newaxis, train_smpls:train_smpls+valid_smpls, ...].reshape(self.batch_size, -1, self.X.shape[-2],self.X.shape[-1])
-        self.valid_Y = self.Y[np.newaxis, train_smpls:train_smpls+valid_smpls].reshape(self.batch_size, -1)
-        self.valid_Mask = self.Mask[np.newaxis, train_smpls:train_smpls+valid_smpls, ...].reshape(self.batch_size, -1, self.Mask.shape[-2], self.Mask.shape[-1])
-
-        return self
-
 
     def train(self, epochs=10, lr=1e-2, alg = 'adamw'):
         if alg=='adagrad':
@@ -192,8 +176,8 @@ class Encoder:
 
         min_val_loss = (9999, 0)
         best_model = None
+        hidden = self.encoder.init_hidden(self.train_X.shape[0])
         for epoch in range(1, epochs+1):
-            hidden = self.encoder.init_hidden(self.train_X.shape[0])
             optimizer.zero_grad()  # Clears existing gradients from previous epoch
             output, _ = self.encoder(train_inp_seq[:,0,...], train_mask[:,0,...], hidden)
             loss = criterion(output[:,-1,:], train_tgt_seq[:,0,...].view(-1))
@@ -228,14 +212,33 @@ class Encoder:
             if abort:
                 return self
 
-        # Restore best model
+        # Restore best model and evaluate it
         self.encoder.load_state_dict(best_model)
         self.encoder.eval()
 
-        print(min_val_loss)
-        return self, min_val_loss[0]
+        #print(min_val_loss)
+        return self
+
+    def eval(self):
+        self.encoder.eval()
+        conf_mat = np.zeros((self.emb_out_size, self.emb_out_size))
+        valid_inp_seq = torch.from_numpy(self.valid_X).float().to(self.device)
+        valid_tgt_seq = torch.Tensor(self.valid_Y).long().to(self.device)
+        valid_mask = torch.Tensor(self.valid_Mask).to(self.device)
+
+        # Fill confusion matrix
+        pred, _ = self.encoder(valid_inp_seq[:, 0, ...], valid_mask[:, 0, ...], self.encoder.init_hidden(self.valid_X.shape[0]))
+        pred = nn.Softmax(dim=-1)(pred)
+        y = pred.detach().to('cpu').numpy()  #
+        predicted = np.argmax(y, axis=-1)
+
+        for i in range(predicted.shape[0]):
+            conf_mat[int(predicted[i][-1]), int(self.valid_Y[i])] += 1
+
+        return conf_mat[:-1,:-1]
 
     def predict(self, pred_set):
+        self.encoder.eval()
         res_set = []
         for sentence in pred_set:
             stc_in = ' '.join(sentence)
@@ -255,10 +258,7 @@ class Encoder:
                 input = np.zeros((1, 1, self.max_len, self.emb_in_size))
                 mask = np.zeros((1, 1, self.max_len, self.emb_in_size))
                 for k, ch in enumerate(w):
-                    if self.use_emb:
-                        input[0, 0, k, :] = self.emb[ch]
-                    else:
-                        input[0,0, k, self.input_char2int[ch]] = 1
+                    input[0, 0, k, :] = self.emb[ch]
                     if ch != ' ':
                         mask[0,0, k, :] = 1
                 hidden = self.encoder.init_hidden(1)
@@ -310,42 +310,53 @@ class Encoder:
 
 def search_hparams():
     verbose = False
-    with open('rnn_res__.csv','w') as f:
-        num_layers = [1,2]
-        n_hidden = [16,32]
+    with open('rnn_res.csv','a') as f:
+        num_layers = [1,2,3,4,5,6]
+        n_hidden = [32,64,128]
         emb = ['one-hot', 'mds', 'nn']
-        win_len = [4, 8]
+        win_len = [4]
         for config_tuple in product(num_layers, n_hidden, emb, win_len):
             config = {'n_layers':config_tuple[0], 'hidden_dim':config_tuple[1], 'embedding':config_tuple[2], 'win_len':config_tuple[3]}
-            if 'val_loss' in locals():
-                del val_loss
-            n_iter=3
-            for i in range(n_iter):
+            if 'conf_mat' in locals():
+                del conf_mat
+            for i in range(5):
                 rnn = Encoder(config)
-                if 'val_loss' in locals():
-                    val_loss += rnn.prep_model().shuffle(None).split(0.05).train(epochs=10000, lr=1e-2, alg='adamw')[1]
+                if 'conf_mat' in locals():
+                    conf_mat += rnn.prep_model().shuffle(None).split(0.05).train(epochs=10000, lr=1e-2, alg='adamw').eval()
                 else:
-                    val_loss = rnn.prep_model().shuffle(None).split(0.05).train(epochs=10000,  lr=1e-2, alg='adamw')[1]
-            val_loss /= n_iter
+                    conf_mat = rnn.prep_model().shuffle(None).split(0.05).train(epochs=10000,  lr=1e-2, alg='adamw').eval()
             res_str = '{};'.format(config)
             print("Configuration = {}: ".format(config))
-            res_str += '{};'.format(val_loss)
-            print('AvgLoss:',val_loss)
-            f.write(res_str+'\n')
+            precision, recall = metrics.MicroAvg(conf_mat)
+            f1 = metrics.Fscore(precision, recall, 1)
+            res_str += '{};'.format(f1)
+            print('MicroAvg:', precision, recall, f1)
+            precision, recall = metrics.MacroAvg(conf_mat)
+            f1 = metrics.Fscore(recall, precision, 1)
+            res_str += '{};'.format(f1)
+            print('MacroAvg:', precision, recall, f1)
+            acc = metrics.AvgAcc(conf_mat)
+            res_str += '{};'.format(acc)
+            print('AvgAcc:', acc)
+            f.write(res_str + '\n')
+            conf_mat = metrics.NormalizeConfusion(conf_mat)
+            if verbose:
+                print('ConfMat:\n', np.array_str(conf_mat, max_line_width=300, precision=4))
+                print('----------------------------------------------')
             f.flush()
 
 def check_seeds():
-    config = {'ftrs': ('IS_FIRST', 'IS_LAST', 'VAL', 'PRV_VAL', 'NXT_VAL', 'FRST_VAL', 'LST_VAL', 'SCND_VAL', 'SCND_LST_VAL')}
+    config = {'n_layers': 3, 'hidden_dim': 32, 'embedding': 'mds', 'win_len': 4}
     print("seed, accuracy")
     for seed in range(11):
         if 'conf_mat' in locals():
             del conf_mat
-        for iters in range(5):
-            memm = MEMM(config)
+        for i in range(5):
+            rnn = Encoder(config)
             if 'conf_mat' in locals():
-                conf_mat += memm.prep_data().shuffle(seed).split(0.1).train().eval()
+                conf_mat += rnn.prep_model().shuffle(seed).split(0.05).train(epochs=10000, lr=1e-2, alg='adamw').eval()
             else:
-                conf_mat = memm.prep_data().shuffle(seed).split(0.1).train().eval()
+                conf_mat = rnn.prep_model().shuffle(seed).split(0.05).train(epochs=10000, lr=1e-2, alg='adamw').eval()
         acc = metrics.AvgAcc(conf_mat)
         print(seed, acc)
 

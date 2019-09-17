@@ -9,6 +9,7 @@ from hmm import HMM
 from memm import MEMM
 from crf_word import CRF as CRF_WORD
 from crf_sentence import CRF as CRF_SENT
+from rnn import Encoder as RNN
 from post_proc.syllabification import syllabification
 from post_proc.post_processing import romanize
 
@@ -88,6 +89,9 @@ def test():
     config = {'ftrs': ('IS_FIRST', 'IS_LAST', 'IDX', 'VAL', 'PRV_VAL', 'NXT_VAL', 'FRST_VAL', 'LST_VAL', 'SCND_VAL', 'SCND_LST_VAL')}
     untrained_models.append((CRF_WORD(config), 'CRF. config: {}'.format(config)))
     trained_models = [(model.prep_data().shuffle(0xfab1e).split(0).train(),name) for model,name in untrained_models]
+    config = {'n_layers': 3, 'hidden_dim': 32, 'embedding': 'mds', 'win_len': 4}
+    rnn = RNN(config)
+    trained_models.append((rnn.prep_model().load('rnn_model.bin'),  'RNN. config: {}'.format(config)))
     for model,name in trained_models:
         trained_model = model
         conf_mat, dist = TestModel(trained_model, data)

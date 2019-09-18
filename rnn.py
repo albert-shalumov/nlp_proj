@@ -278,7 +278,7 @@ class Encoder:
         torch.save(self.encoder.state_dict(), file)
 
     def load(self, file):
-        self.encoder.load_state_dict(torch.load(file))
+        self.encoder.load_state_dict(torch.load(file,map_location='cpu'))
         return self
 
     @staticmethod

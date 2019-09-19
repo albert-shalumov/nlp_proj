@@ -1,6 +1,6 @@
 
 # Hebrew syllabification
-Description: Final project in "Intro. to NLP" course.
+Description: Final project in "Intro. to NLP" course by Albert Shalumov and Kobi Bodek
 
 ## Schedule
 <!--- :heavy_check_mark: --->

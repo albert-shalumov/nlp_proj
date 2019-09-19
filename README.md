@@ -40,6 +40,15 @@ Each model must be executed with a single parameter: search | seeds.
 ## Utilities
  - metrics.py - Accuracy measures
  - **test.py - Executes all models with the best configuration**
- -  input_proc\utils.py - Convert and prepare MILA dataset for annotation 
- -  input_proc\verifier.py - Validate annotation
+ - input_proc\utils.py - Convert and prepare MILA dataset for annotation 
+ - input_proc\verifier.py - Validate annotation
 
+## Results
+ - crf_sentence_res.csv - Results of CRF sentence search
+ - crf_word_res.csv - Results of CRF word search
+ - hmm_res.csv - Results of HMM search
+ - memm_res.csv - Results of MEMM search
+ 
+## Requirements
+ - cots\used_packages.txt - Used packages
+rnn_res.csv

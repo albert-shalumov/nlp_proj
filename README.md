@@ -22,9 +22,9 @@ Description: Final project in "Intro. to NLP" course.
 
 # Files description
 ## Models
-Each model must be executed with a single parameter: search | seeds.
-**Search** - train on each possible configuration and calculate accuracy measures
-**Seeds** - Train using selected configuration over different seeds and calculate accuracy
+Each model must be executed with a single parameter: search | seeds.  
+**Search** - train on each possible configuration and calculate accuracy measures  
+**Seeds** - Train using selected configuration over different seeds and calculate accuracy  
  - crf_sentence.py - CRF model for word and sentence features
  - crf_word.py - CRF model for word only features
  - embedding_mds.py - Create embedding matrix using MDS
@@ -39,14 +39,7 @@ Each model must be executed with a single parameter: search | seeds.
  
 ## Utilities
  - metrics.py - Accuracy measures
- - test.py - executes all models with the best configuration
- -  
+ - **test.py - Executes all models with the best configuration**
+ -  input_proc\utils.py - Convert and prepare MILA dataset for annotation 
+ -  input_proc\verifier.py - Validate annotation
 
-
-input_proc\utils.py
-input_proc\verifier.py
-
-post_proc\statistics.py
-
-post_proc\test_scores.py
-post_proc\utils.py

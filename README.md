@@ -48,7 +48,8 @@ Each model must be executed with a single parameter: search | seeds.
  - crf_word_res.csv - Results of CRF word search
  - hmm_res.csv - Results of HMM search
  - memm_res.csv - Results of MEMM search
+  - rnn_res.csv - Results of RNN search
  
 ## Requirements
  - cots\used_packages.txt - Used packages
-rnn_res.csv
+

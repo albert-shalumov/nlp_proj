@@ -32,6 +32,9 @@ Each model must be executed with a single parameter: search | seeds.
  - hmm.py - HMM model
  - memm.py - MEMM model
  - rnn.py - RNN model
+ - rnn_model.bin - Trained RNN model
+ - emb_model_mds.npy - MDS embedding matrix
+ - emb_model_nn.npy - NN embedding matrix 
  
  ## Post-Processing
   - post_proc\syllabification.py - Syllabification

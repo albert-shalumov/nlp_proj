@@ -1,3 +1,4 @@
+
 # Hebrew syllabification
 Description: Final project in "Intro. to NLP" course.
 
@@ -21,6 +22,9 @@ Description: Final project in "Intro. to NLP" course.
 
 # Files description
 ## Models
+Each model must be executed with a single parameter: search | seeds.
+**Search** - train on each possible configuration and calculate accuracy measures
+**Seeds** - Train using selected configuration over different seeds and calculate accuracy
  - crf_sentence.py - CRF model for word and sentence features
  - crf_word.py - CRF model for word only features
  - embedding_mds.py - Create embedding matrix using MDS
@@ -29,14 +33,20 @@ Description: Final project in "Intro. to NLP" course.
  - memm.py - MEMM model
  - rnn.py - RNN model
  
+ ## Post-Processing
+  - post_proc\syllabification.py - Syllabification
+  - post_proc\post_processing.py - Romanization
+ 
 ## Utilities
- - metrics.py - Data metrics
+ - metrics.py - Accuracy measures
+ - test.py - executes all models with the best configuration
+ -  
 
-test.py
+
 input_proc\utils.py
 input_proc\verifier.py
-post_proc\post_processing.py
+
 post_proc\statistics.py
-post_proc\syllabification.py
+
 post_proc\test_scores.py
 post_proc\utils.py

@@ -13,19 +13,30 @@ Description: Final project in "Intro. to NLP" course.
 | 2/8 | Division to syllables finished |:heavy_check_mark:|7/8|
 | 9/8 | Conversion to english letters finished |:heavy_check_mark:|7/8|
 | 15/8 | CRF code finished |:heavy_check_mark:| 28/7 |
-| 8/9 | Final data version - no more annotation from this point |||
+| 8/9 | Final data version - no more annotation from this point |:heavy_check_mark:||
 | 9/8 | Implement edit distance metric |:heavy_check_mark:|7/8|
 | 16/8 | Finish NN |:heavy_check_mark:|15/8|
-| 19/9 | Finished project |||
+| 19/9 | Finished project |:heavy_check_mark:||
 | 21/9 | Verified project |||
 
-## File description
- - hmm.py - Contains HMM implementation (adapter for NLTK). If called directly, scans over different configurations:
- ngram: [1..9], smoothing:{MLE, Laplace, Add-\delta [0.1,0.2,...0.9], GoodTuring}. Seed is fixed to 0 to ensure 
- reproducability.
- - memm.py - Contains MEMM implementation (using sklearn for optimization). If called directly,
- scans over combinations of possible features: ['IS_FIRST', 'IS_LAST', 'IDX', 'VAL', 'PRV_VAL', 'NXT_VAL', 'FRST_VAL', 'LST_VAL', 'SCND_VAL', 'SCND_LST_VAL', 'LEN'].
- Seed is fixed to 0 to ensure reproducability. 
- - crf_word.py - Contains CRF implementation using word scope only. If called directly,
- scans over combinations of possible features: ['IS_FIRST', 'IS_LAST', 'IDX', 'VAL', 'PRV_VAL', 'NXT_VAL', 'FRST_VAL', 'LST_VAL', 'SCND_VAL', 'SCND_LST_VAL', 'LEN'].
- Seed is fixed to 0 to ensure reproducability.  
+# Files description
+## Models
+ - crf_sentence.py - CRF model for word and sentence features
+ - crf_word.py - CRF model for word only features
+ - embedding_mds.py - Create embedding matrix using MDS
+ - embedding_nn.py - Create embedding matrix using NN
+ - hmm.py - HMM model
+ - memm.py - MEMM model
+ - rnn.py - RNN model
+ 
+## Utilities
+ - metrics.py - Data metrics
+
+test.py
+input_proc\utils.py
+input_proc\verifier.py
+post_proc\post_processing.py
+post_proc\statistics.py
+post_proc\syllabification.py
+post_proc\test_scores.py
+post_proc\utils.py
